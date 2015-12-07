@@ -18,7 +18,7 @@
 		A9943BE71C15FA7E00894073 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9943BE51C15FA7E00894073 /* Interface.storyboard */; };
 		A9943BE91C15FA7E00894073 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9943BE81C15FA7E00894073 /* Assets.xcassets */; };
 		A9943BF01C15FA7E00894073 /* Exercise1 WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A9943BEF1C15FA7E00894073 /* Exercise1 WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		A9943BF51C15FA7E00894073 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9943BF41C15FA7E00894073 /* InterfaceController.swift */; };
+		A9943BF51C15FA7E00894073 /* HomeInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9943BF41C15FA7E00894073 /* HomeInterfaceController.swift */; };
 		A9943BF71C15FA7E00894073 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9943BF61C15FA7E00894073 /* ExtensionDelegate.swift */; };
 		A9943BF91C15FA7E00894073 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9943BF81C15FA7E00894073 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -98,7 +98,7 @@
 		A9943BE81C15FA7E00894073 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9943BEA1C15FA7E00894073 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9943BEF1C15FA7E00894073 /* Exercise1 WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Exercise1 WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A9943BF41C15FA7E00894073 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A9943BF41C15FA7E00894073 /* HomeInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInterfaceController.swift; sourceTree = "<group>"; };
 		A9943BF61C15FA7E00894073 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		A9943BF81C15FA7E00894073 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9943BFA1C15FA7E00894073 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -204,7 +204,7 @@
 		A9943BF31C15FA7E00894073 /* Exercise1 WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				A9943BF41C15FA7E00894073 /* InterfaceController.swift */,
+				A9943BF41C15FA7E00894073 /* HomeInterfaceController.swift */,
 				A9943BF61C15FA7E00894073 /* ExtensionDelegate.swift */,
 				A9943BF81C15FA7E00894073 /* Assets.xcassets */,
 				A9943BFA1C15FA7E00894073 /* Info.plist */,
@@ -430,7 +430,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9943BF71C15FA7E00894073 /* ExtensionDelegate.swift in Sources */,
-				A9943BF51C15FA7E00894073 /* InterfaceController.swift in Sources */,
+				A9943BF51C15FA7E00894073 /* HomeInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -717,6 +717,7 @@
 				A9943BFF1C15FA7E00894073 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A9943C011C15FA7E00894073 /* Build configuration list for PBXNativeTarget "Exercise1 WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -725,6 +726,7 @@
 				A9943C031C15FA7E00894073 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A9943C051C15FA7E00894073 /* Build configuration list for PBXNativeTarget "Exercise1" */ = {
 			isa = XCConfigurationList;
@@ -733,6 +735,7 @@
 				A9943C071C15FA7E00894073 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A9943C081C15FA7E00894073 /* Build configuration list for PBXNativeTarget "Exercise1Tests" */ = {
 			isa = XCConfigurationList;
@@ -741,6 +744,7 @@
 				A9943C0A1C15FA7E00894073 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A9943C0B1C15FA7E00894073 /* Build configuration list for PBXNativeTarget "Exercise1UITests" */ = {
 			isa = XCConfigurationList;
@@ -749,6 +753,7 @@
 				A9943C0D1C15FA7E00894073 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
