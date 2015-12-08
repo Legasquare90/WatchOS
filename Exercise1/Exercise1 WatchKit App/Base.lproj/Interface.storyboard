@@ -57,12 +57,20 @@
             <objects>
                 <controller identifier="Formato" id="55M-Es-4ax" customClass="FormatInterfaceController" customModule="Exercise1_WatchKit_Extension">
                     <items>
-                        <switch width="1" alignment="left" title="24H" id="6UZ-Jv-WmX"/>
+                        <switch width="1" alignment="left" title="PST/GMT" id="6UZ-Jv-WmX">
+                            <connections>
+                                <action selector="changeFormat:" destination="55M-Es-4ax" id="AFl-y3-TTU"/>
+                            </connections>
+                        </switch>
                         <dateLabel alignment="center" verticalAlignment="center" id="bBX-P0-hdu">
                             <fontDescription key="font" style="UICTFontTextStyleBody"/>
-                            <dateFormatterStyle key="timeStyle" short="YES"/>
+                            <dateFormatterStyle key="timeStyle" short="YES" medium="YES" long="YES"/>
                         </dateLabel>
                     </items>
+                    <connections>
+                        <outlet property="date" destination="bBX-P0-hdu" id="nwR-Qt-tRk"/>
+                        <outlet property="switchObject" destination="6UZ-Jv-WmX" id="Rfk-Lr-0YK"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="613" y="323"/>

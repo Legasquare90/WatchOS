@@ -12,20 +12,23 @@ import Foundation
 
 class FormatInterfaceController: WKInterfaceController {
 
+    @IBOutlet var date: WKInterfaceDate!
+    @IBOutlet var switchObject: WKInterfaceSwitch!
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
-        
-        // Configure interface objects here.
+        setTitle("Timezone")
     }
-
+    
     override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        switchObject.setOn(true)
+        date.setTimeZone(NSTimeZone(abbreviation: "GMT"))
     }
 
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-        super.didDeactivate()
+    @IBAction func changeFormat(value: Bool) {
+        let timezone: String = value ? "GMT" : "PST"
+        date.setTimeZone(NSTimeZone(abbreviation: timezone))
     }
 
 }
