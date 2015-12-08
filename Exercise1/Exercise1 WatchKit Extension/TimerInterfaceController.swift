@@ -35,16 +35,6 @@ class TimerInterfaceController: WKInterfaceController {
         doneTimer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("handleTimer:"), userInfo: nil, repeats: true)
     }
 
-    override func didDeactivate() {
-        super.didDeactivate()
-        
-        timer.stop()
-        durationCounter = 0
-        doneTimer?.invalidate()
-        doneTimer = nil
-        stopped = true
-    }
-
     @IBAction func startButtonAction() {
         
         if (stopped) {

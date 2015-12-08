@@ -14,7 +14,7 @@ class TableInterfaceController: WKInterfaceController {
 
     @IBOutlet var table: WKInterfaceTable!
     
-    let model = [0:"Formato", 1:"Timer"]
+    let model = [0:"Timezone", 1:"Timer"]
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)

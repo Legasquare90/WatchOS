@@ -1,5 +1,5 @@
 //
-//  FormatInterfaceController.swift
+//  TimezoneInterfaceController.swift
 //  Exercise1
 //
 //  Created by Jose Angel Cuadrado on 8/12/15.
@@ -10,7 +10,7 @@ import WatchKit
 import Foundation
 
 
-class FormatInterfaceController: WKInterfaceController {
+class TimezoneInterfaceController: WKInterfaceController {
 
     @IBOutlet var date: WKInterfaceDate!
     @IBOutlet var switchObject: WKInterfaceSwitch!

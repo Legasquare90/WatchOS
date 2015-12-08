@@ -52,10 +52,10 @@
             </objects>
             <point key="canvasLocation" x="387" y="323"/>
         </scene>
-        <!--Formato-->
+        <!--Timezone-->
         <scene sceneID="tqp-Pm-5eQ">
             <objects>
-                <controller identifier="Formato" id="55M-Es-4ax" customClass="FormatInterfaceController" customModule="Exercise1_WatchKit_Extension">
+                <controller identifier="Timezone" id="55M-Es-4ax" customClass="TimezoneInterfaceController" customModule="Exercise1_WatchKit_Extension">
                     <items>
                         <switch width="1" alignment="left" title="PST/GMT" id="6UZ-Jv-WmX">
                             <connections>
