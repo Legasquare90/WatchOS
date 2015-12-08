@@ -83,13 +83,22 @@
                         <timer alignment="center" previewedSeconds="60" id="Luj-Rr-xCF">
                             <calendarUnit key="units" minute="YES" second="YES"/>
                         </timer>
-                        <button width="1" alignment="left" title="Start" id="Hea-EL-KOX"/>
+                        <button width="1" alignment="left" title="Start" id="Hea-EL-KOX">
+                            <connections>
+                                <action selector="startButtonAction" destination="WHa-JR-MkB" id="kFn-R8-lc8"/>
+                            </connections>
+                        </button>
                         <separator alignment="left" id="0hi-zi-51p"/>
-                        <imageView alignment="left" id="jiR-Km-lwk"/>
+                        <imageView alignment="center" image="tick" id="jiR-Km-lwk"/>
                     </items>
+                    <connections>
+                        <outlet property="image" destination="jiR-Km-lwk" id="lUe-tl-NcF"/>
+                        <outlet property="startButton" destination="Hea-EL-KOX" id="sBK-4E-5dy"/>
+                        <outlet property="timer" destination="Luj-Rr-xCF" id="sbm-Ki-Vjl"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="613" y="564"/>
+            <point key="canvasLocation" x="613" y="565.75"/>
         </scene>
     </scenes>
 </document>
