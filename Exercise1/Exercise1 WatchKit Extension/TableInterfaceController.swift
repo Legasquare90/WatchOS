@@ -32,7 +32,8 @@ class TableInterfaceController: WKInterfaceController {
     }
     
     override func table(table: WKInterfaceTable, didSelectRowAtIndex rowIndex: Int) {
-        
+        let controllerIdentifier: String = model[rowIndex]!
+        pushControllerWithName(controllerIdentifier, context: nil)
     }
 
 }

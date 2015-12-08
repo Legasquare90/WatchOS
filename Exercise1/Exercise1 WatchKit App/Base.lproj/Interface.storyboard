@@ -52,5 +52,36 @@
             </objects>
             <point key="canvasLocation" x="387" y="323"/>
         </scene>
+        <!--Formato-->
+        <scene sceneID="tqp-Pm-5eQ">
+            <objects>
+                <controller identifier="Formato" id="55M-Es-4ax" customClass="FormatInterfaceController" customModule="Exercise1_WatchKit_Extension">
+                    <items>
+                        <switch width="1" alignment="left" title="24H" id="6UZ-Jv-WmX"/>
+                        <dateLabel alignment="center" verticalAlignment="center" id="bBX-P0-hdu">
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                            <dateFormatterStyle key="timeStyle" short="YES"/>
+                        </dateLabel>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="613" y="323"/>
+        </scene>
+        <!--Timer-->
+        <scene sceneID="bbv-RW-upY">
+            <objects>
+                <controller identifier="Timer" id="WHa-JR-MkB" customClass="TimerInterfaceController" customModule="Exercise1_WatchKit_Extension">
+                    <items>
+                        <timer alignment="center" previewedSeconds="60" id="Luj-Rr-xCF">
+                            <calendarUnit key="units" minute="YES" second="YES"/>
+                        </timer>
+                        <button width="1" alignment="left" title="Start" id="Hea-EL-KOX"/>
+                        <separator alignment="left" id="0hi-zi-51p"/>
+                        <imageView alignment="left" id="jiR-Km-lwk"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="613" y="564"/>
+        </scene>
     </scenes>
 </document>
