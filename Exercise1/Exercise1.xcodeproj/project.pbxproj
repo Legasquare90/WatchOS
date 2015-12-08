@@ -24,7 +24,6 @@
 		A9943BF01C15FA7E00894073 /* Exercise1 WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A9943BEF1C15FA7E00894073 /* Exercise1 WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A9943BF51C15FA7E00894073 /* HomeInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9943BF41C15FA7E00894073 /* HomeInterfaceController.swift */; };
 		A9943BF71C15FA7E00894073 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9943BF61C15FA7E00894073 /* ExtensionDelegate.swift */; };
-		A9943BF91C15FA7E00894073 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9943BF81C15FA7E00894073 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,7 +107,6 @@
 		A9943BEF1C15FA7E00894073 /* Exercise1 WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Exercise1 WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9943BF41C15FA7E00894073 /* HomeInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInterfaceController.swift; sourceTree = "<group>"; };
 		A9943BF61C15FA7E00894073 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		A9943BF81C15FA7E00894073 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9943BFA1C15FA7E00894073 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -218,7 +216,6 @@
 				A94E0EBE1C17051800F8844F /* TimerInterfaceController.swift */,
 				A94E0EC01C17055300F8844F /* FormatInterfaceController.swift */,
 				A94E0EBC1C16F79C00F8844F /* RowController.swift */,
-				A9943BF81C15FA7E00894073 /* Assets.xcassets */,
 				A9943BFA1C15FA7E00894073 /* Info.plist */,
 			);
 			path = "Exercise1 WatchKit Extension";
@@ -405,7 +402,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9943BF91C15FA7E00894073 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
