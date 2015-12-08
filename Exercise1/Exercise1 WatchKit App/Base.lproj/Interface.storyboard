@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9019"/>
     </dependencies>
     <scenes>
-        <!--Home Interface Controller-->
+        <!--home-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="HomeInterfaceController" customModule="Exercise1_WatchKit_Extension">
+                <controller identifier="home" id="AgC-eL-Hgc" customClass="HomeInterfaceController" customModule="Exercise1_WatchKit_Extension">
                     <items>
                         <button width="1" alignment="center" verticalAlignment="center" title="Comenzar" id="7F1-gW-juP">
                             <connections>
@@ -25,23 +25,29 @@
             </objects>
             <point key="canvasLocation" x="143" y="323"/>
         </scene>
-        <!--Interface Controller-->
+        <!--table-->
         <scene sceneID="h6J-eW-SHh">
             <objects>
-                <controller id="XYa-XK-HLo">
+                <controller identifier="table" id="XYa-XK-HLo" customClass="TableInterfaceController" customModule="Exercise1_WatchKit_Extension">
                     <items>
                         <table alignment="left" id="eq9-tJ-obC">
                             <items>
-                                <tableRow id="iVi-Vq-Zes">
+                                <tableRow identifier="rowTable" id="iVi-Vq-Zes" customClass="RowController" customModule="Exercise1_WatchKit_Extension">
                                     <group key="rootItem" width="1" alignment="left" id="noD-xA-xmq">
                                         <items>
                                             <label alignment="center" verticalAlignment="center" text="Opción" id="xhy-P4-wXK"/>
                                         </items>
                                     </group>
+                                    <connections>
+                                        <outlet property="textLabel" destination="xhy-P4-wXK" id="Wyb-e7-WyS"/>
+                                    </connections>
                                 </tableRow>
                             </items>
                         </table>
                     </items>
+                    <connections>
+                        <outlet property="table" destination="eq9-tJ-obC" id="wrF-Je-sBS"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="387" y="323"/>
