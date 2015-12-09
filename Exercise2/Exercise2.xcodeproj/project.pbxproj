@@ -18,7 +18,7 @@
 		A94E0EFF1C177B8700F8844F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A94E0EFD1C177B8700F8844F /* Interface.storyboard */; };
 		A94E0F011C177B8700F8844F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A94E0F001C177B8700F8844F /* Assets.xcassets */; };
 		A94E0F081C177B8700F8844F /* Exercise2 WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A94E0F071C177B8700F8844F /* Exercise2 WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		A94E0F0D1C177B8700F8844F /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E0F0C1C177B8700F8844F /* InterfaceController.swift */; };
+		A94E0F0D1C177B8700F8844F /* MapInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E0F0C1C177B8700F8844F /* MapInterfaceController.swift */; };
 		A94E0F0F1C177B8700F8844F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E0F0E1C177B8700F8844F /* ExtensionDelegate.swift */; };
 		A94E0F111C177B8700F8844F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A94E0F101C177B8700F8844F /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -98,7 +98,7 @@
 		A94E0F001C177B8700F8844F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A94E0F021C177B8700F8844F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A94E0F071C177B8700F8844F /* Exercise2 WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Exercise2 WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A94E0F0C1C177B8700F8844F /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A94E0F0C1C177B8700F8844F /* MapInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInterfaceController.swift; sourceTree = "<group>"; };
 		A94E0F0E1C177B8700F8844F /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		A94E0F101C177B8700F8844F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A94E0F121C177B8700F8844F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -204,7 +204,7 @@
 		A94E0F0B1C177B8700F8844F /* Exercise2 WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				A94E0F0C1C177B8700F8844F /* InterfaceController.swift */,
+				A94E0F0C1C177B8700F8844F /* MapInterfaceController.swift */,
 				A94E0F0E1C177B8700F8844F /* ExtensionDelegate.swift */,
 				A94E0F101C177B8700F8844F /* Assets.xcassets */,
 				A94E0F121C177B8700F8844F /* Info.plist */,
@@ -430,7 +430,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A94E0F0F1C177B8700F8844F /* ExtensionDelegate.swift in Sources */,
-				A94E0F0D1C177B8700F8844F /* InterfaceController.swift in Sources */,
+				A94E0F0D1C177B8700F8844F /* MapInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -717,6 +717,7 @@
 				A94E0F171C177B8700F8844F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A94E0F191C177B8700F8844F /* Build configuration list for PBXNativeTarget "Exercise2 WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -725,6 +726,7 @@
 				A94E0F1B1C177B8700F8844F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A94E0F1D1C177B8700F8844F /* Build configuration list for PBXNativeTarget "Exercise2" */ = {
 			isa = XCConfigurationList;
@@ -733,6 +735,7 @@
 				A94E0F1F1C177B8700F8844F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A94E0F201C177B8700F8844F /* Build configuration list for PBXNativeTarget "Exercise2Tests" */ = {
 			isa = XCConfigurationList;
@@ -741,6 +744,7 @@
 				A94E0F221C177B8700F8844F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A94E0F231C177B8700F8844F /* Build configuration list for PBXNativeTarget "Exercise2UITests" */ = {
 			isa = XCConfigurationList;
@@ -749,6 +753,7 @@
 				A94E0F251C177B8700F8844F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
