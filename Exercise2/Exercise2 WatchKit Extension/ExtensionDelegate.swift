@@ -12,9 +12,6 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
 
     func applicationDidFinishLaunching() {
         // Perform any final initialization of your application.
-        let objects = [["name":"UPSA", "latitude":40.962009, "longitude":-5.665677], ["name":"IGZ", "latitude":40.421322, "longitude":-3.705472], ["name":"T3chFest (UC3M)", "latitude":40.332143, "longitude":-3.835696]]
-        let controllers = Array(count: objects.count, repeatedValue: "map")
-        WKInterfaceController.reloadRootControllersWithNames( controllers, contexts: nil)
     }
 
     func applicationDidBecomeActive() {
