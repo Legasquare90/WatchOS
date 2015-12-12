@@ -18,9 +18,11 @@
 		530939A61C183530000D1F8B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 530939A41C183530000D1F8B /* Interface.storyboard */; };
 		530939A81C183530000D1F8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 530939A71C183530000D1F8B /* Assets.xcassets */; };
 		530939AF1C183530000D1F8B /* Exercise3 WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 530939AE1C183530000D1F8B /* Exercise3 WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		530939B41C183530000D1F8B /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530939B31C183530000D1F8B /* InterfaceController.swift */; };
+		530939B41C183530000D1F8B /* ChooseTeamInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530939B31C183530000D1F8B /* ChooseTeamInterfaceController.swift */; };
 		530939B61C183530000D1F8B /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530939B51C183530000D1F8B /* ExtensionDelegate.swift */; };
 		530939B81C183530000D1F8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 530939B71C183530000D1F8B /* Assets.xcassets */; };
+		A94E0F271C1CDE9C00F8844F /* PickerTeamInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E0F261C1CDE9C00F8844F /* PickerTeamInterfaceController.swift */; };
+		A94E0F291C1CDEC400F8844F /* VideoInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E0F281C1CDEC400F8844F /* VideoInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,10 +100,12 @@
 		530939A71C183530000D1F8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		530939A91C183530000D1F8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		530939AE1C183530000D1F8B /* Exercise3 WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Exercise3 WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		530939B31C183530000D1F8B /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		530939B31C183530000D1F8B /* ChooseTeamInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseTeamInterfaceController.swift; sourceTree = "<group>"; };
 		530939B51C183530000D1F8B /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		530939B71C183530000D1F8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		530939B91C183530000D1F8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A94E0F261C1CDE9C00F8844F /* PickerTeamInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerTeamInterfaceController.swift; sourceTree = "<group>"; };
+		A94E0F281C1CDEC400F8844F /* VideoInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,7 +208,9 @@
 		530939B21C183530000D1F8B /* Exercise3 WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				530939B31C183530000D1F8B /* InterfaceController.swift */,
+				530939B31C183530000D1F8B /* ChooseTeamInterfaceController.swift */,
+				A94E0F261C1CDE9C00F8844F /* PickerTeamInterfaceController.swift */,
+				A94E0F281C1CDEC400F8844F /* VideoInterfaceController.swift */,
 				530939B51C183530000D1F8B /* ExtensionDelegate.swift */,
 				530939B71C183530000D1F8B /* Assets.xcassets */,
 				530939B91C183530000D1F8B /* Info.plist */,
@@ -429,8 +435,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A94E0F271C1CDE9C00F8844F /* PickerTeamInterfaceController.swift in Sources */,
+				A94E0F291C1CDEC400F8844F /* VideoInterfaceController.swift in Sources */,
 				530939B61C183530000D1F8B /* ExtensionDelegate.swift in Sources */,
-				530939B41C183530000D1F8B /* InterfaceController.swift in Sources */,
+				530939B41C183530000D1F8B /* ChooseTeamInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -719,6 +727,7 @@
 				530939BE1C183530000D1F8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		530939C01C183530000D1F8B /* Build configuration list for PBXNativeTarget "Exercise3 WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -727,6 +736,7 @@
 				530939C21C183530000D1F8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		530939C41C183530000D1F8B /* Build configuration list for PBXNativeTarget "Exercise3" */ = {
 			isa = XCConfigurationList;
@@ -735,6 +745,7 @@
 				530939C61C183530000D1F8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		530939C71C183530000D1F8B /* Build configuration list for PBXNativeTarget "Exercise3Tests" */ = {
 			isa = XCConfigurationList;
@@ -743,6 +754,7 @@
 				530939C91C183530000D1F8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		530939CA1C183530000D1F8B /* Build configuration list for PBXNativeTarget "Exercise3UITests" */ = {
 			isa = XCConfigurationList;
@@ -751,6 +763,7 @@
 				530939CC1C183530000D1F8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

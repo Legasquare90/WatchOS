@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9019"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--chooseTeam-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Exercise3_WatchKit_App" customModuleProvider="target">
+                <controller identifier="chooseTeam" id="AgC-eL-Hgc" customClass="ChooseTeamInterfaceController" customModule="Exercise3_WatchKit_Extension">
                     <items>
                         <group width="1" alignment="left" layout="vertical" id="Cc1-3r-ys0">
                             <items>
@@ -21,11 +21,12 @@
                     </items>
                 </controller>
             </objects>
+            <point key="canvasLocation" x="565" y="595"/>
         </scene>
-        <!--Interface Controller-->
+        <!--pickerTeam-->
         <scene sceneID="nam-2l-GLC">
             <objects>
-                <controller id="Glc-au-W4U">
+                <controller identifier="pickerTeam" id="Glc-au-W4U" customClass="PickerTeamInterfaceController" customModule="Exercise3_WatchKit_Extension">
                     <items>
                         <picker height="100" alignment="left" id="KTO-YE-DYF"/>
                         <label alignment="center" text="Equipo" numberOfLines="2" id="oiR-kN-oad"/>
@@ -34,10 +35,10 @@
             </objects>
             <point key="canvasLocation" x="794" y="479"/>
         </scene>
-        <!--Interface Controller-->
+        <!--video-->
         <scene sceneID="8UH-N3-txY">
             <objects>
-                <controller id="I0G-4f-paj">
+                <controller identifier="video" id="I0G-4f-paj" customClass="VideoInterfaceController" customModule="Exercise3_WatchKit_Extension">
                     <items>
                         <movie width="1" height="100" alignment="left" id="CAF-py-U6l"/>
                     </items>

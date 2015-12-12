@@ -1,8 +1,8 @@
 //
-//  InterfaceController.swift
-//  Exercise3 WatchKit Extension
+//  VideoInterfaceController.swift
+//  Exercise3
 //
-//  Created by Jose Angel  Cuadrado Mingo on 9/12/15.
+//  Created by Jose Angel Cuadrado on 13/12/15.
 //  Copyright © 2015 UPSA. All rights reserved.
 //
 
@@ -10,7 +10,7 @@ import WatchKit
 import Foundation
 
 
-class InterfaceController: WKInterfaceController {
+class VideoInterfaceController: WKInterfaceController {
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
