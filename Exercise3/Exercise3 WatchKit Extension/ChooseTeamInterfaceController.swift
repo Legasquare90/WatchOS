@@ -12,20 +12,22 @@ import Foundation
 
 class ChooseTeamInterfaceController: WKInterfaceController {
 
+    @IBOutlet var teamCounterLabel: WKInterfaceLabel!
+    @IBOutlet var slider: WKInterfaceSlider!
+    
+    var teamCounter: Int? = 2
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
-        
-        // Configure interface objects here.
     }
 
-    override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
-        super.willActivate()
+    @IBAction func sliderAction(value: Float) {
+        self.teamCounter = Int(value)
+        self.teamCounterLabel.setText("Nº Equipos: \(self.teamCounter!)")
     }
-
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-        super.didDeactivate()
+    
+    @IBAction func chooseButton() {
+        let controllers = Array(count: self.teamCounter!, repeatedValue: "pickerTeam")
+        self.presentControllerWithNames(controllers, contexts: nil)
     }
-
 }

@@ -13,12 +13,24 @@
                         <group width="1" alignment="left" layout="vertical" id="Cc1-3r-ys0">
                             <items>
                                 <label alignment="center" text="Cantidad de equipos a escoger" textAlignment="center" numberOfLines="0" id="FGE-nU-TBP"/>
-                                <slider width="1" height="30" alignment="left" value="2" minimum="2" maximum="4" steps="2" id="xEc-AZ-NZW"/>
+                                <slider width="1" height="30" alignment="left" value="2" minimum="2" maximum="4" steps="2" id="xEc-AZ-NZW">
+                                    <connections>
+                                        <action selector="sliderAction:" destination="AgC-eL-Hgc" id="sWB-vF-kXc"/>
+                                    </connections>
+                                </slider>
                             </items>
                         </group>
                         <label alignment="center" text="Nº Equipos: 2" textAlignment="center" id="BjS-ti-2JD"/>
-                        <button width="1" alignment="left" verticalAlignment="bottom" title="Elegir" id="eaC-Ca-M9F"/>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Elegir" id="eaC-Ca-M9F">
+                            <connections>
+                                <action selector="chooseButton" destination="AgC-eL-Hgc" id="Vg8-kP-4Mz"/>
+                            </connections>
+                        </button>
                     </items>
+                    <connections>
+                        <outlet property="slider" destination="xEc-AZ-NZW" id="eaU-81-PeT"/>
+                        <outlet property="teamCounterLabel" destination="BjS-ti-2JD" id="1Ho-Za-ipq"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="565" y="595"/>
@@ -28,9 +40,17 @@
             <objects>
                 <controller identifier="pickerTeam" id="Glc-au-W4U" customClass="PickerTeamInterfaceController" customModule="Exercise3_WatchKit_Extension">
                     <items>
-                        <picker height="100" alignment="left" id="KTO-YE-DYF"/>
-                        <label alignment="center" text="Equipo" numberOfLines="2" id="oiR-kN-oad"/>
+                        <picker height="100" alignment="left" id="KTO-YE-DYF">
+                            <connections>
+                                <action selector="pickerAction:" destination="Glc-au-W4U" id="FVZ-Ja-Oxj"/>
+                            </connections>
+                        </picker>
+                        <label alignment="center" text="Equipo" textAlignment="center" numberOfLines="2" id="oiR-kN-oad"/>
                     </items>
+                    <connections>
+                        <outlet property="picker" destination="KTO-YE-DYF" id="dOV-Qq-cGa"/>
+                        <outlet property="pickerItemSelectedLabel" destination="oiR-kN-oad" id="QvU-LI-hDQ"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="794" y="479"/>

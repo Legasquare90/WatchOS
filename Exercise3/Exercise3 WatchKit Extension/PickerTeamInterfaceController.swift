@@ -12,20 +12,29 @@ import Foundation
 
 class PickerTeamInterfaceController: WKInterfaceController {
 
+    @IBOutlet var picker: WKInterfacePicker!
+    @IBOutlet var pickerItemSelectedLabel: WKInterfaceLabel!
+    
+    var teams = ["R. Madrid", "Barcelona", "Valencia", "Ath. Bilbao", "Sevilla"]
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
-        // Configure interface objects here.
+        pickerItemSelectedLabel.setText("Equipo: \(teams[0])")
+        
+        var items: [WKPickerItem] = [WKPickerItem]()
+
+        for team in teams {
+            let item = WKPickerItem()
+            item.title = team
+            items.append(item)
+        }
+        
+        picker.setItems(items)
+        
     }
 
-    override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
-        super.willActivate()
+    @IBAction func pickerAction(value: Int) {
+        pickerItemSelectedLabel.setText("Equipo: \(teams[value])")
     }
-
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-        super.didDeactivate()
-    }
-
 }
