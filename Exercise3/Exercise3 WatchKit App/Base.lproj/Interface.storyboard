@@ -27,6 +27,15 @@
                             </connections>
                         </button>
                     </items>
+                    <menu key="menu" id="o8z-wo-Dlh">
+                        <items>
+                            <menuItem title="Video example" icon="play" id="l7m-Jx-p6W">
+                                <connections>
+                                    <action selector="videoMenuAction" destination="AgC-eL-Hgc" id="hG1-UT-jWv"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
                     <connections>
                         <outlet property="slider" destination="xEc-AZ-NZW" id="eaU-81-PeT"/>
                         <outlet property="teamCounterLabel" destination="BjS-ti-2JD" id="1Ho-Za-ipq"/>
@@ -60,8 +69,11 @@
             <objects>
                 <controller identifier="video" id="I0G-4f-paj" customClass="VideoInterfaceController" customModule="Exercise3_WatchKit_Extension">
                     <items>
-                        <movie width="1" height="100" alignment="left" id="CAF-py-U6l"/>
+                        <movie width="1" height="100" alignment="left" posterImage="movie_poster" id="CAF-py-U6l"/>
                     </items>
+                    <connections>
+                        <outlet property="video" destination="CAF-py-U6l" id="f4P-Oq-Ruk"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="794" y="742"/>

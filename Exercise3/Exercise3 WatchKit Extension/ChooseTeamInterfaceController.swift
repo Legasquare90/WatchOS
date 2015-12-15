@@ -28,6 +28,20 @@ class ChooseTeamInterfaceController: WKInterfaceController {
     
     @IBAction func chooseButton() {
         let controllers = Array(count: self.teamCounter!, repeatedValue: "pickerTeam")
-        self.presentControllerWithNames(controllers, contexts: nil)
+        presentControllerWithNames(controllers, contexts: nil)
+    }
+    
+    @IBAction func videoMenuAction() {
+        // Válido sólo con navegación jerárquica
+        pushControllerWithName("video", context: nil)
+        
+        /*
+        // Alternativa
+        let url = NSBundle.mainBundle().URLForResource("movieclip", withExtension: "mov")
+        let options = [WKMediaPlayerControllerOptionsAutoplayKey : "false"]
+        presentMediaPlayerControllerWithURL(url!, options: options) { (didPlayToEnd, endTime, error) -> Void in
+            
+        }
+        */
     }
 }

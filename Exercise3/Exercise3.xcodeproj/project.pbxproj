@@ -23,6 +23,7 @@
 		530939B81C183530000D1F8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 530939B71C183530000D1F8B /* Assets.xcassets */; };
 		A94E0F271C1CDE9C00F8844F /* PickerTeamInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E0F261C1CDE9C00F8844F /* PickerTeamInterfaceController.swift */; };
 		A94E0F291C1CDEC400F8844F /* VideoInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E0F281C1CDEC400F8844F /* VideoInterfaceController.swift */; };
+		A94E0F2B1C1F8BDE00F8844F /* movieclip.mov in Resources */ = {isa = PBXBuildFile; fileRef = A94E0F2A1C1F8BDE00F8844F /* movieclip.mov */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +107,7 @@
 		530939B91C183530000D1F8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A94E0F261C1CDE9C00F8844F /* PickerTeamInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerTeamInterfaceController.swift; sourceTree = "<group>"; };
 		A94E0F281C1CDEC400F8844F /* VideoInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoInterfaceController.swift; sourceTree = "<group>"; };
+		A94E0F2A1C1F8BDE00F8844F /* movieclip.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = movieclip.mov; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +210,7 @@
 		530939B21C183530000D1F8B /* Exercise3 WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				A94E0F2A1C1F8BDE00F8844F /* movieclip.mov */,
 				530939B31C183530000D1F8B /* ChooseTeamInterfaceController.swift */,
 				A94E0F261C1CDE9C00F8844F /* PickerTeamInterfaceController.swift */,
 				A94E0F281C1CDEC400F8844F /* VideoInterfaceController.swift */,
@@ -400,6 +403,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				530939B81C183530000D1F8B /* Assets.xcassets in Resources */,
+				A94E0F2B1C1F8BDE00F8844F /* movieclip.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
