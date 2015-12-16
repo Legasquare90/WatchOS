@@ -23,21 +23,103 @@
                     <items>
                         <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
                     </items>
-                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <notificationCategory key="notificationCategory" identifier="deportes" id="JfB-70-Muf">
+                        <color key="sashColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </notificationCategory>
                     <connections>
                         <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
-                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="u7m-2x-mL3" kind="relationship" relationship="dynamicNotificationInterface" id="zIk-Ky-DZO"/>
                     </connections>
                 </notificationController>
             </objects>
             <point key="canvasLocation" x="220" y="643"/>
         </scene>
-        <!--Notification Controller-->
-        <scene sceneID="ZPc-GJ-vnh">
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="c01-6e-D6r">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Exercise4_WatchKit_App" customModuleProvider="target"/>
+                <notificationController id="1sW-9U-f8k">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="ftg-c4-QX3"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="tecnologia" id="B7t-rP-PVD">
+                        <color key="sashColor" red="0.96470588239999999" green="0.51764705879999995" blue="0.031372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </notificationCategory>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="ftg-c4-QX3" id="avd-ss-9BS"/>
+                        <segue destination="hFz-i7-GyD" kind="relationship" relationship="dynamicNotificationInterface" id="OPp-aO-hYL"/>
+                    </connections>
+                </notificationController>
             </objects>
-            <point key="canvasLocation" x="468" y="643"/>
+            <point key="canvasLocation" x="220" y="892"/>
+        </scene>
+        <!--Notification Controller Deportes-->
+        <scene sceneID="YdH-T4-6At">
+            <objects>
+                <controller id="u7m-2x-mL3" customClass="NotificationControllerDeportes" customModule="Exercise4_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="fLF-pF-54D">
+                            <items>
+                                <label alignment="left" text="Título" numberOfLines="0" id="wNf-Zs-3or">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                                <label alignment="left" text="Body" numberOfLines="0" id="xur-yW-l2z"/>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="Fek-cH-Z2N">
+                            <color key="color" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </separator>
+                        <group width="1" alignment="left" layout="vertical" id="FD1-Ll-pGo">
+                            <items>
+                                <group width="1" alignment="left" id="QkI-qk-dGd">
+                                    <items>
+                                        <label alignment="left" text="Equipo 1" id="LOQ-l4-xia"/>
+                                        <label alignment="right" text="0" id="jas-s8-4Ct"/>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="RpG-0d-6rC">
+                                    <items>
+                                        <label alignment="left" text="Equipo 2" id="m7d-SM-tkz"/>
+                                        <label alignment="right" text="0" id="dai-Ef-P9T"/>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="bodyLabel" destination="xur-yW-l2z" id="jWk-5x-CHI"/>
+                        <outlet property="nameTeam1Label" destination="LOQ-l4-xia" id="6TL-g7-Uyk"/>
+                        <outlet property="nameTeam2Label" destination="m7d-SM-tkz" id="n1l-H8-wvb"/>
+                        <outlet property="scoreTeam1Label" destination="jas-s8-4Ct" id="F6M-Sy-vrt"/>
+                        <outlet property="scoreTeam2Label" destination="dai-Ef-P9T" id="19G-qb-5h0"/>
+                        <outlet property="titleLabel" destination="wNf-Zs-3or" id="aZj-Cj-TDQ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="470" y="643"/>
+        </scene>
+        <!--Notification Controller Tecnologia-->
+        <scene sceneID="94d-Ls-L5c">
+            <objects>
+                <controller id="hFz-i7-GyD" customClass="NotificationControllerTecnologia" customModule="Exercise4_WatchKit_Extension">
+                    <items>
+                        <imageView alignment="left" image="foto_tecnologia" id="Gwy-L4-Qjo"/>
+                        <group width="1" alignment="left" layout="vertical" id="M4a-16-GLE">
+                            <items>
+                                <label alignment="left" text="Título" numberOfLines="0" id="LcF-4w-8kb">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                                <label alignment="left" text="Body" numberOfLines="0" id="gA9-vd-RZ4"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="bodyLabel" destination="gA9-vd-RZ4" id="QuW-pl-4nH"/>
+                        <outlet property="image" destination="Gwy-L4-Qjo" id="cMq-Og-RrT"/>
+                        <outlet property="titleLabel" destination="LcF-4w-8kb" id="Rlh-rw-Q5b"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="470" y="892"/>
         </scene>
     </scenes>
 </document>

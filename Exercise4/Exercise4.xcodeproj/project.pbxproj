@@ -20,8 +20,9 @@
 		A94E0F6D1C1F965C00F8844F /* Exercise4 WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A94E0F6C1C1F965C00F8844F /* Exercise4 WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A94E0F741C1F965C00F8844F /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E0F731C1F965C00F8844F /* InterfaceController.swift */; };
 		A94E0F761C1F965C00F8844F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E0F751C1F965C00F8844F /* ExtensionDelegate.swift */; };
-		A94E0F781C1F965C00F8844F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E0F771C1F965C00F8844F /* NotificationController.swift */; };
+		A94E0F781C1F965C00F8844F /* NotificationControllerDeportes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E0F771C1F965C00F8844F /* NotificationControllerDeportes.swift */; };
 		A94E0F7A1C1F965C00F8844F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A94E0F791C1F965C00F8844F /* Assets.xcassets */; };
+		A94E0F921C22263500F8844F /* NotificationControllerTecnologia.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E0F911C22263500F8844F /* NotificationControllerTecnologia.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,11 +103,12 @@
 		A94E0F721C1F965C00F8844F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		A94E0F731C1F965C00F8844F /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		A94E0F751C1F965C00F8844F /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		A94E0F771C1F965C00F8844F /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		A94E0F771C1F965C00F8844F /* NotificationControllerDeportes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationControllerDeportes.swift; sourceTree = "<group>"; };
 		A94E0F791C1F965C00F8844F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A94E0F7B1C1F965C00F8844F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A94E0F8F1C21F83900F8844F /* NotificationPayloadDeportes.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = NotificationPayloadDeportes.apns; sourceTree = "<group>"; };
 		A94E0F901C21F84D00F8844F /* NotificationPayloadTecnologia.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = NotificationPayloadTecnologia.apns; sourceTree = "<group>"; };
+		A94E0F911C22263500F8844F /* NotificationControllerTecnologia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationControllerTecnologia.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,12 +213,12 @@
 			children = (
 				A94E0F731C1F965C00F8844F /* InterfaceController.swift */,
 				A94E0F751C1F965C00F8844F /* ExtensionDelegate.swift */,
-				A94E0F771C1F965C00F8844F /* NotificationController.swift */,
+				A94E0F771C1F965C00F8844F /* NotificationControllerDeportes.swift */,
+				A94E0F911C22263500F8844F /* NotificationControllerTecnologia.swift */,
 				A94E0F791C1F965C00F8844F /* Assets.xcassets */,
 				A94E0F7B1C1F965C00F8844F /* Info.plist */,
 				A94E0F711C1F965C00F8844F /* Supporting Files */,
-				A94E0F8F1C21F83900F8844F /* NotificationPayloadDeportes.apns */,
-				A94E0F901C21F84D00F8844F /* NotificationPayloadTecnologia.apns */,
+				A94E0F931C22264600F8844F /* Notifications Payload */,
 			);
 			path = "Exercise4 WatchKit Extension";
 			sourceTree = "<group>";
@@ -227,6 +229,15 @@
 				A94E0F721C1F965C00F8844F /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A94E0F931C22264600F8844F /* Notifications Payload */ = {
+			isa = PBXGroup;
+			children = (
+				A94E0F8F1C21F83900F8844F /* NotificationPayloadDeportes.apns */,
+				A94E0F901C21F84D00F8844F /* NotificationPayloadTecnologia.apns */,
+			);
+			name = "Notifications Payload";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -446,7 +457,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A94E0F781C1F965C00F8844F /* NotificationController.swift in Sources */,
+				A94E0F781C1F965C00F8844F /* NotificationControllerDeportes.swift in Sources */,
+				A94E0F921C22263500F8844F /* NotificationControllerTecnologia.swift in Sources */,
 				A94E0F761C1F965C00F8844F /* ExtensionDelegate.swift in Sources */,
 				A94E0F741C1F965C00F8844F /* InterfaceController.swift in Sources */,
 			);

@@ -1,5 +1,5 @@
 //
-//  NotificationController.swift
+//  NotificationControllerDeportes.swift
 //  Exercise4 WatchKit Extension
 //
 //  Created by Jose Angel Cuadrado on 15/12/15.
@@ -10,8 +10,15 @@ import WatchKit
 import Foundation
 
 
-class NotificationController: WKUserNotificationInterfaceController {
+class NotificationControllerDeportes: WKUserNotificationInterfaceController {
 
+    @IBOutlet var titleLabel: WKInterfaceLabel!
+    @IBOutlet var bodyLabel: WKInterfaceLabel!
+    @IBOutlet var nameTeam1Label: WKInterfaceLabel!
+    @IBOutlet var scoreTeam1Label: WKInterfaceLabel!
+    @IBOutlet var nameTeam2Label: WKInterfaceLabel!
+    @IBOutlet var scoreTeam2Label: WKInterfaceLabel!
+    
     override init() {
         // Initialize variables here.
         super.init()
