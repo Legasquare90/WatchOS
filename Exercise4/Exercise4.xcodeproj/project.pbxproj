@@ -100,7 +100,6 @@
 		A94E0F651C1F965C00F8844F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A94E0F671C1F965C00F8844F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A94E0F6C1C1F965C00F8844F /* Exercise4 WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Exercise4 WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A94E0F721C1F965C00F8844F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		A94E0F731C1F965C00F8844F /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		A94E0F751C1F965C00F8844F /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		A94E0F771C1F965C00F8844F /* NotificationControllerDeportes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationControllerDeportes.swift; sourceTree = "<group>"; };
@@ -218,7 +217,6 @@
 				A94E0F791C1F965C00F8844F /* Assets.xcassets */,
 				A94E0F7B1C1F965C00F8844F /* Info.plist */,
 				A94E0F711C1F965C00F8844F /* Supporting Files */,
-				A94E0F931C22264600F8844F /* Notifications Payload */,
 			);
 			path = "Exercise4 WatchKit Extension";
 			sourceTree = "<group>";
@@ -226,18 +224,10 @@
 		A94E0F711C1F965C00F8844F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A94E0F721C1F965C00F8844F /* PushNotificationPayload.apns */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		A94E0F931C22264600F8844F /* Notifications Payload */ = {
-			isa = PBXGroup;
-			children = (
 				A94E0F8F1C21F83900F8844F /* NotificationPayloadDeportes.apns */,
 				A94E0F901C21F84D00F8844F /* NotificationPayloadTecnologia.apns */,
 			);
-			name = "Notifications Payload";
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -35,26 +35,37 @@ class NotificationControllerDeportes: WKUserNotificationInterfaceController {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
-
-    /*
-    override func didReceiveLocalNotification(localNotification: UILocalNotification, withCompletion completionHandler: ((WKUserNotificationInterfaceType) -> Void)) {
-        // This method is called when a local notification needs to be presented.
-        // Implement it if you use a dynamic notification interface.
-        // Populate your dynamic notification interface as quickly as possible.
-        //
-        // After populating your dynamic notification interface call the completion block.
-        completionHandler(.Custom)
-    }
-    */
     
-    /*
     override func didReceiveRemoteNotification(remoteNotification: [NSObject : AnyObject], withCompletion completionHandler: ((WKUserNotificationInterfaceType) -> Void)) {
-        // This method is called when a remote notification needs to be presented.
-        // Implement it if you use a dynamic notification interface.
-        // Populate your dynamic notification interface as quickly as possible.
-        //
-        // After populating your dynamic notification interface call the completion block.
+        
+        let aps = remoteNotification["aps"] as! Dictionary<String, AnyObject>
+        
+        guard let alert = aps["alert"] else {
+            completionHandler(.Default)
+            return
+        }
+        guard let title = alert["title"] else {
+            completionHandler(.Default)
+            return
+        }
+        guard let body = alert["body"] else {
+            completionHandler(.Default)
+            return
+        }
+        
+        let nameTeam1 = remoteNotification["equipo1"] as! String
+        let nameTeam2 = remoteNotification["equipo2"] as! String
+        let scoreTeam1 = remoteNotification["equipo1_score"] as! Int
+        let scoreTeam2 = remoteNotification["equipo2_score"] as! Int
+        
+        titleLabel.setText("\(title!)")
+        bodyLabel.setText("\(body!)")
+        nameTeam1Label.setText(nameTeam1)
+        scoreTeam1Label.setText("\(scoreTeam1)")
+        nameTeam2Label.setText(nameTeam2)
+        scoreTeam2Label.setText("\(scoreTeam2)")
+        
         completionHandler(.Custom)
     }
-    */
+
 }

@@ -33,25 +33,31 @@ class NotificationControllerTecnologia: WKUserNotificationInterfaceController {
         super.didDeactivate()
     }
 
-    /*
-    override func didReceiveLocalNotification(localNotification: UILocalNotification, withCompletion completionHandler: ((WKUserNotificationInterfaceType) -> Void)) {
-        // This method is called when a local notification needs to be presented.
-        // Implement it if you use a dynamic notification interface.
-        // Populate your dynamic notification interface as quickly as possible.
-        //
-        // After populating your dynamic notification interface call the completion block.
-        completionHandler(.Custom)
-    }
-    */
-    
-    /*
     override func didReceiveRemoteNotification(remoteNotification: [NSObject : AnyObject], withCompletion completionHandler: ((WKUserNotificationInterfaceType) -> Void)) {
-        // This method is called when a remote notification needs to be presented.
-        // Implement it if you use a dynamic notification interface.
-        // Populate your dynamic notification interface as quickly as possible.
-        //
-        // After populating your dynamic notification interface call the completion block.
+        
+        let aps = remoteNotification["aps"] as! Dictionary<String, AnyObject>
+        
+        guard let alert = aps["alert"] else {
+            completionHandler(.Default)
+            return
+        }
+        guard let title = alert["title"] else {
+            completionHandler(.Default)
+            return
+        }
+        guard let body = alert["body"] else {
+            completionHandler(.Default)
+            return
+        }
+        
+        let image = remoteNotification["image"] as! String
+        
+        titleLabel.setText("\(title!)")
+        bodyLabel.setText("\(body!)")
+        self.image.setImageNamed(image)
+        
         completionHandler(.Custom)
+        
     }
-    */
+    
 }
