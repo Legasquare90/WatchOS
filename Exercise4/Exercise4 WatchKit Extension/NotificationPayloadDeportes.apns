@@ -1,0 +1,22 @@
+{
+    "aps": {
+        "alert": {
+            "body": "El Barça destroza al Real Madrid en su casa",
+            "title": "Fútbol: R. Madrid 0 - Barça 4"
+        },
+        "category": "deportes"
+    },
+    
+    "WatchKit Simulator Actions": [
+        {
+            "title": "Ver noticia",
+            "identifier": "ver"
+        }
+    ],
+    
+    "equipo1": "R. Madrid",
+    "equipo1_score": 0,
+    "equipo2": "Barcelona",
+    "equipo2_score": 4,
+    "image":"foto_deportes"
+}

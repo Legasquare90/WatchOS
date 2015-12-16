@@ -1,0 +1,18 @@
+{
+    "aps": {
+        "alert": {
+            "body": "Google publica las estadísticas con lo más buscado por sus usarios durante el año",
+            "title": "Lo más buscado en 2015"
+        },
+        "category": "tecnologia"
+    },
+    
+    "WatchKit Simulator Actions": [
+        {
+            "title": "Ver noticia",
+            "identifier": "ver"
+        }
+    ],
+    
+    "image":"foto_tecnologia"
+}

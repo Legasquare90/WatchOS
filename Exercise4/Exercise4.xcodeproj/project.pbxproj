@@ -105,6 +105,8 @@
 		A94E0F771C1F965C00F8844F /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		A94E0F791C1F965C00F8844F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A94E0F7B1C1F965C00F8844F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A94E0F8F1C21F83900F8844F /* NotificationPayloadDeportes.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = NotificationPayloadDeportes.apns; sourceTree = "<group>"; };
+		A94E0F901C21F84D00F8844F /* NotificationPayloadTecnologia.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = NotificationPayloadTecnologia.apns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +215,8 @@
 				A94E0F791C1F965C00F8844F /* Assets.xcassets */,
 				A94E0F7B1C1F965C00F8844F /* Info.plist */,
 				A94E0F711C1F965C00F8844F /* Supporting Files */,
+				A94E0F8F1C21F83900F8844F /* NotificationPayloadDeportes.apns */,
+				A94E0F901C21F84D00F8844F /* NotificationPayloadTecnologia.apns */,
 			);
 			path = "Exercise4 WatchKit Extension";
 			sourceTree = "<group>";
@@ -731,6 +735,7 @@
 				A94E0F801C1F965C00F8844F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A94E0F821C1F965C00F8844F /* Build configuration list for PBXNativeTarget "Exercise4 WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -739,6 +744,7 @@
 				A94E0F841C1F965C00F8844F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A94E0F861C1F965C00F8844F /* Build configuration list for PBXNativeTarget "Exercise4" */ = {
 			isa = XCConfigurationList;
@@ -747,6 +753,7 @@
 				A94E0F881C1F965C00F8844F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A94E0F891C1F965C00F8844F /* Build configuration list for PBXNativeTarget "Exercise4Tests" */ = {
 			isa = XCConfigurationList;
@@ -755,6 +762,7 @@
 				A94E0F8B1C1F965C00F8844F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A94E0F8C1C1F965C00F8844F /* Build configuration list for PBXNativeTarget "Exercise4UITests" */ = {
 			isa = XCConfigurationList;
@@ -763,6 +771,7 @@
 				A94E0F8E1C1F965C00F8844F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
