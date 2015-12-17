@@ -23,6 +23,7 @@
 		A94E0F781C1F965C00F8844F /* NotificationControllerDeportes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E0F771C1F965C00F8844F /* NotificationControllerDeportes.swift */; };
 		A94E0F7A1C1F965C00F8844F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A94E0F791C1F965C00F8844F /* Assets.xcassets */; };
 		A94E0F921C22263500F8844F /* NotificationControllerTecnologia.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E0F911C22263500F8844F /* NotificationControllerTecnologia.swift */; };
+		A94E0F951C2232C300F8844F /* NewsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E0F941C2232C300F8844F /* NewsInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +109,7 @@
 		A94E0F8F1C21F83900F8844F /* NotificationPayloadDeportes.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = NotificationPayloadDeportes.apns; sourceTree = "<group>"; };
 		A94E0F901C21F84D00F8844F /* NotificationPayloadTecnologia.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = NotificationPayloadTecnologia.apns; sourceTree = "<group>"; };
 		A94E0F911C22263500F8844F /* NotificationControllerTecnologia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationControllerTecnologia.swift; sourceTree = "<group>"; };
+		A94E0F941C2232C300F8844F /* NewsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +214,7 @@
 			children = (
 				A94E0F731C1F965C00F8844F /* InterfaceController.swift */,
 				A94E0F751C1F965C00F8844F /* ExtensionDelegate.swift */,
+				A94E0F941C2232C300F8844F /* NewsInterfaceController.swift */,
 				A94E0F771C1F965C00F8844F /* NotificationControllerDeportes.swift */,
 				A94E0F911C22263500F8844F /* NotificationControllerTecnologia.swift */,
 				A94E0F791C1F965C00F8844F /* Assets.xcassets */,
@@ -447,6 +450,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A94E0F951C2232C300F8844F /* NewsInterfaceController.swift in Sources */,
 				A94E0F781C1F965C00F8844F /* NotificationControllerDeportes.swift in Sources */,
 				A94E0F921C22263500F8844F /* NotificationControllerTecnologia.swift in Sources */,
 				A94E0F761C1F965C00F8844F /* ExtensionDelegate.swift in Sources */,

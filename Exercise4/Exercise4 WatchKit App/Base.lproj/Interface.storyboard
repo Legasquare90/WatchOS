@@ -16,12 +16,32 @@
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>
+        <!--news-->
+        <scene sceneID="a12-RM-uBn">
+            <objects>
+                <controller identifier="news" id="xqe-GL-jA7" customClass="NewsInterfaceController" customModule="Exercise4_WatchKit_Extension">
+                    <items>
+                        <imageView alignment="center" id="Rrd-EB-UdO"/>
+                        <label alignment="left" text="Title" numberOfLines="0" id="gLc-3X-M1R">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <label alignment="left" text="Body" numberOfLines="0" id="4Z2-6E-a9X"/>
+                    </items>
+                    <connections>
+                        <outlet property="bodyLabel" destination="4Z2-6E-a9X" id="YpA-Ek-6ee"/>
+                        <outlet property="newsImage" destination="Rrd-EB-UdO" id="xEc-lJ-air"/>
+                        <outlet property="titleLabel" destination="gLc-3X-M1R" id="RJC-lB-kOz"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="470" y="345"/>
+        </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
             <objects>
                 <notificationController id="YCC-NB-fut">
                     <items>
-                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
                     </items>
                     <notificationCategory key="notificationCategory" identifier="deportes" id="JfB-70-Muf">
                         <color key="sashColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -39,7 +59,7 @@
             <objects>
                 <notificationController id="1sW-9U-f8k">
                     <items>
-                        <label alignment="left" text="Alert Label" id="ftg-c4-QX3"/>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="ftg-c4-QX3"/>
                     </items>
                     <notificationCategory key="notificationCategory" identifier="tecnologia" id="B7t-rP-PVD">
                         <color key="sashColor" red="0.96470588239999999" green="0.51764705879999995" blue="0.031372549020000001" alpha="1" colorSpace="calibratedRGB"/>
