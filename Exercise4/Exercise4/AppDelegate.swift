@@ -14,8 +14,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool
+    {
+        registerForNotification()
         return true
     }
 
@@ -41,6 +42,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    func registerForNotification() {
+        let seeNews = UIMutableUserNotificationAction()
+        seeNews.activationMode = UIUserNotificationActivationMode.Foreground
+        seeNews.title = "Ver noticia"
+        seeNews.authenticationRequired = false
+        seeNews.identifier = "ver"
+        seeNews.destructive = false
+        
+        let sportsCategory = UIMutableUserNotificationCategory()
+        sportsCategory.identifier = "deportes"
+        sportsCategory.setActions([seeNews], forContext: UIUserNotificationActionContext.Default)
+        
+        let techCategory = UIMutableUserNotificationCategory()
+        techCategory.identifier = "tecnologia"
+        techCategory.setActions([seeNews], forContext: UIUserNotificationActionContext.Default)
+        
+        let categories = NSSet(objects: sportsCategory, techCategory)
+        let settings = UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: categories as? Set<UIUserNotificationCategory>)
+        UIApplication.sharedApplication().registerUserNotificationSettings(settings)
+    }
 
 }
 
