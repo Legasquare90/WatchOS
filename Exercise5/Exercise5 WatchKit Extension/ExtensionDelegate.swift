@@ -11,7 +11,32 @@ import WatchKit
 class ExtensionDelegate: NSObject, WKExtensionDelegate {
 
     func applicationDidFinishLaunching() {
-        // Perform any final initialization of your application.
+        ScheduleTV().schedule = ["Discovery Max":   [["name":"Wild Frank",
+                                                    "img":"wild_frank",
+                                                    "inicio":"09:00",
+                                                    "fin":"14:00"],
+                                                    ["name":"Top Gear",
+                                                    "img":"top_gear",
+                                                    "inicio":"14:00",
+                                                    "fin":"00:00"],
+                                                    ["name":"Cazasubastas",
+                                                    "img":"cazasubastas",
+                                                    "inicio":"00:00",
+                                                    "fin":"09:00"]
+                                                    ],
+                                "Neox":             [["name":"Los Simpsons",
+                                                    "img":"simpsons",
+                                                    "inicio":"09:00",
+                                                    "fin":"14:00"],
+                                                    ["name":"Padre de familia",
+                                                    "img":"padre_familia",
+                                                    "inicio":"14:00",
+                                                    "fin":"00:00"],
+                                                    ["name":"El chiringuito de jugones",
+                                                    "img":"chiringuito",
+                                                    "inicio":"00:00",
+                                                    "fin":"09:00"]
+                                                    ]]
     }
 
     func applicationDidBecomeActive() {

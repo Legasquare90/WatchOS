@@ -22,6 +22,7 @@
 		A94E0FDE1C26310B00F8844F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E0FDD1C26310B00F8844F /* ExtensionDelegate.swift */; };
 		A94E0FE01C26310B00F8844F /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E0FDF1C26310B00F8844F /* GlanceController.swift */; };
 		A94E0FE21C26310B00F8844F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A94E0FE11C26310B00F8844F /* Assets.xcassets */; };
+		A9CC219F1C29F02600C344CC /* ScheduleTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CC219E1C29F02600C344CC /* ScheduleTV.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +105,7 @@
 		A94E0FDF1C26310B00F8844F /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
 		A94E0FE11C26310B00F8844F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A94E0FE31C26310B00F8844F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9CC219E1C29F02600C344CC /* ScheduleTV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleTV.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +213,7 @@
 				A94E0FDF1C26310B00F8844F /* GlanceController.swift */,
 				A94E0FE11C26310B00F8844F /* Assets.xcassets */,
 				A94E0FE31C26310B00F8844F /* Info.plist */,
+				A9CC219E1C29F02600C344CC /* ScheduleTV.swift */,
 			);
 			path = "Exercise5 WatchKit Extension";
 			sourceTree = "<group>";
@@ -434,6 +437,7 @@
 			files = (
 				A94E0FDE1C26310B00F8844F /* ExtensionDelegate.swift in Sources */,
 				A94E0FDC1C26310B00F8844F /* InterfaceController.swift in Sources */,
+				A9CC219F1C29F02600C344CC /* ScheduleTV.swift in Sources */,
 				A94E0FE01C26310B00F8844F /* GlanceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -721,6 +725,7 @@
 				A94E0FE81C26310B00F8844F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A94E0FEA1C26310B00F8844F /* Build configuration list for PBXNativeTarget "Exercise5 WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -729,6 +734,7 @@
 				A94E0FEC1C26310B00F8844F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A94E0FEE1C26310B00F8844F /* Build configuration list for PBXNativeTarget "Exercise5" */ = {
 			isa = XCConfigurationList;
@@ -737,6 +743,7 @@
 				A94E0FF01C26310B00F8844F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A94E0FF11C26310B00F8844F /* Build configuration list for PBXNativeTarget "Exercise5Tests" */ = {
 			isa = XCConfigurationList;
@@ -745,6 +752,7 @@
 				A94E0FF31C26310B00F8844F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A94E0FF41C26310B00F8844F /* Build configuration list for PBXNativeTarget "Exercise5UITests" */ = {
 			isa = XCConfigurationList;
@@ -753,6 +761,7 @@
 				A94E0FF61C26310B00F8844F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

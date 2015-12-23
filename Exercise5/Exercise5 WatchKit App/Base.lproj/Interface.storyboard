@@ -1,26 +1,52 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="14A389" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3734"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9019"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Exercise5_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="164" y="217"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="rjY-Ar-IMT">
             <objects>
-                <glanceController spacing="0.0" id="Sv0-Ai-Zie" customClass="GlanceController" customModuleProvider="target">
+                <glanceController spacing="0.0" id="Sv0-Ai-Zie" customClass="GlanceController" customModule="Exercise5_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <group alignment="left" id="gv7-I2-MZq"/>
-                        <group alignment="left" id="eew-Gs-W6Y"/>
+                        <group alignment="left" contentMode="scaleAspectFit" id="gv7-I2-MZq">
+                            <items>
+                                <imageView width="0.40000000000000002" height="1" alignment="left" image="discovery_max" contentMode="scaleAspectFit" id="Xyd-PQ-gkh"/>
+                                <group width="0.59999999999999998" height="1" alignment="left" layout="vertical" id="Fyg-pO-lDx">
+                                    <items>
+                                        <label alignment="left" verticalAlignment="center" text="Ahora" id="sEo-zB-5uv">
+                                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                        </label>
+                                        <label alignment="left" verticalAlignment="center" text="Discovery Max" id="cIf-xh-Ciw"/>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <group alignment="left" contentMode="scaleAspectFit" layout="vertical" id="eew-Gs-W6Y">
+                            <items>
+                                <imageView height="0.80000000000000004" alignment="left" image="wild_frank" contentMode="scaleAspectFit" id="RJR-ZY-kEW"/>
+                                <label alignment="center" verticalAlignment="bottom" text="Wild Frank" id="0VM-Dy-GdY">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                            </items>
+                        </group>
                     </items>
                     <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                    <connections>
+                        <outlet property="channelImage" destination="Xyd-PQ-gkh" id="GLp-qZ-qfT"/>
+                        <outlet property="channelLabel" destination="cIf-xh-Ciw" id="IsR-nF-hVi"/>
+                        <outlet property="tvShowImage" destination="RJR-ZY-kEW" id="giv-Bj-DqP"/>
+                        <outlet property="tvShowLabel" destination="0VM-Dy-GdY" id="GEu-5E-E5O"/>
+                    </connections>
                 </glanceController>
             </objects>
             <point key="canvasLocation" x="164" y="514"/>
