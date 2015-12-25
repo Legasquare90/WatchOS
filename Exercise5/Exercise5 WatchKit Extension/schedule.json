@@ -1,0 +1,52 @@
+{
+    "channels": [
+        {
+            "name": "Discovery Max",
+            "logo": "discovery_max",
+            "schedule": [
+                    {
+                         "name":"Wild Frank",
+                         "img":"wild_frank",
+                         "inicio":"09:00",
+                         "fin":"13:59"
+                    },
+                    {
+                         "name":"Top Gear",
+                         "img":"top_gear",
+                         "inicio":"14:00",
+                         "fin":"23:59"
+                    },
+                    {
+                         "name":"Cazasubastas",
+                         "img":"cazasubastas",
+                         "inicio":"00:00",
+                         "fin":"08:59"
+                    }
+                 ]
+        },
+        {
+             "name": "Neox",
+             "logo": "neox",
+             "schedule": [
+                    {
+                          "name":"Los Simpsons",
+                          "img":"simpsons",
+                          "inicio":"09:00",
+                          "fin":"13:59"
+                    },
+                    {
+                          "name":"Padre de familia",
+                          "img":"padre_familia",
+                          "inicio":"14:00",
+                          "fin":"23:59"
+                    },
+                    {
+                          "name":"El chiringuito de jugones",
+                          "img":"chiringuito",
+                          "inicio":"00:00",
+                          "fin":"08:59"
+                    }
+                ]
+        }
+    ]
+}

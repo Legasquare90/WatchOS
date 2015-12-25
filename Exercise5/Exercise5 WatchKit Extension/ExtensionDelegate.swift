@@ -11,32 +11,13 @@ import WatchKit
 class ExtensionDelegate: NSObject, WKExtensionDelegate {
 
     func applicationDidFinishLaunching() {
-        ScheduleTV().schedule = ["Discovery Max":   [["name":"Wild Frank",
-                                                    "img":"wild_frank",
-                                                    "inicio":"09:00",
-                                                    "fin":"14:00"],
-                                                    ["name":"Top Gear",
-                                                    "img":"top_gear",
-                                                    "inicio":"14:00",
-                                                    "fin":"00:00"],
-                                                    ["name":"Cazasubastas",
-                                                    "img":"cazasubastas",
-                                                    "inicio":"00:00",
-                                                    "fin":"09:00"]
-                                                    ],
-                                "Neox":             [["name":"Los Simpsons",
-                                                    "img":"simpsons",
-                                                    "inicio":"09:00",
-                                                    "fin":"14:00"],
-                                                    ["name":"Padre de familia",
-                                                    "img":"padre_familia",
-                                                    "inicio":"14:00",
-                                                    "fin":"00:00"],
-                                                    ["name":"El chiringuito de jugones",
-                                                    "img":"chiringuito",
-                                                    "inicio":"00:00",
-                                                    "fin":"09:00"]
-                                                    ]]
+        do {
+            let filePath = NSBundle.mainBundle().pathForResource("schedule", ofType: "json")
+            let data = NSData(contentsOfFile: filePath!)
+            ScheduleTV().schedule = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers) as? Dictionary<String, AnyObject>
+        } catch let error as NSError {
+            print("JSON Error: \(error.localizedDescription)")
+        }
     }
 
     func applicationDidBecomeActive() {
