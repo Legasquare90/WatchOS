@@ -213,9 +213,9 @@
 				A94E0FDB1C26310B00F8844F /* InterfaceController.swift */,
 				A94E0FDD1C26310B00F8844F /* ExtensionDelegate.swift */,
 				A94E0FDF1C26310B00F8844F /* GlanceController.swift */,
+				A9CC219E1C29F02600C344CC /* ScheduleTV.swift */,
 				A94E0FE11C26310B00F8844F /* Assets.xcassets */,
 				A94E0FE31C26310B00F8844F /* Info.plist */,
-				A9CC219E1C29F02600C344CC /* ScheduleTV.swift */,
 				A9CC21A01C2DFEC200C344CC /* schedule.json */,
 			);
 			path = "Exercise5 WatchKit Extension";

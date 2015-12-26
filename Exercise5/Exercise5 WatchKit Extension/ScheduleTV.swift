@@ -22,4 +22,14 @@ class ScheduleTV {
         }
     }
     
+    var channel: String {
+        get {
+            return userDefaults?.objectForKey("channel") as! String
+        }
+        set (value) {
+            userDefaults?.setObject(value, forKey: "channel")
+            userDefaults?.synchronize()
+        }
+    }
+    
 }

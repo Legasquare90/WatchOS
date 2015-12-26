@@ -8,7 +8,27 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Exercise5_WatchKit_App" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Exercise5_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <picker height="0.69999999999999996" alignment="center" focusStyle="sequence" id="Eom-Pu-mQP">
+                            <connections>
+                                <action selector="pickerSelected:" destination="AgC-eL-Hgc" id="34a-sj-5Ds"/>
+                            </connections>
+                        </picker>
+                        <button width="1" height="0.20000000000000001" alignment="left" title="Guardar" id="lI9-Tg-aOA">
+                            <connections>
+                                <action selector="saveChannel" destination="AgC-eL-Hgc" id="T3H-tP-w1a"/>
+                            </connections>
+                        </button>
+                        <label height="0.10000000000000001" alignment="center" hidden="YES" text="Guardado" id="FYO-Jb-bky">
+                            <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="picker" destination="Eom-Pu-mQP" id="blf-ZG-enl"/>
+                        <outlet property="saveLabel" destination="FYO-Jb-bky" id="pFc-lU-WdZ"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="164" y="217"/>
         </scene>
@@ -19,22 +39,22 @@
                     <items>
                         <group alignment="left" contentMode="scaleAspectFit" id="gv7-I2-MZq">
                             <items>
-                                <imageView width="0.40000000000000002" height="1" alignment="left" image="discovery_max" contentMode="scaleAspectFit" id="Xyd-PQ-gkh"/>
+                                <imageView width="0.40000000000000002" height="1" alignment="left" contentMode="scaleAspectFit" id="Xyd-PQ-gkh"/>
                                 <group width="0.59999999999999998" height="1" alignment="left" layout="vertical" id="Fyg-pO-lDx">
                                     <items>
                                         <label alignment="left" verticalAlignment="center" text="Ahora" id="sEo-zB-5uv">
                                             <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="font" style="UICTFontTextStyleBody"/>
                                         </label>
-                                        <label alignment="left" verticalAlignment="center" text="Discovery Max" id="cIf-xh-Ciw"/>
+                                        <label alignment="left" verticalAlignment="center" text="Canal" id="cIf-xh-Ciw"/>
                                     </items>
                                 </group>
                             </items>
                         </group>
                         <group alignment="left" contentMode="scaleAspectFit" layout="vertical" id="eew-Gs-W6Y">
                             <items>
-                                <imageView height="0.80000000000000004" alignment="left" image="wild_frank" contentMode="scaleAspectFit" id="RJR-ZY-kEW"/>
-                                <label alignment="center" verticalAlignment="bottom" text="Wild Frank" id="0VM-Dy-GdY">
+                                <imageView height="0.80000000000000004" alignment="left" contentMode="scaleAspectFit" id="RJR-ZY-kEW"/>
+                                <label alignment="center" verticalAlignment="bottom" text="Programa" id="0VM-Dy-GdY">
                                     <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
                                 </label>
                             </items>

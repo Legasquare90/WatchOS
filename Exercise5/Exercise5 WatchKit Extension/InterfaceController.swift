@@ -12,20 +12,40 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+    @IBOutlet var picker: WKInterfacePicker!
+    @IBOutlet var saveLabel: WKInterfaceLabel!
+    
+    var channelSelected = 0
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
-        // Configure interface objects here.
+        self.setTitle("Favorito")
+        
+        var pickerItems : [WKPickerItem] = []
+        
+        let dictionary = ScheduleTV().schedule
+        let arrayChannels = dictionary!["channels"] as! [Dictionary<String, AnyObject>]
+        for channelDict in arrayChannels {
+            let pickerItem = WKPickerItem()
+            pickerItem.title = channelDict["name"] as? String
+            pickerItem.caption = channelDict["name"] as? String
+            pickerItems.append(pickerItem)
+        }
+        
+        picker.setItems(pickerItems)
     }
 
-    override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
-        super.willActivate()
+    @IBAction func pickerSelected(value: Int) {
+        channelSelected = value
     }
-
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-        super.didDeactivate()
+    
+    @IBAction func saveChannel() {
+        let dictionary = ScheduleTV().schedule
+        let arrayChannels = dictionary!["channels"] as! [Dictionary<String, AnyObject>]
+        let channel = arrayChannels[channelSelected]
+        ScheduleTV().channel = channel["name"] as! String
+        saveLabel.setHidden(false)
     }
 
 }
