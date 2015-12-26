@@ -30,7 +30,25 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="164" y="217"/>
+            <point key="canvasLocation" x="61" y="239"/>
+        </scene>
+        <!--details-->
+        <scene sceneID="rVI-I5-tpa">
+            <objects>
+                <controller identifier="details" id="Dyz-Et-lri" customClass="DetailsInterfaceController" customModule="Exercise5_WatchKit_Extension">
+                    <items>
+                        <imageView alignment="left" id="TNe-Ba-ryo"/>
+                        <label alignment="left" text="Inicio" id="BN6-gp-kAu"/>
+                        <label alignment="left" text="Fin" id="Eov-R5-PBt"/>
+                    </items>
+                    <connections>
+                        <outlet property="endLabel" destination="Eov-R5-PBt" id="d3Q-6b-Psn"/>
+                        <outlet property="hourLabel" destination="BN6-gp-kAu" id="Uwq-88-MyQ"/>
+                        <outlet property="showImage" destination="TNe-Ba-ryo" id="pMn-2S-O9C"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="290" y="239"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="rjY-Ar-IMT">

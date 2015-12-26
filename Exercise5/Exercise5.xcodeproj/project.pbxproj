@@ -24,6 +24,7 @@
 		A94E0FE21C26310B00F8844F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A94E0FE11C26310B00F8844F /* Assets.xcassets */; };
 		A9CC219F1C29F02600C344CC /* ScheduleTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CC219E1C29F02600C344CC /* ScheduleTV.swift */; };
 		A9CC21A11C2DFEC200C344CC /* schedule.json in Resources */ = {isa = PBXBuildFile; fileRef = A9CC21A01C2DFEC200C344CC /* schedule.json */; };
+		A9CC21A31C2E167F00C344CC /* DetailsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CC21A21C2E167F00C344CC /* DetailsInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +109,7 @@
 		A94E0FE31C26310B00F8844F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9CC219E1C29F02600C344CC /* ScheduleTV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleTV.swift; sourceTree = "<group>"; };
 		A9CC21A01C2DFEC200C344CC /* schedule.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schedule.json; sourceTree = "<group>"; };
+		A9CC21A21C2E167F00C344CC /* DetailsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,8 +212,9 @@
 		A94E0FDA1C26310B00F8844F /* Exercise5 WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				A94E0FDB1C26310B00F8844F /* InterfaceController.swift */,
 				A94E0FDD1C26310B00F8844F /* ExtensionDelegate.swift */,
+				A94E0FDB1C26310B00F8844F /* InterfaceController.swift */,
+				A9CC21A21C2E167F00C344CC /* DetailsInterfaceController.swift */,
 				A94E0FDF1C26310B00F8844F /* GlanceController.swift */,
 				A9CC219E1C29F02600C344CC /* ScheduleTV.swift */,
 				A94E0FE11C26310B00F8844F /* Assets.xcassets */,
@@ -440,6 +443,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A94E0FDE1C26310B00F8844F /* ExtensionDelegate.swift in Sources */,
+				A9CC21A31C2E167F00C344CC /* DetailsInterfaceController.swift in Sources */,
 				A94E0FDC1C26310B00F8844F /* InterfaceController.swift in Sources */,
 				A9CC219F1C29F02600C344CC /* ScheduleTV.swift in Sources */,
 				A94E0FE01C26310B00F8844F /* GlanceController.swift in Sources */,

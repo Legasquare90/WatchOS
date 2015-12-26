@@ -17,6 +17,8 @@ class GlanceController: WKInterfaceController {
     @IBOutlet var tvShowImage: WKInterfaceImage!
     @IBOutlet var tvShowLabel: WKInterfaceLabel!
     
+    var show = Dictionary<String, AnyObject>()
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         let dictionary = ScheduleTV().schedule
@@ -44,6 +46,7 @@ class GlanceController: WKInterfaceController {
             let hour = components.hour
             
             if (hour >= horaInicio && hour <= horaFin) {
+                show = dictShow
                 tvShowImage.setImageNamed(dictShow["img"] as? String)
                 tvShowLabel.setText(dictShow["name"] as? String)
             }
@@ -51,8 +54,7 @@ class GlanceController: WKInterfaceController {
     }
 
     override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
-        super.willActivate()
+        updateUserActivity(NSBundle.mainBundle().bundleIdentifier!, userInfo: ["details":show], webpageURL: nil)
     }
 
 }

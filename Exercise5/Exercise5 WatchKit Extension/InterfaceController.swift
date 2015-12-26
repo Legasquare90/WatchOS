@@ -47,5 +47,9 @@ class InterfaceController: WKInterfaceController {
         ScheduleTV().channel = channel["name"] as! String
         saveLabel.setHidden(false)
     }
+    
+    override func handleUserActivity(userInfo: [NSObject : AnyObject]?) {
+        pushControllerWithName("details", context: userInfo!["details"])
+    }
 
 }
