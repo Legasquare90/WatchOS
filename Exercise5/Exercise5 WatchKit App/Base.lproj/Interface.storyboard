@@ -53,8 +53,8 @@
                         </group>
                         <group alignment="left" contentMode="scaleAspectFit" layout="vertical" id="eew-Gs-W6Y">
                             <items>
-                                <imageView height="0.80000000000000004" alignment="left" contentMode="scaleAspectFit" id="RJR-ZY-kEW"/>
-                                <label alignment="center" verticalAlignment="bottom" text="Programa" id="0VM-Dy-GdY">
+                                <imageView height="0.80000000000000004" alignment="center" contentMode="scaleAspectFit" id="RJR-ZY-kEW"/>
+                                <label alignment="left" verticalAlignment="bottom" text="Programa" id="0VM-Dy-GdY">
                                     <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
                                 </label>
                             </items>

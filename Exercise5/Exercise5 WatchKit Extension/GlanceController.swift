@@ -20,10 +20,19 @@ class GlanceController: WKInterfaceController {
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         let dictionary = ScheduleTV().schedule
-        let arrayShows = dictionary!["Discovery Max"] as! [Dictionary<String, AnyObject>]
-        channelImage.setImageNamed("discovery_max")
-        channelLabel.setText("Discovery Max")
-        for dictShow in arrayShows {
+        let arrayChannels = dictionary!["channels"] as! [Dictionary<String, AnyObject>]
+        var channelDict = Dictionary<String, AnyObject>()
+        for channel in arrayChannels {
+            let channelName = channel["name"] as! String
+            if (channelName == ScheduleTV().channel) {
+                channelDict = channel
+                channelLabel.setText(channelName)
+            }
+        }
+        let channelShows = channelDict["schedule"] as! [Dictionary<String, AnyObject>]
+        let channelImg = channelDict["logo"] as! String
+        channelImage.setImageNamed(channelImg)
+        for dictShow in channelShows {
             let horaInicioCompleto = dictShow["inicio"] as! String
             let horaInicio = Int(horaInicioCompleto.characters.split(":").map(String.init)[0])
             let horaFinCompleto = dictShow["fin"] as! String
