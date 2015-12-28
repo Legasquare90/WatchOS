@@ -14,15 +14,15 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     // MARK: - Timeline Configuration
     
     func getSupportedTimeTravelDirectionsForComplication(complication: CLKComplication, withHandler handler: (CLKComplicationTimeTravelDirections) -> Void) {
-        handler([.Forward, .Backward])
+        handler(.Forward)
     }
     
     func getTimelineStartDateForComplication(complication: CLKComplication, withHandler handler: (NSDate?) -> Void) {
-        handler(nil)
+        handler(NSDate())
     }
     
     func getTimelineEndDateForComplication(complication: CLKComplication, withHandler handler: (NSDate?) -> Void) {
-        handler(nil)
+        handler(NSDate(timeIntervalSinceNow: (60*60*24)))
     }
     
     func getPrivacyBehaviorForComplication(complication: CLKComplication, withHandler handler: (CLKComplicationPrivacyBehavior) -> Void) {
@@ -56,8 +56,11 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     // MARK: - Placeholder Templates
     
     func getPlaceholderTemplateForComplication(complication: CLKComplication, withHandler handler: (CLKComplicationTemplate?) -> Void) {
-        // This method will be called once per supported complication, and the results will be cached
-        handler(nil)
+        let template = CLKComplicationTemplateModularLargeStandardBody()
+        template.headerTextProvider = CLKTimeIntervalTextProvider(startDate: NSDate(), endDate: NSDate(timeIntervalSinceNow: 60*60*1.5))
+        template.body1TextProvider = CLKSimpleTextProvider(text: "Show Name", shortText: "Name")
+        template.body2TextProvider = CLKSimpleTextProvider(text: "Show Genre", shortText: nil)
+        handler(template)
     }
     
 }
