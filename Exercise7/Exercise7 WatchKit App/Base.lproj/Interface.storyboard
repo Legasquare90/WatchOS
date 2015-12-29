@@ -30,7 +30,29 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="175" y="338"/>
+            <point key="canvasLocation" x="64" y="359"/>
+        </scene>
+        <!--Accelerometer-->
+        <scene sceneID="0G0-rG-w3q">
+            <objects>
+                <controller identifier="Accelerometer" id="zV1-Jr-JSH" customClass="AccelerometerInterfaceController" customModule="Exercise7_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="center" verticalAlignment="center" layout="vertical" id="qSM-IO-QtC">
+                            <items>
+                                <label alignment="left" text="Label" id="Fcv-JQ-irB"/>
+                                <label alignment="left" text="Label" id="XE2-Jb-HYd"/>
+                                <label alignment="left" text="Label" id="hEW-8s-C2P"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="axisXLabel" destination="Fcv-JQ-irB" id="rAG-Ys-K0x"/>
+                        <outlet property="axisYLabel" destination="XE2-Jb-HYd" id="G4g-GR-0rU"/>
+                        <outlet property="axisZLabel" destination="hEW-8s-C2P" id="hD4-lc-lCg"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="287" y="122"/>
         </scene>
     </scenes>
 </document>
