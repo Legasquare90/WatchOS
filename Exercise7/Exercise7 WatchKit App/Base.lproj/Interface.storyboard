@@ -8,8 +8,29 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Exercise7_WatchKit_App" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Exercise7_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="6FC-gN-AZa">
+                            <items>
+                                <tableRow identifier="row" id="HWM-Zt-ud7" customClass="RowController" customModule="Exercise7_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="fKG-TP-twM">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="Label" id="Gb7-DL-M0F"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="nameLabel" destination="Gb7-DL-M0F" id="ZIA-Hf-G0v"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tableView" destination="6FC-gN-AZa" id="tHu-7g-HR0"/>
+                    </connections>
+                </controller>
             </objects>
+            <point key="canvasLocation" x="175" y="338"/>
         </scene>
     </scenes>
 </document>

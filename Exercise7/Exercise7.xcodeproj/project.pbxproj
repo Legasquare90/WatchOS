@@ -21,6 +21,7 @@
 		A9BBE3701C32FAC2005CBE91 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BBE36F1C32FAC2005CBE91 /* InterfaceController.swift */; };
 		A9BBE3721C32FAC2005CBE91 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BBE3711C32FAC2005CBE91 /* ExtensionDelegate.swift */; };
 		A9BBE3741C32FAC2005CBE91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9BBE3731C32FAC2005CBE91 /* Assets.xcassets */; };
+		A9BBE38A1C32FF69005CBE91 /* RowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BBE3891C32FF69005CBE91 /* RowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +103,7 @@
 		A9BBE3711C32FAC2005CBE91 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		A9BBE3731C32FAC2005CBE91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9BBE3751C32FAC2005CBE91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9BBE3891C32FF69005CBE91 /* RowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				A9BBE36F1C32FAC2005CBE91 /* InterfaceController.swift */,
+				A9BBE3891C32FF69005CBE91 /* RowController.swift */,
 				A9BBE3711C32FAC2005CBE91 /* ExtensionDelegate.swift */,
 				A9BBE3731C32FAC2005CBE91 /* Assets.xcassets */,
 				A9BBE3751C32FAC2005CBE91 /* Info.plist */,
@@ -429,6 +432,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9BBE38A1C32FF69005CBE91 /* RowController.swift in Sources */,
 				A9BBE3721C32FAC2005CBE91 /* ExtensionDelegate.swift in Sources */,
 				A9BBE3701C32FAC2005CBE91 /* InterfaceController.swift in Sources */,
 			);
