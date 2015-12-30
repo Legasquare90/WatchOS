@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53A66AEA1C340E7600E9FC38 /* DeviceMotionInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A66AE91C340E7600E9FC38 /* DeviceMotionInterfaceController.swift */; };
 		A9BBE3371C32FAC2005CBE91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BBE3361C32FAC2005CBE91 /* AppDelegate.swift */; };
 		A9BBE3391C32FAC2005CBE91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BBE3381C32FAC2005CBE91 /* ViewController.swift */; };
 		A9BBE33C1C32FAC2005CBE91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9BBE33A1C32FAC2005CBE91 /* Main.storyboard */; };
@@ -82,6 +83,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		53A66AE91C340E7600E9FC38 /* DeviceMotionInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceMotionInterfaceController.swift; sourceTree = "<group>"; };
 		A9BBE3331C32FAC2005CBE91 /* Exercise7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exercise7.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9BBE3361C32FAC2005CBE91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9BBE3381C32FAC2005CBE91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				A9BBE38B1C331152005CBE91 /* AccelerometerInterfaceController.swift */,
+				53A66AE91C340E7600E9FC38 /* DeviceMotionInterfaceController.swift */,
 				A9BBE36F1C32FAC2005CBE91 /* InterfaceController.swift */,
 				A9BBE3891C32FF69005CBE91 /* RowController.swift */,
 				A9BBE3711C32FAC2005CBE91 /* ExtensionDelegate.swift */,
@@ -438,6 +441,7 @@
 				A9BBE38A1C32FF69005CBE91 /* RowController.swift in Sources */,
 				A9BBE38C1C331152005CBE91 /* AccelerometerInterfaceController.swift in Sources */,
 				A9BBE3721C32FAC2005CBE91 /* ExtensionDelegate.swift in Sources */,
+				53A66AEA1C340E7600E9FC38 /* DeviceMotionInterfaceController.swift in Sources */,
 				A9BBE3701C32FAC2005CBE91 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -725,6 +729,7 @@
 				A9BBE37A1C32FAC2005CBE91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A9BBE37C1C32FAC2005CBE91 /* Build configuration list for PBXNativeTarget "Exercise7 WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -733,6 +738,7 @@
 				A9BBE37E1C32FAC2005CBE91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A9BBE3801C32FAC2005CBE91 /* Build configuration list for PBXNativeTarget "Exercise7" */ = {
 			isa = XCConfigurationList;
@@ -741,6 +747,7 @@
 				A9BBE3821C32FAC2005CBE91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A9BBE3831C32FAC2005CBE91 /* Build configuration list for PBXNativeTarget "Exercise7Tests" */ = {
 			isa = XCConfigurationList;
@@ -749,6 +756,7 @@
 				A9BBE3851C32FAC2005CBE91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A9BBE3861C32FAC2005CBE91 /* Build configuration list for PBXNativeTarget "Exercise7UITests" */ = {
 			isa = XCConfigurationList;
@@ -757,6 +765,7 @@
 				A9BBE3881C32FAC2005CBE91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

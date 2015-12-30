@@ -14,7 +14,7 @@ class InterfaceController: WKInterfaceController {
 
     @IBOutlet var tableView: WKInterfaceTable!
     
-    let model = ["Accelerometer"]
+    let model = ["Accelerometer", "DeviceMotion"]
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)

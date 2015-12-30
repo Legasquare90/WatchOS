@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
@@ -53,6 +53,46 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="287" y="122"/>
+        </scene>
+        <!--DeviceMotion-->
+        <scene sceneID="fFT-bN-BVM">
+            <objects>
+                <controller identifier="DeviceMotion" id="wjt-2M-umi" customClass="DeviceMotionInterfaceController" customModule="Exercise7_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="center" verticalAlignment="center" layout="vertical" id="Pkf-LJ-tni">
+                            <items>
+                                <label alignment="left" text="Label" id="J96-Rw-ZrQ"/>
+                                <label alignment="left" text="Label" id="TOd-R4-3Ge"/>
+                                <label alignment="left" text="Label" id="eW4-hf-XVF"/>
+                                <label alignment="left" text="Label" id="enm-Uj-WUc"/>
+                                <label alignment="left" text="Label" id="seA-qM-Q9C"/>
+                                <label alignment="left" text="Label" id="4FF-WJ-ltb"/>
+                                <label alignment="left" text="Label" id="wIF-SJ-x7F"/>
+                                <label alignment="left" text="Label" id="mYf-R1-WPi"/>
+                                <label alignment="left" text="Label" id="PPX-3x-Biu"/>
+                                <label alignment="left" text="Label" id="ZiY-7G-lCU"/>
+                                <label alignment="left" text="Label" id="Fk8-Ut-JdD"/>
+                                <label alignment="left" text="Label" id="zI5-Tg-qtm"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="accXLabel" destination="enm-Uj-WUc" id="fcv-d9-HAX"/>
+                        <outlet property="accYLabel" destination="seA-qM-Q9C" id="gvH-Fc-fVf"/>
+                        <outlet property="accZLabel" destination="4FF-WJ-ltb" id="Bu9-VG-xUA"/>
+                        <outlet property="gravXLabel" destination="ZiY-7G-lCU" id="gL3-27-dcb"/>
+                        <outlet property="gravYLabel" destination="Fk8-Ut-JdD" id="UwE-6C-EvW"/>
+                        <outlet property="gravZLabel" destination="zI5-Tg-qtm" id="gFu-fi-6EL"/>
+                        <outlet property="pitch" destination="TOd-R4-3Ge" id="fkv-ep-re5"/>
+                        <outlet property="roll" destination="J96-Rw-ZrQ" id="gbz-1H-X8E"/>
+                        <outlet property="rotXLabel" destination="wIF-SJ-x7F" id="QQR-Qd-Sjz"/>
+                        <outlet property="rotYLabel" destination="mYf-R1-WPi" id="TMu-qt-niK"/>
+                        <outlet property="rotZLabel" destination="PPX-3x-Biu" id="SDp-E2-cFI"/>
+                        <outlet property="yaw" destination="eW4-hf-XVF" id="VAc-JG-nnZ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="540" y="122"/>
         </scene>
     </scenes>
 </document>
