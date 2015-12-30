@@ -38,7 +38,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     }
     
     func getTimelineEndDateForComplication(complication: CLKComplication, withHandler handler: (NSDate?) -> Void) {
-        handler(NSDate(timeIntervalSinceNow: (60*60*24)))
+        handler(NSDate(timeIntervalSinceNow: (hour*24)))
     }
     
     func getPrivacyBehaviorForComplication(complication: CLKComplication, withHandler handler: (CLKComplicationPrivacyBehavior) -> Void) {
@@ -88,15 +88,14 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     // MARK: - Update Scheduling
     
     func getNextRequestedUpdateDateWithHandler(handler: (NSDate?) -> Void) {
-        // Call the handler with the date when you would next like to be given the opportunity to update your complication content
-        handler(nil);
+        handler(NSDate(timeIntervalSinceNow: hour*24))
     }
     
     // MARK: - Placeholder Templates
     
     func getPlaceholderTemplateForComplication(complication: CLKComplication, withHandler handler: (CLKComplicationTemplate?) -> Void) {
         let template = CLKComplicationTemplateModularLargeStandardBody()
-        template.headerTextProvider = CLKTimeIntervalTextProvider(startDate: NSDate(), endDate: NSDate(timeIntervalSinceNow: 60*60*1.5))
+        template.headerTextProvider = CLKTimeIntervalTextProvider(startDate: NSDate(), endDate: NSDate(timeIntervalSinceNow: hour*1.5))
         template.body1TextProvider = CLKSimpleTextProvider(text: "Show Name", shortText: "Name")
         template.body2TextProvider = CLKSimpleTextProvider(text: "Show Genre", shortText: nil)
         handler(template)
