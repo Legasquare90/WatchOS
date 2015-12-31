@@ -167,6 +167,7 @@
 		539612FC1C3524B3009B9523 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A9357BF51C35B2BA00AF7E37 /* Exercise7 WatchKit Extension.entitlements */,
 				A9BBE3731C32FAC2005CBE91 /* Assets.xcassets */,
 				A9BBE3751C32FAC2005CBE91 /* Info.plist */,
 			);
@@ -252,7 +253,6 @@
 		A9BBE36E1C32FAC2005CBE91 /* Exercise7 WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				A9357BF51C35B2BA00AF7E37 /* Exercise7 WatchKit Extension.entitlements */,
 				539612FE1C3525D2009B9523 /* Haptic Engine */,
 				539612FB1C352499009B9523 /* Menú */,
 				A9BBE38B1C331152005CBE91 /* AccelerometerInterfaceController.swift */,
