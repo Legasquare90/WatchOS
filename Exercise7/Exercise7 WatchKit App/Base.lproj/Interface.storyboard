@@ -52,7 +52,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="305" y="60"/>
+            <point key="canvasLocation" x="305" y="359"/>
         </scene>
         <!--DeviceMotion-->
         <scene sceneID="fFT-bN-BVM">
@@ -92,7 +92,33 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="305" y="379.5"/>
+            <point key="canvasLocation" x="305" y="665.5"/>
+        </scene>
+        <!--HeartRate-->
+        <scene sceneID="VDo-7Q-Boq">
+            <objects>
+                <controller identifier="HeartRate" id="yGC-HD-wls" customClass="HeartRateInterfaceController" customModule="Exercise7_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="Start" id="mhS-Pu-eKa">
+                            <connections>
+                                <action selector="startButtonAction" destination="yGC-HD-wls" id="9FN-mE-ZSD"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Stop" id="Et2-zZ-HZv">
+                            <connections>
+                                <action selector="stopButtonAction" destination="yGC-HD-wls" id="jsX-S7-yVk"/>
+                            </connections>
+                        </button>
+                        <label alignment="center" text="Label" id="W4G-WJ-zYP"/>
+                    </items>
+                    <connections>
+                        <outlet property="heartLabel" destination="W4G-WJ-zYP" id="maf-Uf-sEC"/>
+                        <outlet property="startButton" destination="mhS-Pu-eKa" id="Kf1-p7-f6T"/>
+                        <outlet property="stopButton" destination="Et2-zZ-HZv" id="LPV-XM-PGy"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="520" y="602"/>
         </scene>
         <!--HapticEngine-->
         <scene sceneID="Gs4-VR-53A">

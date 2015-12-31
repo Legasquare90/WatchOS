@@ -10,6 +10,8 @@
 		539613001C3525F2009B9523 /* HapticEngineInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539612FF1C3525F2009B9523 /* HapticEngineInterfaceController.swift */; };
 		539613021C35260F009B9523 /* HapticEngineRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539613011C35260F009B9523 /* HapticEngineRowController.swift */; };
 		53A66AEA1C340E7600E9FC38 /* DeviceMotionInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A66AE91C340E7600E9FC38 /* DeviceMotionInterfaceController.swift */; };
+		53D3B6721C354D19002E10E3 /* HeartRateInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D3B6711C354D19002E10E3 /* HeartRateInterfaceController.swift */; };
+		53D3B6771C355168002E10E3 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53D3B6761C355168002E10E3 /* HealthKit.framework */; };
 		A9BBE3371C32FAC2005CBE91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BBE3361C32FAC2005CBE91 /* AppDelegate.swift */; };
 		A9BBE3391C32FAC2005CBE91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BBE3381C32FAC2005CBE91 /* ViewController.swift */; };
 		A9BBE33C1C32FAC2005CBE91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9BBE33A1C32FAC2005CBE91 /* Main.storyboard */; };
@@ -88,6 +90,9 @@
 		539612FF1C3525F2009B9523 /* HapticEngineInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HapticEngineInterfaceController.swift; sourceTree = "<group>"; };
 		539613011C35260F009B9523 /* HapticEngineRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HapticEngineRowController.swift; sourceTree = "<group>"; };
 		53A66AE91C340E7600E9FC38 /* DeviceMotionInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceMotionInterfaceController.swift; sourceTree = "<group>"; };
+		53D3B6711C354D19002E10E3 /* HeartRateInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartRateInterfaceController.swift; sourceTree = "<group>"; };
+		53D3B6751C355168002E10E3 /* Exercise7 WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Exercise7 WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		53D3B6761C355168002E10E3 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		A9BBE3331C32FAC2005CBE91 /* Exercise7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exercise7.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9BBE3361C32FAC2005CBE91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9BBE3381C32FAC2005CBE91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -140,6 +145,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53D3B6771C355168002E10E3 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +182,7 @@
 		A9BBE32A1C32FAC2005CBE91 = {
 			isa = PBXGroup;
 			children = (
+				53D3B6761C355168002E10E3 /* HealthKit.framework */,
 				A9BBE3351C32FAC2005CBE91 /* Exercise7 */,
 				A9BBE34A1C32FAC2005CBE91 /* Exercise7Tests */,
 				A9BBE3551C32FAC2005CBE91 /* Exercise7UITests */,
@@ -241,10 +248,12 @@
 		A9BBE36E1C32FAC2005CBE91 /* Exercise7 WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				53D3B6751C355168002E10E3 /* Exercise7 WatchKit Extension.entitlements */,
 				539612FE1C3525D2009B9523 /* Haptic Engine */,
 				539612FB1C352499009B9523 /* Menú */,
 				A9BBE38B1C331152005CBE91 /* AccelerometerInterfaceController.swift */,
 				53A66AE91C340E7600E9FC38 /* DeviceMotionInterfaceController.swift */,
+				53D3B6711C354D19002E10E3 /* HeartRateInterfaceController.swift */,
 				A9BBE3711C32FAC2005CBE91 /* ExtensionDelegate.swift */,
 				539612FC1C3524B3009B9523 /* Resources */,
 			);
@@ -369,6 +378,12 @@
 					};
 					A9BBE3691C32FAC2005CBE91 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 3VW789WSMP;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -470,6 +485,7 @@
 			files = (
 				539613001C3525F2009B9523 /* HapticEngineInterfaceController.swift in Sources */,
 				A9BBE38A1C32FF69005CBE91 /* RowController.swift in Sources */,
+				53D3B6721C354D19002E10E3 /* HeartRateInterfaceController.swift in Sources */,
 				A9BBE38C1C331152005CBE91 /* AccelerometerInterfaceController.swift in Sources */,
 				A9BBE3721C32FAC2005CBE91 /* ExtensionDelegate.swift in Sources */,
 				53A66AEA1C340E7600E9FC38 /* DeviceMotionInterfaceController.swift in Sources */,
@@ -615,10 +631,14 @@
 		A9BBE3791C32FAC2005CBE91 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Exercise7 WatchKit Extension/Exercise7 WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Exercise7 WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo.UPSA.Exercise7.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -629,10 +649,14 @@
 		A9BBE37A1C32FAC2005CBE91 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Exercise7 WatchKit Extension/Exercise7 WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Exercise7 WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo.UPSA.Exercise7.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
