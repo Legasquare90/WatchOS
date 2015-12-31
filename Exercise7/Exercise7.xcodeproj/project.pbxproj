@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		539613001C3525F2009B9523 /* HapticEngineInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539612FF1C3525F2009B9523 /* HapticEngineInterfaceController.swift */; };
+		539613021C35260F009B9523 /* HapticEngineRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539613011C35260F009B9523 /* HapticEngineRowController.swift */; };
 		53A66AEA1C340E7600E9FC38 /* DeviceMotionInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A66AE91C340E7600E9FC38 /* DeviceMotionInterfaceController.swift */; };
 		A9BBE3371C32FAC2005CBE91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BBE3361C32FAC2005CBE91 /* AppDelegate.swift */; };
 		A9BBE3391C32FAC2005CBE91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BBE3381C32FAC2005CBE91 /* ViewController.swift */; };
@@ -83,6 +85,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		539612FF1C3525F2009B9523 /* HapticEngineInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HapticEngineInterfaceController.swift; sourceTree = "<group>"; };
+		539613011C35260F009B9523 /* HapticEngineRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HapticEngineRowController.swift; sourceTree = "<group>"; };
 		53A66AE91C340E7600E9FC38 /* DeviceMotionInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceMotionInterfaceController.swift; sourceTree = "<group>"; };
 		A9BBE3331C32FAC2005CBE91 /* Exercise7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exercise7.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9BBE3361C32FAC2005CBE91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +146,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		539612FB1C352499009B9523 /* Menú */ = {
+			isa = PBXGroup;
+			children = (
+				A9BBE36F1C32FAC2005CBE91 /* InterfaceController.swift */,
+				A9BBE3891C32FF69005CBE91 /* RowController.swift */,
+			);
+			name = "Menú";
+			sourceTree = "<group>";
+		};
+		539612FC1C3524B3009B9523 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A9BBE3731C32FAC2005CBE91 /* Assets.xcassets */,
+				A9BBE3751C32FAC2005CBE91 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		539612FE1C3525D2009B9523 /* Haptic Engine */ = {
+			isa = PBXGroup;
+			children = (
+				539612FF1C3525F2009B9523 /* HapticEngineInterfaceController.swift */,
+				539613011C35260F009B9523 /* HapticEngineRowController.swift */,
+			);
+			name = "Haptic Engine";
+			sourceTree = "<group>";
+		};
 		A9BBE32A1C32FAC2005CBE91 = {
 			isa = PBXGroup;
 			children = (
@@ -210,13 +241,12 @@
 		A9BBE36E1C32FAC2005CBE91 /* Exercise7 WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				539612FE1C3525D2009B9523 /* Haptic Engine */,
+				539612FB1C352499009B9523 /* Menú */,
 				A9BBE38B1C331152005CBE91 /* AccelerometerInterfaceController.swift */,
 				53A66AE91C340E7600E9FC38 /* DeviceMotionInterfaceController.swift */,
-				A9BBE36F1C32FAC2005CBE91 /* InterfaceController.swift */,
-				A9BBE3891C32FF69005CBE91 /* RowController.swift */,
 				A9BBE3711C32FAC2005CBE91 /* ExtensionDelegate.swift */,
-				A9BBE3731C32FAC2005CBE91 /* Assets.xcassets */,
-				A9BBE3751C32FAC2005CBE91 /* Info.plist */,
+				539612FC1C3524B3009B9523 /* Resources */,
 			);
 			path = "Exercise7 WatchKit Extension";
 			sourceTree = "<group>";
@@ -438,11 +468,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				539613001C3525F2009B9523 /* HapticEngineInterfaceController.swift in Sources */,
 				A9BBE38A1C32FF69005CBE91 /* RowController.swift in Sources */,
 				A9BBE38C1C331152005CBE91 /* AccelerometerInterfaceController.swift in Sources */,
 				A9BBE3721C32FAC2005CBE91 /* ExtensionDelegate.swift in Sources */,
 				53A66AEA1C340E7600E9FC38 /* DeviceMotionInterfaceController.swift in Sources */,
 				A9BBE3701C32FAC2005CBE91 /* InterfaceController.swift in Sources */,
+				539613021C35260F009B9523 /* HapticEngineRowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

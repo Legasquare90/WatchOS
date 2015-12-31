@@ -52,7 +52,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="287" y="122"/>
+            <point key="canvasLocation" x="305" y="60"/>
         </scene>
         <!--DeviceMotion-->
         <scene sceneID="fFT-bN-BVM">
@@ -92,7 +92,34 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="540" y="122"/>
+            <point key="canvasLocation" x="305" y="379.5"/>
+        </scene>
+        <!--HapticEngine-->
+        <scene sceneID="Gs4-VR-53A">
+            <objects>
+                <controller identifier="HapticEngine" id="dNy-R9-Jqc" customClass="HapticEngineInterfaceController" customModule="Exercise7_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="Km5-Qu-BMx">
+                            <items>
+                                <tableRow identifier="hapticRow" id="Gkh-eu-zF5" customClass="HapticEngineRowController" customModule="Exercise7_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="sUV-gX-hnc">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="Label" id="8aT-4j-egQ"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="hapticLabel" destination="8aT-4j-egQ" id="pqF-ZX-X9u"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tableView" destination="Km5-Qu-BMx" id="cX8-j4-ebX"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="520" y="359"/>
         </scene>
     </scenes>
 </document>
