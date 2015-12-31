@@ -109,7 +109,7 @@
                                 <action selector="stopButtonAction" destination="yGC-HD-wls" id="jsX-S7-yVk"/>
                             </connections>
                         </button>
-                        <label alignment="center" text="Label" id="W4G-WJ-zYP"/>
+                        <label alignment="center" text="Label" numberOfLines="0" id="W4G-WJ-zYP"/>
                     </items>
                     <connections>
                         <outlet property="heartLabel" destination="W4G-WJ-zYP" id="maf-Uf-sEC"/>
