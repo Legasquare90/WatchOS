@@ -118,7 +118,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="520" y="602"/>
+            <point key="canvasLocation" x="696" y="359"/>
         </scene>
         <!--HapticEngine-->
         <scene sceneID="Gs4-VR-53A">
@@ -146,6 +146,32 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="520" y="359"/>
+        </scene>
+        <!--InfoDevice-->
+        <scene sceneID="RUu-oI-wk1">
+            <objects>
+                <controller identifier="InfoDevice" id="vTD-9u-HvU" customClass="InfoDeviceInterfaceController" customModule="Exercise7_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Label" numberOfLines="0" id="GtO-UM-LD5"/>
+                        <label alignment="left" text="Label" numberOfLines="0" id="nr8-95-7AK"/>
+                        <label alignment="left" text="Label" numberOfLines="0" id="9fD-D0-XW4"/>
+                        <label alignment="left" text="Label" numberOfLines="0" id="Qjm-Fv-odH"/>
+                        <label alignment="left" text="Label" numberOfLines="0" id="UXb-QN-YXM"/>
+                        <label alignment="left" text="Label" numberOfLines="0" id="pa3-7d-2AB"/>
+                        <label alignment="left" text="Label" numberOfLines="0" id="G8R-HW-edR"/>
+                    </items>
+                    <connections>
+                        <outlet property="localizedModelLabel" destination="G8R-HW-edR" id="x1m-KQ-oSh"/>
+                        <outlet property="nameLabel" destination="pa3-7d-2AB" id="tuo-Fc-yGz"/>
+                        <outlet property="preferredContentSizeCategoryLabel" destination="9fD-D0-XW4" id="KDp-f1-TLe"/>
+                        <outlet property="scaleLabel" destination="nr8-95-7AK" id="oFo-5U-yV9"/>
+                        <outlet property="screenBoundsLabel" destination="GtO-UM-LD5" id="6A3-bK-ogF"/>
+                        <outlet property="systemNameLabel" destination="Qjm-Fv-odH" id="8nV-p2-VKc"/>
+                        <outlet property="systemVersionLabel" destination="UXb-QN-YXM" id="as3-Lf-k4Z"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="520" y="618.5"/>
         </scene>
     </scenes>
 </document>

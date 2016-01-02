@@ -14,6 +14,7 @@
 		A9357BF41C35A09100AF7E37 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9357BF31C35A09100AF7E37 /* HealthKit.framework */; };
 		A9357BF61C35B2BA00AF7E37 /* Exercise7 WatchKit Extension.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = A9357BF51C35B2BA00AF7E37 /* Exercise7 WatchKit Extension.entitlements */; };
 		A9357BF81C35B30D00AF7E37 /* Exercise7.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = A9357BF71C35B30D00AF7E37 /* Exercise7.entitlements */; };
+		A9357BFA1C37F51A00AF7E37 /* InfoDeviceInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9357BF91C37F51A00AF7E37 /* InfoDeviceInterfaceController.swift */; };
 		A9BBE3371C32FAC2005CBE91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BBE3361C32FAC2005CBE91 /* AppDelegate.swift */; };
 		A9BBE3391C32FAC2005CBE91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BBE3381C32FAC2005CBE91 /* ViewController.swift */; };
 		A9BBE33C1C32FAC2005CBE91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9BBE33A1C32FAC2005CBE91 /* Main.storyboard */; };
@@ -96,6 +97,7 @@
 		A9357BF31C35A09100AF7E37 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		A9357BF51C35B2BA00AF7E37 /* Exercise7 WatchKit Extension.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Exercise7 WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		A9357BF71C35B30D00AF7E37 /* Exercise7.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Exercise7.entitlements; sourceTree = "<group>"; };
+		A9357BF91C37F51A00AF7E37 /* InfoDeviceInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoDeviceInterfaceController.swift; sourceTree = "<group>"; };
 		A9BBE3331C32FAC2005CBE91 /* Exercise7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exercise7.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9BBE3361C32FAC2005CBE91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9BBE3381C32FAC2005CBE91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -257,6 +259,7 @@
 				539612FB1C352499009B9523 /* Menú */,
 				A9BBE38B1C331152005CBE91 /* AccelerometerInterfaceController.swift */,
 				53A66AE91C340E7600E9FC38 /* DeviceMotionInterfaceController.swift */,
+				A9357BF91C37F51A00AF7E37 /* InfoDeviceInterfaceController.swift */,
 				53D3B6711C354D19002E10E3 /* HeartRateInterfaceController.swift */,
 				A9BBE3711C32FAC2005CBE91 /* ExtensionDelegate.swift */,
 				539612FC1C3524B3009B9523 /* Resources */,
@@ -501,6 +504,7 @@
 				A9BBE38C1C331152005CBE91 /* AccelerometerInterfaceController.swift in Sources */,
 				A9BBE3721C32FAC2005CBE91 /* ExtensionDelegate.swift in Sources */,
 				53A66AEA1C340E7600E9FC38 /* DeviceMotionInterfaceController.swift in Sources */,
+				A9357BFA1C37F51A00AF7E37 /* InfoDeviceInterfaceController.swift in Sources */,
 				A9BBE3701C32FAC2005CBE91 /* InterfaceController.swift in Sources */,
 				539613021C35260F009B9523 /* HapticEngineRowController.swift in Sources */,
 			);
