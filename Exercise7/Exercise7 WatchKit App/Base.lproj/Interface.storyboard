@@ -32,6 +32,39 @@
             </objects>
             <point key="canvasLocation" x="64" y="359"/>
         </scene>
+        <!--Audio-->
+        <scene sceneID="Hpj-Tc-Q3k">
+            <objects>
+                <controller identifier="Audio" id="xEG-A2-ULZ" customClass="AudioInterfaceController" customModule="Exercise7_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="Grabar" id="try-90-1d0">
+                            <connections>
+                                <action selector="recordButtonAction" destination="xEG-A2-ULZ" id="BfO-6k-bQG"/>
+                            </connections>
+                        </button>
+                        <separator alignment="left" id="lby-mq-8lg"/>
+                        <table alignment="left" id="1bX-iX-vlh">
+                            <items>
+                                <tableRow identifier="audioRow" id="fRY-0W-ide" customClass="AudioRowController" customModule="Exercise7_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="3Vk-Ku-FCc">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Label" numberOfLines="2" id="dXs-SB-NjE"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="fileLabel" destination="dXs-SB-NjE" id="ntR-pe-bTB"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tableView" destination="1bX-iX-vlh" id="fLE-Wb-naH"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="305" y="115"/>
+        </scene>
         <!--Accelerometer-->
         <scene sceneID="0G0-rG-w3q">
             <objects>
