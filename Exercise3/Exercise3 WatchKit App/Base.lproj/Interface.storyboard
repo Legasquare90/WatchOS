@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9019"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
     </dependencies>
     <scenes>
         <!--chooseTeam-->
@@ -70,6 +70,11 @@
                 <controller identifier="video" id="I0G-4f-paj" customClass="VideoInterfaceController" customModule="Exercise3_WatchKit_Extension">
                     <items>
                         <movie width="1" height="100" alignment="left" posterImage="movie_poster" id="CAF-py-U6l"/>
+                        <button width="1" alignment="left" title="Play Alt." id="XhN-6l-Km6">
+                            <connections>
+                                <action selector="alternativePlayButtonAction" destination="I0G-4f-paj" id="IWt-w2-3kB"/>
+                            </connections>
+                        </button>
                     </items>
                     <connections>
                         <outlet property="video" destination="CAF-py-U6l" id="f4P-Oq-Ruk"/>
