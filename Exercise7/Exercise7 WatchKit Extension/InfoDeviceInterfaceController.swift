@@ -23,6 +23,8 @@ class InfoDeviceInterfaceController: WKInterfaceController {
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
+        setTitle("Info")
+        
         let device = WKInterfaceDevice.currentDevice()
         
         screenBoundsLabel.setText("Tamaño pantalla: \(device.screenBounds.width)x\(device.screenBounds.height)")

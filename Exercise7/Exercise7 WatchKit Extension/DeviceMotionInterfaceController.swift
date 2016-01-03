@@ -30,7 +30,7 @@ class DeviceMotionInterfaceController: WKInterfaceController {
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
-        self.setTitle("Acelerómetro")
+        self.setTitle("DeviceMotion")
         self.accXLabel.setText("Acc. X: --")
         self.accYLabel.setText("Acc. Y: --")
         self.accZLabel.setText("Acc. Z: --")

@@ -65,6 +65,26 @@
             </objects>
             <point key="canvasLocation" x="305" y="115"/>
         </scene>
+        <!--Phone-->
+        <scene sceneID="IG4-ul-JVp">
+            <objects>
+                <controller identifier="Phone" id="hca-hP-5UD" customClass="PhoneInterfaceController" customModule="Exercise7_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="Llamada" id="jDX-VH-ecv">
+                            <connections>
+                                <action selector="callButtonAction" destination="hca-hP-5UD" id="Nxm-8v-tFP"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="SMS" id="kQU-BZ-03F">
+                            <connections>
+                                <action selector="smsButtonAction" destination="hca-hP-5UD" id="OEq-hs-2Gw"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="520" y="115"/>
+        </scene>
         <!--Accelerometer-->
         <scene sceneID="0G0-rG-w3q">
             <objects>
@@ -126,6 +146,26 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="305" y="665.5"/>
+        </scene>
+        <!--Keyboard-->
+        <scene sceneID="d4b-0a-2kl">
+            <objects>
+                <controller identifier="Keyboard" id="HBO-N2-GZA" customClass="KeyboardInterfaceController" customModule="Exercise7_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Answer" id="POY-UG-q4O">
+                            <connections>
+                                <action selector="answerButtonAction" destination="HBO-N2-GZA" id="jA4-b5-6lw"/>
+                            </connections>
+                        </button>
+                        <label alignment="left" text="AW: Hola!" id="Awf-kP-YC8"/>
+                        <label alignment="left" hidden="YES" text="Tú:" id="fFp-nM-Ubq"/>
+                    </items>
+                    <connections>
+                        <outlet property="answerLabel" destination="fFp-nM-Ubq" id="bLu-q9-T1g"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="696" y="115"/>
         </scene>
         <!--HeartRate-->
         <scene sceneID="VDo-7Q-Boq">

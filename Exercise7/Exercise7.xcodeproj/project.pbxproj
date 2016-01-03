@@ -17,6 +17,8 @@
 		A9357BFA1C37F51A00AF7E37 /* InfoDeviceInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9357BF91C37F51A00AF7E37 /* InfoDeviceInterfaceController.swift */; };
 		A9357BFC1C383D2100AF7E37 /* AudioInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9357BFB1C383D2100AF7E37 /* AudioInterfaceController.swift */; };
 		A9357BFF1C383D5C00AF7E37 /* AudioRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9357BFE1C383D5C00AF7E37 /* AudioRowController.swift */; };
+		A9357C601C39B3E900AF7E37 /* PhoneInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9357C5F1C39B3E900AF7E37 /* PhoneInterfaceController.swift */; };
+		A9357C621C39BD6F00AF7E37 /* KeyboardInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9357C611C39BD6F00AF7E37 /* KeyboardInterfaceController.swift */; };
 		A9BBE3371C32FAC2005CBE91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BBE3361C32FAC2005CBE91 /* AppDelegate.swift */; };
 		A9BBE3391C32FAC2005CBE91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BBE3381C32FAC2005CBE91 /* ViewController.swift */; };
 		A9BBE33C1C32FAC2005CBE91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9BBE33A1C32FAC2005CBE91 /* Main.storyboard */; };
@@ -102,6 +104,8 @@
 		A9357BF91C37F51A00AF7E37 /* InfoDeviceInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoDeviceInterfaceController.swift; sourceTree = "<group>"; };
 		A9357BFB1C383D2100AF7E37 /* AudioInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioInterfaceController.swift; sourceTree = "<group>"; };
 		A9357BFE1C383D5C00AF7E37 /* AudioRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioRowController.swift; sourceTree = "<group>"; };
+		A9357C5F1C39B3E900AF7E37 /* PhoneInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneInterfaceController.swift; sourceTree = "<group>"; };
+		A9357C611C39BD6F00AF7E37 /* KeyboardInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardInterfaceController.swift; sourceTree = "<group>"; };
 		A9BBE3331C32FAC2005CBE91 /* Exercise7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exercise7.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9BBE3361C32FAC2005CBE91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9BBE3381C32FAC2005CBE91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -198,6 +202,54 @@
 			name = Audio;
 			sourceTree = "<group>";
 		};
+		A9357C641C39C2F600AF7E37 /* Accelerometer */ = {
+			isa = PBXGroup;
+			children = (
+				A9BBE38B1C331152005CBE91 /* AccelerometerInterfaceController.swift */,
+			);
+			name = Accelerometer;
+			sourceTree = "<group>";
+		};
+		A9357C651C39C30200AF7E37 /* DeviceMotion */ = {
+			isa = PBXGroup;
+			children = (
+				53A66AE91C340E7600E9FC38 /* DeviceMotionInterfaceController.swift */,
+			);
+			name = DeviceMotion;
+			sourceTree = "<group>";
+		};
+		A9357C661C39C30C00AF7E37 /* InfoDevice */ = {
+			isa = PBXGroup;
+			children = (
+				A9357BF91C37F51A00AF7E37 /* InfoDeviceInterfaceController.swift */,
+			);
+			name = InfoDevice;
+			sourceTree = "<group>";
+		};
+		A9357C671C39C31400AF7E37 /* HeartRate */ = {
+			isa = PBXGroup;
+			children = (
+				53D3B6711C354D19002E10E3 /* HeartRateInterfaceController.swift */,
+			);
+			name = HeartRate;
+			sourceTree = "<group>";
+		};
+		A9357C681C39C32900AF7E37 /* Phone */ = {
+			isa = PBXGroup;
+			children = (
+				A9357C5F1C39B3E900AF7E37 /* PhoneInterfaceController.swift */,
+			);
+			name = Phone;
+			sourceTree = "<group>";
+		};
+		A9357C691C39C32E00AF7E37 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A9357C611C39BD6F00AF7E37 /* KeyboardInterfaceController.swift */,
+			);
+			name = Keyboard;
+			sourceTree = "<group>";
+		};
 		A9BBE32A1C32FAC2005CBE91 = {
 			isa = PBXGroup;
 			children = (
@@ -268,14 +320,16 @@
 		A9BBE36E1C32FAC2005CBE91 /* Exercise7 WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				A9357BFD1C383D3900AF7E37 /* Audio */,
-				539612FE1C3525D2009B9523 /* Haptic Engine */,
-				539612FB1C352499009B9523 /* Menú */,
-				A9BBE38B1C331152005CBE91 /* AccelerometerInterfaceController.swift */,
-				53A66AE91C340E7600E9FC38 /* DeviceMotionInterfaceController.swift */,
-				A9357BF91C37F51A00AF7E37 /* InfoDeviceInterfaceController.swift */,
-				53D3B6711C354D19002E10E3 /* HeartRateInterfaceController.swift */,
 				A9BBE3711C32FAC2005CBE91 /* ExtensionDelegate.swift */,
+				A9357C641C39C2F600AF7E37 /* Accelerometer */,
+				A9357BFD1C383D3900AF7E37 /* Audio */,
+				A9357C651C39C30200AF7E37 /* DeviceMotion */,
+				539612FE1C3525D2009B9523 /* Haptic Engine */,
+				A9357C671C39C31400AF7E37 /* HeartRate */,
+				A9357C661C39C30C00AF7E37 /* InfoDevice */,
+				A9357C691C39C32E00AF7E37 /* Keyboard */,
+				539612FB1C352499009B9523 /* Menú */,
+				A9357C681C39C32900AF7E37 /* Phone */,
 				539612FC1C3524B3009B9523 /* Resources */,
 			);
 			path = "Exercise7 WatchKit Extension";
@@ -520,6 +574,8 @@
 				A9BBE3721C32FAC2005CBE91 /* ExtensionDelegate.swift in Sources */,
 				53A66AEA1C340E7600E9FC38 /* DeviceMotionInterfaceController.swift in Sources */,
 				A9357BFC1C383D2100AF7E37 /* AudioInterfaceController.swift in Sources */,
+				A9357C621C39BD6F00AF7E37 /* KeyboardInterfaceController.swift in Sources */,
+				A9357C601C39B3E900AF7E37 /* PhoneInterfaceController.swift in Sources */,
 				A9357BFA1C37F51A00AF7E37 /* InfoDeviceInterfaceController.swift in Sources */,
 				A9BBE3701C32FAC2005CBE91 /* InterfaceController.swift in Sources */,
 				539613021C35260F009B9523 /* HapticEngineRowController.swift in Sources */,

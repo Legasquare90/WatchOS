@@ -16,6 +16,7 @@ class HapticEngineInterfaceController: WKInterfaceController {
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
+        setTitle("Haptic Engine")
         setupTable()
     }
     
