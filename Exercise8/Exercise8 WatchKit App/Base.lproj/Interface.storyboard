@@ -1,15 +1,122 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="13E28" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Exercise8_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" title="List simple with image" id="f4x-gW-WiT">
+                            <connections>
+                                <segue destination="cxB-DO-exN" kind="push" id="VfU-wp-gaV"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="List outline" id="77s-Ia-kQT">
+                            <connections>
+                                <segue destination="jFD-ZU-kqB" kind="push" id="brh-fb-Mcj"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="List caption" id="11g-s7-yKg">
+                            <connections>
+                                <segue destination="maT-sk-g2V" kind="push" id="Wsx-8H-OQ5"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Stack" id="mFd-hC-MKR">
+                            <connections>
+                                <segue destination="0Ro-ud-3It" kind="push" id="41u-Wg-eoj"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Sequence" id="5Xk-PX-I5V">
+                            <connections>
+                                <segue destination="BED-1o-VOW" kind="push" id="dHM-2B-h9z"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="PickerAnimations" id="ICS-5n-yRo">
+                            <connections>
+                                <segue destination="mf0-8H-XG6" kind="push" id="STo-hG-ocD"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
             </objects>
+            <point key="canvasLocation" x="89" y="298"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="NPa-9P-PZE">
+            <objects>
+                <controller id="cxB-DO-exN">
+                    <items>
+                        <picker height="0.5" alignment="left" id="G9d-bL-mLo"/>
+                        <picker height="0.5" alignment="left" id="58y-r1-PY8"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="349" y="153"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="L2y-Lc-2f7">
+            <objects>
+                <controller id="maT-sk-g2V">
+                    <items>
+                        <picker height="0.5" alignment="left" focusStyle="sequence" id="iSh-tt-X1h"/>
+                        <picker height="0.5" alignment="left" focusStyle="sequence" id="xZP-3y-egw"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="740" y="153"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="bNx-L5-igX">
+            <objects>
+                <controller id="BED-1o-VOW">
+                    <items>
+                        <picker height="100" alignment="left" style="sequence" id="RTE-fv-qRO"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="542" y="422"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="6CU-0z-RWv">
+            <objects>
+                <controller id="mf0-8H-XG6">
+                    <items>
+                        <group width="1" height="0.90000000000000002" alignment="left" backgroundImage="activity-0" id="RIT-DT-0Cx">
+                            <items>
+                                <picker width="50" height="50" alignment="center" verticalAlignment="center" id="489-yK-aL5"/>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="740" y="422"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="JI9-0v-Gqu">
+            <objects>
+                <controller id="0Ro-ud-3It">
+                    <items>
+                        <picker height="100" alignment="left" style="stack" id="HgB-Ds-q9T"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="349" y="422"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="v8e-fJ-uwx">
+            <objects>
+                <controller id="jFD-ZU-kqB">
+                    <items>
+                        <picker height="0.5" alignment="left" focusStyle="stack" id="aKF-iC-BPO"/>
+                        <picker height="0.5" alignment="left" focusStyle="stack" id="p0c-J0-KW9"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="542" y="153"/>
         </scene>
     </scenes>
 </document>
