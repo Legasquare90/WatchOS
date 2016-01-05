@@ -25,14 +25,14 @@
                                 <segue destination="maT-sk-g2V" kind="push" id="Wsx-8H-OQ5"/>
                             </connections>
                         </button>
-                        <button width="1" alignment="left" title="Stack" id="mFd-hC-MKR">
-                            <connections>
-                                <segue destination="0Ro-ud-3It" kind="push" id="41u-Wg-eoj"/>
-                            </connections>
-                        </button>
-                        <button width="1" alignment="left" title="Sequence" id="5Xk-PX-I5V">
+                        <button width="1" alignment="left" title="Stack" id="5Xk-PX-I5V">
                             <connections>
                                 <segue destination="BED-1o-VOW" kind="push" id="dHM-2B-h9z"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Sequence" id="mFd-hC-MKR">
+                            <connections>
+                                <segue destination="0Ro-ud-3It" kind="push" id="41u-Wg-eoj"/>
                             </connections>
                         </button>
                         <button width="1" alignment="left" title="PickerAnimations" id="ICS-5n-yRo">
@@ -45,75 +45,114 @@
             </objects>
             <point key="canvasLocation" x="89" y="298"/>
         </scene>
-        <!--Interface Controller-->
+        <!--List Simple Interface Controller-->
         <scene sceneID="NPa-9P-PZE">
             <objects>
-                <controller id="cxB-DO-exN">
+                <controller id="cxB-DO-exN" customClass="ListSimpleInterfaceController" customModule="Exercise8_WatchKit_Extension">
                     <items>
-                        <picker height="0.5" alignment="left" id="G9d-bL-mLo"/>
-                        <picker height="0.5" alignment="left" id="58y-r1-PY8"/>
+                        <picker height="0.5" alignment="left" id="G9d-bL-mLo">
+                            <connections>
+                                <action selector="firstPickerChangeValue:" destination="cxB-DO-exN" id="HbC-bs-Eh5"/>
+                            </connections>
+                        </picker>
+                        <picker height="0.5" alignment="left" id="58y-r1-PY8">
+                            <connections>
+                                <action selector="secondPickerChangeValue:" destination="cxB-DO-exN" id="5r0-AO-qtf"/>
+                            </connections>
+                        </picker>
                     </items>
+                    <connections>
+                        <outlet property="firstPicker" destination="G9d-bL-mLo" id="mqT-py-nPy"/>
+                        <outlet property="secondPicker" destination="58y-r1-PY8" id="wdQ-VT-fQb"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="349" y="153"/>
         </scene>
-        <!--Interface Controller-->
+        <!--List Caption Interface Controller-->
         <scene sceneID="L2y-Lc-2f7">
             <objects>
-                <controller id="maT-sk-g2V">
+                <controller id="maT-sk-g2V" customClass="ListCaptionInterfaceController" customModule="Exercise8_WatchKit_Extension">
                     <items>
                         <picker height="0.5" alignment="left" focusStyle="sequence" id="iSh-tt-X1h"/>
                         <picker height="0.5" alignment="left" focusStyle="sequence" id="xZP-3y-egw"/>
                     </items>
+                    <connections>
+                        <outlet property="firstPicker" destination="iSh-tt-X1h" id="VXD-24-cgE"/>
+                        <outlet property="secondPicker" destination="xZP-3y-egw" id="TuX-uc-91g"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="740" y="153"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Stack Interface Controller-->
         <scene sceneID="bNx-L5-igX">
             <objects>
-                <controller id="BED-1o-VOW">
+                <controller id="BED-1o-VOW" customClass="StackInterfaceController" customModule="Exercise8_WatchKit_Extension">
                     <items>
-                        <picker height="100" alignment="left" style="sequence" id="RTE-fv-qRO"/>
+                        <picker height="100" alignment="left" style="stack" id="RTE-fv-qRO"/>
                     </items>
+                    <connections>
+                        <outlet property="picker" destination="RTE-fv-qRO" id="fRr-Mt-VM0"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="542" y="422"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Picker Animation Interface Controller-->
         <scene sceneID="6CU-0z-RWv">
             <objects>
-                <controller id="mf0-8H-XG6">
+                <controller id="mf0-8H-XG6" customClass="PickerAnimationInterfaceController" customModule="Exercise8_WatchKit_Extension">
                     <items>
                         <group width="1" height="0.90000000000000002" alignment="left" backgroundImage="activity-0" id="RIT-DT-0Cx">
                             <items>
-                                <picker width="50" height="50" alignment="center" verticalAlignment="center" id="489-yK-aL5"/>
+                                <group width="100" height="100" alignment="center" verticalAlignment="center" backgroundImage="activity-0" id="vn8-eI-0ev">
+                                    <items>
+                                        <picker width="50" height="50" alignment="center" verticalAlignment="center" style="sequence" id="489-yK-aL5">
+                                            <connections>
+                                                <action selector="pickerChangesValue:" destination="mf0-8H-XG6" id="edv-J5-BkS"/>
+                                            </connections>
+                                        </picker>
+                                    </items>
+                                </group>
                             </items>
                         </group>
                     </items>
+                    <connections>
+                        <outlet property="group" destination="RIT-DT-0Cx" id="gdt-ct-Ish"/>
+                        <outlet property="picker" destination="489-yK-aL5" id="OBU-HI-EBv"/>
+                        <outlet property="secondGroup" destination="vn8-eI-0ev" id="aUG-8e-RAq"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="740" y="422"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Sequence Interface Controller-->
         <scene sceneID="JI9-0v-Gqu">
             <objects>
-                <controller id="0Ro-ud-3It">
+                <controller id="0Ro-ud-3It" customClass="SequenceInterfaceController" customModule="Exercise8_WatchKit_Extension">
                     <items>
-                        <picker height="100" alignment="left" style="stack" id="HgB-Ds-q9T"/>
+                        <picker height="100" alignment="left" style="sequence" id="HgB-Ds-q9T"/>
                     </items>
+                    <connections>
+                        <outlet property="picker" destination="HgB-Ds-q9T" id="YaL-eQ-rlu"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="349" y="422"/>
         </scene>
-        <!--Interface Controller-->
+        <!--List Outline Interface Controller-->
         <scene sceneID="v8e-fJ-uwx">
             <objects>
-                <controller id="jFD-ZU-kqB">
+                <controller id="jFD-ZU-kqB" customClass="ListOutlineInterfaceController" customModule="Exercise8_WatchKit_Extension">
                     <items>
                         <picker height="0.5" alignment="left" focusStyle="stack" id="aKF-iC-BPO"/>
                         <picker height="0.5" alignment="left" focusStyle="stack" id="p0c-J0-KW9"/>
                     </items>
+                    <connections>
+                        <outlet property="firstPicker" destination="aKF-iC-BPO" id="7o5-7f-Zg7"/>
+                        <outlet property="secondPicker" destination="p0c-J0-KW9" id="1sg-oa-oWv"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="542" y="153"/>

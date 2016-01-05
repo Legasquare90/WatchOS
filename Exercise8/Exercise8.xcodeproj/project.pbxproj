@@ -21,6 +21,12 @@
 		A9357C461C38696700AF7E37 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9357C451C38696700AF7E37 /* InterfaceController.swift */; };
 		A9357C481C38696700AF7E37 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9357C471C38696700AF7E37 /* ExtensionDelegate.swift */; };
 		A9357C4A1C38696700AF7E37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9357C491C38696700AF7E37 /* Assets.xcassets */; };
+		A9357C6B1C3ACE7500AF7E37 /* ListSimpleInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9357C6A1C3ACE7500AF7E37 /* ListSimpleInterfaceController.swift */; };
+		A9357C6D1C3ACE8800AF7E37 /* ListOutlineInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9357C6C1C3ACE8800AF7E37 /* ListOutlineInterfaceController.swift */; };
+		A9357C6F1C3ACE9500AF7E37 /* ListCaptionInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9357C6E1C3ACE9500AF7E37 /* ListCaptionInterfaceController.swift */; };
+		A9357C711C3ACEA500AF7E37 /* StackInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9357C701C3ACEA500AF7E37 /* StackInterfaceController.swift */; };
+		A9357C731C3ACEB100AF7E37 /* SequenceInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9357C721C3ACEB100AF7E37 /* SequenceInterfaceController.swift */; };
+		A9357C751C3ACF4800AF7E37 /* PickerAnimationInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9357C741C3ACF4800AF7E37 /* PickerAnimationInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +108,12 @@
 		A9357C471C38696700AF7E37 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		A9357C491C38696700AF7E37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9357C4B1C38696700AF7E37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9357C6A1C3ACE7500AF7E37 /* ListSimpleInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListSimpleInterfaceController.swift; sourceTree = "<group>"; };
+		A9357C6C1C3ACE8800AF7E37 /* ListOutlineInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOutlineInterfaceController.swift; sourceTree = "<group>"; };
+		A9357C6E1C3ACE9500AF7E37 /* ListCaptionInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCaptionInterfaceController.swift; sourceTree = "<group>"; };
+		A9357C701C3ACEA500AF7E37 /* StackInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackInterfaceController.swift; sourceTree = "<group>"; };
+		A9357C721C3ACEB100AF7E37 /* SequenceInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequenceInterfaceController.swift; sourceTree = "<group>"; };
+		A9357C741C3ACF4800AF7E37 /* PickerAnimationInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerAnimationInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +218,12 @@
 			children = (
 				A9357C451C38696700AF7E37 /* InterfaceController.swift */,
 				A9357C471C38696700AF7E37 /* ExtensionDelegate.swift */,
+				A9357C6A1C3ACE7500AF7E37 /* ListSimpleInterfaceController.swift */,
+				A9357C6C1C3ACE8800AF7E37 /* ListOutlineInterfaceController.swift */,
+				A9357C6E1C3ACE9500AF7E37 /* ListCaptionInterfaceController.swift */,
+				A9357C701C3ACEA500AF7E37 /* StackInterfaceController.swift */,
+				A9357C721C3ACEB100AF7E37 /* SequenceInterfaceController.swift */,
+				A9357C741C3ACF4800AF7E37 /* PickerAnimationInterfaceController.swift */,
 				A9357C491C38696700AF7E37 /* Assets.xcassets */,
 				A9357C4B1C38696700AF7E37 /* Info.plist */,
 			);
@@ -434,8 +452,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9357C711C3ACEA500AF7E37 /* StackInterfaceController.swift in Sources */,
+				A9357C6D1C3ACE8800AF7E37 /* ListOutlineInterfaceController.swift in Sources */,
 				A9357C481C38696700AF7E37 /* ExtensionDelegate.swift in Sources */,
+				A9357C6B1C3ACE7500AF7E37 /* ListSimpleInterfaceController.swift in Sources */,
+				A9357C6F1C3ACE9500AF7E37 /* ListCaptionInterfaceController.swift in Sources */,
 				A9357C461C38696700AF7E37 /* InterfaceController.swift in Sources */,
+				A9357C751C3ACF4800AF7E37 /* PickerAnimationInterfaceController.swift in Sources */,
+				A9357C731C3ACEB100AF7E37 /* SequenceInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
