@@ -15,10 +15,15 @@
                                 <segue destination="8A7-QY-s4m" kind="push" id="VnB-O1-qkh"/>
                             </connections>
                         </button>
+                        <button width="1" alignment="left" title="transferUserInfo" id="8V0-tx-2fb">
+                            <connections>
+                                <segue destination="PUO-Q3-2A6" kind="push" id="rCQ-Xc-fuP"/>
+                            </connections>
+                        </button>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="163" y="344"/>
+            <point key="canvasLocation" x="97" y="362"/>
         </scene>
         <!--Update Application Context Interface Controller-->
         <scene sceneID="feq-1x-urx">
@@ -71,6 +76,58 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="386" y="192"/>
+        </scene>
+        <!--Transfer User Info Interface Controller-->
+        <scene sceneID="CVF-vc-OcZ">
+            <objects>
+                <controller id="PUO-Q3-2A6" customClass="TransferUserInfoInterfaceController" customModule="Exercise9_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="PwC-Bg-wKl">
+                            <items>
+                                <button width="0.5" alignment="left" title="🍎" id="qcT-oE-ssu">
+                                    <connections>
+                                        <action selector="appleAction" destination="PUO-Q3-2A6" id="at6-6E-Hxo"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" alignment="left" title="🍐" id="g2L-p4-5ni">
+                                    <connections>
+                                        <action selector="pearAction" destination="PUO-Q3-2A6" id="0BT-gF-qfG"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="BdE-wt-AvI">
+                            <items>
+                                <button width="0.5" alignment="left" title="🍊" id="trM-dD-eGk">
+                                    <connections>
+                                        <action selector="orangeAction" destination="PUO-Q3-2A6" id="axT-am-Nbn"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" alignment="left" title="🍌" id="s0H-kh-OVN">
+                                    <connections>
+                                        <action selector="bananaAction" destination="PUO-Q3-2A6" id="xk2-k9-7Pu"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="fud-h6-98n">
+                            <items>
+                                <button width="0.5" alignment="left" title="🍒" id="tBC-oA-lvE">
+                                    <connections>
+                                        <action selector="cherryAction" destination="PUO-Q3-2A6" id="YWn-C4-HIn"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" alignment="left" title="🍍" id="PW5-IU-qJ5">
+                                    <connections>
+                                        <action selector="pineappleAction" destination="PUO-Q3-2A6" id="IBY-IQ-F9D"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="386" y="428"/>
         </scene>
     </scenes>
 </document>

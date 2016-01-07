@@ -13,6 +13,8 @@ class ViewController: UIViewController, WCSessionDelegate {
 
     @IBOutlet weak var updateApplicationContextLabel: UILabel!
     
+    @IBOutlet weak var transferUserInfoLabel: UILabel!
+    
     let session: WCSession? = WCSession.isSupported() ? WCSession.defaultSession() : nil
     
     override func viewDidLoad() {
@@ -32,6 +34,16 @@ class ViewController: UIViewController, WCSessionDelegate {
         dispatch_async(dispatch_get_main_queue()) {
             if let emoji = emoji {
                 self.updateApplicationContextLabel.text = "Last emoji: \(emoji)"
+            }
+        }
+    }
+    
+    func session(session: WCSession, didReceiveUserInfo userInfo: [String : AnyObject]) {
+        let emoji = userInfo["emoji"] as? String
+        
+        dispatch_async(dispatch_get_main_queue()) {
+            if let emoji = emoji {
+                self.transferUserInfoLabel.text = "Last emoji: \(emoji)"
             }
         }
     }

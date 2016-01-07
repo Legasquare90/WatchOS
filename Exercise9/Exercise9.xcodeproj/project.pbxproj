@@ -22,6 +22,7 @@
 		A9357CBE1C3BE3D700AF7E37 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9357CBD1C3BE3D700AF7E37 /* ExtensionDelegate.swift */; };
 		A9357CC01C3BE3D700AF7E37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9357CBF1C3BE3D700AF7E37 /* Assets.xcassets */; };
 		A9357CD61C3E8D0A00AF7E37 /* UpdateApplicationContextInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9357CD51C3E8D0900AF7E37 /* UpdateApplicationContextInterfaceController.swift */; };
+		A9357CD81C3EBAE400AF7E37 /* TransferUserInfoInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9357CD71C3EBAE400AF7E37 /* TransferUserInfoInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +105,7 @@
 		A9357CBF1C3BE3D700AF7E37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9357CC11C3BE3D700AF7E37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9357CD51C3E8D0900AF7E37 /* UpdateApplicationContextInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateApplicationContextInterfaceController.swift; sourceTree = "<group>"; };
+		A9357CD71C3EBAE400AF7E37 /* TransferUserInfoInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferUserInfoInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +213,7 @@
 				A9357CBF1C3BE3D700AF7E37 /* Assets.xcassets */,
 				A9357CC11C3BE3D700AF7E37 /* Info.plist */,
 				A9357CD51C3E8D0900AF7E37 /* UpdateApplicationContextInterfaceController.swift */,
+				A9357CD71C3EBAE400AF7E37 /* TransferUserInfoInterfaceController.swift */,
 			);
 			path = "Exercise9 WatchKit Extension";
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9357CBE1C3BE3D700AF7E37 /* ExtensionDelegate.swift in Sources */,
+				A9357CD81C3EBAE400AF7E37 /* TransferUserInfoInterfaceController.swift in Sources */,
 				A9357CD61C3E8D0A00AF7E37 /* UpdateApplicationContextInterfaceController.swift in Sources */,
 				A9357CBC1C3BE3D700AF7E37 /* InterfaceController.swift in Sources */,
 			);
