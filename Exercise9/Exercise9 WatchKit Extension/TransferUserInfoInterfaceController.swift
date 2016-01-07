@@ -49,4 +49,9 @@ class TransferUserInfoInterfaceController: WKInterfaceController, WCSessionDeleg
         let dict = ["emoji": emoji]
         session?.transferUserInfo(dict)
     }
+    
+    func session(session: WCSession, didFinishUserInfoTransfer userInfoTransfer: WCSessionUserInfoTransfer, error: NSError?) {
+        print("error: \(error?.localizedDescription)")
+    }
+    
 }
