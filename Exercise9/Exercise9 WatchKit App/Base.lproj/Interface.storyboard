@@ -20,10 +20,15 @@
                                 <segue destination="PUO-Q3-2A6" kind="push" id="rCQ-Xc-fuP"/>
                             </connections>
                         </button>
+                        <button width="1" alignment="left" title="transferFile" id="n6e-6L-0Q3">
+                            <connections>
+                                <segue destination="8eD-Zp-RzG" kind="push" id="93B-ZU-LRM"/>
+                            </connections>
+                        </button>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="97" y="362"/>
+            <point key="canvasLocation" x="88" y="459"/>
         </scene>
         <!--Update Application Context Interface Controller-->
         <scene sceneID="feq-1x-urx">
@@ -75,7 +80,29 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="386" y="192"/>
+            <point key="canvasLocation" x="376" y="-1"/>
+        </scene>
+        <!--Transfer File Interface Controller-->
+        <scene sceneID="Xuu-07-Ks6">
+            <objects>
+                <controller id="8eD-Zp-RzG" customClass="TransferFileInterfaceController" customModule="Exercise9_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="Sin imagen" id="ndl-yT-6wZ"/>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Actualizar" id="lfW-TH-k77">
+                            <connections>
+                                <action selector="updateButtonAction" destination="8eD-Zp-RzG" id="m7C-iJ-jEQ"/>
+                            </connections>
+                        </button>
+                        <imageView alignment="left" hidden="YES" id="iEh-8x-giK"/>
+                    </items>
+                    <connections>
+                        <outlet property="errorLabel" destination="ndl-yT-6wZ" id="d50-qq-JE5"/>
+                        <outlet property="image" destination="iEh-8x-giK" id="Sf6-i6-DCF"/>
+                        <outlet property="updateButton" destination="lfW-TH-k77" id="KdH-6d-LMF"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="376" y="459"/>
         </scene>
         <!--Transfer User Info Interface Controller-->
         <scene sceneID="CVF-vc-OcZ">
@@ -127,7 +154,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="386" y="428"/>
+            <point key="canvasLocation" x="376" y="228"/>
         </scene>
     </scenes>
 </document>

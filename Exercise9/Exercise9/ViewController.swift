@@ -23,11 +23,11 @@ class ViewController: UIViewController, WCSessionDelegate {
         session?.activateSession()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func sendPhotoAction(sender: AnyObject) {
+        let filePath = NSURL.fileURLWithPath(NSBundle.mainBundle().pathForResource("Apple Watch", ofType: "jpg")!)
+        session?.transferFile(filePath, metadata: nil)
     }
-
+    
     func session(session: WCSession, didReceiveApplicationContext applicationContext: [String : AnyObject]) {
         let emoji = applicationContext["emoji"] as? String
 
@@ -46,6 +46,10 @@ class ViewController: UIViewController, WCSessionDelegate {
                 self.transferUserInfoLabel.text = "Last emoji: \(emoji)"
             }
         }
+    }
+    
+    func session(session: WCSession, didFinishFileTransfer fileTransfer: WCSessionFileTransfer, error: NSError?) {
+        print("error: \(error?.localizedDescription)")
     }
     
 }

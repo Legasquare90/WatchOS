@@ -23,6 +23,8 @@
 		A9357CC01C3BE3D700AF7E37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9357CBF1C3BE3D700AF7E37 /* Assets.xcassets */; };
 		A9357CD61C3E8D0A00AF7E37 /* UpdateApplicationContextInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9357CD51C3E8D0900AF7E37 /* UpdateApplicationContextInterfaceController.swift */; };
 		A9357CD81C3EBAE400AF7E37 /* TransferUserInfoInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9357CD71C3EBAE400AF7E37 /* TransferUserInfoInterfaceController.swift */; };
+		A9357CDA1C3EC81600AF7E37 /* Apple Watch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A9357CD91C3EC81600AF7E37 /* Apple Watch.jpg */; };
+		A9357CDC1C3EC90400AF7E37 /* TransferFileInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9357CDB1C3EC90400AF7E37 /* TransferFileInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +108,8 @@
 		A9357CC11C3BE3D700AF7E37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9357CD51C3E8D0900AF7E37 /* UpdateApplicationContextInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateApplicationContextInterfaceController.swift; sourceTree = "<group>"; };
 		A9357CD71C3EBAE400AF7E37 /* TransferUserInfoInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferUserInfoInterfaceController.swift; sourceTree = "<group>"; };
+		A9357CD91C3EC81600AF7E37 /* Apple Watch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Apple Watch.jpg"; sourceTree = "<group>"; };
+		A9357CDB1C3EC90400AF7E37 /* TransferFileInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferFileInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +174,7 @@
 				A9357C821C3BE3D700AF7E37 /* AppDelegate.swift */,
 				A9357C841C3BE3D700AF7E37 /* ViewController.swift */,
 				A9357C861C3BE3D700AF7E37 /* Main.storyboard */,
+				A9357CD91C3EC81600AF7E37 /* Apple Watch.jpg */,
 				A9357C891C3BE3D700AF7E37 /* Assets.xcassets */,
 				A9357C8B1C3BE3D700AF7E37 /* LaunchScreen.storyboard */,
 				A9357C8E1C3BE3D700AF7E37 /* Info.plist */,
@@ -214,6 +219,7 @@
 				A9357CC11C3BE3D700AF7E37 /* Info.plist */,
 				A9357CD51C3E8D0900AF7E37 /* UpdateApplicationContextInterfaceController.swift */,
 				A9357CD71C3EBAE400AF7E37 /* TransferUserInfoInterfaceController.swift */,
+				A9357CDB1C3EC90400AF7E37 /* TransferFileInterfaceController.swift */,
 			);
 			path = "Exercise9 WatchKit Extension";
 			sourceTree = "<group>";
@@ -374,6 +380,7 @@
 				A9357C8D1C3BE3D700AF7E37 /* LaunchScreen.storyboard in Resources */,
 				A9357C8A1C3BE3D700AF7E37 /* Assets.xcassets in Resources */,
 				A9357C881C3BE3D700AF7E37 /* Main.storyboard in Resources */,
+				A9357CDA1C3EC81600AF7E37 /* Apple Watch.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +449,7 @@
 			files = (
 				A9357CBE1C3BE3D700AF7E37 /* ExtensionDelegate.swift in Sources */,
 				A9357CD81C3EBAE400AF7E37 /* TransferUserInfoInterfaceController.swift in Sources */,
+				A9357CDC1C3EC90400AF7E37 /* TransferFileInterfaceController.swift in Sources */,
 				A9357CD61C3E8D0A00AF7E37 /* UpdateApplicationContextInterfaceController.swift in Sources */,
 				A9357CBC1C3BE3D700AF7E37 /* InterfaceController.swift in Sources */,
 			);
