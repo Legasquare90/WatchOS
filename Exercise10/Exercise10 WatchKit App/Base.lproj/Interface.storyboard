@@ -1,15 +1,140 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="13E28" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Exercise10_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" title="Animación básica" id="Vpn-f4-Rgh">
+                            <connections>
+                                <segue destination="eMK-cU-roi" kind="push" id="LB2-zL-W1B"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Animación controlada " id="S5a-aj-Rjy">
+                            <connections>
+                                <segue destination="s50-gn-a2Y" kind="push" id="4MR-hi-DyC"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Animación de vistas" id="32W-p3-dDJ">
+                            <connections>
+                                <segue destination="KhH-yh-0MM" kind="push" id="zuO-JK-wDD"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
             </objects>
+            <point key="canvasLocation" x="179" y="337"/>
+        </scene>
+        <!--Animation Interface Controller-->
+        <scene sceneID="g8j-Cs-Pyn">
+            <objects>
+                <controller id="eMK-cU-roi" customClass="AnimationInterfaceController" customModule="Exercise10_WatchKit_Extension">
+                    <items>
+                        <imageView alignment="center" image="Animation0" id="XV8-Nl-x8B"/>
+                        <group width="1" alignment="left" id="Ae0-XW-GUP">
+                            <items>
+                                <button width="0.5" alignment="left" title="Start" id="v0f-P1-F34">
+                                    <connections>
+                                        <action selector="startAction" destination="eMK-cU-roi" id="l5l-fS-pHz"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" alignment="left" title="Stop" id="lJh-yt-qTO">
+                                    <connections>
+                                        <action selector="stopAction" destination="eMK-cU-roi" id="AUV-y9-awA"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="image" destination="XV8-Nl-x8B" id="48A-So-boi"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="399" y="337"/>
+        </scene>
+        <!--View Animations Interface Controller-->
+        <scene sceneID="0YW-im-jdA">
+            <objects>
+                <controller id="KhH-yh-0MM" customClass="ViewAnimationsInterfaceController" customModule="Exercise10_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="0.59999999999999998" alignment="left" id="SHN-wr-Gef">
+                            <items>
+                                <imageView width="50" height="50" alignment="center" verticalAlignment="center" image="upsa" id="fx1-ow-aik"/>
+                            </items>
+                        </group>
+                        <group width="1" height="0.20000000000000001" alignment="left" id="6eO-Rj-Q7d">
+                            <items>
+                                <button width="0.33000000000000002" height="1" alignment="left" title="Alpha" id="oL3-MA-9cd">
+                                    <fontDescription key="font" type="system" pointSize="11"/>
+                                    <connections>
+                                        <action selector="alphaAction" destination="KhH-yh-0MM" id="qZM-I7-dg2"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33000000000000002" height="1" alignment="left" title="Size" id="xwd-vR-7lU">
+                                    <fontDescription key="font" type="system" pointSize="11"/>
+                                    <connections>
+                                        <action selector="sizeAction" destination="KhH-yh-0MM" id="tUO-3f-XLo"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33000000000000002" height="1" alignment="left" title="Align" id="NQu-id-csf">
+                                    <fontDescription key="font" type="system" pointSize="11"/>
+                                    <connections>
+                                        <action selector="alignmentAction" destination="KhH-yh-0MM" id="TIg-p4-h8p"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.20000000000000001" alignment="left" id="d73-oC-U9H">
+                            <items>
+                                <button width="0.5" height="1" alignment="left" title="Inset" id="gOE-5n-PB1">
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                    <connections>
+                                        <action selector="insetAction" destination="KhH-yh-0MM" id="KaG-kw-eGG"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" height="1" alignment="left" title="Back" id="2LX-SH-OWs">
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                    <connections>
+                                        <action selector="backgroundAction" destination="KhH-yh-0MM" id="zdB-Pv-jVe"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="groupView" destination="SHN-wr-Gef" id="hSJ-Tg-CDb"/>
+                        <outlet property="imageView" destination="fx1-ow-aik" id="Lrn-8G-2nG"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="179" y="655"/>
+        </scene>
+        <!--Controlled Animation Interface Controller-->
+        <scene sceneID="thH-jq-UfK">
+            <objects>
+                <controller id="s50-gn-a2Y" customClass="ControlledAnimationInterfaceController" customModule="Exercise10_WatchKit_Extension">
+                    <items>
+                        <imageView alignment="center" image="Animation0" id="SoA-1g-dU2"/>
+                        <slider width="1" alignment="left" value="0.40000000000000002" minimum="-0.40000000000000002" steps="7" id="ius-Vh-eK3">
+                            <connections>
+                                <action selector="sliderChangeValue:" destination="s50-gn-a2Y" id="e0O-nT-9pT"/>
+                            </connections>
+                        </slider>
+                        <label alignment="center" text="Vel: 0.4" id="ibj-IP-a95"/>
+                    </items>
+                    <connections>
+                        <outlet property="image" destination="SoA-1g-dU2" id="egw-yy-syA"/>
+                        <outlet property="speedLabel" destination="ibj-IP-a95" id="tcU-Dk-FHm"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="399" y="655.25"/>
         </scene>
     </scenes>
 </document>
