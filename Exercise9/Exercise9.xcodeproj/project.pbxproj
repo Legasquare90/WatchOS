@@ -25,6 +25,7 @@
 		A9357CD81C3EBAE400AF7E37 /* TransferUserInfoInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9357CD71C3EBAE400AF7E37 /* TransferUserInfoInterfaceController.swift */; };
 		A9357CDA1C3EC81600AF7E37 /* Apple Watch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A9357CD91C3EC81600AF7E37 /* Apple Watch.jpg */; };
 		A9357CDC1C3EC90400AF7E37 /* TransferFileInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9357CDB1C3EC90400AF7E37 /* TransferFileInterfaceController.swift */; };
+		A9357CE01C3FCAF800AF7E37 /* SendMessageInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9357CDF1C3FCAF800AF7E37 /* SendMessageInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +111,7 @@
 		A9357CD71C3EBAE400AF7E37 /* TransferUserInfoInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferUserInfoInterfaceController.swift; sourceTree = "<group>"; };
 		A9357CD91C3EC81600AF7E37 /* Apple Watch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Apple Watch.jpg"; sourceTree = "<group>"; };
 		A9357CDB1C3EC90400AF7E37 /* TransferFileInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferFileInterfaceController.swift; sourceTree = "<group>"; };
+		A9357CDF1C3FCAF800AF7E37 /* SendMessageInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendMessageInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,15 +215,32 @@
 		A9357CBA1C3BE3D700AF7E37 /* Exercise9 WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				A9357CDD1C3FCA7600AF7E37 /* Background Transfer */,
+				A9357CDE1C3FCA9600AF7E37 /* Interactive Messages */,
 				A9357CBB1C3BE3D700AF7E37 /* InterfaceController.swift */,
 				A9357CBD1C3BE3D700AF7E37 /* ExtensionDelegate.swift */,
 				A9357CBF1C3BE3D700AF7E37 /* Assets.xcassets */,
 				A9357CC11C3BE3D700AF7E37 /* Info.plist */,
+			);
+			path = "Exercise9 WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		A9357CDD1C3FCA7600AF7E37 /* Background Transfer */ = {
+			isa = PBXGroup;
+			children = (
 				A9357CD51C3E8D0900AF7E37 /* UpdateApplicationContextInterfaceController.swift */,
 				A9357CD71C3EBAE400AF7E37 /* TransferUserInfoInterfaceController.swift */,
 				A9357CDB1C3EC90400AF7E37 /* TransferFileInterfaceController.swift */,
 			);
-			path = "Exercise9 WatchKit Extension";
+			name = "Background Transfer";
+			sourceTree = "<group>";
+		};
+		A9357CDE1C3FCA9600AF7E37 /* Interactive Messages */ = {
+			isa = PBXGroup;
+			children = (
+				A9357CDF1C3FCAF800AF7E37 /* SendMessageInterfaceController.swift */,
+			);
+			name = "Interactive Messages";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -448,6 +467,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9357CBE1C3BE3D700AF7E37 /* ExtensionDelegate.swift in Sources */,
+				A9357CE01C3FCAF800AF7E37 /* SendMessageInterfaceController.swift in Sources */,
 				A9357CD81C3EBAE400AF7E37 /* TransferUserInfoInterfaceController.swift in Sources */,
 				A9357CDC1C3EC90400AF7E37 /* TransferFileInterfaceController.swift in Sources */,
 				A9357CD61C3E8D0A00AF7E37 /* UpdateApplicationContextInterfaceController.swift in Sources */,

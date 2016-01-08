@@ -25,6 +25,11 @@
                                 <segue destination="8eD-Zp-RzG" kind="push" id="93B-ZU-LRM"/>
                             </connections>
                         </button>
+                        <button width="1" alignment="left" title="sendMessage" id="IVh-Ux-WsG">
+                            <connections>
+                                <segue destination="q8P-oc-y73" kind="push" id="ogM-EO-QlV"/>
+                            </connections>
+                        </button>
                     </items>
                 </controller>
             </objects>
@@ -103,6 +108,41 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="376" y="459"/>
+        </scene>
+        <!--Send Message Interface Controller-->
+        <scene sceneID="1Vi-ye-B5V">
+            <objects>
+                <controller id="q8P-oc-y73" customClass="SendMessageInterfaceController" customModule="Exercise9_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="Label" id="d4d-tv-Qtc"/>
+                        <group width="1" alignment="left" id="WPY-ET-nzx">
+                            <items>
+                                <button width="0.5" alignment="left" title="Hit" id="k4g-0L-CfV">
+                                    <connections>
+                                        <action selector="hitAction" destination="q8P-oc-y73" id="GG2-fx-oa8"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" alignment="left" title="Clear" id="ajm-ta-EDS">
+                                    <connections>
+                                        <action selector="clearAction" destination="q8P-oc-y73" id="G1u-dr-on9"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="Save" id="Nkz-Uj-lCN">
+                            <connections>
+                                <action selector="saveAction" destination="q8P-oc-y73" id="QMm-tw-Qmr"/>
+                            </connections>
+                        </button>
+                        <label alignment="center" verticalAlignment="bottom" hidden="YES" text="Saved!" id="FcX-Wt-cT6"/>
+                    </items>
+                    <connections>
+                        <outlet property="counterLabel" destination="d4d-tv-Qtc" id="5mk-O0-dJb"/>
+                        <outlet property="savedLabel" destination="FcX-Wt-cT6" id="wX7-3F-Z1Q"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="376" y="696"/>
         </scene>
         <!--Transfer User Info Interface Controller-->
         <scene sceneID="CVF-vc-OcZ">

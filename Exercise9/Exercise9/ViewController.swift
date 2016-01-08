@@ -15,6 +15,8 @@ class ViewController: UIViewController, WCSessionDelegate {
     
     @IBOutlet weak var transferUserInfoLabel: UILabel!
     
+    @IBOutlet weak var sendMessageLabel: UILabel!
+    
     let session: WCSession? = WCSession.isSupported() ? WCSession.defaultSession() : nil
     
     override func viewDidLoad() {
@@ -50,6 +52,15 @@ class ViewController: UIViewController, WCSessionDelegate {
     
     func session(session: WCSession, didFinishFileTransfer fileTransfer: WCSessionFileTransfer, error: NSError?) {
         print("error: \(error?.localizedDescription)")
+    }
+    
+    func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
+        let counter = message["counter"] as! Int
+        dispatch_async(dispatch_get_main_queue()) {
+            self.sendMessageLabel.text = "\(counter)"
+        }
+        let dict = ["reply":"OK"]
+        replyHandler(dict)
     }
     
 }
