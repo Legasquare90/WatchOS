@@ -51,6 +51,13 @@
                                     <constraint firstAttribute="height" constant="1" id="c3A-md-bMc"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uWV-ao-VyB">
+                                <rect key="frame" x="90" y="307" width="421" height="1"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Eav-yI-Knf"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="52o-Jb-Xhm">
                                 <rect key="frame" x="90" y="164" width="421" height="1"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -90,7 +97,7 @@
                                     <constraint firstAttribute="width" constant="86" id="drn-IP-6Zh"/>
                                     <constraint firstAttribute="height" constant="30" id="usT-oq-Ogi"/>
                                 </constraints>
-                                <state key="normal" title="Enviar fotos"/>
+                                <state key="normal" title="Enviar foto"/>
                                 <connections>
                                     <action selector="sendPhotoAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XjL-td-gBA"/>
                                 </connections>
@@ -114,20 +121,37 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uWV-ao-VyB">
-                                <rect key="frame" x="90" y="307" width="421" height="1"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SendMessageData" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdH-iB-yAn">
+                                <rect key="frame" x="210" y="316" width="180" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="1" id="Eav-yI-Knf"/>
+                                    <constraint firstAttribute="width" constant="180" id="5rY-35-aNM"/>
+                                    <constraint firstAttribute="height" constant="21" id="X0S-A1-kFO"/>
                                 </constraints>
-                            </view>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzT-G6-REn">
+                                <rect key="frame" x="254" y="345" width="93" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="20Z-kO-uNy"/>
+                                    <constraint firstAttribute="width" constant="93" id="4GS-Fg-FJe"/>
+                                </constraints>
+                                <state key="normal" title="Enviar foto"/>
+                                <connections>
+                                    <action selector="sendPhotoInstantAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="md0-dX-8xU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="CtR-Hl-Mnl" firstAttribute="top" secondItem="ROn-GG-qpL" secondAttribute="bottom" constant="8" symbolic="YES" id="1cM-IZ-4EH"/>
+                            <constraint firstItem="kdH-iB-yAn" firstAttribute="centerX" secondItem="uWV-ao-VyB" secondAttribute="centerX" id="2Gn-pa-Prg"/>
                             <constraint firstItem="uWV-ao-VyB" firstAttribute="trailing" secondItem="gqI-iO-yI7" secondAttribute="trailing" id="6qS-Rd-K8z"/>
+                            <constraint firstItem="kdH-iB-yAn" firstAttribute="centerX" secondItem="uzT-G6-REn" secondAttribute="centerX" id="7c9-1u-CBQ"/>
                             <constraint firstItem="Bek-yD-bdr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="70" id="7de-VD-sjt"/>
                             <constraint firstItem="3KP-lM-W0Y" firstAttribute="centerX" secondItem="52o-Jb-Xhm" secondAttribute="centerX" id="8c9-j2-5t8"/>
+                            <constraint firstItem="kdH-iB-yAn" firstAttribute="top" secondItem="uWV-ao-VyB" secondAttribute="bottom" constant="8" symbolic="YES" id="8w7-dp-30Z"/>
                             <constraint firstItem="Phc-yB-ScF" firstAttribute="leading" secondItem="Fkx-v6-spT" secondAttribute="leading" id="FoE-6B-GVk"/>
                             <constraint firstItem="fcC-hv-VJu" firstAttribute="top" secondItem="52o-Jb-Xhm" secondAttribute="bottom" constant="8" symbolic="YES" id="Fqz-D7-kTC"/>
                             <constraint firstItem="upt-I4-ogL" firstAttribute="top" secondItem="gqI-iO-yI7" secondAttribute="bottom" constant="8" symbolic="YES" id="Fzf-Kb-gtR"/>
@@ -137,6 +161,7 @@
                             <constraint firstItem="Bek-yD-bdr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LDO-up-uEU"/>
                             <constraint firstItem="3KP-lM-W0Y" firstAttribute="centerX" secondItem="Fkx-v6-spT" secondAttribute="centerX" id="LXn-gM-axA"/>
                             <constraint firstItem="gqI-iO-yI7" firstAttribute="centerX" secondItem="0EB-IF-n4w" secondAttribute="centerX" id="NCA-aH-XYa"/>
+                            <constraint firstItem="uzT-G6-REn" firstAttribute="top" secondItem="kdH-iB-yAn" secondAttribute="bottom" constant="8" symbolic="YES" id="OJk-JU-xA9"/>
                             <constraint firstItem="3KP-lM-W0Y" firstAttribute="top" secondItem="Bek-yD-bdr" secondAttribute="bottom" constant="8" symbolic="YES" id="QDC-vd-Qdz"/>
                             <constraint firstItem="gqI-iO-yI7" firstAttribute="trailing" secondItem="52o-Jb-Xhm" secondAttribute="trailing" id="RqV-pN-hjm"/>
                             <constraint firstItem="CtR-Hl-Mnl" firstAttribute="centerX" secondItem="Bek-yD-bdr" secondAttribute="centerX" id="WG7-ri-lcO"/>

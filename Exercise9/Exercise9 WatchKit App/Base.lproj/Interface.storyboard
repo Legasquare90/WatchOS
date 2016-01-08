@@ -30,6 +30,11 @@
                                 <segue destination="q8P-oc-y73" kind="push" id="ogM-EO-QlV"/>
                             </connections>
                         </button>
+                        <button width="1" alignment="left" title="sendMessageData" id="Qyq-5a-eeb">
+                            <connections>
+                                <segue destination="XhT-Tr-TgL" kind="push" id="m88-HA-cg4"/>
+                            </connections>
+                        </button>
                     </items>
                 </controller>
             </objects>
@@ -108,6 +113,22 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="376" y="459"/>
+        </scene>
+        <!--Send Message Data Interface Controller-->
+        <scene sceneID="ymk-qI-GOR">
+            <objects>
+                <controller id="XhT-Tr-TgL" customClass="SendMessageDataInterfaceController" customModule="Exercise9_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="Sin imagen" id="bGC-IJ-jpr"/>
+                        <imageView alignment="center" hidden="YES" id="tN0-LM-8M0"/>
+                    </items>
+                    <connections>
+                        <outlet property="errorLabel" destination="bGC-IJ-jpr" id="esa-Fq-7CL"/>
+                        <outlet property="image" destination="tN0-LM-8M0" id="bLE-Cw-POx"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="376" y="926"/>
         </scene>
         <!--Send Message Interface Controller-->
         <scene sceneID="1Vi-ye-B5V">

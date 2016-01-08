@@ -30,6 +30,18 @@ class ViewController: UIViewController, WCSessionDelegate {
         session?.transferFile(filePath, metadata: nil)
     }
     
+    @IBAction func sendPhotoInstantAction(sender: AnyObject) {
+        let filePath = NSURL.fileURLWithPath(NSBundle.mainBundle().pathForResource("apple-128", ofType: "png")!)
+        let imageData = NSData(contentsOfURL: filePath)
+        if (session?.reachable == true) {
+            session?.sendMessageData(imageData!, replyHandler: nil, errorHandler: { (error: NSError) -> Void in
+                print("Error: \(error.localizedDescription)")
+            })
+        } else {
+            print("Session not reachable")
+        }
+    }
+    
     func session(session: WCSession, didReceiveApplicationContext applicationContext: [String : AnyObject]) {
         let emoji = applicationContext["emoji"] as? String
 
