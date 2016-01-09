@@ -24,6 +24,7 @@
 		A9357D471C40360C00AF7E37 /* AnimationInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9357D461C40360C00AF7E37 /* AnimationInterfaceController.swift */; };
 		A9357D491C40550000AF7E37 /* ControlledAnimationInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9357D481C40550000AF7E37 /* ControlledAnimationInterfaceController.swift */; };
 		A9357D4B1C40622100AF7E37 /* ViewAnimationsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9357D4A1C40622100AF7E37 /* ViewAnimationsInterfaceController.swift */; };
+		A9357D4D1C40923000AF7E37 /* CoreGraphicsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9357D4C1C40923000AF7E37 /* CoreGraphicsInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +109,7 @@
 		A9357D461C40360C00AF7E37 /* AnimationInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationInterfaceController.swift; sourceTree = "<group>"; };
 		A9357D481C40550000AF7E37 /* ControlledAnimationInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlledAnimationInterfaceController.swift; sourceTree = "<group>"; };
 		A9357D4A1C40622100AF7E37 /* ViewAnimationsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAnimationsInterfaceController.swift; sourceTree = "<group>"; };
+		A9357D4C1C40923000AF7E37 /* CoreGraphicsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreGraphicsInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +219,7 @@
 				A9357D461C40360C00AF7E37 /* AnimationInterfaceController.swift */,
 				A9357D481C40550000AF7E37 /* ControlledAnimationInterfaceController.swift */,
 				A9357D4A1C40622100AF7E37 /* ViewAnimationsInterfaceController.swift */,
+				A9357D4C1C40923000AF7E37 /* CoreGraphicsInterfaceController.swift */,
 			);
 			path = "Exercise10 WatchKit Extension";
 			sourceTree = "<group>";
@@ -448,6 +451,7 @@
 				A9357D4B1C40622100AF7E37 /* ViewAnimationsInterfaceController.swift in Sources */,
 				A9357D491C40550000AF7E37 /* ControlledAnimationInterfaceController.swift in Sources */,
 				A9357D2D1C40199100AF7E37 /* InterfaceController.swift in Sources */,
+				A9357D4D1C40923000AF7E37 /* CoreGraphicsInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -734,6 +738,7 @@
 				A9357D371C40199100AF7E37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A9357D391C40199100AF7E37 /* Build configuration list for PBXNativeTarget "Exercise10 WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -742,6 +747,7 @@
 				A9357D3B1C40199100AF7E37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A9357D3D1C40199100AF7E37 /* Build configuration list for PBXNativeTarget "Exercise10" */ = {
 			isa = XCConfigurationList;
@@ -750,6 +756,7 @@
 				A9357D3F1C40199100AF7E37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A9357D401C40199100AF7E37 /* Build configuration list for PBXNativeTarget "Exercise10Tests" */ = {
 			isa = XCConfigurationList;
@@ -758,6 +765,7 @@
 				A9357D421C40199100AF7E37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A9357D431C40199100AF7E37 /* Build configuration list for PBXNativeTarget "Exercise10UITests" */ = {
 			isa = XCConfigurationList;
@@ -766,6 +774,7 @@
 				A9357D451C40199100AF7E37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

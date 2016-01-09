@@ -25,6 +25,11 @@
                                 <segue destination="KhH-yh-0MM" kind="push" id="zuO-JK-wDD"/>
                             </connections>
                         </button>
+                        <button width="1" alignment="left" title="CoreGraphics" id="PBt-7G-DUC">
+                            <connections>
+                                <segue destination="9rK-uI-Zmw" kind="push" id="DPK-aL-OXb"/>
+                            </connections>
+                        </button>
                     </items>
                 </controller>
             </objects>
@@ -57,6 +62,20 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="399" y="337"/>
+        </scene>
+        <!--Core Graphics Interface Controller-->
+        <scene sceneID="LaI-HX-diQ">
+            <objects>
+                <controller id="9rK-uI-Zmw" customClass="CoreGraphicsInterfaceController" customModule="Exercise10_WatchKit_Extension">
+                    <items>
+                        <imageView width="100" height="100" alignment="center" verticalAlignment="center" id="gzY-ic-ltM"/>
+                    </items>
+                    <connections>
+                        <outlet property="image" destination="gzY-ic-ltM" id="t3P-yQ-yRg"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-12" y="655"/>
         </scene>
         <!--View Animations Interface Controller-->
         <scene sceneID="0YW-im-jdA">
