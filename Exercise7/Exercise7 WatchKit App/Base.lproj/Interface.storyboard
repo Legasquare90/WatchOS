@@ -246,5 +246,25 @@
             </objects>
             <point key="canvasLocation" x="520" y="618.5"/>
         </scene>
+        <!--Pedometer-->
+        <scene sceneID="AFD-Gk-Bf1">
+            <objects>
+                <controller identifier="Pedometer" id="i9D-ul-9fM" customClass="PedometerInterfaceController" customModule="Exercise7_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Label" id="BZb-uK-V7E"/>
+                        <label alignment="left" text="Label" id="qej-BP-U6Q"/>
+                        <label alignment="left" text="Label" id="G9A-A6-BSi"/>
+                        <label alignment="left" text="Label" id="bDg-5e-Pi4"/>
+                    </items>
+                    <connections>
+                        <outlet property="distanceLabel" destination="qej-BP-U6Q" id="R9y-LQ-KuJ"/>
+                        <outlet property="floorAscendedLabel" destination="G9A-A6-BSi" id="Q2e-Qn-avV"/>
+                        <outlet property="floorDescendedLabel" destination="bDg-5e-Pi4" id="e8R-5i-aoo"/>
+                        <outlet property="stepsLabel" destination="BZb-uK-V7E" id="gRH-2v-1QQ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="696" y="613"/>
+        </scene>
     </scenes>
 </document>

@@ -19,6 +19,7 @@
 		A9357BFF1C383D5C00AF7E37 /* AudioRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9357BFE1C383D5C00AF7E37 /* AudioRowController.swift */; };
 		A9357C601C39B3E900AF7E37 /* PhoneInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9357C5F1C39B3E900AF7E37 /* PhoneInterfaceController.swift */; };
 		A9357C621C39BD6F00AF7E37 /* KeyboardInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9357C611C39BD6F00AF7E37 /* KeyboardInterfaceController.swift */; };
+		A9357D501C4098D400AF7E37 /* PedometerInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9357D4F1C4098D400AF7E37 /* PedometerInterfaceController.swift */; };
 		A9BBE3371C32FAC2005CBE91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BBE3361C32FAC2005CBE91 /* AppDelegate.swift */; };
 		A9BBE3391C32FAC2005CBE91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BBE3381C32FAC2005CBE91 /* ViewController.swift */; };
 		A9BBE33C1C32FAC2005CBE91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9BBE33A1C32FAC2005CBE91 /* Main.storyboard */; };
@@ -106,6 +107,7 @@
 		A9357BFE1C383D5C00AF7E37 /* AudioRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioRowController.swift; sourceTree = "<group>"; };
 		A9357C5F1C39B3E900AF7E37 /* PhoneInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneInterfaceController.swift; sourceTree = "<group>"; };
 		A9357C611C39BD6F00AF7E37 /* KeyboardInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardInterfaceController.swift; sourceTree = "<group>"; };
+		A9357D4F1C4098D400AF7E37 /* PedometerInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PedometerInterfaceController.swift; sourceTree = "<group>"; };
 		A9BBE3331C32FAC2005CBE91 /* Exercise7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exercise7.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9BBE3361C32FAC2005CBE91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9BBE3381C32FAC2005CBE91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -250,6 +252,14 @@
 			name = Keyboard;
 			sourceTree = "<group>";
 		};
+		A9357D4E1C4098C800AF7E37 /* Pedometer */ = {
+			isa = PBXGroup;
+			children = (
+				A9357D4F1C4098D400AF7E37 /* PedometerInterfaceController.swift */,
+			);
+			name = Pedometer;
+			sourceTree = "<group>";
+		};
 		A9BBE32A1C32FAC2005CBE91 = {
 			isa = PBXGroup;
 			children = (
@@ -329,6 +339,7 @@
 				A9357C661C39C30C00AF7E37 /* InfoDevice */,
 				A9357C691C39C32E00AF7E37 /* Keyboard */,
 				539612FB1C352499009B9523 /* Menú */,
+				A9357D4E1C4098C800AF7E37 /* Pedometer */,
 				A9357C681C39C32900AF7E37 /* Phone */,
 				539612FC1C3524B3009B9523 /* Resources */,
 			);
@@ -577,6 +588,7 @@
 				A9357C621C39BD6F00AF7E37 /* KeyboardInterfaceController.swift in Sources */,
 				A9357C601C39B3E900AF7E37 /* PhoneInterfaceController.swift in Sources */,
 				A9357BFA1C37F51A00AF7E37 /* InfoDeviceInterfaceController.swift in Sources */,
+				A9357D501C4098D400AF7E37 /* PedometerInterfaceController.swift in Sources */,
 				A9BBE3701C32FAC2005CBE91 /* InterfaceController.swift in Sources */,
 				539613021C35260F009B9523 /* HapticEngineRowController.swift in Sources */,
 			);
