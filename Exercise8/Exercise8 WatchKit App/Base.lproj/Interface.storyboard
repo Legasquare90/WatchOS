@@ -106,22 +106,17 @@
                     <items>
                         <group width="1" height="0.90000000000000002" alignment="left" backgroundImage="activity-0" id="RIT-DT-0Cx">
                             <items>
-                                <group width="100" height="100" alignment="center" verticalAlignment="center" backgroundImage="activity-0" id="vn8-eI-0ev">
-                                    <items>
-                                        <picker width="50" height="50" alignment="center" verticalAlignment="center" style="sequence" id="489-yK-aL5">
-                                            <connections>
-                                                <action selector="pickerChangesValue:" destination="mf0-8H-XG6" id="edv-J5-BkS"/>
-                                            </connections>
-                                        </picker>
-                                    </items>
-                                </group>
+                                <picker width="50" height="50" alignment="center" verticalAlignment="center" id="489-yK-aL5">
+                                    <connections>
+                                        <action selector="pickerChangesValue:" destination="mf0-8H-XG6" id="edv-J5-BkS"/>
+                                    </connections>
+                                </picker>
                             </items>
                         </group>
                     </items>
                     <connections>
                         <outlet property="group" destination="RIT-DT-0Cx" id="gdt-ct-Ish"/>
                         <outlet property="picker" destination="489-yK-aL5" id="OBU-HI-EBv"/>
-                        <outlet property="secondGroup" destination="vn8-eI-0ev" id="aUG-8e-RAq"/>
                     </connections>
                 </controller>
             </objects>
