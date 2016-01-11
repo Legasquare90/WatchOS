@@ -10,6 +10,11 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Exercise10_WatchKit_App" customModuleProvider="target">
                     <items>
+                        <button width="1" alignment="left" title="Imagen fuera de assets" id="kN6-lb-z6p">
+                            <connections>
+                                <segue destination="qbd-2z-9k6" kind="push" id="osn-SO-BhC"/>
+                            </connections>
+                        </button>
                         <button width="1" alignment="left" title="Animación básica" id="Vpn-f4-Rgh">
                             <connections>
                                 <segue destination="eMK-cU-roi" kind="push" id="LB2-zL-W1B"/>
@@ -34,6 +39,20 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="179" y="337"/>
+        </scene>
+        <!--Image Interface Controller-->
+        <scene sceneID="Ng9-SX-NrZ">
+            <objects>
+                <controller id="qbd-2z-9k6" customClass="ImageInterfaceController" customModule="Exercise10_WatchKit_Extension">
+                    <items>
+                        <imageView width="120" height="120" alignment="center" verticalAlignment="center" contentMode="scaleAspectFit" id="S3b-Dz-s4U"/>
+                    </items>
+                    <connections>
+                        <outlet property="image" destination="S3b-Dz-s4U" id="qzv-fd-xX2"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="399" y="81"/>
         </scene>
         <!--Animation Interface Controller-->
         <scene sceneID="g8j-Cs-Pyn">

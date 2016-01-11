@@ -25,6 +25,7 @@
 		A9357D491C40550000AF7E37 /* ControlledAnimationInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9357D481C40550000AF7E37 /* ControlledAnimationInterfaceController.swift */; };
 		A9357D4B1C40622100AF7E37 /* ViewAnimationsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9357D4A1C40622100AF7E37 /* ViewAnimationsInterfaceController.swift */; };
 		A9357D4D1C40923000AF7E37 /* CoreGraphicsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9357D4C1C40923000AF7E37 /* CoreGraphicsInterfaceController.swift */; };
+		A9357D521C44631D00AF7E37 /* ImageInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9357D511C44631D00AF7E37 /* ImageInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +111,7 @@
 		A9357D481C40550000AF7E37 /* ControlledAnimationInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlledAnimationInterfaceController.swift; sourceTree = "<group>"; };
 		A9357D4A1C40622100AF7E37 /* ViewAnimationsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAnimationsInterfaceController.swift; sourceTree = "<group>"; };
 		A9357D4C1C40923000AF7E37 /* CoreGraphicsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreGraphicsInterfaceController.swift; sourceTree = "<group>"; };
+		A9357D511C44631D00AF7E37 /* ImageInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +222,7 @@
 				A9357D481C40550000AF7E37 /* ControlledAnimationInterfaceController.swift */,
 				A9357D4A1C40622100AF7E37 /* ViewAnimationsInterfaceController.swift */,
 				A9357D4C1C40923000AF7E37 /* CoreGraphicsInterfaceController.swift */,
+				A9357D511C44631D00AF7E37 /* ImageInterfaceController.swift */,
 			);
 			path = "Exercise10 WatchKit Extension";
 			sourceTree = "<group>";
@@ -449,6 +452,7 @@
 				A9357D2F1C40199100AF7E37 /* ExtensionDelegate.swift in Sources */,
 				A9357D471C40360C00AF7E37 /* AnimationInterfaceController.swift in Sources */,
 				A9357D4B1C40622100AF7E37 /* ViewAnimationsInterfaceController.swift in Sources */,
+				A9357D521C44631D00AF7E37 /* ImageInterfaceController.swift in Sources */,
 				A9357D491C40550000AF7E37 /* ControlledAnimationInterfaceController.swift in Sources */,
 				A9357D2D1C40199100AF7E37 /* InterfaceController.swift in Sources */,
 				A9357D4D1C40923000AF7E37 /* CoreGraphicsInterfaceController.swift in Sources */,
