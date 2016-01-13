@@ -467,10 +467,11 @@
 					};
 					A9BBE35A1C32FAC2005CBE91 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = MDH593987K;
 					};
 					A9BBE3691C32FAC2005CBE91 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 3VW789WSMP;
+						DevelopmentTeam = MDH593987K;
 						SystemCapabilities = {
 							com.apple.HealthKit = {
 								enabled = 1;
@@ -736,7 +737,7 @@
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Exercise7 WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.demo.UPSA.Exercise7.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.UPSA.E7.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
@@ -754,7 +755,7 @@
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Exercise7 WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.demo.UPSA.Exercise7.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.UPSA.E7.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
@@ -768,11 +769,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = Exercise7_WatchKit_Extension;
 				INFOPLIST_FILE = "Exercise7 WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.demo.UPSA.Exercise7.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.UPSA.E7.watchkitapp;
+				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -784,11 +786,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = Exercise7_WatchKit_Extension;
 				INFOPLIST_FILE = "Exercise7 WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.demo.UPSA.Exercise7.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.UPSA.E7.watchkitapp;
+				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -801,11 +804,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Exercise7/Exercise7.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Exercise7/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.demo.UPSA.Exercise7;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.UPSA.E7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -816,11 +817,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Exercise7/Exercise7.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Exercise7/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.demo.UPSA.Exercise7;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.UPSA.E7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

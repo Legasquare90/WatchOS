@@ -28,7 +28,7 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>WKCompanionAppBundleIdentifier</key>
-	<string>com.demo.UPSA.Exercise7</string>
+	<string>com.demo.UPSA.E7</string>
 	<key>WKWatchKitApp</key>
 	<true/>
 </dict>
