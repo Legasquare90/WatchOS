@@ -1,15 +1,62 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="13E28" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Exercise11_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" title="Download photo" id="orV-Mc-Asq">
+                            <connections>
+                                <segue destination="VEV-Wl-dG9" kind="push" id="JWb-CB-Uke"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="See photo" id="Ear-Bk-DFu">
+                            <connections>
+                                <segue destination="jPb-Tb-0Wv" kind="push" id="XgI-GE-vwJ"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
             </objects>
+            <point key="canvasLocation" x="184" y="343"/>
+        </scene>
+        <!--Get Image Interface Controller-->
+        <scene sceneID="7I5-La-czL">
+            <objects>
+                <controller id="VEV-Wl-dG9" customClass="GetImageInterfaceController" customModule="Exercise11_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Get image" id="eDT-np-Weh">
+                            <connections>
+                                <action selector="getImageBtnTapped" destination="VEV-Wl-dG9" id="h91-jm-gMs"/>
+                            </connections>
+                        </button>
+                        <label alignment="center" verticalAlignment="center" text="Sin imagen" id="Z3W-7Y-tZ2"/>
+                    </items>
+                    <connections>
+                        <outlet property="infoLabel" destination="Z3W-7Y-tZ2" id="YQc-GU-urL"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="395" y="343"/>
+        </scene>
+        <!--See Image Interface Controller-->
+        <scene sceneID="cqK-hN-IWw">
+            <objects>
+                <controller id="jPb-Tb-0Wv" customClass="SeeImageInterfaceController" customModule="Exercise11_WatchKit_Extension">
+                    <items>
+                        <imageView width="100" height="100" alignment="center" verticalAlignment="center" id="CNw-cx-1hD"/>
+                    </items>
+                    <connections>
+                        <outlet property="image" destination="CNw-cx-1hD" id="4G4-OS-9Z4"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="395" y="582"/>
         </scene>
     </scenes>
 </document>

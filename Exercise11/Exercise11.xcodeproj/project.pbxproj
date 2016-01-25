@@ -19,6 +19,8 @@
 		A9004BDE1C56BCE4003EA41A /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9004BDD1C56BCE4003EA41A /* InterfaceController.swift */; };
 		A9004BE01C56BCE4003EA41A /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9004BDF1C56BCE4003EA41A /* ExtensionDelegate.swift */; };
 		A9004BE21C56BCE4003EA41A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9004BE11C56BCE4003EA41A /* Assets.xcassets */; };
+		A9004BF21C56C684003EA41A /* GetImageInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9004BF11C56C684003EA41A /* GetImageInterfaceController.swift */; };
+		A9004BF41C56E16C003EA41A /* SeeImageInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9004BF31C56E16C003EA41A /* SeeImageInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		A9004BDF1C56BCE4003EA41A /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		A9004BE11C56BCE4003EA41A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9004BE31C56BCE4003EA41A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9004BF11C56C684003EA41A /* GetImageInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetImageInterfaceController.swift; sourceTree = "<group>"; };
+		A9004BF31C56E16C003EA41A /* SeeImageInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeeImageInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +154,8 @@
 				A9004BDF1C56BCE4003EA41A /* ExtensionDelegate.swift */,
 				A9004BE11C56BCE4003EA41A /* Assets.xcassets */,
 				A9004BE31C56BCE4003EA41A /* Info.plist */,
+				A9004BF11C56C684003EA41A /* GetImageInterfaceController.swift */,
+				A9004BF31C56E16C003EA41A /* SeeImageInterfaceController.swift */,
 			);
 			path = "Exercise11 WatchKit Extension";
 			sourceTree = "<group>";
@@ -298,8 +304,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9004BF21C56C684003EA41A /* GetImageInterfaceController.swift in Sources */,
 				A9004BE01C56BCE4003EA41A /* ExtensionDelegate.swift in Sources */,
 				A9004BDE1C56BCE4003EA41A /* InterfaceController.swift in Sources */,
+				A9004BF41C56E16C003EA41A /* SeeImageInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
