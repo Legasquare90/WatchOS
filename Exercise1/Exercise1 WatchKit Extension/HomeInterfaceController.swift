@@ -19,7 +19,7 @@ class HomeInterfaceController: WKInterfaceController {
 
     @IBAction func startButtonAction() {
         let action1 = WKAlertAction(title: "OK", style: .Default, handler:{print("OK")})
-        let action2 = WKAlertAction(title: "Os odio", style: .Destructive) {print("Nos odian :(")}
+        let action2 = WKAlertAction(title: "Destructive", style: .Destructive) {print("Destructive :(")}
         let action3 = WKAlertAction(title: "Cancel", style: .Cancel) {}
         
         presentAlertControllerWithTitle("No disponible", message: "", preferredStyle: .ActionSheet, actions: [action1, action2,action3])
