@@ -20,6 +20,11 @@
                                 <segue destination="jPb-Tb-0Wv" kind="push" id="XgI-GE-vwJ"/>
                             </connections>
                         </button>
+                        <button width="1" alignment="left" title="Download another image" id="UoP-Bm-cip">
+                            <connections>
+                                <segue destination="8lh-QH-XLJ" kind="push" id="scM-Vj-Uml"/>
+                            </connections>
+                        </button>
                     </items>
                 </controller>
             </objects>
@@ -44,19 +49,42 @@
             </objects>
             <point key="canvasLocation" x="395" y="343"/>
         </scene>
+        <!--Image With Alamofire Interface Controller-->
+        <scene sceneID="Rcd-Zq-fFY">
+            <objects>
+                <controller id="8lh-QH-XLJ" customClass="ImageWithAlamofireInterfaceController" customModule="Exercise11_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Get image" id="JOS-AN-W2E">
+                            <connections>
+                                <action selector="getImage" destination="8lh-QH-XLJ" id="cgO-Qs-9Ti"/>
+                            </connections>
+                        </button>
+                        <label alignment="center" verticalAlignment="center" text="Sin imagen" id="uWR-fJ-X0N"/>
+                    </items>
+                    <connections>
+                        <outlet property="infoLabel" destination="uWR-fJ-X0N" id="Us0-BI-Feu"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="114" y="634"/>
+        </scene>
         <!--See Image Interface Controller-->
         <scene sceneID="cqK-hN-IWw">
             <objects>
                 <controller id="jPb-Tb-0Wv" customClass="SeeImageInterfaceController" customModule="Exercise11_WatchKit_Extension">
                     <items>
-                        <imageView width="100" height="100" alignment="center" verticalAlignment="center" id="CNw-cx-1hD"/>
+                        <label alignment="center" text="NSUserDefaults" id="5z2-XT-bSN"/>
+                        <imageView width="80" height="80" alignment="center" id="CNw-cx-1hD"/>
+                        <separator alignment="left" id="ked-NZ-Xtc"/>
+                        <label alignment="center" text="NSFileManager" id="5A9-Ic-aig"/>
+                        <imageView width="80" height="80" alignment="center" id="DrL-wl-fDE"/>
                     </items>
                     <connections>
                         <outlet property="image" destination="CNw-cx-1hD" id="4G4-OS-9Z4"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="395" y="582"/>
+            <point key="canvasLocation" x="395" y="633.75"/>
         </scene>
     </scenes>
 </document>

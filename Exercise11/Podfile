@@ -1,0 +1,12 @@
+inhibit_all_warnings!
+use_frameworks!
+
+target 'Exercise11' do
+    platform :ios, '9.0'
+    pod 'Alamofire'
+end
+
+target 'Exercise11 WatchKit Extension' do
+    platform :watchos, '2.0'
+    pod 'Alamofire'
+end
