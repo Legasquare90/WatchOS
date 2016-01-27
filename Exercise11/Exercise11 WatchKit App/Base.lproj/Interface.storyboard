@@ -15,14 +15,14 @@
                                 <segue destination="VEV-Wl-dG9" kind="push" id="JWb-CB-Uke"/>
                             </connections>
                         </button>
-                        <button width="1" alignment="left" title="See photo" id="Ear-Bk-DFu">
-                            <connections>
-                                <segue destination="jPb-Tb-0Wv" kind="push" id="XgI-GE-vwJ"/>
-                            </connections>
-                        </button>
                         <button width="1" alignment="left" title="Download another image" id="UoP-Bm-cip">
                             <connections>
                                 <segue destination="8lh-QH-XLJ" kind="push" id="scM-Vj-Uml"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="See photo" id="Ear-Bk-DFu">
+                            <connections>
+                                <segue destination="jPb-Tb-0Wv" kind="push" id="XgI-GE-vwJ"/>
                             </connections>
                         </button>
                     </items>
@@ -81,6 +81,7 @@
                     </items>
                     <connections>
                         <outlet property="image" destination="CNw-cx-1hD" id="4G4-OS-9Z4"/>
+                        <outlet property="imageFileManager" destination="DrL-wl-fDE" id="akA-Oy-u0K"/>
                     </connections>
                 </controller>
             </objects>

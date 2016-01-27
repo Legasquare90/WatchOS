@@ -16,27 +16,21 @@ class ImageWithAlamofireInterfaceController: WKInterfaceController {
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
-        
-        // Configure interface objects here.
     }
 
     override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
         super.willActivate()
-    }
-
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-        super.didDeactivate()
+        self.infoLabel.setText("Sin imagen")
     }
 
     @IBAction func getImage() {
+        self.infoLabel.setText("Receiving...")
         Alamofire.download(.GET, "https://pbs.twimg.com/media/CZOk7__WEAAXZq8.jpg") { temporaryURL, response in
             let fileManager = NSFileManager.defaultManager()
             let directoryURL = fileManager.URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)[0]
-            let pathComponent = response.suggestedFilename
-            
-            return directoryURL.URLByAppendingPathComponent(pathComponent!)
+            let pathComponent = "image.jpg"
+            self.infoLabel.setText("Received!")
+            return directoryURL.URLByAppendingPathComponent(pathComponent)
         }
     }
     
