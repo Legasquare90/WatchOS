@@ -27,8 +27,9 @@ class SeeImageInterfaceController: WKInterfaceController {
         let fileManager = NSFileManager.defaultManager()
         let directoryURL = fileManager.URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)[0]
         let imageURL = directoryURL.URLByAppendingPathComponent("image.jpg")
-        let imageDataFileManager = NSData(contentsOfURL: imageURL)
-        self.imageFileManager.setImageData(imageDataFileManager!)
+        if let imageDataFileManager = NSData(contentsOfURL: imageURL) {
+            self.imageFileManager.setImageData(imageDataFileManager)
+        }
     }
 
 }

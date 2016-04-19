@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
@@ -28,7 +28,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="184" y="343"/>
+            <point key="canvasLocation" x="137" y="235"/>
         </scene>
         <!--Get Image Interface Controller-->
         <scene sceneID="7I5-La-czL">
@@ -40,14 +40,16 @@
                                 <action selector="getImageBtnTapped" destination="VEV-Wl-dG9" id="h91-jm-gMs"/>
                             </connections>
                         </button>
+                        <imageView width="60" height="60" alignment="center" image="Animation0" id="gUa-e7-kau"/>
                         <label alignment="center" verticalAlignment="center" text="Sin imagen" id="Z3W-7Y-tZ2"/>
                     </items>
                     <connections>
                         <outlet property="infoLabel" destination="Z3W-7Y-tZ2" id="YQc-GU-urL"/>
+                        <outlet property="loadingImage" destination="gUa-e7-kau" id="UyK-hz-aRO"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="395" y="343"/>
+            <point key="canvasLocation" x="549" y="235"/>
         </scene>
         <!--Image With Alamofire Interface Controller-->
         <scene sceneID="Rcd-Zq-fFY">
@@ -60,13 +62,15 @@
                             </connections>
                         </button>
                         <label alignment="center" verticalAlignment="center" text="Sin imagen" id="uWR-fJ-X0N"/>
+                        <imageView width="60" height="60" alignment="center" image="Animation0" id="fNU-pF-Ja2"/>
                     </items>
                     <connections>
                         <outlet property="infoLabel" destination="uWR-fJ-X0N" id="Us0-BI-Feu"/>
+                        <outlet property="loadingImage" destination="fNU-pF-Ja2" id="N2O-Es-SLZ"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="114" y="634"/>
+            <point key="canvasLocation" x="137" y="634"/>
         </scene>
         <!--See Image Interface Controller-->
         <scene sceneID="cqK-hN-IWw">
@@ -74,10 +78,10 @@
                 <controller id="jPb-Tb-0Wv" customClass="SeeImageInterfaceController" customModule="Exercise11_WatchKit_Extension">
                     <items>
                         <label alignment="center" text="NSUserDefaults" id="5z2-XT-bSN"/>
-                        <imageView width="80" height="80" alignment="center" id="CNw-cx-1hD"/>
+                        <imageView width="80" height="80" alignment="center" contentMode="scaleAspectFit" id="CNw-cx-1hD"/>
                         <separator alignment="left" id="ked-NZ-Xtc"/>
                         <label alignment="center" text="NSFileManager" id="5A9-Ic-aig"/>
-                        <imageView width="80" height="80" alignment="center" id="DrL-wl-fDE"/>
+                        <imageView width="80" height="80" alignment="center" contentMode="scaleAspectFit" id="DrL-wl-fDE"/>
                     </items>
                     <connections>
                         <outlet property="image" destination="CNw-cx-1hD" id="4G4-OS-9Z4"/>
@@ -85,7 +89,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="395" y="633.75"/>
+            <point key="canvasLocation" x="541" y="634"/>
         </scene>
     </scenes>
 </document>

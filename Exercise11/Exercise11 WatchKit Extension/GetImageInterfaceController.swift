@@ -13,6 +13,7 @@ import Foundation
 class GetImageInterfaceController: WKInterfaceController {
 
     @IBOutlet var infoLabel: WKInterfaceLabel!
+    @IBOutlet var loadingImage: WKInterfaceImage!
     
     var task: NSURLSessionDataTask?
     var isActive: Bool = false
@@ -21,10 +22,10 @@ class GetImageInterfaceController: WKInterfaceController {
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
+        loadingImage.setImageNamed("Animation")
+        loadingImage.setHidden(true)
         if (userDefaults.objectForKey("imageData") != nil) {
             self.infoLabel.setText("Received!")
-        } else {
-            
         }
     }
     
@@ -45,6 +46,8 @@ class GetImageInterfaceController: WKInterfaceController {
     
     @IBAction func getImageBtnTapped() {
         self.infoLabel.setText("Receiving...")
+        self.loadingImage.setHidden(false)
+        self.loadingImage.startAnimating()
         let url = NSURL(string:"https://pbs.twimg.com/profile_images/3186881240/fa714ece16d0fabccf903cec863b1949_400x400.png")!
         let conf = NSURLSessionConfiguration.defaultSessionConfiguration()
         let session = NSURLSession(configuration: conf)
@@ -58,6 +61,8 @@ class GetImageInterfaceController: WKInterfaceController {
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
                     if self.isActive {
                         self.infoLabel.setText("Received!")
+                        self.loadingImage.setHidden(true)
+                        self.loadingImage.stopAnimating()
                     }
                 })
             }
