@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Home Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="HomeInterfaceController" customModule="DemoApuestasTerminado_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="¡Hola Pepe!" numberOfLines="0" id="akc-OF-vkn"/>
+                        <separator width="0.90000000000000002" alignment="center" id="miB-tE-lcV">
+                            <color key="color" red="0.96470588239999999" green="0.51764705879999995" blue="0.031372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </separator>
+                        <label alignment="center" text="Tu cuenta tiene:" textAlignment="center" id="6Q4-A3-pQY"/>
+                        <label alignment="center" text="100 €" id="8HU-zn-iL3">
+                            <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="24"/>
+                        </label>
+                        <label alignment="center" verticalAlignment="bottom" text="Apuesta realizada" id="LeV-ix-vjl">
+                            <color key="textColor" red="0.96470588239999999" green="0.51764705879999995" blue="0.031372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Apostar" id="bLR-wL-ld4">
+                            <connections>
+                                <action selector="btnBetAction" destination="AgC-eL-Hgc" id="sLt-RL-Vo5"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <menu key="menu" id="xVX-sS-gzF">
+                        <items>
+                            <menuItem title="Lugares" icon="info" id="4Qq-ad-gjH">
+                                <connections>
+                                    <action selector="btnMapsMenu" destination="AgC-eL-Hgc" id="v8V-0D-RBZ"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="lblMoney" destination="8HU-zn-iL3" id="Ic7-5M-T8c"/>
+                        <outlet property="lblName" destination="akc-OF-vkn" id="nJn-2q-R7V"/>
+                        <outlet property="lblStatus" destination="LeV-ix-vjl" id="7pL-2s-5Ey"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="347" y="360"/>
+        </scene>
+        <!--location-->
+        <scene sceneID="y7g-As-Plf">
+            <objects>
+                <controller identifier="location" id="v7Y-ZT-BQ9" customClass="MapInterfaceController" customModule="DemoApuestasTerminado_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="IGZ España" id="IEz-9F-0Ck"/>
+                        <map height="100" alignment="left" id="z61-Mc-PXm"/>
+                    </items>
+                    <connections>
+                        <outlet property="lblLocation" destination="IEz-9F-0Ck" id="QzE-Ee-Cfv"/>
+                        <outlet property="map" destination="z61-Mc-PXm" id="2Ek-rA-Giz"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="347" y="619"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="I0o-Lz-wVh">
+            <objects>
+                <notificationController id="UVi-CV-Rg3">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="wd8-mV-coA"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="game" id="AjB-Hf-9Qz">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sashColor" red="0.96470588239999999" green="0.51764705879999995" blue="0.031372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </notificationCategory>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="wd8-mV-coA" id="Oxi-cc-BAV"/>
+                        <segue destination="1jf-0U-GlP" kind="relationship" relationship="dynamicNotificationInterface" id="Zfm-di-DaZ"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="347" y="862"/>
+        </scene>
+        <!--bets_table-->
+        <scene sceneID="0WM-Ij-NYH">
+            <objects>
+                <controller identifier="bets_table" id="cDC-AS-XfN" customClass="BetsTableInterfaceController" customModule="DemoApuestasTerminado_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="xos-ww-jNJ">
+                            <items>
+                                <tableRow identifier="betRow" id="Mv5-O9-de8" customClass="BetRowController" customModule="DemoApuestasTerminado_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="Zw5-Ku-LwE">
+                                        <items>
+                                            <label width="0.29999999999999999" alignment="left" verticalAlignment="center" text="BUL" id="A7X-MC-gbW"/>
+                                            <label width="0.40000000000000002" alignment="center" verticalAlignment="center" text="18:00" textAlignment="center" id="Kls-tO-yXW">
+                                                <color key="textColor" red="0.96470588239999999" green="0.51764705879999995" blue="0.031372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            </label>
+                                            <label width="0.29999999999999999" alignment="right" verticalAlignment="center" text="CAV" id="GwT-em-t3n"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="dateBet" destination="Kls-tO-yXW" id="v3J-4S-pat"/>
+                                        <outlet property="lblLocal" destination="A7X-MC-gbW" id="JOp-2F-3Qa"/>
+                                        <outlet property="lblVisitant" destination="GwT-em-t3n" id="jnb-AH-kd1"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tableBets" destination="xos-ww-jNJ" id="ese-Dp-7N2"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="584" y="360"/>
+        </scene>
+        <!--bet-->
+        <scene sceneID="bvN-l7-iFu">
+            <objects>
+                <controller identifier="bet" id="JfO-Ek-cHn" customClass="MakeBetInterfaceController" customModule="DemoApuestasTerminado_WatchKit_Extension">
+                    <items>
+                        <switch width="1" alignment="left" value="YES" title="¿Gana BUL?" id="Idv-nQ-L5d">
+                            <connections>
+                                <action selector="changeValueSwitchWinner:" destination="JfO-Ek-cHn" id="iQC-aR-iGl"/>
+                            </connections>
+                        </switch>
+                        <group width="1" alignment="left" id="Z8Q-dc-oOJ">
+                            <items>
+                                <label width="0.30000000000000016" alignment="left" verticalAlignment="center" text="100 €" textAlignment="center" minimumScaleFactor="0.80000000000000004" id="mUs-3T-o9G"/>
+                                <slider width="0.70000000000000007" alignment="left" continuous="YES" maximum="100" steps="20" id="cDn-sZ-CeJ">
+                                    <connections>
+                                        <action selector="changeValueSliderMoney:" destination="JfO-Ek-cHn" id="ke6-f9-e4X"/>
+                                    </connections>
+                                </slider>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="wLz-Mf-Xie">
+                            <color key="color" red="1" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </separator>
+                        <label alignment="center" text="Apuestas 100 € a favor de CAV" textAlignment="center" numberOfLines="0" id="4nw-0j-Bmh"/>
+                        <separator alignment="left" id="ZUM-Wc-gBU">
+                            <color key="color" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </separator>
+                        <button width="1" alignment="left" title="Confirmar" id="IZK-J0-sn0">
+                            <connections>
+                                <action selector="btnConfirmAction" destination="JfO-Ek-cHn" id="Oun-te-9Oe"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="btnConfirm" destination="IZK-J0-sn0" id="M7C-Le-Ozy"/>
+                        <outlet property="lblBet" destination="4nw-0j-Bmh" id="yUx-FL-d5J"/>
+                        <outlet property="lblMoney" destination="mUs-3T-o9G" id="0Ma-5P-wP5"/>
+                        <outlet property="separator1" destination="wLz-Mf-Xie" id="ax6-TP-ycQ"/>
+                        <outlet property="separator2" destination="ZUM-Wc-gBU" id="9XT-BJ-1Ta"/>
+                        <outlet property="switchWinner" destination="Idv-nQ-L5d" id="fb8-fj-Hj7"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="829" y="359.5"/>
+        </scene>
+        <!--Scores Notification Controller-->
+        <scene sceneID="SYJ-tv-oxn">
+            <objects>
+                <controller id="1jf-0U-GlP" customClass="ScoresNotificationController" customModule="DemoApuestasTerminado_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Fin 1º cuarto" id="ifo-Gt-W58">
+                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <group width="1" alignment="left" id="QM8-gh-Qjb">
+                            <items>
+                                <label alignment="left" text="Bulls" id="b2E-3e-AGu"/>
+                                <label alignment="right" text="28" id="dr9-9P-u17"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="06d-hG-Vy5">
+                            <items>
+                                <label alignment="left" text="Cavaliers" id="ccn-FB-2he"/>
+                                <label alignment="right" text="23" id="5bX-ph-H52"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="lblLocal" destination="b2E-3e-AGu" id="LZd-zR-ybK"/>
+                        <outlet property="lblScoreLocal" destination="dr9-9P-u17" id="tOW-pI-3TB"/>
+                        <outlet property="lblScoreVisitant" destination="5bX-ph-H52" id="7ht-b0-aTl"/>
+                        <outlet property="lblTitle" destination="ifo-Gt-W58" id="e33-Tq-l45"/>
+                        <outlet property="lblVisitant" destination="ccn-FB-2he" id="nTf-2I-kuk"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="584" y="862"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="cvq-lO-QT3">
+            <objects>
+                <glanceController topTemplateType="body1Medium" id="7Fk-q1-Y0m" customClass="GlanceInterfaceController" customModule="DemoApuestasTerminado_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Apuestas Pend." id="ytM-cP-4nX"/>
+                        <label alignment="left" text="2" id="eVn-yX-4jR"/>
+                        <group alignment="left" layout="vertical" id="LKT-Rl-GrL">
+                            <items>
+                                <label alignment="left" text="Últimas apuestas" id="SS8-jT-xLM">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                </label>
+                                <separator alignment="left" id="vP1-Ck-puv">
+                                    <color key="color" red="0.96470588239999999" green="0.51764705879999995" blue="0.031372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <label alignment="left" text="Ap: 10 € @ BUL" id="0cf-RN-L9H">
+                                    <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                </label>
+                                <label alignment="left" text="Ap: 5 € @ GRI" id="Gvp-TN-o3j"/>
+                                <label alignment="left" text="Ap: 20 € @ LAK" id="d3u-t7-RK7"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="lblFirstBet" destination="0cf-RN-L9H" id="Xlr-II-817"/>
+                        <outlet property="lblNumberBets" destination="eVn-yX-4jR" id="L6u-Cx-KRz"/>
+                        <outlet property="lblSecondBet" destination="Gvp-TN-o3j" id="22l-KX-n5J"/>
+                        <outlet property="lblThirdBet" destination="d3u-t7-RK7" id="zql-9T-PSj"/>
+                    </connections>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="347" y="110"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.96470588239999999" green="0.51764705879999995" blue="0.031372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+</document>

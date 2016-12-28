@@ -1,0 +1,16 @@
+{
+    "aps": {
+        "alert": {
+            "body": "Final: Grizzlies 108 - Raptors 88",
+            "title": "Final partido"
+        },
+        "category": "game"
+    },
+    
+    "local": "GRI",
+    "localLong": "Grizzlies",
+    "localScore": "108",
+    "visitant": "RAP",
+    "visitantLong": "Raptors",
+    "visitantScore": "88"
+}

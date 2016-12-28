@@ -1,0 +1,765 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5358D1C91B03313E00EB4CF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5358D1C81B03313E00EB4CF5 /* AppDelegate.swift */; };
+		5358D1CB1B03313E00EB4CF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5358D1CA1B03313E00EB4CF5 /* ViewController.swift */; };
+		5358D1CE1B03313E00EB4CF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5358D1CC1B03313E00EB4CF5 /* Main.storyboard */; };
+		5358D1D01B03313E00EB4CF5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5358D1CF1B03313E00EB4CF5 /* Images.xcassets */; };
+		5358D1D31B03313E00EB4CF5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5358D1D11B03313E00EB4CF5 /* LaunchScreen.xib */; };
+		5358D1DF1B03313E00EB4CF5 /* DemoApuestasTerminadoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5358D1DE1B03313E00EB4CF5 /* DemoApuestasTerminadoTests.swift */; };
+		5358D1F11B0331D500EB4CF5 /* HomeInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5358D1F01B0331D500EB4CF5 /* HomeInterfaceController.swift */; };
+		5358D1F31B0331D500EB4CF5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5358D1F21B0331D500EB4CF5 /* Images.xcassets */; };
+		5358D1F71B0331D500EB4CF5 /* DemoApuestasTerminado WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 5358D1F61B0331D500EB4CF5 /* DemoApuestasTerminado WatchKit App.app */; };
+		5358D1FF1B0331D500EB4CF5 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5358D1FD1B0331D500EB4CF5 /* Interface.storyboard */; };
+		5358D2011B0331D500EB4CF5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5358D2001B0331D500EB4CF5 /* Images.xcassets */; };
+		5358D2041B0331D500EB4CF5 /* DemoApuestasTerminado WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5358D1EC1B0331D500EB4CF5 /* DemoApuestasTerminado WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A9921DA91B0E95BB009CBECD /* GlanceInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9921DA81B0E95BB009CBECD /* GlanceInterfaceController.swift */; };
+		A9C178EF1B0E5EF1005B66CD /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C53C5C1B0BCEDC0043D6F1 /* UserStore.swift */; };
+		A9C53C531B0BBCE30043D6F1 /* BetsTableInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C53C521B0BBCE30043D6F1 /* BetsTableInterfaceController.swift */; };
+		A9C53C551B0BBDAF0043D6F1 /* MakeBetInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C53C541B0BBDAF0043D6F1 /* MakeBetInterfaceController.swift */; };
+		A9C53C571B0BC1A60043D6F1 /* MapInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C53C561B0BC1A60043D6F1 /* MapInterfaceController.swift */; };
+		A9C53C5B1B0BC3D90043D6F1 /* ScoresNotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C53C5A1B0BC3D90043D6F1 /* ScoresNotificationController.swift */; };
+		A9C53C5F1B0BF31F0043D6F1 /* BetRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C53C5E1B0BF31F0043D6F1 /* BetRowController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5358D1D91B03313E00EB4CF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5358D1BB1B03313E00EB4CF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5358D1C21B03313E00EB4CF5;
+			remoteInfo = DemoApuestasTerminado;
+		};
+		5358D1F81B0331D500EB4CF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5358D1BB1B03313E00EB4CF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5358D1F51B0331D500EB4CF5;
+			remoteInfo = "DemoApuestasTerminado WatchKit App";
+		};
+		5358D2021B0331D500EB4CF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5358D1BB1B03313E00EB4CF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5358D1EB1B0331D500EB4CF5;
+			remoteInfo = "DemoApuestasTerminado WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5358D20B1B0331D500EB4CF5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5358D2041B0331D500EB4CF5 /* DemoApuestasTerminado WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5358D1C31B03313E00EB4CF5 /* DemoApuestasTerminado.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApuestasTerminado.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5358D1C71B03313E00EB4CF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5358D1C81B03313E00EB4CF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5358D1CA1B03313E00EB4CF5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5358D1CD1B03313E00EB4CF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5358D1CF1B03313E00EB4CF5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5358D1D21B03313E00EB4CF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		5358D1D81B03313E00EB4CF5 /* DemoApuestasTerminadoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoApuestasTerminadoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5358D1DD1B03313E00EB4CF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5358D1DE1B03313E00EB4CF5 /* DemoApuestasTerminadoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoApuestasTerminadoTests.swift; sourceTree = "<group>"; };
+		5358D1EC1B0331D500EB4CF5 /* DemoApuestasTerminado WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "DemoApuestasTerminado WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5358D1EF1B0331D500EB4CF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5358D1F01B0331D500EB4CF5 /* HomeInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInterfaceController.swift; sourceTree = "<group>"; };
+		5358D1F21B0331D500EB4CF5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5358D1F61B0331D500EB4CF5 /* DemoApuestasTerminado WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DemoApuestasTerminado WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5358D1FC1B0331D500EB4CF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5358D1FE1B0331D500EB4CF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		5358D2001B0331D500EB4CF5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A9921DA81B0E95BB009CBECD /* GlanceInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlanceInterfaceController.swift; sourceTree = "<group>"; };
+		A9C178F61B0E86D2005B66CD /* FirstGameNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = FirstGameNotificationPayload.apns; sourceTree = "<group>"; };
+		A9C178F71B0E8842005B66CD /* SecondGameNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = SecondGameNotificationPayload.apns; sourceTree = "<group>"; };
+		A9C53C521B0BBCE30043D6F1 /* BetsTableInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetsTableInterfaceController.swift; sourceTree = "<group>"; };
+		A9C53C541B0BBDAF0043D6F1 /* MakeBetInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeBetInterfaceController.swift; sourceTree = "<group>"; };
+		A9C53C561B0BC1A60043D6F1 /* MapInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapInterfaceController.swift; sourceTree = "<group>"; };
+		A9C53C5A1B0BC3D90043D6F1 /* ScoresNotificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoresNotificationController.swift; sourceTree = "<group>"; };
+		A9C53C5C1B0BCEDC0043D6F1 /* UserStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserStore.swift; path = ../DemoApuestasTerminado/UserStore.swift; sourceTree = "<group>"; };
+		A9C53C5E1B0BF31F0043D6F1 /* BetRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetRowController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5358D1C01B03313E00EB4CF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5358D1D51B03313E00EB4CF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5358D1E91B0331D500EB4CF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5358D1BA1B03313E00EB4CF5 = {
+			isa = PBXGroup;
+			children = (
+				5358D1C51B03313E00EB4CF5 /* DemoApuestasTerminado */,
+				5358D1DB1B03313E00EB4CF5 /* DemoApuestasTerminadoTests */,
+				5358D1ED1B0331D500EB4CF5 /* DemoApuestasTerminado WatchKit Extension */,
+				5358D1FA1B0331D500EB4CF5 /* DemoApuestasTerminado WatchKit App */,
+				5358D1C41B03313E00EB4CF5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5358D1C41B03313E00EB4CF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5358D1C31B03313E00EB4CF5 /* DemoApuestasTerminado.app */,
+				5358D1D81B03313E00EB4CF5 /* DemoApuestasTerminadoTests.xctest */,
+				5358D1EC1B0331D500EB4CF5 /* DemoApuestasTerminado WatchKit Extension.appex */,
+				5358D1F61B0331D500EB4CF5 /* DemoApuestasTerminado WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5358D1C51B03313E00EB4CF5 /* DemoApuestasTerminado */ = {
+			isa = PBXGroup;
+			children = (
+				5358D1C81B03313E00EB4CF5 /* AppDelegate.swift */,
+				5358D1CA1B03313E00EB4CF5 /* ViewController.swift */,
+				5358D1CC1B03313E00EB4CF5 /* Main.storyboard */,
+				5358D1CF1B03313E00EB4CF5 /* Images.xcassets */,
+				5358D1D11B03313E00EB4CF5 /* LaunchScreen.xib */,
+				5358D1C61B03313E00EB4CF5 /* Supporting Files */,
+			);
+			path = DemoApuestasTerminado;
+			sourceTree = "<group>";
+		};
+		5358D1C61B03313E00EB4CF5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5358D1C71B03313E00EB4CF5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5358D1DB1B03313E00EB4CF5 /* DemoApuestasTerminadoTests */ = {
+			isa = PBXGroup;
+			children = (
+				5358D1DE1B03313E00EB4CF5 /* DemoApuestasTerminadoTests.swift */,
+				5358D1DC1B03313E00EB4CF5 /* Supporting Files */,
+			);
+			path = DemoApuestasTerminadoTests;
+			sourceTree = "<group>";
+		};
+		5358D1DC1B03313E00EB4CF5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5358D1DD1B03313E00EB4CF5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5358D1ED1B0331D500EB4CF5 /* DemoApuestasTerminado WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A9921DA71B0E959D009CBECD /* Glance */,
+				A9C178F01B0E862D005B66CD /* Home */,
+				A9C178F11B0E863F005B66CD /* Today Bets */,
+				A9C178F21B0E864B005B66CD /* Bet */,
+				A9C178F31B0E8656005B66CD /* Map */,
+				A9C178F51B0E866F005B66CD /* Notification */,
+				A9C178F41B0E865F005B66CD /* Store */,
+				5358D1F21B0331D500EB4CF5 /* Images.xcassets */,
+				5358D1EE1B0331D500EB4CF5 /* Supporting Files */,
+			);
+			path = "DemoApuestasTerminado WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		5358D1EE1B0331D500EB4CF5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5358D1EF1B0331D500EB4CF5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5358D1FA1B0331D500EB4CF5 /* DemoApuestasTerminado WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				5358D1FD1B0331D500EB4CF5 /* Interface.storyboard */,
+				5358D2001B0331D500EB4CF5 /* Images.xcassets */,
+				5358D1FB1B0331D500EB4CF5 /* Supporting Files */,
+			);
+			path = "DemoApuestasTerminado WatchKit App";
+			sourceTree = "<group>";
+		};
+		5358D1FB1B0331D500EB4CF5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5358D1FC1B0331D500EB4CF5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A9921DA71B0E959D009CBECD /* Glance */ = {
+			isa = PBXGroup;
+			children = (
+				A9921DA81B0E95BB009CBECD /* GlanceInterfaceController.swift */,
+			);
+			name = Glance;
+			sourceTree = "<group>";
+		};
+		A9C178F01B0E862D005B66CD /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5358D1F01B0331D500EB4CF5 /* HomeInterfaceController.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		A9C178F11B0E863F005B66CD /* Today Bets */ = {
+			isa = PBXGroup;
+			children = (
+				A9C53C521B0BBCE30043D6F1 /* BetsTableInterfaceController.swift */,
+				A9C53C5E1B0BF31F0043D6F1 /* BetRowController.swift */,
+			);
+			name = "Today Bets";
+			sourceTree = "<group>";
+		};
+		A9C178F21B0E864B005B66CD /* Bet */ = {
+			isa = PBXGroup;
+			children = (
+				A9C53C541B0BBDAF0043D6F1 /* MakeBetInterfaceController.swift */,
+			);
+			name = Bet;
+			sourceTree = "<group>";
+		};
+		A9C178F31B0E8656005B66CD /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				A9C53C561B0BC1A60043D6F1 /* MapInterfaceController.swift */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		A9C178F41B0E865F005B66CD /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				A9C53C5C1B0BCEDC0043D6F1 /* UserStore.swift */,
+			);
+			name = Store;
+			sourceTree = "<group>";
+		};
+		A9C178F51B0E866F005B66CD /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				A9C53C5A1B0BC3D90043D6F1 /* ScoresNotificationController.swift */,
+				A9C178F61B0E86D2005B66CD /* FirstGameNotificationPayload.apns */,
+				A9C178F71B0E8842005B66CD /* SecondGameNotificationPayload.apns */,
+			);
+			name = Notification;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5358D1C21B03313E00EB4CF5 /* DemoApuestasTerminado */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5358D1E21B03313E00EB4CF5 /* Build configuration list for PBXNativeTarget "DemoApuestasTerminado" */;
+			buildPhases = (
+				5358D1BF1B03313E00EB4CF5 /* Sources */,
+				5358D1C01B03313E00EB4CF5 /* Frameworks */,
+				5358D1C11B03313E00EB4CF5 /* Resources */,
+				5358D20B1B0331D500EB4CF5 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5358D2031B0331D500EB4CF5 /* PBXTargetDependency */,
+			);
+			name = DemoApuestasTerminado;
+			productName = DemoApuestasTerminado;
+			productReference = 5358D1C31B03313E00EB4CF5 /* DemoApuestasTerminado.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5358D1D71B03313E00EB4CF5 /* DemoApuestasTerminadoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5358D1E51B03313E00EB4CF5 /* Build configuration list for PBXNativeTarget "DemoApuestasTerminadoTests" */;
+			buildPhases = (
+				5358D1D41B03313E00EB4CF5 /* Sources */,
+				5358D1D51B03313E00EB4CF5 /* Frameworks */,
+				5358D1D61B03313E00EB4CF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5358D1DA1B03313E00EB4CF5 /* PBXTargetDependency */,
+			);
+			name = DemoApuestasTerminadoTests;
+			productName = DemoApuestasTerminadoTests;
+			productReference = 5358D1D81B03313E00EB4CF5 /* DemoApuestasTerminadoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5358D1EB1B0331D500EB4CF5 /* DemoApuestasTerminado WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5358D2081B0331D500EB4CF5 /* Build configuration list for PBXNativeTarget "DemoApuestasTerminado WatchKit Extension" */;
+			buildPhases = (
+				5358D1E81B0331D500EB4CF5 /* Sources */,
+				5358D1E91B0331D500EB4CF5 /* Frameworks */,
+				5358D1EA1B0331D500EB4CF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5358D1F91B0331D500EB4CF5 /* PBXTargetDependency */,
+			);
+			name = "DemoApuestasTerminado WatchKit Extension";
+			productName = "DemoApuestasTerminado WatchKit Extension";
+			productReference = 5358D1EC1B0331D500EB4CF5 /* DemoApuestasTerminado WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		5358D1F51B0331D500EB4CF5 /* DemoApuestasTerminado WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5358D2051B0331D500EB4CF5 /* Build configuration list for PBXNativeTarget "DemoApuestasTerminado WatchKit App" */;
+			buildPhases = (
+				5358D1F41B0331D500EB4CF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DemoApuestasTerminado WatchKit App";
+			productName = "DemoApuestasTerminado WatchKit App";
+			productReference = 5358D1F61B0331D500EB4CF5 /* DemoApuestasTerminado WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5358D1BB1B03313E00EB4CF5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = IGZ;
+				TargetAttributes = {
+					5358D1C21B03313E00EB4CF5 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					5358D1D71B03313E00EB4CF5 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 5358D1C21B03313E00EB4CF5;
+					};
+					5358D1EB1B0331D500EB4CF5 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					5358D1F51B0331D500EB4CF5 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 5358D1BE1B03313E00EB4CF5 /* Build configuration list for PBXProject "DemoApuestasTerminado" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5358D1BA1B03313E00EB4CF5;
+			productRefGroup = 5358D1C41B03313E00EB4CF5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5358D1C21B03313E00EB4CF5 /* DemoApuestasTerminado */,
+				5358D1D71B03313E00EB4CF5 /* DemoApuestasTerminadoTests */,
+				5358D1EB1B0331D500EB4CF5 /* DemoApuestasTerminado WatchKit Extension */,
+				5358D1F51B0331D500EB4CF5 /* DemoApuestasTerminado WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5358D1C11B03313E00EB4CF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5358D1CE1B03313E00EB4CF5 /* Main.storyboard in Resources */,
+				5358D1D31B03313E00EB4CF5 /* LaunchScreen.xib in Resources */,
+				5358D1D01B03313E00EB4CF5 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5358D1D61B03313E00EB4CF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5358D1EA1B0331D500EB4CF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5358D1F31B0331D500EB4CF5 /* Images.xcassets in Resources */,
+				5358D1F71B0331D500EB4CF5 /* DemoApuestasTerminado WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5358D1F41B0331D500EB4CF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5358D1FF1B0331D500EB4CF5 /* Interface.storyboard in Resources */,
+				5358D2011B0331D500EB4CF5 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5358D1BF1B03313E00EB4CF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5358D1CB1B03313E00EB4CF5 /* ViewController.swift in Sources */,
+				5358D1C91B03313E00EB4CF5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5358D1D41B03313E00EB4CF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5358D1DF1B03313E00EB4CF5 /* DemoApuestasTerminadoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5358D1E81B0331D500EB4CF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9C53C531B0BBCE30043D6F1 /* BetsTableInterfaceController.swift in Sources */,
+				A9921DA91B0E95BB009CBECD /* GlanceInterfaceController.swift in Sources */,
+				A9C53C5F1B0BF31F0043D6F1 /* BetRowController.swift in Sources */,
+				A9C53C551B0BBDAF0043D6F1 /* MakeBetInterfaceController.swift in Sources */,
+				A9C53C571B0BC1A60043D6F1 /* MapInterfaceController.swift in Sources */,
+				5358D1F11B0331D500EB4CF5 /* HomeInterfaceController.swift in Sources */,
+				A9C178EF1B0E5EF1005B66CD /* UserStore.swift in Sources */,
+				A9C53C5B1B0BC3D90043D6F1 /* ScoresNotificationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5358D1DA1B03313E00EB4CF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5358D1C21B03313E00EB4CF5 /* DemoApuestasTerminado */;
+			targetProxy = 5358D1D91B03313E00EB4CF5 /* PBXContainerItemProxy */;
+		};
+		5358D1F91B0331D500EB4CF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5358D1F51B0331D500EB4CF5 /* DemoApuestasTerminado WatchKit App */;
+			targetProxy = 5358D1F81B0331D500EB4CF5 /* PBXContainerItemProxy */;
+		};
+		5358D2031B0331D500EB4CF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5358D1EB1B0331D500EB4CF5 /* DemoApuestasTerminado WatchKit Extension */;
+			targetProxy = 5358D2021B0331D500EB4CF5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5358D1CC1B03313E00EB4CF5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5358D1CD1B03313E00EB4CF5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5358D1D11B03313E00EB4CF5 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5358D1D21B03313E00EB4CF5 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		5358D1FD1B0331D500EB4CF5 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5358D1FE1B0331D500EB4CF5 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5358D1E01B03313E00EB4CF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5358D1E11B03313E00EB4CF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5358D1E31B03313E00EB4CF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DemoApuestasTerminado/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5358D1E41B03313E00EB4CF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DemoApuestasTerminado/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5358D1E61B03313E00EB4CF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DemoApuestasTerminadoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemoApuestasTerminado.app/DemoApuestasTerminado";
+			};
+			name = Debug;
+		};
+		5358D1E71B03313E00EB4CF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DemoApuestasTerminadoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemoApuestasTerminado.app/DemoApuestasTerminado";
+			};
+			name = Release;
+		};
+		5358D2061B0331D500EB4CF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = DemoApuestasTerminado_WatchKit_Extension;
+				INFOPLIST_FILE = "DemoApuestasTerminado WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		5358D2071B0331D500EB4CF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = DemoApuestasTerminado_WatchKit_Extension;
+				INFOPLIST_FILE = "DemoApuestasTerminado WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		5358D2091B0331D500EB4CF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DemoApuestasTerminado WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5358D20A1B0331D500EB4CF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "DemoApuestasTerminado WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5358D1BE1B03313E00EB4CF5 /* Build configuration list for PBXProject "DemoApuestasTerminado" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5358D1E01B03313E00EB4CF5 /* Debug */,
+				5358D1E11B03313E00EB4CF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5358D1E21B03313E00EB4CF5 /* Build configuration list for PBXNativeTarget "DemoApuestasTerminado" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5358D1E31B03313E00EB4CF5 /* Debug */,
+				5358D1E41B03313E00EB4CF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5358D1E51B03313E00EB4CF5 /* Build configuration list for PBXNativeTarget "DemoApuestasTerminadoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5358D1E61B03313E00EB4CF5 /* Debug */,
+				5358D1E71B03313E00EB4CF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5358D2051B0331D500EB4CF5 /* Build configuration list for PBXNativeTarget "DemoApuestasTerminado WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5358D2061B0331D500EB4CF5 /* Debug */,
+				5358D2071B0331D500EB4CF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5358D2081B0331D500EB4CF5 /* Build configuration list for PBXNativeTarget "DemoApuestasTerminado WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5358D2091B0331D500EB4CF5 /* Debug */,
+				5358D20A1B0331D500EB4CF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5358D1BB1B03313E00EB4CF5 /* Project object */;
+}

@@ -1,0 +1,23 @@
+{
+    "aps": {
+        "alert": {
+            "body": "1º cuarto: Bulls 28 - Cavaliers 23",
+            "title": "Fin 1º cuarto"
+        },
+        "category": "game"
+    },
+    
+    "WatchKit Simulator Actions": [
+        {
+            "title": "Apuesta",
+            "identifier": "betNotification"
+        }
+    ],
+    
+    "local": "BUL",
+    "localLong": "Bulls",
+    "localScore": "28",
+    "visitant": "CAV",
+    "visitantLong": "Cavaliers",
+    "visitantScore": "23"
+}
