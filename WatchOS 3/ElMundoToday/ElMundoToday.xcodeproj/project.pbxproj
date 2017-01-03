@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A90EF7D21E1B04FC00FA53E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90EF7D11E1B04FC00FA53E3 /* AppDelegate.swift */; };
+		A90EF7D41E1B04FC00FA53E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90EF7D31E1B04FC00FA53E3 /* ViewController.swift */; };
+		A90EF7D71E1B04FC00FA53E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A90EF7D51E1B04FC00FA53E3 /* Main.storyboard */; };
+		A90EF7D91E1B04FC00FA53E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A90EF7D81E1B04FC00FA53E3 /* Assets.xcassets */; };
+		A90EF7DC1E1B04FC00FA53E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A90EF7DA1E1B04FC00FA53E3 /* LaunchScreen.storyboard */; };
+		A90EF7E11E1B04FC00FA53E3 /* ElMundoToday WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A90EF7E01E1B04FC00FA53E3 /* ElMundoToday WatchKit App.app */; };
+		A90EF7E71E1B04FC00FA53E3 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A90EF7E51E1B04FC00FA53E3 /* Interface.storyboard */; };
+		A90EF7E91E1B04FC00FA53E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A90EF7E81E1B04FC00FA53E3 /* Assets.xcassets */; };
+		A90EF7F01E1B04FC00FA53E3 /* ElMundoToday WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A90EF7EF1E1B04FC00FA53E3 /* ElMundoToday WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A90EF7F71E1B04FC00FA53E3 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90EF7F61E1B04FC00FA53E3 /* InterfaceController.swift */; };
+		A90EF7F91E1B04FC00FA53E3 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90EF7F81E1B04FC00FA53E3 /* ExtensionDelegate.swift */; };
+		A90EF7FB1E1B04FC00FA53E3 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90EF7FA1E1B04FC00FA53E3 /* NotificationController.swift */; };
+		A90EF7FD1E1B04FC00FA53E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A90EF7FC1E1B04FC00FA53E3 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A90EF7E21E1B04FC00FA53E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A90EF7C61E1B04FB00FA53E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A90EF7DF1E1B04FC00FA53E3;
+			remoteInfo = "ElMundoToday WatchKit App";
+		};
+		A90EF7F11E1B04FC00FA53E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A90EF7C61E1B04FB00FA53E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A90EF7EE1E1B04FC00FA53E3;
+			remoteInfo = "ElMundoToday WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A90EF8041E1B04FC00FA53E3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A90EF7F01E1B04FC00FA53E3 /* ElMundoToday WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A90EF8081E1B04FC00FA53E3 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A90EF7E11E1B04FC00FA53E3 /* ElMundoToday WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A90EF7CE1E1B04FC00FA53E3 /* ElMundoToday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElMundoToday.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A90EF7D11E1B04FC00FA53E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A90EF7D31E1B04FC00FA53E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A90EF7D61E1B04FC00FA53E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A90EF7D81E1B04FC00FA53E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A90EF7DB1E1B04FC00FA53E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A90EF7DD1E1B04FC00FA53E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A90EF7E01E1B04FC00FA53E3 /* ElMundoToday WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ElMundoToday WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A90EF7E61E1B04FC00FA53E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A90EF7E81E1B04FC00FA53E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A90EF7EA1E1B04FC00FA53E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A90EF7EF1E1B04FC00FA53E3 /* ElMundoToday WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ElMundoToday WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A90EF7F51E1B04FC00FA53E3 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		A90EF7F61E1B04FC00FA53E3 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A90EF7F81E1B04FC00FA53E3 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		A90EF7FA1E1B04FC00FA53E3 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		A90EF7FC1E1B04FC00FA53E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A90EF7FE1E1B04FC00FA53E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A90EF7CB1E1B04FB00FA53E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A90EF7EC1E1B04FC00FA53E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A90EF7C51E1B04FB00FA53E3 = {
+			isa = PBXGroup;
+			children = (
+				A90EF7D01E1B04FC00FA53E3 /* ElMundoToday */,
+				A90EF7E41E1B04FC00FA53E3 /* ElMundoToday WatchKit App */,
+				A90EF7F31E1B04FC00FA53E3 /* ElMundoToday WatchKit Extension */,
+				A90EF7CF1E1B04FC00FA53E3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A90EF7CF1E1B04FC00FA53E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A90EF7CE1E1B04FC00FA53E3 /* ElMundoToday.app */,
+				A90EF7E01E1B04FC00FA53E3 /* ElMundoToday WatchKit App.app */,
+				A90EF7EF1E1B04FC00FA53E3 /* ElMundoToday WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A90EF7D01E1B04FC00FA53E3 /* ElMundoToday */ = {
+			isa = PBXGroup;
+			children = (
+				A90EF7D11E1B04FC00FA53E3 /* AppDelegate.swift */,
+				A90EF7D31E1B04FC00FA53E3 /* ViewController.swift */,
+				A90EF7D51E1B04FC00FA53E3 /* Main.storyboard */,
+				A90EF7D81E1B04FC00FA53E3 /* Assets.xcassets */,
+				A90EF7DA1E1B04FC00FA53E3 /* LaunchScreen.storyboard */,
+				A90EF7DD1E1B04FC00FA53E3 /* Info.plist */,
+			);
+			path = ElMundoToday;
+			sourceTree = "<group>";
+		};
+		A90EF7E41E1B04FC00FA53E3 /* ElMundoToday WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A90EF7E51E1B04FC00FA53E3 /* Interface.storyboard */,
+				A90EF7E81E1B04FC00FA53E3 /* Assets.xcassets */,
+				A90EF7EA1E1B04FC00FA53E3 /* Info.plist */,
+			);
+			path = "ElMundoToday WatchKit App";
+			sourceTree = "<group>";
+		};
+		A90EF7F31E1B04FC00FA53E3 /* ElMundoToday WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A90EF7F61E1B04FC00FA53E3 /* InterfaceController.swift */,
+				A90EF7F81E1B04FC00FA53E3 /* ExtensionDelegate.swift */,
+				A90EF7FA1E1B04FC00FA53E3 /* NotificationController.swift */,
+				A90EF7FC1E1B04FC00FA53E3 /* Assets.xcassets */,
+				A90EF7FE1E1B04FC00FA53E3 /* Info.plist */,
+				A90EF7F41E1B04FC00FA53E3 /* Supporting Files */,
+			);
+			path = "ElMundoToday WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		A90EF7F41E1B04FC00FA53E3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A90EF7F51E1B04FC00FA53E3 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A90EF7CD1E1B04FB00FA53E3 /* ElMundoToday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A90EF8091E1B04FC00FA53E3 /* Build configuration list for PBXNativeTarget "ElMundoToday" */;
+			buildPhases = (
+				A90EF7CA1E1B04FB00FA53E3 /* Sources */,
+				A90EF7CB1E1B04FB00FA53E3 /* Frameworks */,
+				A90EF7CC1E1B04FB00FA53E3 /* Resources */,
+				A90EF8081E1B04FC00FA53E3 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A90EF7E31E1B04FC00FA53E3 /* PBXTargetDependency */,
+			);
+			name = ElMundoToday;
+			productName = ElMundoToday;
+			productReference = A90EF7CE1E1B04FC00FA53E3 /* ElMundoToday.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A90EF7DF1E1B04FC00FA53E3 /* ElMundoToday WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A90EF8051E1B04FC00FA53E3 /* Build configuration list for PBXNativeTarget "ElMundoToday WatchKit App" */;
+			buildPhases = (
+				A90EF7DE1E1B04FC00FA53E3 /* Resources */,
+				A90EF8041E1B04FC00FA53E3 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A90EF7F21E1B04FC00FA53E3 /* PBXTargetDependency */,
+			);
+			name = "ElMundoToday WatchKit App";
+			productName = "ElMundoToday WatchKit App";
+			productReference = A90EF7E01E1B04FC00FA53E3 /* ElMundoToday WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A90EF7EE1E1B04FC00FA53E3 /* ElMundoToday WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A90EF8011E1B04FC00FA53E3 /* Build configuration list for PBXNativeTarget "ElMundoToday WatchKit Extension" */;
+			buildPhases = (
+				A90EF7EB1E1B04FC00FA53E3 /* Sources */,
+				A90EF7EC1E1B04FC00FA53E3 /* Frameworks */,
+				A90EF7ED1E1B04FC00FA53E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ElMundoToday WatchKit Extension";
+			productName = "ElMundoToday WatchKit Extension";
+			productReference = A90EF7EF1E1B04FC00FA53E3 /* ElMundoToday WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A90EF7C61E1B04FB00FA53E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = UPSA;
+				TargetAttributes = {
+					A90EF7CD1E1B04FB00FA53E3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					A90EF7DF1E1B04FC00FA53E3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					A90EF7EE1E1B04FC00FA53E3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A90EF7C91E1B04FB00FA53E3 /* Build configuration list for PBXProject "ElMundoToday" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A90EF7C51E1B04FB00FA53E3;
+			productRefGroup = A90EF7CF1E1B04FC00FA53E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A90EF7CD1E1B04FB00FA53E3 /* ElMundoToday */,
+				A90EF7DF1E1B04FC00FA53E3 /* ElMundoToday WatchKit App */,
+				A90EF7EE1E1B04FC00FA53E3 /* ElMundoToday WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A90EF7CC1E1B04FB00FA53E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A90EF7DC1E1B04FC00FA53E3 /* LaunchScreen.storyboard in Resources */,
+				A90EF7D91E1B04FC00FA53E3 /* Assets.xcassets in Resources */,
+				A90EF7D71E1B04FC00FA53E3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A90EF7DE1E1B04FC00FA53E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A90EF7E91E1B04FC00FA53E3 /* Assets.xcassets in Resources */,
+				A90EF7E71E1B04FC00FA53E3 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A90EF7ED1E1B04FC00FA53E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A90EF7FD1E1B04FC00FA53E3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A90EF7CA1E1B04FB00FA53E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A90EF7D41E1B04FC00FA53E3 /* ViewController.swift in Sources */,
+				A90EF7D21E1B04FC00FA53E3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A90EF7EB1E1B04FC00FA53E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A90EF7FB1E1B04FC00FA53E3 /* NotificationController.swift in Sources */,
+				A90EF7F91E1B04FC00FA53E3 /* ExtensionDelegate.swift in Sources */,
+				A90EF7F71E1B04FC00FA53E3 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A90EF7E31E1B04FC00FA53E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A90EF7DF1E1B04FC00FA53E3 /* ElMundoToday WatchKit App */;
+			targetProxy = A90EF7E21E1B04FC00FA53E3 /* PBXContainerItemProxy */;
+		};
+		A90EF7F21E1B04FC00FA53E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A90EF7EE1E1B04FC00FA53E3 /* ElMundoToday WatchKit Extension */;
+			targetProxy = A90EF7F11E1B04FC00FA53E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A90EF7D51E1B04FC00FA53E3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A90EF7D61E1B04FC00FA53E3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A90EF7DA1E1B04FC00FA53E3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A90EF7DB1E1B04FC00FA53E3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A90EF7E51E1B04FC00FA53E3 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A90EF7E61E1B04FC00FA53E3 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A90EF7FF1E1B04FC00FA53E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A90EF8001E1B04FC00FA53E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A90EF8021E1B04FC00FA53E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "ElMundoToday WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.ElMundoToday.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		A90EF8031E1B04FC00FA53E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "ElMundoToday WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.ElMundoToday.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		A90EF8061E1B04FC00FA53E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = ElMundoToday_WatchKit_Extension;
+				INFOPLIST_FILE = "ElMundoToday WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.ElMundoToday.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		A90EF8071E1B04FC00FA53E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = ElMundoToday_WatchKit_Extension;
+				INFOPLIST_FILE = "ElMundoToday WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.ElMundoToday.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		A90EF80A1E1B04FC00FA53E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ElMundoToday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.ElMundoToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A90EF80B1E1B04FC00FA53E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ElMundoToday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.ElMundoToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A90EF7C91E1B04FB00FA53E3 /* Build configuration list for PBXProject "ElMundoToday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A90EF7FF1E1B04FC00FA53E3 /* Debug */,
+				A90EF8001E1B04FC00FA53E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A90EF8011E1B04FC00FA53E3 /* Build configuration list for PBXNativeTarget "ElMundoToday WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A90EF8021E1B04FC00FA53E3 /* Debug */,
+				A90EF8031E1B04FC00FA53E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A90EF8051E1B04FC00FA53E3 /* Build configuration list for PBXNativeTarget "ElMundoToday WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A90EF8061E1B04FC00FA53E3 /* Debug */,
+				A90EF8071E1B04FC00FA53E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A90EF8091E1B04FC00FA53E3 /* Build configuration list for PBXNativeTarget "ElMundoToday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A90EF80A1E1B04FC00FA53E3 /* Debug */,
+				A90EF80B1E1B04FC00FA53E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A90EF7C61E1B04FB00FA53E3 /* Project object */;
+}
