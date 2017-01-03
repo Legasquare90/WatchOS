@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A90EF8191E1C62B100FA53E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90EF8181E1C62B100FA53E3 /* AppDelegate.swift */; };
+		A90EF81B1E1C62B100FA53E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90EF81A1E1C62B100FA53E3 /* ViewController.swift */; };
+		A90EF81E1E1C62B100FA53E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A90EF81C1E1C62B100FA53E3 /* Main.storyboard */; };
+		A90EF8201E1C62B100FA53E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A90EF81F1E1C62B100FA53E3 /* Assets.xcassets */; };
+		A90EF8231E1C62B100FA53E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A90EF8211E1C62B100FA53E3 /* LaunchScreen.storyboard */; };
+		A90EF8281E1C62B100FA53E3 /* PokemonGO WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A90EF8271E1C62B100FA53E3 /* PokemonGO WatchKit App.app */; };
+		A90EF82E1E1C62B100FA53E3 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A90EF82C1E1C62B100FA53E3 /* Interface.storyboard */; };
+		A90EF8301E1C62B100FA53E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A90EF82F1E1C62B100FA53E3 /* Assets.xcassets */; };
+		A90EF8371E1C62B100FA53E3 /* PokemonGO WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A90EF8361E1C62B100FA53E3 /* PokemonGO WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A90EF83C1E1C62B100FA53E3 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90EF83B1E1C62B100FA53E3 /* InterfaceController.swift */; };
+		A90EF83E1E1C62B100FA53E3 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90EF83D1E1C62B100FA53E3 /* ExtensionDelegate.swift */; };
+		A90EF8401E1C62B100FA53E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A90EF83F1E1C62B100FA53E3 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A90EF8291E1C62B100FA53E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A90EF80D1E1C62B100FA53E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A90EF8261E1C62B100FA53E3;
+			remoteInfo = "PokemonGO WatchKit App";
+		};
+		A90EF8381E1C62B100FA53E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A90EF80D1E1C62B100FA53E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A90EF8351E1C62B100FA53E3;
+			remoteInfo = "PokemonGO WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A90EF8471E1C62B100FA53E3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A90EF8371E1C62B100FA53E3 /* PokemonGO WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A90EF84B1E1C62B100FA53E3 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A90EF8281E1C62B100FA53E3 /* PokemonGO WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A90EF8151E1C62B100FA53E3 /* PokemonGO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokemonGO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A90EF8181E1C62B100FA53E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A90EF81A1E1C62B100FA53E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A90EF81D1E1C62B100FA53E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A90EF81F1E1C62B100FA53E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A90EF8221E1C62B100FA53E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A90EF8241E1C62B100FA53E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A90EF8271E1C62B100FA53E3 /* PokemonGO WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PokemonGO WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A90EF82D1E1C62B100FA53E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A90EF82F1E1C62B100FA53E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A90EF8311E1C62B100FA53E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A90EF8361E1C62B100FA53E3 /* PokemonGO WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PokemonGO WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A90EF83B1E1C62B100FA53E3 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A90EF83D1E1C62B100FA53E3 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		A90EF83F1E1C62B100FA53E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A90EF8411E1C62B100FA53E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A90EF8121E1C62B100FA53E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A90EF8331E1C62B100FA53E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A90EF80C1E1C62B100FA53E3 = {
+			isa = PBXGroup;
+			children = (
+				A90EF8171E1C62B100FA53E3 /* PokemonGO */,
+				A90EF82B1E1C62B100FA53E3 /* PokemonGO WatchKit App */,
+				A90EF83A1E1C62B100FA53E3 /* PokemonGO WatchKit Extension */,
+				A90EF8161E1C62B100FA53E3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A90EF8161E1C62B100FA53E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A90EF8151E1C62B100FA53E3 /* PokemonGO.app */,
+				A90EF8271E1C62B100FA53E3 /* PokemonGO WatchKit App.app */,
+				A90EF8361E1C62B100FA53E3 /* PokemonGO WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A90EF8171E1C62B100FA53E3 /* PokemonGO */ = {
+			isa = PBXGroup;
+			children = (
+				A90EF8181E1C62B100FA53E3 /* AppDelegate.swift */,
+				A90EF81A1E1C62B100FA53E3 /* ViewController.swift */,
+				A90EF81C1E1C62B100FA53E3 /* Main.storyboard */,
+				A90EF81F1E1C62B100FA53E3 /* Assets.xcassets */,
+				A90EF8211E1C62B100FA53E3 /* LaunchScreen.storyboard */,
+				A90EF8241E1C62B100FA53E3 /* Info.plist */,
+			);
+			path = PokemonGO;
+			sourceTree = "<group>";
+		};
+		A90EF82B1E1C62B100FA53E3 /* PokemonGO WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A90EF82C1E1C62B100FA53E3 /* Interface.storyboard */,
+				A90EF82F1E1C62B100FA53E3 /* Assets.xcassets */,
+				A90EF8311E1C62B100FA53E3 /* Info.plist */,
+			);
+			path = "PokemonGO WatchKit App";
+			sourceTree = "<group>";
+		};
+		A90EF83A1E1C62B100FA53E3 /* PokemonGO WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A90EF83B1E1C62B100FA53E3 /* InterfaceController.swift */,
+				A90EF83D1E1C62B100FA53E3 /* ExtensionDelegate.swift */,
+				A90EF83F1E1C62B100FA53E3 /* Assets.xcassets */,
+				A90EF8411E1C62B100FA53E3 /* Info.plist */,
+			);
+			path = "PokemonGO WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A90EF8141E1C62B100FA53E3 /* PokemonGO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A90EF84C1E1C62B100FA53E3 /* Build configuration list for PBXNativeTarget "PokemonGO" */;
+			buildPhases = (
+				A90EF8111E1C62B100FA53E3 /* Sources */,
+				A90EF8121E1C62B100FA53E3 /* Frameworks */,
+				A90EF8131E1C62B100FA53E3 /* Resources */,
+				A90EF84B1E1C62B100FA53E3 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A90EF82A1E1C62B100FA53E3 /* PBXTargetDependency */,
+			);
+			name = PokemonGO;
+			productName = PokemonGO;
+			productReference = A90EF8151E1C62B100FA53E3 /* PokemonGO.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A90EF8261E1C62B100FA53E3 /* PokemonGO WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A90EF8481E1C62B100FA53E3 /* Build configuration list for PBXNativeTarget "PokemonGO WatchKit App" */;
+			buildPhases = (
+				A90EF8251E1C62B100FA53E3 /* Resources */,
+				A90EF8471E1C62B100FA53E3 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A90EF8391E1C62B100FA53E3 /* PBXTargetDependency */,
+			);
+			name = "PokemonGO WatchKit App";
+			productName = "PokemonGO WatchKit App";
+			productReference = A90EF8271E1C62B100FA53E3 /* PokemonGO WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A90EF8351E1C62B100FA53E3 /* PokemonGO WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A90EF8441E1C62B100FA53E3 /* Build configuration list for PBXNativeTarget "PokemonGO WatchKit Extension" */;
+			buildPhases = (
+				A90EF8321E1C62B100FA53E3 /* Sources */,
+				A90EF8331E1C62B100FA53E3 /* Frameworks */,
+				A90EF8341E1C62B100FA53E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PokemonGO WatchKit Extension";
+			productName = "PokemonGO WatchKit Extension";
+			productReference = A90EF8361E1C62B100FA53E3 /* PokemonGO WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A90EF80D1E1C62B100FA53E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = UPSA;
+				TargetAttributes = {
+					A90EF8141E1C62B100FA53E3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					A90EF8261E1C62B100FA53E3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					A90EF8351E1C62B100FA53E3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A90EF8101E1C62B100FA53E3 /* Build configuration list for PBXProject "PokemonGO" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A90EF80C1E1C62B100FA53E3;
+			productRefGroup = A90EF8161E1C62B100FA53E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A90EF8141E1C62B100FA53E3 /* PokemonGO */,
+				A90EF8261E1C62B100FA53E3 /* PokemonGO WatchKit App */,
+				A90EF8351E1C62B100FA53E3 /* PokemonGO WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A90EF8131E1C62B100FA53E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A90EF8231E1C62B100FA53E3 /* LaunchScreen.storyboard in Resources */,
+				A90EF8201E1C62B100FA53E3 /* Assets.xcassets in Resources */,
+				A90EF81E1E1C62B100FA53E3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A90EF8251E1C62B100FA53E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A90EF8301E1C62B100FA53E3 /* Assets.xcassets in Resources */,
+				A90EF82E1E1C62B100FA53E3 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A90EF8341E1C62B100FA53E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A90EF8401E1C62B100FA53E3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A90EF8111E1C62B100FA53E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A90EF81B1E1C62B100FA53E3 /* ViewController.swift in Sources */,
+				A90EF8191E1C62B100FA53E3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A90EF8321E1C62B100FA53E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A90EF83E1E1C62B100FA53E3 /* ExtensionDelegate.swift in Sources */,
+				A90EF83C1E1C62B100FA53E3 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A90EF82A1E1C62B100FA53E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A90EF8261E1C62B100FA53E3 /* PokemonGO WatchKit App */;
+			targetProxy = A90EF8291E1C62B100FA53E3 /* PBXContainerItemProxy */;
+		};
+		A90EF8391E1C62B100FA53E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A90EF8351E1C62B100FA53E3 /* PokemonGO WatchKit Extension */;
+			targetProxy = A90EF8381E1C62B100FA53E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A90EF81C1E1C62B100FA53E3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A90EF81D1E1C62B100FA53E3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A90EF8211E1C62B100FA53E3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A90EF8221E1C62B100FA53E3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A90EF82C1E1C62B100FA53E3 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A90EF82D1E1C62B100FA53E3 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A90EF8421E1C62B100FA53E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A90EF8431E1C62B100FA53E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A90EF8451E1C62B100FA53E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "PokemonGO WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.PokemonGO.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		A90EF8461E1C62B100FA53E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "PokemonGO WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.PokemonGO.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		A90EF8491E1C62B100FA53E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = PokemonGO_WatchKit_Extension;
+				INFOPLIST_FILE = "PokemonGO WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.PokemonGO.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		A90EF84A1E1C62B100FA53E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = PokemonGO_WatchKit_Extension;
+				INFOPLIST_FILE = "PokemonGO WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.PokemonGO.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		A90EF84D1E1C62B100FA53E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PokemonGO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.PokemonGO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A90EF84E1E1C62B100FA53E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PokemonGO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.PokemonGO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A90EF8101E1C62B100FA53E3 /* Build configuration list for PBXProject "PokemonGO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A90EF8421E1C62B100FA53E3 /* Debug */,
+				A90EF8431E1C62B100FA53E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A90EF8441E1C62B100FA53E3 /* Build configuration list for PBXNativeTarget "PokemonGO WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A90EF8451E1C62B100FA53E3 /* Debug */,
+				A90EF8461E1C62B100FA53E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A90EF8481E1C62B100FA53E3 /* Build configuration list for PBXNativeTarget "PokemonGO WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A90EF8491E1C62B100FA53E3 /* Debug */,
+				A90EF84A1E1C62B100FA53E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A90EF84C1E1C62B100FA53E3 /* Build configuration list for PBXNativeTarget "PokemonGO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A90EF84D1E1C62B100FA53E3 /* Debug */,
+				A90EF84E1E1C62B100FA53E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A90EF80D1E1C62B100FA53E3 /* Project object */;
+}
