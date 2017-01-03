@@ -1,15 +1,139 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="PokemonGO_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="Cerca de ti..." id="PhJ-kY-mzE"/>
+                        <table alignment="left" id="f4b-jm-XJj">
+                            <items>
+                                <tableRow id="yGW-RP-3BC">
+                                    <group key="rootItem" width="1" alignment="left" id="hx3-8q-A6M">
+                                        <items>
+                                            <imageView width="0.29999999999999999" alignment="left" verticalAlignment="center" id="fJr-Dm-B9g"/>
+                                            <label width="0.69999999999999996" alignment="left" verticalAlignment="center" text="Label" id="f3Q-Su-KT2"/>
+                                        </items>
+                                    </group>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                </controller>
             </objects>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="9lC-w5-nLx">
+            <objects>
+                <controller id="CkF-wb-34e">
+                    <items>
+                        <map height="0.5" alignment="center" id="hSO-Bi-jIa"/>
+                        <separator alignment="left" id="zV7-qN-axr"/>
+                        <label alignment="center" verticalAlignment="bottom" text="¡Muy cerca!" id="VXq-QF-46s"/>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Capturar" id="9zP-5R-UpF"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="311" y="37"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="God-3h-EBo">
+            <objects>
+                <controller id="ZRY-Nm-MbB">
+                    <items>
+                        <table alignment="left" id="Ffq-LS-EXR">
+                            <items>
+                                <tableRow id="gQC-YI-Mtr">
+                                    <group key="rootItem" width="1" alignment="left" id="F8s-R4-cCW">
+                                        <items>
+                                            <imageView width="0.29999999999999999" alignment="left" verticalAlignment="center" id="Puu-Pk-0N4"/>
+                                            <label width="0.69999999999999996" alignment="left" verticalAlignment="center" text="Label" id="ksr-tz-Gqy"/>
+                                        </items>
+                                    </group>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="311" y="351"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="pFZ-QH-HUP">
+            <objects>
+                <controller id="23m-fR-ae7">
+                    <items>
+                        <table alignment="left" id="LtO-Ou-OzU">
+                            <items>
+                                <tableRow id="fvp-Aj-zww">
+                                    <group key="rootItem" width="1" alignment="left" id="37J-lS-jc4">
+                                        <items>
+                                            <imageView width="0.29999999999999999" alignment="left" verticalAlignment="center" id="bCS-HK-2Bj"/>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="ITf-jm-ckA"/>
+                                        </items>
+                                    </group>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="311" y="650"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="HkI-QJ-ggj">
+            <objects>
+                <controller id="cm1-eN-yjJ">
+                    <items>
+                        <picker height="0.5" alignment="left" style="stack" id="4lG-gK-f8c"/>
+                        <label alignment="center" text="Label" id="5mc-Kr-jkj"/>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Button" id="5Yh-ky-9cj"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="600" y="37"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="1Wn-mp-hUH">
+            <objects>
+                <controller id="7el-hU-tme">
+                    <items>
+                        <imageView height="0.5" alignment="left" id="Eth-Ph-lfb"/>
+                        <label alignment="center" text="150 CP" id="NPY-97-kpG"/>
+                        <label alignment="center" text="76 HP" id="1Rd-Dc-8wn"/>
+                        <group width="1" height="0.20000000000000001" alignment="left" id="hzV-HB-3rj">
+                            <items>
+                                <imageView width="0.20000000000000001" height="1" alignment="left" verticalAlignment="center" id="pqK-5f-obc"/>
+                                <label alignment="left" verticalAlignment="center" text="Tackle" id="d9T-s9-On0"/>
+                                <label alignment="right" verticalAlignment="center" text="20" id="s0g-sr-fEM"/>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="600" y="351"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="VGo-t8-h0S">
+            <objects>
+                <controller id="Az1-6q-EMi">
+                    <items>
+                        <imageView height="0.5" alignment="left" id="Sag-l9-VK1"/>
+                        <label alignment="center" text="Label" id="tL3-wL-qe1"/>
+                        <paymentButton width="1" alignment="left" verticalAlignment="bottom" id="Igt-61-aqY"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="600" y="650"/>
         </scene>
     </scenes>
 </document>
