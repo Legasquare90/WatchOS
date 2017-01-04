@@ -47,6 +47,11 @@ class PokemonNearbyController: WKInterfaceController {
         loadingLabel.setHidden(true)
     }
     
+    override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
+        let controllerIdentifier = "PokemonNearbyDetail"
+        pushController(withName: controllerIdentifier, context: pokemonNearby[rowIndex])
+    }
+    
     func getNearbyPokemon() {
         let url = URL(string: "http://private-64c57c-pokemongoupsa.apiary-mock.com/nearby")
         var urlRequest = URLRequest(url: url!)

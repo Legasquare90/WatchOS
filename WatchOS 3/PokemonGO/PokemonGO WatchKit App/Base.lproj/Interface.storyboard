@@ -41,16 +41,25 @@
             </objects>
             <point key="canvasLocation" x="17" y="37"/>
         </scene>
-        <!--Interface Controller-->
+        <!--PokemonNearbyDetail-->
         <scene sceneID="9lC-w5-nLx">
             <objects>
-                <controller id="CkF-wb-34e">
+                <controller identifier="PokemonNearbyDetail" id="CkF-wb-34e" customClass="PokemonNearbyDetailController" customModule="PokemonGO_WatchKit_Extension">
                     <items>
                         <map height="0.5" alignment="center" id="hSO-Bi-jIa"/>
                         <separator alignment="left" id="zV7-qN-axr"/>
                         <label alignment="center" verticalAlignment="bottom" text="¡Muy cerca!" id="VXq-QF-46s"/>
-                        <button width="1" alignment="left" verticalAlignment="bottom" title="Capturar" id="9zP-5R-UpF"/>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Capturar" id="9zP-5R-UpF">
+                            <connections>
+                                <action selector="catchAction" destination="CkF-wb-34e" id="0cd-8A-hd2"/>
+                            </connections>
+                        </button>
                     </items>
+                    <connections>
+                        <outlet property="catchButton" destination="9zP-5R-UpF" id="do9-TP-68Y"/>
+                        <outlet property="distanceLabel" destination="VXq-QF-46s" id="2iH-4I-cHI"/>
+                        <outlet property="map" destination="hSO-Bi-jIa" id="SiW-cx-bVN"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="311" y="37"/>
