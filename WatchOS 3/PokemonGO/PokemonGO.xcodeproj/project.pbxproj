@@ -16,7 +16,7 @@
 		A90EF82E1E1C62B100FA53E3 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A90EF82C1E1C62B100FA53E3 /* Interface.storyboard */; };
 		A90EF8301E1C62B100FA53E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A90EF82F1E1C62B100FA53E3 /* Assets.xcassets */; };
 		A90EF8371E1C62B100FA53E3 /* PokemonGO WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A90EF8361E1C62B100FA53E3 /* PokemonGO WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		A90EF83C1E1C62B100FA53E3 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90EF83B1E1C62B100FA53E3 /* InterfaceController.swift */; };
+		A90EF83C1E1C62B100FA53E3 /* PokemonNearbyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90EF83B1E1C62B100FA53E3 /* PokemonNearbyController.swift */; };
 		A90EF83E1E1C62B100FA53E3 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90EF83D1E1C62B100FA53E3 /* ExtensionDelegate.swift */; };
 		A90EF8401E1C62B100FA53E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A90EF83F1E1C62B100FA53E3 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -76,7 +76,7 @@
 		A90EF82F1E1C62B100FA53E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A90EF8311E1C62B100FA53E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A90EF8361E1C62B100FA53E3 /* PokemonGO WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PokemonGO WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A90EF83B1E1C62B100FA53E3 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A90EF83B1E1C62B100FA53E3 /* PokemonNearbyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonNearbyController.swift; sourceTree = "<group>"; };
 		A90EF83D1E1C62B100FA53E3 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		A90EF83F1E1C62B100FA53E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A90EF8411E1C62B100FA53E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -146,7 +146,7 @@
 		A90EF83A1E1C62B100FA53E3 /* PokemonGO WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				A90EF83B1E1C62B100FA53E3 /* InterfaceController.swift */,
+				A90EF83B1E1C62B100FA53E3 /* PokemonNearbyController.swift */,
 				A90EF83D1E1C62B100FA53E3 /* ExtensionDelegate.swift */,
 				A90EF83F1E1C62B100FA53E3 /* Assets.xcassets */,
 				A90EF8411E1C62B100FA53E3 /* Info.plist */,
@@ -299,7 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A90EF83E1E1C62B100FA53E3 /* ExtensionDelegate.swift in Sources */,
-				A90EF83C1E1C62B100FA53E3 /* InterfaceController.swift in Sources */,
+				A90EF83C1E1C62B100FA53E3 /* PokemonNearbyController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,6 +546,7 @@
 				A90EF8461E1C62B100FA53E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A90EF8481E1C62B100FA53E3 /* Build configuration list for PBXNativeTarget "PokemonGO WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -554,6 +555,7 @@
 				A90EF84A1E1C62B100FA53E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A90EF84C1E1C62B100FA53E3 /* Build configuration list for PBXNativeTarget "PokemonGO" */ = {
 			isa = XCConfigurationList;
@@ -562,6 +564,7 @@
 				A90EF84E1E1C62B100FA53E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

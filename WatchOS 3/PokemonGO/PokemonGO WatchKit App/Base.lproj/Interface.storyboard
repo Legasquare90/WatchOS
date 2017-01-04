@@ -9,27 +9,37 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Pokemon Nearby Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="PokemonGO_WatchKit_App" customModuleProvider="target">
+                <controller id="AgC-eL-Hgc" customClass="PokemonNearbyController" customModule="PokemonGO_WatchKit_Extension">
                     <items>
                         <label alignment="left" text="Cerca de ti..." id="PhJ-kY-mzE"/>
+                        <label alignment="center" verticalAlignment="center" text="Cargando..." id="5yL-l0-VWT"/>
                         <table alignment="left" id="f4b-jm-XJj">
                             <items>
-                                <tableRow id="yGW-RP-3BC">
+                                <tableRow identifier="rowPokemonNearby" id="yGW-RP-3BC" customClass="RowPokemonNearbyController" customModule="PokemonGO_WatchKit_Extension">
                                     <group key="rootItem" width="1" alignment="left" id="hx3-8q-A6M">
                                         <items>
-                                            <imageView width="0.29999999999999999" alignment="left" verticalAlignment="center" id="fJr-Dm-B9g"/>
+                                            <imageView width="0.29999999999999999" alignment="left" verticalAlignment="center" contentMode="scaleAspectFit" id="fJr-Dm-B9g"/>
                                             <label width="0.69999999999999996" alignment="left" verticalAlignment="center" text="Label" id="f3Q-Su-KT2"/>
                                         </items>
                                     </group>
+                                    <connections>
+                                        <outlet property="imagePokemonNearby" destination="fJr-Dm-B9g" id="DDH-Qj-xJb"/>
+                                        <outlet property="namePokemonNearby" destination="f3Q-Su-KT2" id="CVO-8Y-rEg"/>
+                                    </connections>
                                 </tableRow>
                             </items>
                         </table>
                     </items>
+                    <connections>
+                        <outlet property="loadingLabel" destination="5yL-l0-VWT" id="mrZ-ff-mpR"/>
+                        <outlet property="table" destination="f4b-jm-XJj" id="M06-hV-xsO"/>
+                    </connections>
                 </controller>
             </objects>
+            <point key="canvasLocation" x="17" y="37"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="9lC-w5-nLx">
