@@ -108,15 +108,27 @@
             </objects>
             <point key="canvasLocation" x="311" y="650"/>
         </scene>
-        <!--Interface Controller-->
+        <!--CatchPokemon-->
         <scene sceneID="HkI-QJ-ggj">
             <objects>
-                <controller id="cm1-eN-yjJ">
+                <controller identifier="CatchPokemon" id="cm1-eN-yjJ" customClass="CatchPokemonController" customModule="PokemonGO_WatchKit_Extension">
                     <items>
-                        <picker height="0.5" alignment="left" style="stack" id="4lG-gK-f8c"/>
+                        <picker height="0.5" alignment="left" style="stack" id="4lG-gK-f8c">
+                            <connections>
+                                <action selector="pickerChangeValue:" destination="cm1-eN-yjJ" id="Fai-AX-Ne0"/>
+                            </connections>
+                        </picker>
                         <label alignment="center" text="Label" id="5mc-Kr-jkj"/>
-                        <button width="1" alignment="left" verticalAlignment="bottom" title="Button" id="5Yh-ky-9cj"/>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Button" id="5Yh-ky-9cj">
+                            <connections>
+                                <action selector="catchAction" destination="cm1-eN-yjJ" id="vRp-lD-ibe"/>
+                            </connections>
+                        </button>
                     </items>
+                    <connections>
+                        <outlet property="picker" destination="4lG-gK-f8c" id="pl3-WA-HN3"/>
+                        <outlet property="pokeballTypeLabel" destination="5mc-Kr-jkj" id="aSh-ln-DLX"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="600" y="37"/>

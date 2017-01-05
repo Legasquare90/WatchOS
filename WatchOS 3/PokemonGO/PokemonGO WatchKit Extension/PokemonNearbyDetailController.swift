@@ -22,9 +22,11 @@ class PokemonNearbyDetailController: WKInterfaceController {
     @IBOutlet var distanceLabel: WKInterfaceLabel!
     @IBOutlet var catchButton: WKInterfaceButton!
     
+    var pokemon: Dictionary<String, Any> = [:]
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        let pokemon = context as! Dictionary<String, Any>
+        pokemon = context as! Dictionary<String, Any>
         setTitle(pokemon["name"] as? String)
         switch pokemon["nearbyType"] as! Int {
             case NearbyType.veryNear.rawValue:
@@ -48,6 +50,7 @@ class PokemonNearbyDetailController: WKInterfaceController {
     }
     
     @IBAction func catchAction() {
-        
+        let controllerIdentifier = "CatchPokemon"
+        pushController(withName: controllerIdentifier, context: pokemon)
     }
 }

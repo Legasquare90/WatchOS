@@ -20,6 +20,7 @@
 		A90EF83E1E1C62B100FA53E3 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90EF83D1E1C62B100FA53E3 /* ExtensionDelegate.swift */; };
 		A90EF8401E1C62B100FA53E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A90EF83F1E1C62B100FA53E3 /* Assets.xcassets */; };
 		A90EF8501E1D917400FA53E3 /* PokemonNearbyDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90EF84F1E1D917400FA53E3 /* PokemonNearbyDetailController.swift */; };
+		A90EF8521E1DBE0C00FA53E3 /* CatchPokemonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90EF8511E1DBE0C00FA53E3 /* CatchPokemonController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		A90EF83F1E1C62B100FA53E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A90EF8411E1C62B100FA53E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A90EF84F1E1D917400FA53E3 /* PokemonNearbyDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonNearbyDetailController.swift; sourceTree = "<group>"; };
+		A90EF8511E1DBE0C00FA53E3 /* CatchPokemonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatchPokemonController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 			children = (
 				A90EF83B1E1C62B100FA53E3 /* PokemonNearbyController.swift */,
 				A90EF84F1E1D917400FA53E3 /* PokemonNearbyDetailController.swift */,
+				A90EF8511E1DBE0C00FA53E3 /* CatchPokemonController.swift */,
 				A90EF83D1E1C62B100FA53E3 /* ExtensionDelegate.swift */,
 				A90EF83F1E1C62B100FA53E3 /* Assets.xcassets */,
 				A90EF8411E1C62B100FA53E3 /* Info.plist */,
@@ -304,6 +307,7 @@
 				A90EF8501E1D917400FA53E3 /* PokemonNearbyDetailController.swift in Sources */,
 				A90EF83E1E1C62B100FA53E3 /* ExtensionDelegate.swift in Sources */,
 				A90EF83C1E1C62B100FA53E3 /* PokemonNearbyController.swift in Sources */,
+				A90EF8521E1DBE0C00FA53E3 /* CatchPokemonController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
