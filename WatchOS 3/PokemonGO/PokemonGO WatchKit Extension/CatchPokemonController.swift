@@ -24,9 +24,12 @@ class CatchPokemonController: WKInterfaceController {
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
+        
         let pokemon = context as! Dictionary<String, Any>
         namePokemon = pokemon["name"] as! String
         ratioPokemon = pokemon["ratio"] as! Double
+        
+        setTitle(namePokemon)
         
         model = UserDefaults.standard.object(forKey: "ballTypes") as! [[String : Any]]
         

@@ -33,6 +33,15 @@
                             </items>
                         </table>
                     </items>
+                    <menu key="menu" id="4pI-xz-nCD">
+                        <items>
+                            <menuItem title="Tienda" image="shop" id="FMw-WK-hpQ">
+                                <connections>
+                                    <action selector="shopMenuAction" destination="AgC-eL-Hgc" id="MLS-MT-kJD"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
                     <connections>
                         <outlet property="loadingLabel" destination="5yL-l0-VWT" id="mrZ-ff-mpR"/>
                         <outlet property="table" destination="f4b-jm-XJj" id="M06-hV-xsO"/>
@@ -86,24 +95,31 @@
             </objects>
             <point key="canvasLocation" x="311" y="351"/>
         </scene>
-        <!--Interface Controller-->
+        <!--ListItems-->
         <scene sceneID="pFZ-QH-HUP">
             <objects>
-                <controller id="23m-fR-ae7">
+                <controller identifier="ListItems" id="23m-fR-ae7" customClass="ListItemsController" customModule="PokemonGO_WatchKit_Extension">
                     <items>
                         <table alignment="left" id="LtO-Ou-OzU">
                             <items>
-                                <tableRow id="fvp-Aj-zww">
+                                <tableRow identifier="RowListItems" id="fvp-Aj-zww" customClass="RowListItemsController" customModule="PokemonGO_WatchKit_Extension">
                                     <group key="rootItem" width="1" alignment="left" id="37J-lS-jc4">
                                         <items>
-                                            <imageView width="0.29999999999999999" alignment="left" verticalAlignment="center" id="bCS-HK-2Bj"/>
+                                            <imageView width="0.29999999999999999" alignment="left" verticalAlignment="center" contentMode="scaleAspectFit" id="bCS-HK-2Bj"/>
                                             <label alignment="left" verticalAlignment="center" text="Label" id="ITf-jm-ckA"/>
                                         </items>
                                     </group>
+                                    <connections>
+                                        <outlet property="imageItem" destination="bCS-HK-2Bj" id="LV7-c4-7wc"/>
+                                        <outlet property="nameItem" destination="ITf-jm-ckA" id="GV7-Xx-38R"/>
+                                    </connections>
                                 </tableRow>
                             </items>
                         </table>
                     </items>
+                    <connections>
+                        <outlet property="table" destination="LtO-Ou-OzU" id="yEq-bN-x7M"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="311" y="650"/>
