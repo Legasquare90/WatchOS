@@ -15,28 +15,36 @@ class CatchPokemonController: WKInterfaceController {
     @IBOutlet var picker: WKInterfacePicker!
     @IBOutlet var pokeballTypeLabel: WKInterfaceLabel!
     
-    let model = ["Pokeball", "Superball", "Ultraball"]
-    var ratio = 0.0
+    var model: [Any] = []
+    var ratioPokemon = 0.0
+    var ratioBall = 0
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         let pokemon = context as! Dictionary<String, Any>
-        ratio = pokemon["ratio"] as! Double
+        ratioPokemon = pokemon["ratio"] as! Double
+        
+        model = UserDefaults.standard.object(forKey: "ballTypes") as! [[String : Any]]
         
         var array: [WKPickerItem] = [WKPickerItem]()
         for i in 0 ..< model.count {
-            let pokeballType = model[i] as String
+            let pokeballType = model[i] as! [String : Any]
             let item = WKPickerItem()
-            item.contentImage = WKImage(imageName: pokeballType.lowercased())
+            item.contentImage = WKImage(imageName: pokeballType["name"] as! String)
             array.append(item)
         }
         picker.setItems(array)
         
-        pokeballTypeLabel.setText(model.first)
+        let firstBall = model.first as! [String : Any]
+        let name = firstBall["name"] as! String
+        pokeballTypeLabel.setText(name.capitalized)
     }
 
     @IBAction func pickerChangeValue(_ value: Int) {
-        pokeballTypeLabel.setText(model[value])
+        let ball = model[value] as! [String : Any]
+        let name = ball["name"] as! String
+        pokeballTypeLabel.setText(name.capitalized)
+        ratioBall = ball["ratio"] as! Int
     }
     
     @IBAction func catchAction() {

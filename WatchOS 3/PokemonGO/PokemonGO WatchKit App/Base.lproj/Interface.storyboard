@@ -119,7 +119,7 @@
                             </connections>
                         </picker>
                         <label alignment="center" text="Label" id="5mc-Kr-jkj"/>
-                        <button width="1" alignment="left" verticalAlignment="bottom" title="Button" id="5Yh-ky-9cj">
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="¡Lanzar!" id="5Yh-ky-9cj">
                             <connections>
                                 <action selector="catchAction" destination="cm1-eN-yjJ" id="vRp-lD-ibe"/>
                             </connections>

@@ -25,10 +25,6 @@ class PokemonNearbyController: WKInterfaceController {
         setTitle("Pokemon GO")
         table.setHidden(true)
         loadingLabel.setHidden(false)
-    }
-    
-    override func willActivate() {
-        super.willActivate()
         getNearbyPokemon()
     }
     
