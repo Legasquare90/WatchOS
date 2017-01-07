@@ -11,9 +11,9 @@ import WatchKit
 class ExtensionDelegate: NSObject, WKExtensionDelegate {
 
     func applicationDidFinishLaunching() {
-        let pokeballData = ["name": "pokeball", "ratio":1, "price":1] as [String : Any]
-        let superballData = ["name": "superball", "ratio":2, "price":3] as [String : Any]
-        let ultraballData = ["name": "ultraball", "ratio":4, "price":5] as [String : Any]
+        let pokeballData = ["name": "pokeball", "ratio":1.0, "price":1] as [String : Any]
+        let superballData = ["name": "superball", "ratio":2.0, "price":3] as [String : Any]
+        let ultraballData = ["name": "ultraball", "ratio":4.0, "price":5] as [String : Any]
         let ballTypes = [pokeballData, superballData, ultraballData]
         
         let userDefaults = UserDefaults.standard
