@@ -18,7 +18,7 @@ class ListItemsController: WKInterfaceController {
 
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        setTitle("Shop")
+        setTitle("Tienda")
         items = UserDefaults.standard.object(forKey: "ballTypes") as! [[String : Any]]
         setupTable()
     }
@@ -38,7 +38,8 @@ class ListItemsController: WKInterfaceController {
     }
     
     override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
-
+        let controllerIdentifier = "BuyItem"
+        pushController(withName: controllerIdentifier, context: items[rowIndex])
     }
 }
 

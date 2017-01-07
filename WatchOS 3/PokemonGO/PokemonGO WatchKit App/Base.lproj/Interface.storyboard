@@ -170,15 +170,28 @@
             </objects>
             <point key="canvasLocation" x="600" y="351"/>
         </scene>
-        <!--Interface Controller-->
+        <!--BuyItem-->
         <scene sceneID="VGo-t8-h0S">
             <objects>
-                <controller id="Az1-6q-EMi">
+                <controller identifier="BuyItem" id="Az1-6q-EMi" customClass="BuyItemController" customModule="PokemonGO_WatchKit_Extension">
                     <items>
-                        <imageView height="0.5" alignment="left" id="Sag-l9-VK1"/>
-                        <label alignment="center" text="Label" id="tL3-wL-qe1"/>
-                        <paymentButton width="1" alignment="left" verticalAlignment="bottom" id="Igt-61-aqY"/>
+                        <imageView height="0.40000000000000002" alignment="center" contentMode="scaleAspectFit" id="Sag-l9-VK1"/>
+                        <label height="0.14999999999999999" alignment="center" text="Label" id="tL3-wL-qe1"/>
+                        <slider width="1" height="0.20000000000000001" alignment="center" continuous="YES" value="1" maximum="10" steps="10" id="hFr-wz-FHM">
+                            <connections>
+                                <action selector="quantitySlider:" destination="Az1-6q-EMi" id="ByG-8v-rOz"/>
+                            </connections>
+                        </slider>
+                        <paymentButton width="1" height="0.25" alignment="left" verticalAlignment="bottom" id="Igt-61-aqY">
+                            <connections>
+                                <action selector="payAction" destination="Az1-6q-EMi" id="6iW-0j-mwo"/>
+                            </connections>
+                        </paymentButton>
                     </items>
+                    <connections>
+                        <outlet property="imageItem" destination="Sag-l9-VK1" id="DE5-nQ-byf"/>
+                        <outlet property="nameItem" destination="tL3-wL-qe1" id="ZvD-lg-Zsf"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="600" y="650"/>

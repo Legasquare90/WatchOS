@@ -22,6 +22,7 @@
 		A90EF8501E1D917400FA53E3 /* PokemonNearbyDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90EF84F1E1D917400FA53E3 /* PokemonNearbyDetailController.swift */; };
 		A90EF8521E1DBE0C00FA53E3 /* CatchPokemonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90EF8511E1DBE0C00FA53E3 /* CatchPokemonController.swift */; };
 		A9B5CB0E1E214AE500EE69BA /* ListItemsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B5CB0D1E214AE500EE69BA /* ListItemsController.swift */; };
+		A9B5CB101E2178DB00EE69BA /* BuyItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B5CB0F1E2178DB00EE69BA /* BuyItemController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		A90EF84F1E1D917400FA53E3 /* PokemonNearbyDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonNearbyDetailController.swift; sourceTree = "<group>"; };
 		A90EF8511E1DBE0C00FA53E3 /* CatchPokemonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatchPokemonController.swift; sourceTree = "<group>"; };
 		A9B5CB0D1E214AE500EE69BA /* ListItemsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItemsController.swift; sourceTree = "<group>"; };
+		A9B5CB0F1E2178DB00EE69BA /* BuyItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyItemController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 				A90EF84F1E1D917400FA53E3 /* PokemonNearbyDetailController.swift */,
 				A90EF8511E1DBE0C00FA53E3 /* CatchPokemonController.swift */,
 				A9B5CB0D1E214AE500EE69BA /* ListItemsController.swift */,
+				A9B5CB0F1E2178DB00EE69BA /* BuyItemController.swift */,
 				A90EF83D1E1C62B100FA53E3 /* ExtensionDelegate.swift */,
 				A90EF83F1E1C62B100FA53E3 /* Assets.xcassets */,
 				A90EF8411E1C62B100FA53E3 /* Info.plist */,
@@ -312,6 +315,7 @@
 				A90EF83C1E1C62B100FA53E3 /* PokemonNearbyController.swift in Sources */,
 				A9B5CB0E1E214AE500EE69BA /* ListItemsController.swift in Sources */,
 				A90EF8521E1DBE0C00FA53E3 /* CatchPokemonController.swift in Sources */,
+				A9B5CB101E2178DB00EE69BA /* BuyItemController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
