@@ -50,6 +50,11 @@ class ListPokemonController: WKInterfaceController {
         loadingLabel.setHidden(true)
         table.setHidden(false)
     }
+    
+    override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
+        let controllerIdentifier = "DetailPokemon"
+        pushController(withName: controllerIdentifier, context: listPokemon[rowIndex])
+    }
 
 }
 
