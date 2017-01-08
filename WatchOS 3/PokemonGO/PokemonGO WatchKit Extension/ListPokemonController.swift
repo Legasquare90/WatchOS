@@ -51,9 +51,12 @@ class ListPokemonController: WKInterfaceController {
         table.setHidden(false)
     }
     
-    override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
-        let controllerIdentifier = "DetailPokemon"
-        pushController(withName: controllerIdentifier, context: listPokemon[rowIndex])
+    override func contextForSegue(withIdentifier segueIdentifier: String, in table: WKInterfaceTable, rowIndex: Int) -> Any? {
+        if (segueIdentifier == "detailPokemonSegue") {
+            return listPokemon[rowIndex]
+        } else {
+            return nil;
+        }
     }
 
 }

@@ -83,7 +83,7 @@
             <objects>
                 <controller identifier="ListPokemon" id="ZRY-Nm-MbB" customClass="ListPokemonController" customModule="PokemonGO_WatchKit_Extension">
                     <items>
-                        <table alignment="left" id="Ffq-LS-EXR">
+                        <table alignment="left" pagingScroll="YES" id="Ffq-LS-EXR">
                             <items>
                                 <tableRow identifier="RowListPokemon" id="gQC-YI-Mtr" customClass="RowListPokemonController" customModule="PokemonGO_WatchKit_Extension">
                                     <group key="rootItem" width="1" alignment="left" id="F8s-R4-cCW">
@@ -95,6 +95,7 @@
                                     <connections>
                                         <outlet property="pokemonImage" destination="Puu-Pk-0N4" id="1Yi-nF-Rwm"/>
                                         <outlet property="pokemonName" destination="ksr-tz-Gqy" id="dDL-4b-leK"/>
+                                        <segue destination="7el-hU-tme" kind="push" identifier="detailPokemonSegue" id="OPp-CA-ygG"/>
                                     </connections>
                                 </tableRow>
                             </items>
@@ -197,7 +198,7 @@
             <objects>
                 <controller identifier="BuyItem" id="Az1-6q-EMi" customClass="BuyItemController" customModule="PokemonGO_WatchKit_Extension">
                     <items>
-                        <imageView height="0.40000000000000002" alignment="center" contentMode="scaleAspectFit" id="Sag-l9-VK1"/>
+                        <imageView height="0.34999999999999998" alignment="center" contentMode="scaleAspectFit" id="Sag-l9-VK1"/>
                         <label height="0.14999999999999999" alignment="center" text="Label" id="tL3-wL-qe1"/>
                         <slider width="1" height="0.20000000000000001" alignment="center" continuous="YES" value="1" maximum="10" steps="10" id="hFr-wz-FHM">
                             <connections>
