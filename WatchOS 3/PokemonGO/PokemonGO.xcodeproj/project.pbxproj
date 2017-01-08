@@ -21,6 +21,7 @@
 		A90EF8401E1C62B100FA53E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A90EF83F1E1C62B100FA53E3 /* Assets.xcassets */; };
 		A90EF8501E1D917400FA53E3 /* PokemonNearbyDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90EF84F1E1D917400FA53E3 /* PokemonNearbyDetailController.swift */; };
 		A90EF8521E1DBE0C00FA53E3 /* CatchPokemonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90EF8511E1DBE0C00FA53E3 /* CatchPokemonController.swift */; };
+		A93DA0F11E21AB43001EAC22 /* PaymentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93DA0F01E21AB43001EAC22 /* PaymentHandler.swift */; };
 		A9B5CB0E1E214AE500EE69BA /* ListItemsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B5CB0D1E214AE500EE69BA /* ListItemsController.swift */; };
 		A9B5CB101E2178DB00EE69BA /* BuyItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B5CB0F1E2178DB00EE69BA /* BuyItemController.swift */; };
 /* End PBXBuildFile section */
@@ -86,6 +87,8 @@
 		A90EF8411E1C62B100FA53E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A90EF84F1E1D917400FA53E3 /* PokemonNearbyDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonNearbyDetailController.swift; sourceTree = "<group>"; };
 		A90EF8511E1DBE0C00FA53E3 /* CatchPokemonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatchPokemonController.swift; sourceTree = "<group>"; };
+		A93DA0EF1E21A929001EAC22 /* PokemonGO WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "PokemonGO WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		A93DA0F01E21AB43001EAC22 /* PaymentHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentHandler.swift; sourceTree = "<group>"; };
 		A9B5CB0D1E214AE500EE69BA /* ListItemsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItemsController.swift; sourceTree = "<group>"; };
 		A9B5CB0F1E2178DB00EE69BA /* BuyItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyItemController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -154,6 +157,8 @@
 		A90EF83A1E1C62B100FA53E3 /* PokemonGO WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				A93DA0EF1E21A929001EAC22 /* PokemonGO WatchKit Extension.entitlements */,
+				A93DA0F01E21AB43001EAC22 /* PaymentHandler.swift */,
 				A90EF83B1E1C62B100FA53E3 /* PokemonNearbyController.swift */,
 				A90EF84F1E1D917400FA53E3 /* PokemonNearbyDetailController.swift */,
 				A90EF8511E1DBE0C00FA53E3 /* CatchPokemonController.swift */,
@@ -242,7 +247,13 @@
 					};
 					A90EF8351E1C62B100FA53E3 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3VW789WSMP;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplePay = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -313,6 +324,7 @@
 				A90EF8501E1D917400FA53E3 /* PokemonNearbyDetailController.swift in Sources */,
 				A90EF83E1E1C62B100FA53E3 /* ExtensionDelegate.swift in Sources */,
 				A90EF83C1E1C62B100FA53E3 /* PokemonNearbyController.swift in Sources */,
+				A93DA0F11E21AB43001EAC22 /* PaymentHandler.swift in Sources */,
 				A9B5CB0E1E214AE500EE69BA /* ListItemsController.swift in Sources */,
 				A90EF8521E1DBE0C00FA53E3 /* CatchPokemonController.swift in Sources */,
 				A9B5CB101E2178DB00EE69BA /* BuyItemController.swift in Sources */,
@@ -457,6 +469,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "PokemonGO WatchKit Extension/PokemonGO WatchKit Extension.entitlements";
+				DEVELOPMENT_TEAM = 3VW789WSMP;
 				INFOPLIST_FILE = "PokemonGO WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo.PokemonGO.watchkitapp.watchkitextension;
@@ -473,6 +487,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "PokemonGO WatchKit Extension/PokemonGO WatchKit Extension.entitlements";
+				DEVELOPMENT_TEAM = 3VW789WSMP;
 				INFOPLIST_FILE = "PokemonGO WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo.PokemonGO.watchkitapp.watchkitextension;
