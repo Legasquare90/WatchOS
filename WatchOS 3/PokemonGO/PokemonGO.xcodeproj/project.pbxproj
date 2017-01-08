@@ -22,6 +22,8 @@
 		A90EF8501E1D917400FA53E3 /* PokemonNearbyDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90EF84F1E1D917400FA53E3 /* PokemonNearbyDetailController.swift */; };
 		A90EF8521E1DBE0C00FA53E3 /* CatchPokemonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90EF8511E1DBE0C00FA53E3 /* CatchPokemonController.swift */; };
 		A93DA0F11E21AB43001EAC22 /* PaymentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93DA0F01E21AB43001EAC22 /* PaymentHandler.swift */; };
+		A93DA0F31E21CD2C001EAC22 /* ListPokemonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93DA0F21E21CD2C001EAC22 /* ListPokemonController.swift */; };
+		A93DA0F51E21CE73001EAC22 /* DetailPokemonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93DA0F41E21CE73001EAC22 /* DetailPokemonController.swift */; };
 		A9B5CB0E1E214AE500EE69BA /* ListItemsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B5CB0D1E214AE500EE69BA /* ListItemsController.swift */; };
 		A9B5CB101E2178DB00EE69BA /* BuyItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B5CB0F1E2178DB00EE69BA /* BuyItemController.swift */; };
 /* End PBXBuildFile section */
@@ -89,6 +91,8 @@
 		A90EF8511E1DBE0C00FA53E3 /* CatchPokemonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatchPokemonController.swift; sourceTree = "<group>"; };
 		A93DA0EF1E21A929001EAC22 /* PokemonGO WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "PokemonGO WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		A93DA0F01E21AB43001EAC22 /* PaymentHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentHandler.swift; sourceTree = "<group>"; };
+		A93DA0F21E21CD2C001EAC22 /* ListPokemonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPokemonController.swift; sourceTree = "<group>"; };
+		A93DA0F41E21CE73001EAC22 /* DetailPokemonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPokemonController.swift; sourceTree = "<group>"; };
 		A9B5CB0D1E214AE500EE69BA /* ListItemsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItemsController.swift; sourceTree = "<group>"; };
 		A9B5CB0F1E2178DB00EE69BA /* BuyItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyItemController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -164,6 +168,8 @@
 				A90EF8511E1DBE0C00FA53E3 /* CatchPokemonController.swift */,
 				A9B5CB0D1E214AE500EE69BA /* ListItemsController.swift */,
 				A9B5CB0F1E2178DB00EE69BA /* BuyItemController.swift */,
+				A93DA0F21E21CD2C001EAC22 /* ListPokemonController.swift */,
+				A93DA0F41E21CE73001EAC22 /* DetailPokemonController.swift */,
 				A90EF83D1E1C62B100FA53E3 /* ExtensionDelegate.swift */,
 				A90EF83F1E1C62B100FA53E3 /* Assets.xcassets */,
 				A90EF8411E1C62B100FA53E3 /* Info.plist */,
@@ -324,10 +330,12 @@
 				A90EF8501E1D917400FA53E3 /* PokemonNearbyDetailController.swift in Sources */,
 				A90EF83E1E1C62B100FA53E3 /* ExtensionDelegate.swift in Sources */,
 				A90EF83C1E1C62B100FA53E3 /* PokemonNearbyController.swift in Sources */,
+				A93DA0F51E21CE73001EAC22 /* DetailPokemonController.swift in Sources */,
 				A93DA0F11E21AB43001EAC22 /* PaymentHandler.swift in Sources */,
 				A9B5CB0E1E214AE500EE69BA /* ListItemsController.swift in Sources */,
 				A90EF8521E1DBE0C00FA53E3 /* CatchPokemonController.swift in Sources */,
 				A9B5CB101E2178DB00EE69BA /* BuyItemController.swift in Sources */,
+				A93DA0F31E21CD2C001EAC22 /* ListPokemonController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

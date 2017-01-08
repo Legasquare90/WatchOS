@@ -53,6 +53,11 @@ class PokemonNearbyController: WKInterfaceController {
         pushController(withName: controllerIdentifier, context: nil)
     }
     
+    @IBAction func listMenuAction() {
+        let controllerIdentifier = "DetailPokemon"
+        pushController(withName: controllerIdentifier, context: nil)
+    }
+    
     func getNearbyPokemon() {
         let url = URL(string: "http://private-64c57c-pokemongoupsa.apiary-mock.com/nearby")
         var urlRequest = URLRequest(url: url!)

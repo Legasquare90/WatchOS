@@ -35,6 +35,11 @@
                     </items>
                     <menu key="menu" id="4pI-xz-nCD">
                         <items>
+                            <menuItem title="Listado" icon="info" id="BoP-BM-XJU">
+                                <connections>
+                                    <action selector="listMenuAction" destination="AgC-eL-Hgc" id="dmY-oQ-kcU"/>
+                                </connections>
+                            </menuItem>
                             <menuItem title="Tienda" image="shop" id="FMw-WK-hpQ">
                                 <connections>
                                     <action selector="shopMenuAction" destination="AgC-eL-Hgc" id="MLS-MT-kJD"/>
@@ -73,24 +78,31 @@
             </objects>
             <point key="canvasLocation" x="311" y="37"/>
         </scene>
-        <!--Interface Controller-->
+        <!--ListPokemon-->
         <scene sceneID="God-3h-EBo">
             <objects>
-                <controller id="ZRY-Nm-MbB">
+                <controller identifier="ListPokemon" id="ZRY-Nm-MbB" customClass="ListPokemonController" customModule="PokemonGO_WatchKit_Extension">
                     <items>
                         <table alignment="left" id="Ffq-LS-EXR">
                             <items>
-                                <tableRow id="gQC-YI-Mtr">
+                                <tableRow identifier="RowListPokemon" id="gQC-YI-Mtr" customClass="RowListPokemonController" customModule="PokemonGO_WatchKit_Extension">
                                     <group key="rootItem" width="1" alignment="left" id="F8s-R4-cCW">
                                         <items>
                                             <imageView width="0.29999999999999999" alignment="left" verticalAlignment="center" id="Puu-Pk-0N4"/>
                                             <label width="0.69999999999999996" alignment="left" verticalAlignment="center" text="Label" id="ksr-tz-Gqy"/>
                                         </items>
                                     </group>
+                                    <connections>
+                                        <outlet property="pokemonImage" destination="Puu-Pk-0N4" id="1Yi-nF-Rwm"/>
+                                        <outlet property="pokemonName" destination="ksr-tz-Gqy" id="dDL-4b-leK"/>
+                                    </connections>
                                 </tableRow>
                             </items>
                         </table>
                     </items>
+                    <connections>
+                        <outlet property="table" destination="Ffq-LS-EXR" id="dIJ-bC-LbE"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="311" y="351"/>
@@ -150,12 +162,12 @@
             </objects>
             <point key="canvasLocation" x="600" y="37"/>
         </scene>
-        <!--Interface Controller-->
+        <!--DetailPokemon-->
         <scene sceneID="1Wn-mp-hUH">
             <objects>
-                <controller id="7el-hU-tme">
+                <controller identifier="DetailPokemon" id="7el-hU-tme" customClass="DetailPokemonController" customModule="PokemonGO_WatchKit_Extension">
                     <items>
-                        <imageView height="0.5" alignment="left" id="Eth-Ph-lfb"/>
+                        <imageView height="0.5" alignment="center" contentMode="scaleAspectFit" id="Eth-Ph-lfb"/>
                         <label alignment="center" text="150 CP" id="NPY-97-kpG"/>
                         <label alignment="center" text="76 HP" id="1Rd-Dc-8wn"/>
                         <group width="1" height="0.20000000000000001" alignment="left" id="hzV-HB-3rj">
@@ -166,6 +178,14 @@
                             </items>
                         </group>
                     </items>
+                    <connections>
+                        <outlet property="attackLabel" destination="d9T-s9-On0" id="KAY-uO-ds3"/>
+                        <outlet property="combatPointsLabel" destination="NPY-97-kpG" id="zzx-HM-8cZ"/>
+                        <outlet property="healthPointsLabel" destination="1Rd-Dc-8wn" id="Gi4-ZM-sGa"/>
+                        <outlet property="pokemonImage" destination="Eth-Ph-lfb" id="z3W-Mz-jrK"/>
+                        <outlet property="powerAttackLabel" destination="s0g-sr-fEM" id="4se-sC-R28"/>
+                        <outlet property="typeImage" destination="pqK-5f-obc" id="FP9-oP-AiR"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="600" y="351"/>
