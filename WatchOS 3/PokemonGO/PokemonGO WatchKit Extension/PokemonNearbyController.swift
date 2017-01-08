@@ -54,7 +54,7 @@ class PokemonNearbyController: WKInterfaceController {
     }
     
     @IBAction func listMenuAction() {
-        let controllerIdentifier = "DetailPokemon"
+        let controllerIdentifier = "ListPokemon"
         pushController(withName: controllerIdentifier, context: nil)
     }
     

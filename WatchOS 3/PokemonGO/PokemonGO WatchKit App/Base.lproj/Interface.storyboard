@@ -99,8 +99,10 @@
                                 </tableRow>
                             </items>
                         </table>
+                        <label alignment="center" verticalAlignment="center" text="Recibiendo datos..." textAlignment="center" numberOfLines="2" id="L9n-nq-q0i"/>
                     </items>
                     <connections>
+                        <outlet property="loadingLabel" destination="L9n-nq-q0i" id="Xrq-Rw-Kvh"/>
                         <outlet property="table" destination="Ffq-LS-EXR" id="dIJ-bC-LbE"/>
                     </connections>
                 </controller>

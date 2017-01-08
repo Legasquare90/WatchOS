@@ -7,8 +7,9 @@
 //
 
 import WatchKit
+import WatchConnectivity
 
-class ExtensionDelegate: NSObject, WKExtensionDelegate {
+class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
 
     func applicationDidFinishLaunching() {
         let pokeballData = ["name": "pokeball", "ratio":1.0, "price":1] as [String : Any]
@@ -19,6 +20,10 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
         let userDefaults = UserDefaults.standard
         userDefaults.set(ballTypes, forKey: "ballTypes")
         userDefaults.synchronize()
+        
+        let session: WCSession? = WCSession.isSupported() ? WCSession.default() : nil
+        session?.delegate = self
+        session?.activate()
     }
 
     func applicationDidBecomeActive() {
@@ -30,6 +35,14 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
         // Use this method to pause ongoing tasks, disable timers, etc.
     }
 
+    public func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        if (error != nil) {
+            print("Activation completed")
+        } else {
+            print(error.debugDescription)
+        }
+    }
+    
     func handle(_ backgroundTasks: Set<WKRefreshBackgroundTask>) {
         // Sent when the system needs to launch the application in the background to process tasks. Tasks arrive in a set, so loop through and process each one.
         for task in backgroundTasks {

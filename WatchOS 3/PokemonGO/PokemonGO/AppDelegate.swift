@@ -7,15 +7,19 @@
 //
 
 import UIKit
+import WatchConnectivity
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        let session: WCSession? = WCSession.isSupported() ? WCSession.default() : nil
+        session?.delegate = self
+        session?.activate()
+
         return true
     }
 
@@ -41,6 +45,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    public func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        if (error != nil) {
+            print("Activation completed")
+        } else {
+            print(error.debugDescription)
+        }
+    }
+    
+    public func sessionDidDeactivate(_ session: WCSession) {
+        
+    }
+    
+    public func sessionDidBecomeInactive(_ session: WCSession) {
+        
+    }
+    
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
+        let action = message["action"] as? String
+        if (action == "listPokemon") {
+            let articunoData = ["name": "articuno", "cp":Int(arc4random_uniform(1000))+300, "hp":Int(arc4random_uniform(100))+100, "typeAttack": "ice", "attack" :"Ventisca", "powerAttack": 110] as [String : Any]
+            let zapdosData = ["name": "zapdos", "cp":Int(arc4random_uniform(1000))+300, "hp":Int(arc4random_uniform(100))+100, "typeAttack": "electric", "attack" :"Trueno", "powerAttack": 110] as [String : Any]
+            let moltresData = ["name": "moltres", "cp":Int(arc4random_uniform(1000))+300, "hp":Int(arc4random_uniform(100))+100, "typeAttack": "fire", "attack" :"Llamarada", "powerAttack": 110] as [String : Any]
+            let listPokemon = [articunoData, zapdosData, moltresData]
+            let replyData = ["listPokemon" : listPokemon]
+            replyHandler(replyData)
+        }
+    }
 }
 
