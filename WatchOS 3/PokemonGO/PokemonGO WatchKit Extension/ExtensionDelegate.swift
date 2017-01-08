@@ -37,9 +37,9 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
 
     public func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
         if (error != nil) {
-            print("Activation completed")
-        } else {
             print(error.debugDescription)
+        } else {
+            print("Activation completed")
         }
     }
     
