@@ -74,12 +74,15 @@ class CatchPokemonController: WKInterfaceController {
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3)) {
             self.catchButton.setEnabled(true)
+            let device = WKInterfaceDevice.current()
             if (caught) {
+                device.play(.success)
                 let ok = WKAlertAction(title: "OK", style: .default, handler: {
                     self.popToRootController()
                 })
                 self.presentAlert(withTitle: "¡Éxito!", message: "Has atrapado a \(self.namePokemon)", preferredStyle: .alert, actions: [ok])
             } else {
+                device.play(.failure)
                 let retry = WKAlertAction(title: "Reintentar", style: .default) {
                     self.pokeballTypeLabel.setText(self.ballType)
                 }
