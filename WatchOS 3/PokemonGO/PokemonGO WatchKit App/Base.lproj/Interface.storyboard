@@ -170,7 +170,18 @@
             <objects>
                 <controller identifier="DetailPokemon" id="7el-hU-tme" customClass="DetailPokemonController" customModule="PokemonGO_WatchKit_Extension">
                     <items>
-                        <imageView height="0.5" alignment="center" contentMode="scaleAspectFit" id="Eth-Ph-lfb"/>
+                        <group width="1" height="0.5" alignment="center" id="uIR-Vg-Dzy">
+                            <items>
+                                <imageView height="1" alignment="center" contentMode="scaleAspectFit" initiallyAnimated="NO" animationDuration="1.5" id="Eth-Ph-lfb"/>
+                            </items>
+                            <gestureRecognizers>
+                                <tapGestureRecognizer id="h0Q-MY-P2U">
+                                    <connections>
+                                        <action selector="tapImage:" destination="7el-hU-tme" id="p9Z-mI-GQ1"/>
+                                    </connections>
+                                </tapGestureRecognizer>
+                            </gestureRecognizers>
+                        </group>
                         <label alignment="center" text="150 CP" id="NPY-97-kpG"/>
                         <label alignment="center" text="76 HP" id="1Rd-Dc-8wn"/>
                         <group width="1" height="0.20000000000000001" alignment="left" id="hzV-HB-3rj">

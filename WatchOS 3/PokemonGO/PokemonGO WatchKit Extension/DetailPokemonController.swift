@@ -40,9 +40,8 @@ class DetailPokemonController: WKInterfaceController {
         typeImage.setImageNamed(pokemon["typeAttack"] as? String)
     }
     
-    override func willActivate() {
-        super.willActivate()
-//        pokemonImage.startAnimatingWithImages(in: NSRange(location: 0, length: 9), duration: 1.0, repeatCount: 0)
+    @IBAction func tapImage(_ sender: Any) {
+        pokemonImage.startAnimating()        
     }
 
 }
