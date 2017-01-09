@@ -11,11 +11,16 @@ import Foundation
 
 
 class InterfaceController: WKInterfaceController {
-
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        
-        // Configure interface objects here.
+        if (context == nil) {
+            let contexts = Array(repeating: ["Test"], count: 5)
+            let controllers = Array(repeating: "interface", count: 5)
+            WKInterfaceController.reloadRootControllers(withNames: controllers, contexts: contexts)
+        } else {
+            print(context!)
+        }
     }
     
     override func willActivate() {
