@@ -14,11 +14,67 @@
             <objects>
                 <controller identifier="interface" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="ElMundoToday_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label alignment="center" verticalAlignment="center" text="Hola" id="Oee-sG-VJa"/>
+                        <imageView height="0.5" alignment="left" contentMode="scaleAspectFit" id="qgK-9d-MpK"/>
+                        <label alignment="right" text="Label" id="W2K-UX-0pb">
+                            <fontDescription key="font" type="system" weight="light" pointSize="12"/>
+                        </label>
+                        <label alignment="left" text="Label" numberOfLines="0" id="rWi-GP-XgI">
+                            <fontDescription key="font" type="boldSystem" pointSize="16"/>
+                        </label>
+                        <label alignment="left" text="Label" numberOfLines="0" id="5ID-W4-Ctf">
+                            <fontDescription key="font" type="system" weight="medium" pointSize="16"/>
+                        </label>
+                        <button width="1" alignment="left" title="Button" id="KY8-NZ-0o5"/>
+                        <button width="1" alignment="left" title="Button" id="9iK-bH-SPH"/>
                     </items>
+                    <menu key="menu" id="caf-nR-spd">
+                        <items>
+                            <menuItem title="Actualizar" id="atI-gf-am4"/>
+                            <menuItem title="Videos" id="DSo-5J-0ak"/>
+                        </items>
+                    </menu>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="s6l-a7-b0I">
+            <objects>
+                <controller id="V51-VO-fk1">
+                    <items>
+                        <label alignment="left" text="Label" numberOfLines="0" id="kYp-hh-VmX"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="520" y="313"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="bAi-rA-H7n">
+            <objects>
+                <controller id="Pz7-pk-wjG">
+                    <items>
+                        <movie width="1" height="100" alignment="center" verticalAlignment="center" id="qhs-Uy-3GC"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="817" y="313"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="fuu-w4-68i">
+            <objects>
+                <controller id="cpE-t9-ick">
+                    <items>
+                        <inlineMovie width="1" height="100" alignment="left" id="Tj0-Ds-MfA"/>
+                        <label alignment="right" text="Label" id="gAE-ah-fQ9">
+                            <fontDescription key="font" type="system" weight="light" pointSize="12"/>
+                        </label>
+                        <label alignment="left" text="Label" numberOfLines="0" id="I6Z-sH-oJv">
+                            <fontDescription key="font" type="boldSystem" pointSize="16"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="-6"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -39,9 +95,53 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="ElMundoToday_WatchKit_App" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="ElMundoToday_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <imageView alignment="left" contentMode="scaleAspectFit" id="xPF-JS-cTK"/>
+                        <label alignment="left" text="Label" numberOfLines="0" id="J6w-Cm-SDq"/>
+                    </items>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="468" y="643"/>
+            <point key="canvasLocation" x="520" y="643"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="cjk-bh-qM6">
+            <objects>
+                <notificationController id="YQh-W4-Ygc">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="hSb-tq-21d"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" id="j3Q-5K-wOA"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="hSb-tq-21d" id="jcO-7P-b4F"/>
+                        <segue destination="fO8-2I-64k" kind="relationship" relationship="dynamicNotificationInterface" id="Ue0-Ts-Td2"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="938"/>
+        </scene>
+        <!--Dynamic Notification Interface Controller-->
+        <scene sceneID="33K-N6-UIW">
+            <objects>
+                <controller id="fO8-2I-64k">
+                    <items>
+                        <label alignment="center" text="EN DIRECTO" id="Tgz-dm-ngr"/>
+                        <group width="1" alignment="left" id="vBJ-0z-DBN">
+                            <items>
+                                <label alignment="left" text="Label" numberOfLines="0" id="FJ7-34-TE7"/>
+                                <label alignment="right" text="Label" id="j3s-5X-iuU"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="nb2-jh-Jq7">
+                            <items>
+                                <label alignment="left" text="Label" id="j2a-hc-8T2"/>
+                                <label alignment="right" text="Label" id="NKb-ja-Sdz"/>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="520" y="938"/>
         </scene>
     </scenes>
 </document>
