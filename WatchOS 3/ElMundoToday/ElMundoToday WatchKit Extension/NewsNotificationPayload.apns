@@ -1,0 +1,19 @@
+{
+    "aps": {
+        "alert": {
+            "body": "Un meteorito colisiona con el Meteosat por detrás cuando estaba mirando a Cuenca",
+            "title": "Última hora en Ciencia y Tecnología"
+        },
+        "category": "news"
+    },
+    
+    "WatchKit Simulator Actions": [
+        {
+            "title": "Leer",
+            "identifier": "readNews"
+        }
+    ],
+    
+    "image": "http://www.emtstatic.com/2017/01/meteosat.jpg",
+    "textBody": "El satélite meteorológico Meteosat ha sido alcanzado por un meteorito mientras estaba orientado hacia Cuenca. El impacto ha causado grandes daños en la parte posterior del cuerpo, que le dejará la válvula de escape inoperativa durante varios días."
+}

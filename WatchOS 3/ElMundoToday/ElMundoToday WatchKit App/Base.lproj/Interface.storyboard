@@ -81,9 +81,9 @@
             <objects>
                 <notificationController id="YCC-NB-fut">
                     <items>
-                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
                     </items>
-                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <notificationCategory key="notificationCategory" identifier="news" id="JfB-70-Muf"/>
                     <connections>
                         <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
                         <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
@@ -92,14 +92,18 @@
             </objects>
             <point key="canvasLocation" x="220" y="643"/>
         </scene>
-        <!--Notification Controller-->
+        <!--News Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="ElMundoToday_WatchKit_App" customModuleProvider="target">
+                <controller id="4sK-HA-Art" customClass="NewsNotificationController" customModule="ElMundoToday_WatchKit_Extension">
                     <items>
                         <imageView alignment="left" contentMode="scaleAspectFit" id="xPF-JS-cTK"/>
                         <label alignment="left" text="Label" numberOfLines="0" id="J6w-Cm-SDq"/>
                     </items>
+                    <connections>
+                        <outlet property="imageNotification" destination="xPF-JS-cTK" id="NEf-j5-Qkg"/>
+                        <outlet property="textNotification" destination="J6w-Cm-SDq" id="pP7-jp-30W"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="520" y="643"/>
@@ -109,9 +113,9 @@
             <objects>
                 <notificationController id="YQh-W4-Ygc">
                     <items>
-                        <label alignment="left" text="Alert Label" id="hSb-tq-21d"/>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="hSb-tq-21d"/>
                     </items>
-                    <notificationCategory key="notificationCategory" id="j3Q-5K-wOA"/>
+                    <notificationCategory key="notificationCategory" identifier="live" id="j3Q-5K-wOA"/>
                     <connections>
                         <outlet property="notificationAlertLabel" destination="hSb-tq-21d" id="jcO-7P-b4F"/>
                         <segue destination="fO8-2I-64k" kind="relationship" relationship="dynamicNotificationInterface" id="Ue0-Ts-Td2"/>
@@ -120,25 +124,42 @@
             </objects>
             <point key="canvasLocation" x="220" y="938"/>
         </scene>
-        <!--Dynamic Notification Interface Controller-->
+        <!--Live Notification Controller-->
         <scene sceneID="33K-N6-UIW">
             <objects>
-                <controller id="fO8-2I-64k">
+                <controller id="fO8-2I-64k" customClass="LiveNotificationController" customModule="ElMundoToday_WatchKit_Extension">
                     <items>
-                        <label alignment="center" text="EN DIRECTO" id="Tgz-dm-ngr"/>
+                        <label alignment="center" text="EN DIRECTO" id="Tgz-dm-ngr">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
                         <group width="1" alignment="left" id="vBJ-0z-DBN">
                             <items>
-                                <label alignment="left" text="Label" numberOfLines="0" id="FJ7-34-TE7"/>
-                                <label alignment="right" text="Label" id="j3s-5X-iuU"/>
+                                <label alignment="left" text="Label" id="FJ7-34-TE7">
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                </label>
+                                <label alignment="right" text="Label" id="j3s-5X-iuU">
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                </label>
                             </items>
                         </group>
                         <group width="1" alignment="left" id="nb2-jh-Jq7">
                             <items>
-                                <label alignment="left" text="Label" id="j2a-hc-8T2"/>
-                                <label alignment="right" text="Label" id="NKb-ja-Sdz"/>
+                                <label alignment="left" text="Label" id="j2a-hc-8T2">
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                </label>
+                                <label alignment="right" text="Label" id="NKb-ja-Sdz">
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                </label>
                             </items>
                         </group>
                     </items>
+                    <connections>
+                        <outlet property="statusLabel" destination="Tgz-dm-ngr" id="OwS-5v-LSN"/>
+                        <outlet property="team1Name" destination="FJ7-34-TE7" id="AHd-0c-AVn"/>
+                        <outlet property="team1ScoreLabel" destination="j3s-5X-iuU" id="eEC-TH-aNM"/>
+                        <outlet property="team2Name" destination="j2a-hc-8T2" id="DxK-ng-Y9G"/>
+                        <outlet property="team2ScoreLabel" destination="NKb-ja-Sdz" id="ODY-pB-cTZ"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="520" y="938"/>

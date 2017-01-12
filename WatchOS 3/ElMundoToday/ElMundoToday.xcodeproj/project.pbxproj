@@ -18,8 +18,11 @@
 		A90EF7F01E1B04FC00FA53E3 /* ElMundoToday WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A90EF7EF1E1B04FC00FA53E3 /* ElMundoToday WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A90EF7F71E1B04FC00FA53E3 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90EF7F61E1B04FC00FA53E3 /* InterfaceController.swift */; };
 		A90EF7F91E1B04FC00FA53E3 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90EF7F81E1B04FC00FA53E3 /* ExtensionDelegate.swift */; };
-		A90EF7FB1E1B04FC00FA53E3 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90EF7FA1E1B04FC00FA53E3 /* NotificationController.swift */; };
+		A90EF7FB1E1B04FC00FA53E3 /* NewsNotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90EF7FA1E1B04FC00FA53E3 /* NewsNotificationController.swift */; };
 		A90EF7FD1E1B04FC00FA53E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A90EF7FC1E1B04FC00FA53E3 /* Assets.xcassets */; };
+		A965D9421E26F8D3005B2577 /* NewsNotificationPayload.apns in Resources */ = {isa = PBXBuildFile; fileRef = A965D9411E26F8D3005B2577 /* NewsNotificationPayload.apns */; };
+		A965D9441E26F8F8005B2577 /* LiveNotificationPayload.apns in Resources */ = {isa = PBXBuildFile; fileRef = A965D9431E26F8F8005B2577 /* LiveNotificationPayload.apns */; };
+		A965D9461E270C19005B2577 /* LiveNotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A965D9451E270C19005B2577 /* LiveNotificationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,9 +83,12 @@
 		A90EF7F51E1B04FC00FA53E3 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		A90EF7F61E1B04FC00FA53E3 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		A90EF7F81E1B04FC00FA53E3 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		A90EF7FA1E1B04FC00FA53E3 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		A90EF7FA1E1B04FC00FA53E3 /* NewsNotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsNotificationController.swift; sourceTree = "<group>"; };
 		A90EF7FC1E1B04FC00FA53E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A90EF7FE1E1B04FC00FA53E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A965D9411E26F8D3005B2577 /* NewsNotificationPayload.apns */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NewsNotificationPayload.apns; sourceTree = "<group>"; };
+		A965D9431E26F8F8005B2577 /* LiveNotificationPayload.apns */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LiveNotificationPayload.apns; sourceTree = "<group>"; };
+		A965D9451E270C19005B2577 /* LiveNotificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveNotificationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,10 +157,13 @@
 			children = (
 				A90EF7F61E1B04FC00FA53E3 /* InterfaceController.swift */,
 				A90EF7F81E1B04FC00FA53E3 /* ExtensionDelegate.swift */,
-				A90EF7FA1E1B04FC00FA53E3 /* NotificationController.swift */,
+				A90EF7FA1E1B04FC00FA53E3 /* NewsNotificationController.swift */,
+				A965D9451E270C19005B2577 /* LiveNotificationController.swift */,
 				A90EF7FC1E1B04FC00FA53E3 /* Assets.xcassets */,
 				A90EF7FE1E1B04FC00FA53E3 /* Info.plist */,
 				A90EF7F41E1B04FC00FA53E3 /* Supporting Files */,
+				A965D9411E26F8D3005B2577 /* NewsNotificationPayload.apns */,
+				A965D9431E26F8F8005B2577 /* LiveNotificationPayload.apns */,
 			);
 			path = "ElMundoToday WatchKit Extension";
 			sourceTree = "<group>";
@@ -291,7 +300,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A965D9421E26F8D3005B2577 /* NewsNotificationPayload.apns in Resources */,
 				A90EF7FD1E1B04FC00FA53E3 /* Assets.xcassets in Resources */,
+				A965D9441E26F8F8005B2577 /* LiveNotificationPayload.apns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,7 +322,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A90EF7FB1E1B04FC00FA53E3 /* NotificationController.swift in Sources */,
+				A965D9461E270C19005B2577 /* LiveNotificationController.swift in Sources */,
+				A90EF7FB1E1B04FC00FA53E3 /* NewsNotificationController.swift in Sources */,
 				A90EF7F91E1B04FC00FA53E3 /* ExtensionDelegate.swift in Sources */,
 				A90EF7F71E1B04FC00FA53E3 /* InterfaceController.swift in Sources */,
 			);
@@ -560,6 +572,7 @@
 				A90EF8031E1B04FC00FA53E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A90EF8051E1B04FC00FA53E3 /* Build configuration list for PBXNativeTarget "ElMundoToday WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -568,6 +581,7 @@
 				A90EF8071E1B04FC00FA53E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A90EF8091E1B04FC00FA53E3 /* Build configuration list for PBXNativeTarget "ElMundoToday" */ = {
 			isa = XCConfigurationList;
@@ -576,6 +590,7 @@
 				A90EF80B1E1B04FC00FA53E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

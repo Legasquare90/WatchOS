@@ -1,0 +1,14 @@
+{
+    "aps": {
+        "alert": {
+            "body": "Los Looney consiguen su liberación al vencer a los Monstars en el último segundo",
+            "title": "Victoria para Jordan"
+        },
+        "category": "live"
+    },
+    
+    "equipo1": "TuneSquad",
+    "equipo1_score": 78,
+    "equipo2": "Monstars",
+    "equipo2_score": 77
+}
