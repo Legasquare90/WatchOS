@@ -16,6 +16,9 @@
                     <items>
                         <imageView width="100" height="100" alignment="center" verticalAlignment="center" image="emt" contentMode="scaleAspectFit" id="Cov-bO-Dmg"/>
                     </items>
+                    <connections>
+                        <outlet property="imageView" destination="Cov-bO-Dmg" id="9NV-gc-Zes"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="-68" y="344"/>
