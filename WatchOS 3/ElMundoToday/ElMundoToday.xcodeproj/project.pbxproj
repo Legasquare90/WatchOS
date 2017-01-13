@@ -16,13 +16,15 @@
 		A90EF7E71E1B04FC00FA53E3 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A90EF7E51E1B04FC00FA53E3 /* Interface.storyboard */; };
 		A90EF7E91E1B04FC00FA53E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A90EF7E81E1B04FC00FA53E3 /* Assets.xcassets */; };
 		A90EF7F01E1B04FC00FA53E3 /* ElMundoToday WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A90EF7EF1E1B04FC00FA53E3 /* ElMundoToday WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		A90EF7F71E1B04FC00FA53E3 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90EF7F61E1B04FC00FA53E3 /* InterfaceController.swift */; };
+		A90EF7F71E1B04FC00FA53E3 /* NewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90EF7F61E1B04FC00FA53E3 /* NewsController.swift */; };
 		A90EF7F91E1B04FC00FA53E3 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90EF7F81E1B04FC00FA53E3 /* ExtensionDelegate.swift */; };
 		A90EF7FB1E1B04FC00FA53E3 /* NewsNotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90EF7FA1E1B04FC00FA53E3 /* NewsNotificationController.swift */; };
 		A90EF7FD1E1B04FC00FA53E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A90EF7FC1E1B04FC00FA53E3 /* Assets.xcassets */; };
 		A965D9421E26F8D3005B2577 /* NewsNotificationPayload.apns in Resources */ = {isa = PBXBuildFile; fileRef = A965D9411E26F8D3005B2577 /* NewsNotificationPayload.apns */; };
 		A965D9441E26F8F8005B2577 /* LiveNotificationPayload.apns in Resources */ = {isa = PBXBuildFile; fileRef = A965D9431E26F8F8005B2577 /* LiveNotificationPayload.apns */; };
 		A965D9461E270C19005B2577 /* LiveNotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A965D9451E270C19005B2577 /* LiveNotificationController.swift */; };
+		A99CA41A1E2844CB00F644A6 /* TextBodyNewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99CA4191E2844CB00F644A6 /* TextBodyNewsController.swift */; };
+		A99CA41C1E284DDE00F644A6 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99CA41B1E284DDE00F644A6 /* HomeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,7 +83,7 @@
 		A90EF7EA1E1B04FC00FA53E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A90EF7EF1E1B04FC00FA53E3 /* ElMundoToday WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ElMundoToday WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A90EF7F51E1B04FC00FA53E3 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		A90EF7F61E1B04FC00FA53E3 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A90EF7F61E1B04FC00FA53E3 /* NewsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsController.swift; sourceTree = "<group>"; };
 		A90EF7F81E1B04FC00FA53E3 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		A90EF7FA1E1B04FC00FA53E3 /* NewsNotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsNotificationController.swift; sourceTree = "<group>"; };
 		A90EF7FC1E1B04FC00FA53E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -89,6 +91,8 @@
 		A965D9411E26F8D3005B2577 /* NewsNotificationPayload.apns */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NewsNotificationPayload.apns; sourceTree = "<group>"; };
 		A965D9431E26F8F8005B2577 /* LiveNotificationPayload.apns */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LiveNotificationPayload.apns; sourceTree = "<group>"; };
 		A965D9451E270C19005B2577 /* LiveNotificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveNotificationController.swift; sourceTree = "<group>"; };
+		A99CA4191E2844CB00F644A6 /* TextBodyNewsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextBodyNewsController.swift; sourceTree = "<group>"; };
+		A99CA41B1E284DDE00F644A6 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,8 +159,10 @@
 		A90EF7F31E1B04FC00FA53E3 /* ElMundoToday WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				A90EF7F61E1B04FC00FA53E3 /* InterfaceController.swift */,
 				A90EF7F81E1B04FC00FA53E3 /* ExtensionDelegate.swift */,
+				A99CA41B1E284DDE00F644A6 /* HomeController.swift */,
+				A90EF7F61E1B04FC00FA53E3 /* NewsController.swift */,
+				A99CA4191E2844CB00F644A6 /* TextBodyNewsController.swift */,
 				A90EF7FA1E1B04FC00FA53E3 /* NewsNotificationController.swift */,
 				A965D9451E270C19005B2577 /* LiveNotificationController.swift */,
 				A90EF7FC1E1B04FC00FA53E3 /* Assets.xcassets */,
@@ -324,8 +330,10 @@
 			files = (
 				A965D9461E270C19005B2577 /* LiveNotificationController.swift in Sources */,
 				A90EF7FB1E1B04FC00FA53E3 /* NewsNotificationController.swift in Sources */,
+				A99CA41C1E284DDE00F644A6 /* HomeController.swift in Sources */,
 				A90EF7F91E1B04FC00FA53E3 /* ExtensionDelegate.swift in Sources */,
-				A90EF7F71E1B04FC00FA53E3 /* InterfaceController.swift in Sources */,
+				A90EF7F71E1B04FC00FA53E3 /* NewsController.swift in Sources */,
+				A99CA41A1E2844CB00F644A6 /* TextBodyNewsController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

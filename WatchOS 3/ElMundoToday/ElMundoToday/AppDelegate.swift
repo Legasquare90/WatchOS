@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -41,6 +42,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    func registerForNotification() {
+        let newsButton = UNNotificationAction.init(identifier: "readNews", title: "Leer", options: .foreground)
+        let newsCategory = UNNotificationCategory.init(identifier: "news", actions: [newsButton], intentIdentifiers: [], options: [])
+        let notificationCenter = UNUserNotificationCenter.current()
+        notificationCenter.setNotificationCategories([newsCategory])
+        notificationCenter.requestAuthorization(options: [.alert, .sound, .badge]) { (granted, error) in
+            if (error != nil) { print(error.debugDescription) }
+            else { print ("Granted!") }
+        }
+    }
 }
 

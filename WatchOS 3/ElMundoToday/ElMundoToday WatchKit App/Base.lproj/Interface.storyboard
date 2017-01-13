@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KRL-6r-kU0">
     <device id="watch38" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,10 +9,21 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
     </dependencies>
     <scenes>
-        <!--interface-->
+        <!--HomeController-->
+        <scene sceneID="WY5-gT-Uks">
+            <objects>
+                <controller identifier="HomeController" id="KRL-6r-kU0" customClass="HomeController" customModule="ElMundoToday_WatchKit_Extension">
+                    <items>
+                        <imageView width="100" height="100" alignment="center" verticalAlignment="center" image="emt" contentMode="scaleAspectFit" id="Cov-bO-Dmg"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-68" y="344"/>
+        </scene>
+        <!--NewsController-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller identifier="interface" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="ElMundoToday_WatchKit_App" customModuleProvider="target">
+                <controller identifier="NewsController" id="AgC-eL-Hgc" customClass="NewsController" customModule="ElMundoToday_WatchKit_Extension">
                     <items>
                         <imageView height="0.5" alignment="left" contentMode="scaleAspectFit" id="qgK-9d-MpK"/>
                         <label alignment="right" text="Label" id="W2K-UX-0pb">
@@ -37,13 +48,16 @@
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>
-        <!--Interface Controller-->
+        <!--TextBodyNewsController-->
         <scene sceneID="s6l-a7-b0I">
             <objects>
-                <controller id="V51-VO-fk1">
+                <controller identifier="TextBodyNewsController" id="V51-VO-fk1" customClass="TextBodyNewsController" customModule="ElMundoToday_WatchKit_Extension">
                     <items>
                         <label alignment="left" text="Label" numberOfLines="0" id="kYp-hh-VmX"/>
                     </items>
+                    <connections>
+                        <outlet property="body" destination="kYp-hh-VmX" id="Rxy-3r-XHf"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="520" y="313"/>
