@@ -12,9 +12,15 @@ import UserNotifications
 
 class HomeController: WKInterfaceController {
 
+    enum NewsError: Error {
+        case parseError
+    }
+    
     @IBOutlet var imageView: WKInterfaceImage!
+    @IBOutlet var titleLabel: WKInterfaceLabel!
     
     var news: [[String : String]] = []
+    var scheduledTask = false
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
@@ -23,7 +29,7 @@ class HomeController: WKInterfaceController {
     
     override func willActivate() {
         super.willActivate()
-        news = UserDefaults.standard.object(forKey: "") as! [[String : String]]
+        downloadNews()
     }
     
     override func didAppear() {
@@ -35,25 +41,26 @@ class HomeController: WKInterfaceController {
             }
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2)) {
-            self.animate(withDuration: 1.5) { () -> Void in
-                self.imageView.setWidth(100)
-                self.imageView.setHeight(100)
-            }
+            self.titleLabel.setHidden(false)
         }
-        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(3000)) {
-            if (self.news.count > 0) {
-                let controllers = Array(repeating: "NewsController", count: 5)
-                WKInterfaceController.reloadRootControllers(withNames: controllers, contexts: self.news)
-            } else {
-                let ok = WKAlertAction(title: "OK", style: .default) {}
-                self.presentAlert(withTitle: "Actualizando...", message: "Se están descargando las noticias. Por favor, vuelve más tarde.", preferredStyle: .alert, actions: [ok])
-                WKExtension.shared().scheduleBackgroundRefresh(withPreferredDate: Date(timeIntervalSinceNow: 30), userInfo: nil, scheduledCompletion: { (error:Error?) in
-                    if let error = error {
-                        print("Error occured while scheduling background refresh: \(error.localizedDescription)")
-                    }
-                })
-            }
-        }
+//        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(3000)) {
+//            if (self.news.count > 0) {
+//                let controllers = Array(repeating: "NewsController", count: 5)
+//                WKInterfaceController.reloadRootControllers(withNames: controllers, contexts: self.news)
+//            } else {
+//                if (!self.scheduledTask) {
+//                    let ok = WKAlertAction(title: "OK", style: .default) {}
+//                    self.presentAlert(withTitle: "Actualizando...", message: "Se están descargando las noticias. Por favor, vuelve más tarde.", preferredStyle: .alert, actions: [ok])
+//                    WKExtension.shared().scheduleBackgroundRefresh(withPreferredDate: Date(timeIntervalSinceNow: 30), userInfo: nil, scheduledCompletion: { (error:Error?) in
+//                        if let error = error {
+//                            print("Error occured while scheduling background refresh: \(error.localizedDescription)")
+//                        } else {
+//                            self.scheduledTask = true
+//                        }
+//                    })
+//                }
+//            }
+//        }
     }
     
     override func handleAction(withIdentifier identifier: String?, for notification: UNNotification) {
@@ -61,6 +68,41 @@ class HomeController: WKInterfaceController {
             let userInfo = notification.request.content.userInfo
             presentController(withName: "TextBodyNewsController", context: userInfo["textBody"])
         }
+    }
+    
+    func downloadNews() {
+        let url = URL(string: "http://private-66576-elmundotodayupsa.apiary-mock.com/news")
+        var urlRequest = URLRequest(url: url!)
+        urlRequest.httpMethod = "GET"
+        let conf = URLSessionConfiguration.default
+        let session = URLSession(configuration: conf)
+        let task: URLSessionDataTask = session.dataTask(with: urlRequest) { (dataResponse, urlResponse, errorResponse) in
+            guard errorResponse == nil else {
+                print("dataTask fail: \(errorResponse!.localizedDescription)")
+                return
+            }
+            guard let data = dataResponse else {
+                print("dataTask fail: not received data")
+                return
+            }
+            do {
+                guard let listNews = try JSONSerialization.jsonObject(with: data, options: []) as? [[String : String]] else {
+                    throw NewsError.parseError
+                }
+                self.news = listNews
+                self.navigateToNews()
+                print(listNews)
+            } catch {
+                print("dataTask fail: error parsing JSON")
+                return
+            }
+        }
+        task.resume()
+    }
+    
+    func navigateToNews() {
+        let controllers = Array(repeating: "NewsController", count: self.news.count)
+        WKInterfaceController.reloadRootControllers(withNames: controllers, contexts: self.news)
     }
 
 }

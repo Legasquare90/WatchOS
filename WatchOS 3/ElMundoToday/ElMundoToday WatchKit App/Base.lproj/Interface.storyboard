@@ -15,9 +15,11 @@
                 <controller identifier="HomeController" id="KRL-6r-kU0" customClass="HomeController" customModule="ElMundoToday_WatchKit_Extension">
                     <items>
                         <imageView width="100" height="100" alignment="center" verticalAlignment="center" image="emt" contentMode="scaleAspectFit" id="Cov-bO-Dmg"/>
+                        <label alignment="center" verticalAlignment="center" hidden="YES" text="El Mundo Today" id="cqM-S9-wCw"/>
                     </items>
                     <connections>
                         <outlet property="imageView" destination="Cov-bO-Dmg" id="9NV-gc-Zes"/>
+                        <outlet property="titleLabel" destination="cqM-S9-wCw" id="raR-zm-yiq"/>
                     </connections>
                 </controller>
             </objects>
