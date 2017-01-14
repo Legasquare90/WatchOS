@@ -8,7 +8,7 @@
 
 import WatchKit
 
-class ExtensionDelegate: NSObject, WKExtensionDelegate {
+class ExtensionDelegate: NSObject, WKExtensionDelegate, URLSessionTaskDelegate {
 
     func applicationDidFinishLaunching() {
         // Perform any final initialization of your application.
@@ -30,6 +30,7 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
             switch task {
             case let backgroundTask as WKApplicationRefreshBackgroundTask:
                 // Be sure to complete the background task once you’re done.
+                beginDownloadTask()
                 backgroundTask.setTaskCompleted()
             case let snapshotTask as WKSnapshotRefreshBackgroundTask:
                 // Snapshot tasks have a unique completion call, make sure to set your expiration date
@@ -45,6 +46,37 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
                 task.setTaskCompleted()
             }
         }
+    }
+    
+    func beginDownloadTask() {
+        print("Init task")
+        let url = URL(string: "http://private-66576-elmundotodayupsa.apiary-mock.com/news")
+        var urlRequest = URLRequest(url: url!)
+        urlRequest.httpMethod = "GET"
+        let config = URLSessionConfiguration.background(withIdentifier: "newsElMundoToday")
+        let session = URLSession(configuration: config, delegate: self, delegateQueue: nil)
+        let task: URLSessionDataTask = session.dataTask(with: urlRequest) { (dataResponse, urlResponse, errorResponse) in
+            guard errorResponse == nil else {
+                print("dataTask fail: \(errorResponse!.localizedDescription)")
+                return
+            }
+            guard let data = dataResponse else {
+                print("dataTask fail: not received data")
+                return
+            }
+//            do {
+//                guard let pokemonNearby = try JSONSerialization.jsonObject(with: data, options: []) as? [Dictionary<String, Any>] else {
+//                    throw PokemonNearbyError.parseError
+//                }
+//                self.pokemonNearby = pokemonNearby
+//                self.setupTable()
+//                print(pokemonNearby)
+//            } catch {
+//                print("dataTask fail: error parsing JSON")
+//                return
+//            }
+        }
+        task.resume()
     }
 
 }

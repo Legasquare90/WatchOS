@@ -14,7 +14,7 @@ class HomeController: WKInterfaceController {
 
     @IBOutlet var imageView: WKInterfaceImage!
     
-    var news: [Any] = []
+    var news: [[String : String]] = []
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
@@ -23,7 +23,7 @@ class HomeController: WKInterfaceController {
     
     override func willActivate() {
         super.willActivate()
-        news = UserDefaults.standard.object(forKey: "") as! [Any]
+        news = UserDefaults.standard.object(forKey: "") as! [[String : String]]
     }
     
     override func didAppear() {
