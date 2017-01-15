@@ -8,7 +8,7 @@
 
 import WatchKit
 
-class ExtensionDelegate: NSObject, WKExtensionDelegate, URLSessionTaskDelegate {
+class ExtensionDelegate: NSObject, WKExtensionDelegate, URLSessionDownloadDelegate {
 
     func applicationDidFinishLaunching() {
         // Perform any final initialization of your application.
@@ -30,7 +30,7 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, URLSessionTaskDelegate {
             switch task {
             case let backgroundTask as WKApplicationRefreshBackgroundTask:
                 // Be sure to complete the background task once you’re done.
-                beginDownloadTask()
+                beginDownloadTask(userInfo: backgroundTask.userInfo as! NSDictionary)
                 backgroundTask.setTaskCompleted()
             case let snapshotTask as WKSnapshotRefreshBackgroundTask:
                 // Snapshot tasks have a unique completion call, make sure to set your expiration date
@@ -48,35 +48,38 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, URLSessionTaskDelegate {
         }
     }
     
-    func beginDownloadTask() {
-        print("Init task")
-        let url = URL(string: "http://private-66576-elmundotodayupsa.apiary-mock.com/news")
-        var urlRequest = URLRequest(url: url!)
-        urlRequest.httpMethod = "GET"
-        let config = URLSessionConfiguration.background(withIdentifier: "newsElMundoToday")
+    func beginDownloadTask(userInfo: NSDictionary) {
+        let urlString = userInfo["url"] as! String
+        print("Init task: \(urlString)")
+        
+        let url = URL(string: urlString)
+        let config = URLSessionConfiguration.background(withIdentifier: NSUUID().uuidString)
         let session = URLSession(configuration: config, delegate: self, delegateQueue: nil)
-        let task: URLSessionDataTask = session.dataTask(with: urlRequest) { (dataResponse, urlResponse, errorResponse) in
-            guard errorResponse == nil else {
-                print("dataTask fail: \(errorResponse!.localizedDescription)")
-                return
-            }
-            guard let data = dataResponse else {
-                print("dataTask fail: not received data")
-                return
-            }
-//            do {
-//                guard let pokemonNearby = try JSONSerialization.jsonObject(with: data, options: []) as? [Dictionary<String, Any>] else {
-//                    throw PokemonNearbyError.parseError
-//                }
-//                self.pokemonNearby = pokemonNearby
-//                self.setupTable()
-//                print(pokemonNearby)
-//            } catch {
-//                print("dataTask fail: error parsing JSON")
-//                return
-//            }
-        }
+        let task = session.downloadTask(with: url!)
         task.resume()
     }
-
+    
+    func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didWriteData bytesWritten: Int64, totalBytesWritten: Int64, totalBytesExpectedToWrite: Int64) {
+        print("Total bytes written: \(totalBytesWritten) | Total bytes: \(totalBytesExpectedToWrite)")
+    }
+    
+    func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didFinishDownloadingTo location: URL) {
+        print("NSURLSession finished to url: ", location)
+        let path = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)
+        let documentDirectoryPath:String = path[0]
+        let fileManager = FileManager()
+        let destinationURLForFile = URL(fileURLWithPath: documentDirectoryPath.appendingFormat("/file.mov"))
+        
+        do {
+            try fileManager.moveItem(at: location, to: destinationURLForFile)
+            print("File moved to url: ", destinationURLForFile)
+        } catch let err {
+            print("An error occurred while moving file to destination url: \(err)")
+        }
+    }
+    
+    func urlSession(_ session: URLSession, task: URLSessionTask, didCompleteWithError error: Error?) {
+        print("Download completed with error: \(error)");
+    }
+    
 }
