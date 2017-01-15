@@ -40,8 +40,16 @@
                         <label alignment="left" text="Label" numberOfLines="0" id="5ID-W4-Ctf">
                             <fontDescription key="font" type="system" weight="medium" pointSize="16"/>
                         </label>
-                        <button width="1" alignment="left" title="Button" id="KY8-NZ-0o5"/>
-                        <button width="1" alignment="left" title="Button" id="9iK-bH-SPH"/>
+                        <button width="1" alignment="left" title="Más info" id="KY8-NZ-0o5">
+                            <connections>
+                                <action selector="readNews" destination="AgC-eL-Hgc" id="m7m-Ua-Inp"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Descargar vídeo" id="9iK-bH-SPH">
+                            <connections>
+                                <action selector="videoButtonAction" destination="AgC-eL-Hgc" id="YlJ-KL-svl"/>
+                            </connections>
+                        </button>
                     </items>
                     <menu key="menu" id="caf-nR-spd">
                         <items>
@@ -49,6 +57,13 @@
                             <menuItem title="Videos" id="DSo-5J-0ak"/>
                         </items>
                     </menu>
+                    <connections>
+                        <outlet property="newsDateLabel" destination="W2K-UX-0pb" id="FjI-Ol-Obv"/>
+                        <outlet property="newsImage" destination="qgK-9d-MpK" id="XHf-eO-KC5"/>
+                        <outlet property="subtitleLabel" destination="5ID-W4-Ctf" id="ZRP-fl-DKJ"/>
+                        <outlet property="titleLabel" destination="rWi-GP-XgI" id="DYY-XM-JqZ"/>
+                        <outlet property="videoButton" destination="9iK-bH-SPH" id="W5N-cc-tNW"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>

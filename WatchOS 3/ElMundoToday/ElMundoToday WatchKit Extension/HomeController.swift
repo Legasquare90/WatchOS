@@ -43,24 +43,6 @@ class HomeController: WKInterfaceController {
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2)) {
             self.titleLabel.setHidden(false)
         }
-//        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(3000)) {
-//            if (self.news.count > 0) {
-//                let controllers = Array(repeating: "NewsController", count: 5)
-//                WKInterfaceController.reloadRootControllers(withNames: controllers, contexts: self.news)
-//            } else {
-//                if (!self.scheduledTask) {
-//                    let ok = WKAlertAction(title: "OK", style: .default) {}
-//                    self.presentAlert(withTitle: "Actualizando...", message: "Se están descargando las noticias. Por favor, vuelve más tarde.", preferredStyle: .alert, actions: [ok])
-//                    WKExtension.shared().scheduleBackgroundRefresh(withPreferredDate: Date(timeIntervalSinceNow: 30), userInfo: nil, scheduledCompletion: { (error:Error?) in
-//                        if let error = error {
-//                            print("Error occured while scheduling background refresh: \(error.localizedDescription)")
-//                        } else {
-//                            self.scheduledTask = true
-//                        }
-//                    })
-//                }
-//            }
-//        }
     }
     
     override func handleAction(withIdentifier identifier: String?, for notification: UNNotification) {
