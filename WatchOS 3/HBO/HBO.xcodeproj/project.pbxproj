@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A92E75451E2EBB46001F598B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E75441E2EBB46001F598B /* AppDelegate.swift */; };
+		A92E75471E2EBB46001F598B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E75461E2EBB46001F598B /* ViewController.swift */; };
+		A92E754A1E2EBB46001F598B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A92E75481E2EBB46001F598B /* Main.storyboard */; };
+		A92E754C1E2EBB46001F598B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A92E754B1E2EBB46001F598B /* Assets.xcassets */; };
+		A92E754F1E2EBB46001F598B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A92E754D1E2EBB46001F598B /* LaunchScreen.storyboard */; };
+		A92E75541E2EBB46001F598B /* HBO WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A92E75531E2EBB46001F598B /* HBO WatchKit App.app */; };
+		A92E755A1E2EBB46001F598B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A92E75581E2EBB46001F598B /* Interface.storyboard */; };
+		A92E755C1E2EBB46001F598B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A92E755B1E2EBB46001F598B /* Assets.xcassets */; };
+		A92E75631E2EBB47001F598B /* HBO WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A92E75621E2EBB47001F598B /* HBO WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A92E75681E2EBB47001F598B /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E75671E2EBB47001F598B /* InterfaceController.swift */; };
+		A92E756A1E2EBB47001F598B /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E75691E2EBB47001F598B /* ExtensionDelegate.swift */; };
+		A92E756C1E2EBB47001F598B /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E756B1E2EBB47001F598B /* ComplicationController.swift */; };
+		A92E756E1E2EBB47001F598B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A92E756D1E2EBB47001F598B /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A92E75551E2EBB46001F598B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A92E75391E2EBB45001F598B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A92E75521E2EBB46001F598B;
+			remoteInfo = "HBO WatchKit App";
+		};
+		A92E75641E2EBB47001F598B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A92E75391E2EBB45001F598B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A92E75611E2EBB47001F598B;
+			remoteInfo = "HBO WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A92E75751E2EBB47001F598B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A92E75631E2EBB47001F598B /* HBO WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A92E75791E2EBB47001F598B /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A92E75541E2EBB46001F598B /* HBO WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A92E75411E2EBB46001F598B /* HBO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HBO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A92E75441E2EBB46001F598B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A92E75461E2EBB46001F598B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A92E75491E2EBB46001F598B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A92E754B1E2EBB46001F598B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A92E754E1E2EBB46001F598B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A92E75501E2EBB46001F598B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A92E75531E2EBB46001F598B /* HBO WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HBO WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A92E75591E2EBB46001F598B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A92E755B1E2EBB46001F598B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A92E755D1E2EBB46001F598B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A92E75621E2EBB47001F598B /* HBO WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HBO WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A92E75671E2EBB47001F598B /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A92E75691E2EBB47001F598B /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		A92E756B1E2EBB47001F598B /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		A92E756D1E2EBB47001F598B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A92E756F1E2EBB47001F598B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A92E753E1E2EBB46001F598B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A92E755F1E2EBB47001F598B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A92E75381E2EBB45001F598B = {
+			isa = PBXGroup;
+			children = (
+				A92E75431E2EBB46001F598B /* HBO */,
+				A92E75571E2EBB46001F598B /* HBO WatchKit App */,
+				A92E75661E2EBB47001F598B /* HBO WatchKit Extension */,
+				A92E75421E2EBB46001F598B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A92E75421E2EBB46001F598B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A92E75411E2EBB46001F598B /* HBO.app */,
+				A92E75531E2EBB46001F598B /* HBO WatchKit App.app */,
+				A92E75621E2EBB47001F598B /* HBO WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A92E75431E2EBB46001F598B /* HBO */ = {
+			isa = PBXGroup;
+			children = (
+				A92E75441E2EBB46001F598B /* AppDelegate.swift */,
+				A92E75461E2EBB46001F598B /* ViewController.swift */,
+				A92E75481E2EBB46001F598B /* Main.storyboard */,
+				A92E754B1E2EBB46001F598B /* Assets.xcassets */,
+				A92E754D1E2EBB46001F598B /* LaunchScreen.storyboard */,
+				A92E75501E2EBB46001F598B /* Info.plist */,
+			);
+			path = HBO;
+			sourceTree = "<group>";
+		};
+		A92E75571E2EBB46001F598B /* HBO WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A92E75581E2EBB46001F598B /* Interface.storyboard */,
+				A92E755B1E2EBB46001F598B /* Assets.xcassets */,
+				A92E755D1E2EBB46001F598B /* Info.plist */,
+			);
+			path = "HBO WatchKit App";
+			sourceTree = "<group>";
+		};
+		A92E75661E2EBB47001F598B /* HBO WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A92E75671E2EBB47001F598B /* InterfaceController.swift */,
+				A92E75691E2EBB47001F598B /* ExtensionDelegate.swift */,
+				A92E756B1E2EBB47001F598B /* ComplicationController.swift */,
+				A92E756D1E2EBB47001F598B /* Assets.xcassets */,
+				A92E756F1E2EBB47001F598B /* Info.plist */,
+			);
+			path = "HBO WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A92E75401E2EBB46001F598B /* HBO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A92E757A1E2EBB47001F598B /* Build configuration list for PBXNativeTarget "HBO" */;
+			buildPhases = (
+				A92E753D1E2EBB46001F598B /* Sources */,
+				A92E753E1E2EBB46001F598B /* Frameworks */,
+				A92E753F1E2EBB46001F598B /* Resources */,
+				A92E75791E2EBB47001F598B /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A92E75561E2EBB46001F598B /* PBXTargetDependency */,
+			);
+			name = HBO;
+			productName = HBO;
+			productReference = A92E75411E2EBB46001F598B /* HBO.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A92E75521E2EBB46001F598B /* HBO WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A92E75761E2EBB47001F598B /* Build configuration list for PBXNativeTarget "HBO WatchKit App" */;
+			buildPhases = (
+				A92E75511E2EBB46001F598B /* Resources */,
+				A92E75751E2EBB47001F598B /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A92E75651E2EBB47001F598B /* PBXTargetDependency */,
+			);
+			name = "HBO WatchKit App";
+			productName = "HBO WatchKit App";
+			productReference = A92E75531E2EBB46001F598B /* HBO WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A92E75611E2EBB47001F598B /* HBO WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A92E75721E2EBB47001F598B /* Build configuration list for PBXNativeTarget "HBO WatchKit Extension" */;
+			buildPhases = (
+				A92E755E1E2EBB47001F598B /* Sources */,
+				A92E755F1E2EBB47001F598B /* Frameworks */,
+				A92E75601E2EBB47001F598B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HBO WatchKit Extension";
+			productName = "HBO WatchKit Extension";
+			productReference = A92E75621E2EBB47001F598B /* HBO WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A92E75391E2EBB45001F598B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = UPSA;
+				TargetAttributes = {
+					A92E75401E2EBB46001F598B = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					A92E75521E2EBB46001F598B = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					A92E75611E2EBB47001F598B = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A92E753C1E2EBB45001F598B /* Build configuration list for PBXProject "HBO" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A92E75381E2EBB45001F598B;
+			productRefGroup = A92E75421E2EBB46001F598B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A92E75401E2EBB46001F598B /* HBO */,
+				A92E75521E2EBB46001F598B /* HBO WatchKit App */,
+				A92E75611E2EBB47001F598B /* HBO WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A92E753F1E2EBB46001F598B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A92E754F1E2EBB46001F598B /* LaunchScreen.storyboard in Resources */,
+				A92E754C1E2EBB46001F598B /* Assets.xcassets in Resources */,
+				A92E754A1E2EBB46001F598B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A92E75511E2EBB46001F598B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A92E755C1E2EBB46001F598B /* Assets.xcassets in Resources */,
+				A92E755A1E2EBB46001F598B /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A92E75601E2EBB47001F598B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A92E756E1E2EBB47001F598B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A92E753D1E2EBB46001F598B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A92E75471E2EBB46001F598B /* ViewController.swift in Sources */,
+				A92E75451E2EBB46001F598B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A92E755E1E2EBB47001F598B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A92E756A1E2EBB47001F598B /* ExtensionDelegate.swift in Sources */,
+				A92E75681E2EBB47001F598B /* InterfaceController.swift in Sources */,
+				A92E756C1E2EBB47001F598B /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A92E75561E2EBB46001F598B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A92E75521E2EBB46001F598B /* HBO WatchKit App */;
+			targetProxy = A92E75551E2EBB46001F598B /* PBXContainerItemProxy */;
+		};
+		A92E75651E2EBB47001F598B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A92E75611E2EBB47001F598B /* HBO WatchKit Extension */;
+			targetProxy = A92E75641E2EBB47001F598B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A92E75481E2EBB46001F598B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A92E75491E2EBB46001F598B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A92E754D1E2EBB46001F598B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A92E754E1E2EBB46001F598B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A92E75581E2EBB46001F598B /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A92E75591E2EBB46001F598B /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A92E75701E2EBB47001F598B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A92E75711E2EBB47001F598B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A92E75731E2EBB47001F598B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "HBO WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.HBO.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		A92E75741E2EBB47001F598B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "HBO WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.HBO.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		A92E75771E2EBB47001F598B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = HBO_WatchKit_Extension;
+				INFOPLIST_FILE = "HBO WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.HBO.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		A92E75781E2EBB47001F598B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = HBO_WatchKit_Extension;
+				INFOPLIST_FILE = "HBO WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.HBO.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		A92E757B1E2EBB47001F598B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HBO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.HBO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A92E757C1E2EBB47001F598B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HBO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.HBO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A92E753C1E2EBB45001F598B /* Build configuration list for PBXProject "HBO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A92E75701E2EBB47001F598B /* Debug */,
+				A92E75711E2EBB47001F598B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A92E75721E2EBB47001F598B /* Build configuration list for PBXNativeTarget "HBO WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A92E75731E2EBB47001F598B /* Debug */,
+				A92E75741E2EBB47001F598B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A92E75761E2EBB47001F598B /* Build configuration list for PBXNativeTarget "HBO WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A92E75771E2EBB47001F598B /* Debug */,
+				A92E75781E2EBB47001F598B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A92E757A1E2EBB47001F598B /* Build configuration list for PBXNativeTarget "HBO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A92E757B1E2EBB47001F598B /* Debug */,
+				A92E757C1E2EBB47001F598B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A92E75391E2EBB45001F598B /* Project object */;
+}
