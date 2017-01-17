@@ -30,18 +30,6 @@ class HomeController: WKInterfaceController {
     override func willActivate() {
         super.willActivate()
         downloadNews()
-        
-        let path = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)
-        let documentDirectoryPath:String = path[0]
-        let fileManager = FileManager()
-        let destinationURLForFile = URL(fileURLWithPath: documentDirectoryPath.appendingFormat("/file.mov"))
-
-        if fileManager.fileExists(atPath: destinationURLForFile.absoluteString) {
-            titleLabel.setText("¡Encontrado!")
-        } else {
-            titleLabel.setText(":(")
-
-        }
     }
     
     override func didAppear() {

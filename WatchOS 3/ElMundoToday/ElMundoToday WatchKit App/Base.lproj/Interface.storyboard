@@ -23,13 +23,14 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-68" y="344"/>
+            <point key="canvasLocation" x="-71" y="156"/>
         </scene>
         <!--NewsController-->
         <scene sceneID="aou-V4-d1y">
             <objects>
                 <controller identifier="NewsController" id="AgC-eL-Hgc" customClass="NewsController" customModule="ElMundoToday_WatchKit_Extension">
                     <items>
+                        <inlineMovie width="1" height="0.5" alignment="center" hidden="YES" id="yaK-oh-ono"/>
                         <imageView height="0.5" alignment="left" contentMode="scaleAspectFit" id="qgK-9d-MpK"/>
                         <label alignment="right" text="Label" id="W2K-UX-0pb">
                             <fontDescription key="font" type="system" weight="light" pointSize="12"/>
@@ -51,22 +52,17 @@
                             </connections>
                         </button>
                     </items>
-                    <menu key="menu" id="caf-nR-spd">
-                        <items>
-                            <menuItem title="Actualizar" id="atI-gf-am4"/>
-                            <menuItem title="Videos" id="DSo-5J-0ak"/>
-                        </items>
-                    </menu>
                     <connections>
                         <outlet property="newsDateLabel" destination="W2K-UX-0pb" id="FjI-Ol-Obv"/>
                         <outlet property="newsImage" destination="qgK-9d-MpK" id="XHf-eO-KC5"/>
                         <outlet property="subtitleLabel" destination="5ID-W4-Ctf" id="ZRP-fl-DKJ"/>
                         <outlet property="titleLabel" destination="rWi-GP-XgI" id="DYY-XM-JqZ"/>
+                        <outlet property="video" destination="yaK-oh-ono" id="f1S-j6-i3G"/>
                         <outlet property="videoButton" destination="9iK-bH-SPH" id="W5N-cc-tNW"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="220" y="157"/>
         </scene>
         <!--TextBodyNewsController-->
         <scene sceneID="s6l-a7-b0I">
@@ -80,35 +76,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="520" y="313"/>
-        </scene>
-        <!--Interface Controller-->
-        <scene sceneID="bAi-rA-H7n">
-            <objects>
-                <controller id="Pz7-pk-wjG">
-                    <items>
-                        <movie width="1" height="100" alignment="center" verticalAlignment="center" id="qhs-Uy-3GC"/>
-                    </items>
-                </controller>
-            </objects>
-            <point key="canvasLocation" x="817" y="313"/>
-        </scene>
-        <!--Interface Controller-->
-        <scene sceneID="fuu-w4-68i">
-            <objects>
-                <controller id="cpE-t9-ick">
-                    <items>
-                        <inlineMovie width="1" height="100" alignment="left" id="Tj0-Ds-MfA"/>
-                        <label alignment="right" text="Label" id="gAE-ah-fQ9">
-                            <fontDescription key="font" type="system" weight="light" pointSize="12"/>
-                        </label>
-                        <label alignment="left" text="Label" numberOfLines="0" id="I6Z-sH-oJv">
-                            <fontDescription key="font" type="boldSystem" pointSize="16"/>
-                        </label>
-                    </items>
-                </controller>
-            </objects>
-            <point key="canvasLocation" x="220" y="-6"/>
+            <point key="canvasLocation" x="520" y="156"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

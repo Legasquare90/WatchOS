@@ -25,6 +25,8 @@
 		A965D9461E270C19005B2577 /* LiveNotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A965D9451E270C19005B2577 /* LiveNotificationController.swift */; };
 		A99CA41A1E2844CB00F644A6 /* TextBodyNewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99CA4191E2844CB00F644A6 /* TextBodyNewsController.swift */; };
 		A99CA41C1E284DDE00F644A6 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99CA41B1E284DDE00F644A6 /* HomeController.swift */; };
+		A9BAE6511E2DA555000E93A4 /* naturaleza.mov in Resources */ = {isa = PBXBuildFile; fileRef = A9BAE64F1E2DA555000E93A4 /* naturaleza.mov */; };
+		A9BAE6521E2DA555000E93A4 /* nieve.mov in Resources */ = {isa = PBXBuildFile; fileRef = A9BAE6501E2DA555000E93A4 /* nieve.mov */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +95,8 @@
 		A965D9451E270C19005B2577 /* LiveNotificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveNotificationController.swift; sourceTree = "<group>"; };
 		A99CA4191E2844CB00F644A6 /* TextBodyNewsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextBodyNewsController.swift; sourceTree = "<group>"; };
 		A99CA41B1E284DDE00F644A6 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		A9BAE64F1E2DA555000E93A4 /* naturaleza.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = naturaleza.mov; sourceTree = "<group>"; };
+		A9BAE6501E2DA555000E93A4 /* nieve.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = nieve.mov; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +174,8 @@
 				A90EF7F41E1B04FC00FA53E3 /* Supporting Files */,
 				A965D9411E26F8D3005B2577 /* NewsNotificationPayload.apns */,
 				A965D9431E26F8F8005B2577 /* LiveNotificationPayload.apns */,
+				A9BAE64F1E2DA555000E93A4 /* naturaleza.mov */,
+				A9BAE6501E2DA555000E93A4 /* nieve.mov */,
 			);
 			path = "ElMundoToday WatchKit Extension";
 			sourceTree = "<group>";
@@ -307,7 +313,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A965D9421E26F8D3005B2577 /* NewsNotificationPayload.apns in Resources */,
+				A9BAE6511E2DA555000E93A4 /* naturaleza.mov in Resources */,
 				A90EF7FD1E1B04FC00FA53E3 /* Assets.xcassets in Resources */,
+				A9BAE6521E2DA555000E93A4 /* nieve.mov in Resources */,
 				A965D9441E26F8F8005B2577 /* LiveNotificationPayload.apns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,7 +491,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Debug;
 		};
@@ -499,7 +507,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Release;
 		};

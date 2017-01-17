@@ -12,6 +12,9 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, URLSessionDownloadDelega
 
     func applicationDidFinishLaunching() {
         // Perform any final initialization of your application.
+        
+        // Only for test happy-path
+        UserDefaults.standard.removeObject(forKey: "videoID")
     }
 
     func applicationDidBecomeActive() {
@@ -31,6 +34,11 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, URLSessionDownloadDelega
             case let backgroundTask as WKApplicationRefreshBackgroundTask:
                 // Be sure to complete the background task once you’re done.
                 beginDownloadTask(userInfo: backgroundTask.userInfo as! NSDictionary)
+                
+                // Only for test happy-path
+                saveVideoID(userInfo: backgroundTask.userInfo as! NSDictionary)
+                updateSnapshot()
+                
                 backgroundTask.setTaskCompleted()
             case let snapshotTask as WKSnapshotRefreshBackgroundTask:
                 // Snapshot tasks have a unique completion call, make sure to set your expiration date
@@ -48,6 +56,23 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, URLSessionDownloadDelega
         }
     }
     
+    func saveVideoID(userInfo: NSDictionary) {
+        let videoID = userInfo["videoID"] as! String
+        let userDefaults = UserDefaults.standard
+        var videoIDArray = userDefaults.object(forKey: "videoID") as? [String]
+        if (videoIDArray == nil) {
+            videoIDArray = [videoID]
+            userDefaults.set(videoIDArray, forKey: "videoID")
+            userDefaults.synchronize()
+        } else {
+            if (!videoIDArray!.contains(videoID)) {
+                videoIDArray!.append(videoID)
+                userDefaults.set(videoIDArray, forKey: "videoID")
+                userDefaults.synchronize()
+            }
+        }
+    }
+    
     func beginDownloadTask(userInfo: NSDictionary) {
         let urlString = userInfo["url"] as! String
         print("Init task: \(urlString)")
@@ -57,6 +82,15 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, URLSessionDownloadDelega
         let session = URLSession(configuration: config, delegate: self, delegateQueue: nil)
         let task = session.downloadTask(with: url!)
         task.resume()
+    }
+    
+    func updateSnapshot() {
+        NotificationCenter.default.post(name: Notification.Name("updateSnapshot"), object: nil)
+        WKExtension.shared().scheduleSnapshotRefresh(withPreferredDate: Date(), userInfo: nil) { error in
+            if (error == nil) {
+                print("successfully scheduled snapshot.  All background work completed.")
+            }
+        }
     }
     
     func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didWriteData bytesWritten: Int64, totalBytesWritten: Int64, totalBytesExpectedToWrite: Int64) {
@@ -73,6 +107,7 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, URLSessionDownloadDelega
         do {
             try fileManager.moveItem(at: location, to: destinationURLForFile)
             print("File moved to url: ", destinationURLForFile)
+            updateSnapshot()
         } catch let err {
             print("An error occurred while moving file to destination url: \(err)")
         }
