@@ -16,17 +16,21 @@
                     <items>
                         <table alignment="left" id="2S2-RA-7vD">
                             <items>
-                                <tableRow id="XpO-2Y-op0">
+                                <tableRow identifier="RowBigNews" id="XpO-2Y-op0" customClass="RowBigNewsController" customModule="HBO_WatchKit_Extension">
                                     <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="r8S-vJ-rgG">
                                         <items>
                                             <imageView height="80" alignment="left" id="WQT-JW-AsC"/>
-                                            <label alignment="left" text="Label" numberOfLines="0" id="SRu-P6-j7c">
+                                            <label alignment="center" text="Label" textAlignment="center" numberOfLines="0" id="SRu-P6-j7c">
                                                 <fontDescription key="font" type="system" weight="semibold" pointSize="18"/>
                                             </label>
                                         </items>
                                     </group>
+                                    <connections>
+                                        <outlet property="newsImage" destination="WQT-JW-AsC" id="xKt-ES-jVJ"/>
+                                        <outlet property="newsTitle" destination="SRu-P6-j7c" id="VDu-K4-sKA"/>
+                                    </connections>
                                 </tableRow>
-                                <tableRow id="8nb-cq-Edj">
+                                <tableRow identifier="RowSmallNews" id="8nb-cq-Edj" customClass="RowSmallNewsController" customModule="HBO_WatchKit_Extension">
                                     <group key="rootItem" width="1" height="0.0" alignment="left" id="VHC-FJ-EZJ">
                                         <items>
                                             <imageView width="50" height="50" alignment="left" verticalAlignment="center" id="Uxa-pQ-kjv"/>
@@ -35,11 +39,16 @@
                                             </label>
                                         </items>
                                     </group>
+                                    <connections>
+                                        <outlet property="newsImage" destination="Uxa-pQ-kjv" id="1qZ-Qb-3F1"/>
+                                        <outlet property="newsTitle" destination="5Gy-Jv-mGN" id="yNu-NL-XBP"/>
+                                    </connections>
                                 </tableRow>
                             </items>
                         </table>
                     </items>
                     <connections>
+                        <outlet property="table" destination="2S2-RA-7vD" id="pe7-nG-Dx2"/>
                         <segue destination="7zn-PI-udL" kind="relationship" relationship="nextPage" id="Nf7-Hy-121"/>
                     </connections>
                 </controller>
