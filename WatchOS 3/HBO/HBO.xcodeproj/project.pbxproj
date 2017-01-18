@@ -20,6 +20,8 @@
 		A92E756A1E2EBB47001F598B /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E75691E2EBB47001F598B /* ExtensionDelegate.swift */; };
 		A92E756C1E2EBB47001F598B /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E756B1E2EBB47001F598B /* ComplicationController.swift */; };
 		A92E756E1E2EBB47001F598B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A92E756D1E2EBB47001F598B /* Assets.xcassets */; };
+		A92E757F1E2EE9CF001F598B /* got.mov in Resources */ = {isa = PBXBuildFile; fileRef = A92E757D1E2EE9CF001F598B /* got.mov */; };
+		A92E75801E2EE9D0001F598B /* silicon_valley.mov in Resources */ = {isa = PBXBuildFile; fileRef = A92E757E1E2EE9CF001F598B /* silicon_valley.mov */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,8 @@
 		A92E756B1E2EBB47001F598B /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		A92E756D1E2EBB47001F598B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A92E756F1E2EBB47001F598B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A92E757D1E2EE9CF001F598B /* got.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = got.mov; sourceTree = "<group>"; };
+		A92E757E1E2EE9CF001F598B /* silicon_valley.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = silicon_valley.mov; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +155,8 @@
 				A92E75671E2EBB47001F598B /* InterfaceController.swift */,
 				A92E75691E2EBB47001F598B /* ExtensionDelegate.swift */,
 				A92E756B1E2EBB47001F598B /* ComplicationController.swift */,
+				A92E757D1E2EE9CF001F598B /* got.mov */,
+				A92E757E1E2EE9CF001F598B /* silicon_valley.mov */,
 				A92E756D1E2EBB47001F598B /* Assets.xcassets */,
 				A92E756F1E2EBB47001F598B /* Info.plist */,
 			);
@@ -282,6 +288,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A92E756E1E2EBB47001F598B /* Assets.xcassets in Resources */,
+				A92E75801E2EE9D0001F598B /* silicon_valley.mov in Resources */,
+				A92E757F1E2EE9CF001F598B /* got.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
