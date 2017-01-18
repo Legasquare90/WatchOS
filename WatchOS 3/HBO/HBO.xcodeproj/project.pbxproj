@@ -16,12 +16,14 @@
 		A92E755A1E2EBB46001F598B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A92E75581E2EBB46001F598B /* Interface.storyboard */; };
 		A92E755C1E2EBB46001F598B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A92E755B1E2EBB46001F598B /* Assets.xcassets */; };
 		A92E75631E2EBB47001F598B /* HBO WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A92E75621E2EBB47001F598B /* HBO WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		A92E75681E2EBB47001F598B /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E75671E2EBB47001F598B /* InterfaceController.swift */; };
+		A92E75681E2EBB47001F598B /* NewsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E75671E2EBB47001F598B /* NewsInterfaceController.swift */; };
 		A92E756A1E2EBB47001F598B /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E75691E2EBB47001F598B /* ExtensionDelegate.swift */; };
 		A92E756C1E2EBB47001F598B /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E756B1E2EBB47001F598B /* ComplicationController.swift */; };
 		A92E756E1E2EBB47001F598B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A92E756D1E2EBB47001F598B /* Assets.xcassets */; };
 		A92E757F1E2EE9CF001F598B /* got.mov in Resources */ = {isa = PBXBuildFile; fileRef = A92E757D1E2EE9CF001F598B /* got.mov */; };
 		A92E75801E2EE9D0001F598B /* silicon_valley.mov in Resources */ = {isa = PBXBuildFile; fileRef = A92E757E1E2EE9CF001F598B /* silicon_valley.mov */; };
+		A92E75821E2EEA1F001F598B /* ReleasesInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E75811E2EEA1F001F598B /* ReleasesInterfaceController.swift */; };
+		A92E75841E2EEA52001F598B /* ProgramsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E75831E2EEA52001F598B /* ProgramsInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,13 +81,15 @@
 		A92E755B1E2EBB46001F598B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A92E755D1E2EBB46001F598B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A92E75621E2EBB47001F598B /* HBO WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HBO WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A92E75671E2EBB47001F598B /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A92E75671E2EBB47001F598B /* NewsInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsInterfaceController.swift; sourceTree = "<group>"; };
 		A92E75691E2EBB47001F598B /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		A92E756B1E2EBB47001F598B /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		A92E756D1E2EBB47001F598B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A92E756F1E2EBB47001F598B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A92E757D1E2EE9CF001F598B /* got.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = got.mov; sourceTree = "<group>"; };
 		A92E757E1E2EE9CF001F598B /* silicon_valley.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = silicon_valley.mov; sourceTree = "<group>"; };
+		A92E75811E2EEA1F001F598B /* ReleasesInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReleasesInterfaceController.swift; sourceTree = "<group>"; };
+		A92E75831E2EEA52001F598B /* ProgramsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramsInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,7 +156,9 @@
 		A92E75661E2EBB47001F598B /* HBO WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				A92E75671E2EBB47001F598B /* InterfaceController.swift */,
+				A92E75671E2EBB47001F598B /* NewsInterfaceController.swift */,
+				A92E75811E2EEA1F001F598B /* ReleasesInterfaceController.swift */,
+				A92E75831E2EEA52001F598B /* ProgramsInterfaceController.swift */,
 				A92E75691E2EBB47001F598B /* ExtensionDelegate.swift */,
 				A92E756B1E2EBB47001F598B /* ComplicationController.swift */,
 				A92E757D1E2EE9CF001F598B /* got.mov */,
@@ -310,8 +316,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A92E756A1E2EBB47001F598B /* ExtensionDelegate.swift in Sources */,
-				A92E75681E2EBB47001F598B /* InterfaceController.swift in Sources */,
+				A92E75681E2EBB47001F598B /* NewsInterfaceController.swift in Sources */,
+				A92E75841E2EEA52001F598B /* ProgramsInterfaceController.swift in Sources */,
 				A92E756C1E2EBB47001F598B /* ComplicationController.swift in Sources */,
+				A92E75821E2EEA1F001F598B /* ReleasesInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

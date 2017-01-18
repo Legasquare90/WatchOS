@@ -9,10 +9,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--News Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="HBO_WatchKit_App" customModuleProvider="target">
+                <controller id="AgC-eL-Hgc" customClass="NewsInterfaceController" customModule="HBO_WatchKit_Extension">
                     <items>
                         <table alignment="left" id="2S2-RA-7vD">
                             <items>
@@ -45,10 +45,10 @@
                 </controller>
             </objects>
         </scene>
-        <!--Interface Controller-->
+        <!--Releases Interface Controller-->
         <scene sceneID="yIU-9v-DGf">
             <objects>
-                <controller id="7zn-PI-udL">
+                <controller id="7zn-PI-udL" customClass="ReleasesInterfaceController" customModule="HBO_WatchKit_Extension">
                     <items>
                         <table alignment="left" id="NK7-1E-eCT">
                             <items>
@@ -72,10 +72,10 @@
             </objects>
             <point key="canvasLocation" x="326" y="36"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Programs Interface Controller-->
         <scene sceneID="1Em-iu-YWY">
             <objects>
-                <controller id="Igu-m0-zgh">
+                <controller id="Igu-m0-zgh" customClass="ProgramsInterfaceController" customModule="HBO_WatchKit_Extension">
                     <items>
                         <table alignment="left" id="dE2-1A-oAx">
                             <items>
