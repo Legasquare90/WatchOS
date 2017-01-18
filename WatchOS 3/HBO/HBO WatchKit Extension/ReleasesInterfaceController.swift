@@ -14,8 +14,7 @@ class ReleasesInterfaceController: WKInterfaceController {
 
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        
-        // Configure interface objects here.
+        setTitle("Estrenos")
     }
 
     override func willActivate() {
