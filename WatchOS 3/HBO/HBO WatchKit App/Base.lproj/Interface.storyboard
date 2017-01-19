@@ -88,10 +88,10 @@
                     <items>
                         <table alignment="left" id="dE2-1A-oAx">
                             <items>
-                                <tableRow id="Jl8-Yf-rNs">
+                                <tableRow identifier="RowProgram" id="Jl8-Yf-rNs" customClass="RowProgramController" customModule="HBO_WatchKit_Extension">
                                     <group key="rootItem" width="1" height="0.0" alignment="left" id="149-7v-25A">
                                         <items>
-                                            <group alignment="left" layout="vertical" id="Ksw-zu-y8s">
+                                            <group width="0.29999999999999999" alignment="left" layout="vertical" id="Ksw-zu-y8s">
                                                 <items>
                                                     <label alignment="left" text="Label" id="EkR-gi-1V4">
                                                         <fontDescription key="font" type="system" pointSize="13"/>
@@ -101,15 +101,24 @@
                                                     </label>
                                                 </items>
                                             </group>
-                                            <label alignment="left" verticalAlignment="center" text="Label" numberOfLines="0" id="cg9-3s-zij">
+                                            <label width="0.69999999999999996" alignment="left" verticalAlignment="center" text="Label" numberOfLines="0" id="cg9-3s-zij">
                                                 <fontDescription key="font" type="boldSystem" pointSize="16"/>
                                             </label>
                                         </items>
                                     </group>
+                                    <connections>
+                                        <outlet property="containerView" destination="149-7v-25A" id="CcF-co-u7X"/>
+                                        <outlet property="finishDateLabel" destination="a02-77-bNH" id="bzu-PQ-K3z"/>
+                                        <outlet property="initDateLabel" destination="EkR-gi-1V4" id="93W-Om-shr"/>
+                                        <outlet property="titleLabel" destination="cg9-3s-zij" id="TZV-Hl-OUh"/>
+                                    </connections>
                                 </tableRow>
                             </items>
                         </table>
                     </items>
+                    <connections>
+                        <outlet property="table" destination="dE2-1A-oAx" id="H7Z-s2-lBT"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="595" y="36"/>
