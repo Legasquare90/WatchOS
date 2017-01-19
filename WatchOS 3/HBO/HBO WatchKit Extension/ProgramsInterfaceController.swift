@@ -13,13 +13,16 @@ import Alamofire
 class ProgramsInterfaceController: WKInterfaceController {
 
     @IBOutlet var table: WKInterfaceTable!
+    @IBOutlet var loadingLabel: WKInterfaceLabel!
     
     var programs: [[String: String]] = []
 
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         setTitle("Programación")
-            
+        table.setHidden(true)
+        loadingLabel.setHidden(false)
+        
         Alamofire.request(URL(string: "http://private-a6537-hboupsa.apiary-mock.com/programs")!, method: .get, parameters: nil).responseJSON { (dataResponse) in
             guard dataResponse.result.isSuccess else {
                 print("Error while fetching programs: \(dataResponse.result.error)")
@@ -33,6 +36,8 @@ class ProgramsInterfaceController: WKInterfaceController {
             
             print(programList)
             self.programs = programList
+            self.loadingLabel.setHidden(true)
+            self.table.setHidden(false)
             self.setupTable()
         }
     }

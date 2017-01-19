@@ -14,6 +14,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="NewsInterfaceController" customModule="HBO_WatchKit_Extension">
                     <items>
+                        <label alignment="center" verticalAlignment="center" text="Cargando..." id="wtC-Ii-8X3"/>
                         <table alignment="left" id="2S2-RA-7vD">
                             <items>
                                 <tableRow identifier="RowBigNews" id="XpO-2Y-op0" customClass="RowBigNewsController" customModule="HBO_WatchKit_Extension">
@@ -48,6 +49,7 @@
                         </table>
                     </items>
                     <connections>
+                        <outlet property="loadingLabel" destination="wtC-Ii-8X3" id="BrS-YL-HvE"/>
                         <outlet property="table" destination="2S2-RA-7vD" id="pe7-nG-Dx2"/>
                         <segue destination="7zn-PI-udL" kind="relationship" relationship="nextPage" id="Nf7-Hy-121"/>
                     </connections>
@@ -60,6 +62,7 @@
             <objects>
                 <controller id="7zn-PI-udL" customClass="ReleasesInterfaceController" customModule="HBO_WatchKit_Extension">
                     <items>
+                        <label alignment="center" verticalAlignment="center" text="Cargando..." id="mtn-6O-Hr6"/>
                         <movie width="1" height="80" alignment="left" posterImage="got7" id="Pvg-X3-SC8"/>
                         <separator alignment="left" id="5nz-P8-fe3"/>
                         <table alignment="left" id="NK7-1E-eCT">
@@ -84,7 +87,9 @@
                         </table>
                     </items>
                     <connections>
+                        <outlet property="loadingLabel" destination="mtn-6O-Hr6" id="dl3-aA-aWg"/>
                         <outlet property="movie" destination="Pvg-X3-SC8" id="uQO-xw-XzZ"/>
+                        <outlet property="separator" destination="5nz-P8-fe3" id="xak-Hg-Wog"/>
                         <outlet property="table" destination="NK7-1E-eCT" id="fAa-Hg-Ibc"/>
                         <segue destination="Igu-m0-zgh" kind="relationship" relationship="nextPage" id="LNV-I5-eJx"/>
                     </connections>
@@ -97,6 +102,7 @@
             <objects>
                 <controller id="Igu-m0-zgh" customClass="ProgramsInterfaceController" customModule="HBO_WatchKit_Extension">
                     <items>
+                        <label alignment="center" verticalAlignment="center" text="Cargando..." id="X22-45-sC6"/>
                         <table alignment="left" id="dE2-1A-oAx">
                             <items>
                                 <tableRow identifier="RowProgram" id="Jl8-Yf-rNs" customClass="RowProgramController" customModule="HBO_WatchKit_Extension">
@@ -128,6 +134,7 @@
                         </table>
                     </items>
                     <connections>
+                        <outlet property="loadingLabel" destination="X22-45-sC6" id="Nca-gV-ULR"/>
                         <outlet property="table" destination="dE2-1A-oAx" id="H7Z-s2-lBT"/>
                     </connections>
                 </controller>

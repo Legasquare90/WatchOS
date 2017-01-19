@@ -19,10 +19,13 @@ class NewsInterfaceController: WKInterfaceController {
     var news: [[String: Any]] = []
     
     @IBOutlet var table: WKInterfaceTable!
+    @IBOutlet var loadingLabel: WKInterfaceLabel!
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         setTitle("Noticias")
+        table.setHidden(true)
+        loadingLabel.setHidden(false)
         
         Alamofire.request(URL(string: "http://private-a6537-hboupsa.apiary-mock.com/news")!, method: .get, parameters: nil).responseJSON { (dataResponse) in
             guard dataResponse.result.isSuccess else {
@@ -37,6 +40,8 @@ class NewsInterfaceController: WKInterfaceController {
             
             print(newsList)
             self.news = newsList
+            self.loadingLabel.setHidden(true)
+            self.table.setHidden(false)
             self.setupTable()
         }
     }

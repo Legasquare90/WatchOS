@@ -14,12 +14,18 @@ class ReleasesInterfaceController: WKInterfaceController {
 
     @IBOutlet var table: WKInterfaceTable!
     @IBOutlet var movie: WKInterfaceMovie!
+    @IBOutlet var separator: WKInterfaceSeparator!
+    @IBOutlet var loadingLabel: WKInterfaceLabel!
     
     var releases: [[String: String]] = []
 
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         setTitle("Estrenos")
+        table.setHidden(true)
+        movie.setHidden(true)
+        separator.setHidden(true)
+        loadingLabel.setHidden(false)
         
         let movieURL = Bundle.main.url(forResource: "got", withExtension: "mov")
         movie.setMovieURL(movieURL!)
@@ -37,6 +43,10 @@ class ReleasesInterfaceController: WKInterfaceController {
             
             print(releasesList)
             self.releases = releasesList
+            self.loadingLabel.setHidden(true)
+            self.movie.setHidden(false)
+            self.separator.setHidden(false)
+            self.table.setHidden(false)
             self.setupTable()
         }
     }
