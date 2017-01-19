@@ -21,7 +21,6 @@
 		A92E756C1E2EBB47001F598B /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E756B1E2EBB47001F598B /* ComplicationController.swift */; };
 		A92E756E1E2EBB47001F598B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A92E756D1E2EBB47001F598B /* Assets.xcassets */; };
 		A92E757F1E2EE9CF001F598B /* got.mov in Resources */ = {isa = PBXBuildFile; fileRef = A92E757D1E2EE9CF001F598B /* got.mov */; };
-		A92E75801E2EE9D0001F598B /* silicon_valley.mov in Resources */ = {isa = PBXBuildFile; fileRef = A92E757E1E2EE9CF001F598B /* silicon_valley.mov */; };
 		A92E75821E2EEA1F001F598B /* ReleasesInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E75811E2EEA1F001F598B /* ReleasesInterfaceController.swift */; };
 		A92E75841E2EEA52001F598B /* ProgramsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E75831E2EEA52001F598B /* ProgramsInterfaceController.swift */; };
 		B0BCB4626DF7092C88129AB7 /* Pods_HBO_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B636C325EBAEF21893FB6AB /* Pods_HBO_WatchKit_Extension.framework */; };
@@ -95,7 +94,6 @@
 		A92E756D1E2EBB47001F598B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A92E756F1E2EBB47001F598B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A92E757D1E2EE9CF001F598B /* got.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = got.mov; sourceTree = "<group>"; };
-		A92E757E1E2EE9CF001F598B /* silicon_valley.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = silicon_valley.mov; sourceTree = "<group>"; };
 		A92E75811E2EEA1F001F598B /* ReleasesInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReleasesInterfaceController.swift; sourceTree = "<group>"; };
 		A92E75831E2EEA52001F598B /* ProgramsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramsInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -190,7 +188,6 @@
 				A92E75691E2EBB47001F598B /* ExtensionDelegate.swift */,
 				A92E756B1E2EBB47001F598B /* ComplicationController.swift */,
 				A92E757D1E2EE9CF001F598B /* got.mov */,
-				A92E757E1E2EE9CF001F598B /* silicon_valley.mov */,
 				A92E756D1E2EBB47001F598B /* Assets.xcassets */,
 				A92E756F1E2EBB47001F598B /* Info.plist */,
 			);
@@ -340,7 +337,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A92E756E1E2EBB47001F598B /* Assets.xcassets in Resources */,
-				A92E75801E2EE9D0001F598B /* silicon_valley.mov in Resources */,
 				A92E757F1E2EE9CF001F598B /* got.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -709,6 +705,7 @@
 				A92E75741E2EBB47001F598B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A92E75761E2EBB47001F598B /* Build configuration list for PBXNativeTarget "HBO WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -717,6 +714,7 @@
 				A92E75781E2EBB47001F598B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A92E757A1E2EBB47001F598B /* Build configuration list for PBXNativeTarget "HBO" */ = {
 			isa = XCConfigurationList;
@@ -725,6 +723,7 @@
 				A92E757C1E2EBB47001F598B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

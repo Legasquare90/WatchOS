@@ -60,16 +60,18 @@
             <objects>
                 <controller id="7zn-PI-udL" customClass="ReleasesInterfaceController" customModule="HBO_WatchKit_Extension">
                     <items>
+                        <movie width="1" height="80" alignment="left" posterImage="got7" id="Pvg-X3-SC8"/>
+                        <separator alignment="left" id="5nz-P8-fe3"/>
                         <table alignment="left" id="NK7-1E-eCT">
                             <items>
                                 <tableRow identifier="RowRelease" id="X6g-Ab-FTZ" customClass="RowReleaseController" customModule="HBO_WatchKit_Extension">
                                     <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="F8S-P6-KfT">
                                         <items>
-                                            <label alignment="left" text="Label" id="0gd-tQ-cqc">
-                                                <fontDescription key="font" type="boldSystem" pointSize="14"/>
+                                            <label alignment="left" text="Label" numberOfLines="0" id="0gd-tQ-cqc">
+                                                <fontDescription key="font" type="boldSystem" pointSize="16"/>
                                             </label>
                                             <label alignment="left" text="Label" id="27L-pX-gbt">
-                                                <fontDescription key="font" type="system" pointSize="12"/>
+                                                <fontDescription key="font" type="italicSystem" pointSize="14"/>
                                             </label>
                                         </items>
                                     </group>
@@ -82,6 +84,7 @@
                         </table>
                     </items>
                     <connections>
+                        <outlet property="movie" destination="Pvg-X3-SC8" id="uQO-xw-XzZ"/>
                         <outlet property="table" destination="NK7-1E-eCT" id="fAa-Hg-Ibc"/>
                         <segue destination="Igu-m0-zgh" kind="relationship" relationship="nextPage" id="LNV-I5-eJx"/>
                     </connections>
@@ -130,17 +133,6 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="595" y="36"/>
-        </scene>
-        <!--Interface Controller-->
-        <scene sceneID="WIs-gp-Sf5">
-            <objects>
-                <controller id="Tn5-4v-vFs">
-                    <items>
-                        <movie width="1" height="100" alignment="center" verticalAlignment="center" id="nwC-lg-Rwb"/>
-                    </items>
-                </controller>
-            </objects>
-            <point key="canvasLocation" x="326" y="324"/>
         </scene>
     </scenes>
 </document>

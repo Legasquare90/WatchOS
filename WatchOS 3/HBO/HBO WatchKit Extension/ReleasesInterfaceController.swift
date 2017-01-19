@@ -13,6 +13,7 @@ import Alamofire
 class ReleasesInterfaceController: WKInterfaceController {
 
     @IBOutlet var table: WKInterfaceTable!
+    @IBOutlet var movie: WKInterfaceMovie!
     
     var releases: [[String: String]] = []
 
@@ -20,6 +21,9 @@ class ReleasesInterfaceController: WKInterfaceController {
         super.awake(withContext: context)
         setTitle("Estrenos")
         
+        let movieURL = Bundle.main.url(forResource: "got", withExtension: "mov")
+        movie.setMovieURL(movieURL!)
+
         Alamofire.request(URL(string: "http://private-a6537-hboupsa.apiary-mock.com/releases")!, method: .get, parameters: nil).responseJSON { (dataResponse) in
             guard dataResponse.result.isSuccess else {
                 print("Error while fetching releases: \(dataResponse.result.error)")
