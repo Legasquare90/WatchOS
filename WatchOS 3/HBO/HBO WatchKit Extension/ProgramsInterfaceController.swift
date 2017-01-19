@@ -9,6 +9,7 @@
 import WatchKit
 import Foundation
 import Alamofire
+import ClockKit
 
 class ProgramsInterfaceController: WKInterfaceController {
 
@@ -35,16 +36,44 @@ class ProgramsInterfaceController: WKInterfaceController {
             }
             
             print(programList)
+            
+            let userDefaults = UserDefaults.standard
+            userDefaults.set(programList, forKey: "ballTypes")
+            userDefaults.synchronize()
+            
             self.programs = programList
             self.loadingLabel.setHidden(true)
             self.table.setHidden(false)
+            
             self.setupTable()
+            self.getComplicationData()
+            self.refreshComplication()
         }
     }
     
     override func willActivate() {
         super.willActivate()
         updateColorPrograms()
+    }
+    
+    func getComplicationData() {
+        var complicationData: [[String:Any]] = []
+        for i in 0 ..< programs.count {
+            let program = programs[i]
+            let title = program["title"]!
+            let initDate = program["timeInit"]!
+            let finishDate = program["timeFinish"]!
+            let timeInit = getDate(dateString: initDate)
+            let timeEnd = getDate(dateString: finishDate)
+
+            if (Date().compare(timeEnd!) == .orderedAscending) {
+                let programWithDate = ["title": title, "timeInit": timeInit!, "timeEnd": timeEnd!] as [String : Any]
+                complicationData.append(programWithDate)
+            }
+        }
+        let userDefaults = UserDefaults.standard
+        userDefaults.set(complicationData, forKey: "complicationData")
+        userDefaults.synchronize()
     }
     
     func updateColorPrograms() {
@@ -78,21 +107,22 @@ class ProgramsInterfaceController: WKInterfaceController {
         }
     }
     
-    func getProgramColor(initDate: String, finishDate: String) -> UIColor? {
+    func getDate(dateString: String) -> Date? {
         let now = Date()
         let gregorian = Calendar(identifier: .gregorian)
         let units: Set<Calendar.Component> = [.second, .minute, .hour, .day, .month, .year]
         var components = gregorian.dateComponents(units, from: now)
         
-        let componentsInitDate = initDate.components(separatedBy: ":")
+        let componentsInitDate = dateString.components(separatedBy: ":")
         components.minute = Int(componentsInitDate[1])
         components.hour = Int(componentsInitDate[0])
-        let timeInit = gregorian.date(from: components)
-        
-        let componentsFinishDate = finishDate.components(separatedBy: ":")
-        components.minute = Int(componentsFinishDate[1])
-        components.hour = Int(componentsFinishDate[0])
-        let timeEnd = gregorian.date(from: components)
+        return gregorian.date(from: components)
+    }
+    
+    func getProgramColor(initDate: String, finishDate: String) -> UIColor? {
+        let now = Date()
+        let timeInit = getDate(dateString: initDate)
+        let timeEnd = getDate(dateString: finishDate)
         
         if (now.compare(timeEnd!) == .orderedDescending) {
             return UIColor.red
@@ -102,6 +132,13 @@ class ProgramsInterfaceController: WKInterfaceController {
             } else {
                 return nil
             }
+        }
+    }
+    
+    func refreshComplication() {
+        let complicationServer = CLKComplicationServer.sharedInstance()
+        for complication in complicationServer.activeComplications! {
+            complicationServer.reloadTimeline(for: complication)
         }
     }
 

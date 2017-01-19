@@ -11,18 +11,21 @@ import ClockKit
 
 class ComplicationController: NSObject, CLKComplicationDataSource {
     
+    let hour: TimeInterval = 60 * 60
+    var programs: [[String: Any]] = []
+    
     // MARK: - Timeline Configuration
     
     func getSupportedTimeTravelDirections(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimeTravelDirections) -> Void) {
-        handler([.forward, .backward])
+        handler([.forward])
     }
     
     func getTimelineStartDate(for complication: CLKComplication, withHandler handler: @escaping (Date?) -> Void) {
-        handler(nil)
+        handler(Date())
     }
     
     func getTimelineEndDate(for complication: CLKComplication, withHandler handler: @escaping (Date?) -> Void) {
-        handler(nil)
+        handler(Date(timeIntervalSinceNow: hour*24))
     }
     
     func getPrivacyBehavior(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationPrivacyBehavior) -> Void) {
@@ -32,25 +35,61 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     // MARK: - Timeline Population
     
     func getCurrentTimelineEntry(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimelineEntry?) -> Void) {
-        // Call the handler with the current timeline entry
-        handler(nil)
+        guard let programsList = UserDefaults.standard.object(forKey: "complicationData") else {
+            handler(nil)
+            return
+        }
+        programs = programsList as! [[String : Any]]
+        let currentProgram = programs.first!
+        let title = currentProgram["title"] as! String
+        let timeInit = currentProgram["timeInit"] as! Date
+        let timeFinish = currentProgram["timeEnd"] as! Date
+        
+        let template = CLKComplicationTemplateModularLargeStandardBody()
+        template.headerTextProvider = CLKTimeIntervalTextProvider(start: timeInit, end: timeFinish)
+        template.body1TextProvider = CLKSimpleTextProvider(text: title)
+        
+        let entry = CLKComplicationTimelineEntry(date: Date(timeInterval: hour * -0.25, since: timeInit), complicationTemplate: template)
+        handler(entry)
     }
     
     func getTimelineEntries(for complication: CLKComplication, before date: Date, limit: Int, withHandler handler: @escaping ([CLKComplicationTimelineEntry]?) -> Void) {
-        // Call the handler with the timeline entries prior to the given date
         handler(nil)
     }
     
     func getTimelineEntries(for complication: CLKComplication, after date: Date, limit: Int, withHandler handler: @escaping ([CLKComplicationTimelineEntry]?) -> Void) {
-        // Call the handler with the timeline entries after to the given date
-        handler(nil)
+        
+        var entries: [CLKComplicationTimelineEntry] = []
+
+        for program in programs {
+            let title = program["title"] as! String
+            let timeInit = program["timeInit"] as! Date
+            let timeFinish = program["timeEnd"] as! Date
+            
+            if entries.count < limit && timeInit.timeIntervalSince(date) > 0 {
+                let template = CLKComplicationTemplateModularLargeStandardBody()
+                template.headerTextProvider = CLKTimeIntervalTextProvider(start: timeInit, end: timeFinish)
+                template.body1TextProvider = CLKSimpleTextProvider(text: title)
+                
+                let entry = CLKComplicationTimelineEntry(date: Date(timeInterval: hour * -0.25, since: timeInit), complicationTemplate: template)
+                entries.append(entry)
+            }
+        }
+        
+        handler(entries)
     }
     
     // MARK: - Placeholder Templates
     
     func getLocalizableSampleTemplate(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTemplate?) -> Void) {
-        // This method will be called once per supported complication, and the results will be cached
-        handler(nil)
+        if (complication.family == .modularLarge) {
+            let template = CLKComplicationTemplateModularLargeStandardBody()
+            template.headerTextProvider = CLKTimeIntervalTextProvider(start: Date(), end: Date(timeIntervalSinceNow: hour*24))
+            template.body1TextProvider = CLKSimpleTextProvider(text: "HBO Program")
+            handler(template)
+        } else {
+            handler(nil)
+        }
     }
     
 }
