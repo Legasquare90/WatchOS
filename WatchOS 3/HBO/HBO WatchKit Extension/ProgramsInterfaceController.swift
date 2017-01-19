@@ -14,7 +14,7 @@ class ProgramsInterfaceController: WKInterfaceController {
 
     @IBOutlet var table: WKInterfaceTable!
     
-    var programs: [[String: Any]] = []
+    var programs: [[String: String]] = []
 
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
@@ -26,7 +26,7 @@ class ProgramsInterfaceController: WKInterfaceController {
                 return
             }
             
-            guard let programList = dataResponse.result.value as? [[String: Any]] else {
+            guard let programList = dataResponse.result.value as? [[String: String]] else {
                 print("Malformed data received")
                 return
             }
@@ -45,7 +45,7 @@ class ProgramsInterfaceController: WKInterfaceController {
     func updateColorPrograms() {
         for i in 0 ..< programs.count {
             let row = table.rowController(at: i) as! RowProgramController
-            let program = programs[i] as! [String:String]
+            let program = programs[i] 
             let initDate = program["timeInit"]!
             let finishDate = program["timeFinish"]!
 
@@ -59,7 +59,7 @@ class ProgramsInterfaceController: WKInterfaceController {
         table.setNumberOfRows(programs.count, withRowType: "RowProgram")
         for i in 0 ..< programs.count {
             let row = table.rowController(at: i) as! RowProgramController
-            let program = programs[i] as! [String:String]
+            let program = programs[i] 
             let title = program["title"]! 
             let initDate = program["timeInit"]!
             let finishDate = program["timeFinish"]!

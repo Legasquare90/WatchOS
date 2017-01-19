@@ -53,6 +53,7 @@
                     </connections>
                 </controller>
             </objects>
+            <point key="canvasLocation" x="33" y="37"/>
         </scene>
         <!--Releases Interface Controller-->
         <scene sceneID="yIU-9v-DGf">
@@ -61,20 +62,27 @@
                     <items>
                         <table alignment="left" id="NK7-1E-eCT">
                             <items>
-                                <tableRow id="X6g-Ab-FTZ">
+                                <tableRow identifier="RowRelease" id="X6g-Ab-FTZ" customClass="RowReleaseController" customModule="HBO_WatchKit_Extension">
                                     <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="F8S-P6-KfT">
                                         <items>
                                             <label alignment="left" text="Label" id="0gd-tQ-cqc">
-                                                <fontDescription key="font" type="boldSystem" pointSize="16"/>
+                                                <fontDescription key="font" type="boldSystem" pointSize="14"/>
                                             </label>
-                                            <label alignment="left" text="Label" id="27L-pX-gbt"/>
+                                            <label alignment="left" text="Label" id="27L-pX-gbt">
+                                                <fontDescription key="font" type="system" pointSize="12"/>
+                                            </label>
                                         </items>
                                     </group>
+                                    <connections>
+                                        <outlet property="dateRelease" destination="27L-pX-gbt" id="uAd-zx-U90"/>
+                                        <outlet property="titleRelease" destination="0gd-tQ-cqc" id="1KO-cr-9SG"/>
+                                    </connections>
                                 </tableRow>
                             </items>
                         </table>
                     </items>
                     <connections>
+                        <outlet property="table" destination="NK7-1E-eCT" id="fAa-Hg-Ibc"/>
                         <segue destination="Igu-m0-zgh" kind="relationship" relationship="nextPage" id="LNV-I5-eJx"/>
                     </connections>
                 </controller>
