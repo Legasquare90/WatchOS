@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A90F07E61E318B3600B84150 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90F07E51E318B3600B84150 /* AppDelegate.swift */; };
+		A90F07E81E318B3600B84150 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90F07E71E318B3600B84150 /* ViewController.swift */; };
+		A90F07EB1E318B3600B84150 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A90F07E91E318B3600B84150 /* Main.storyboard */; };
+		A90F07ED1E318B3600B84150 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A90F07EC1E318B3600B84150 /* Assets.xcassets */; };
+		A90F07F01E318B3600B84150 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A90F07EE1E318B3600B84150 /* LaunchScreen.storyboard */; };
+		A90F07F51E318B3600B84150 /* PPTLS WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A90F07F41E318B3600B84150 /* PPTLS WatchKit App.app */; };
+		A90F07FB1E318B3600B84150 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A90F07F91E318B3600B84150 /* Interface.storyboard */; };
+		A90F07FD1E318B3600B84150 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A90F07FC1E318B3600B84150 /* Assets.xcassets */; };
+		A90F08041E318B3600B84150 /* PPTLS WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A90F08031E318B3600B84150 /* PPTLS WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A90F08091E318B3600B84150 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90F08081E318B3600B84150 /* InterfaceController.swift */; };
+		A90F080B1E318B3600B84150 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90F080A1E318B3600B84150 /* ExtensionDelegate.swift */; };
+		A90F080D1E318B3600B84150 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A90F080C1E318B3600B84150 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A90F07F61E318B3600B84150 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A90F07DA1E318B3600B84150 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A90F07F31E318B3600B84150;
+			remoteInfo = "PPTLS WatchKit App";
+		};
+		A90F08051E318B3600B84150 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A90F07DA1E318B3600B84150 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A90F08021E318B3600B84150;
+			remoteInfo = "PPTLS WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A90F08141E318B3600B84150 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A90F08041E318B3600B84150 /* PPTLS WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A90F08181E318B3600B84150 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A90F07F51E318B3600B84150 /* PPTLS WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A90F07E21E318B3600B84150 /* PPTLS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PPTLS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A90F07E51E318B3600B84150 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A90F07E71E318B3600B84150 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A90F07EA1E318B3600B84150 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A90F07EC1E318B3600B84150 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A90F07EF1E318B3600B84150 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A90F07F11E318B3600B84150 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A90F07F41E318B3600B84150 /* PPTLS WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PPTLS WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A90F07FA1E318B3600B84150 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A90F07FC1E318B3600B84150 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A90F07FE1E318B3600B84150 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A90F08031E318B3600B84150 /* PPTLS WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PPTLS WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A90F08081E318B3600B84150 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A90F080A1E318B3600B84150 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		A90F080C1E318B3600B84150 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A90F080E1E318B3600B84150 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A90F07DF1E318B3600B84150 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A90F08001E318B3600B84150 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A90F07D91E318B3600B84150 = {
+			isa = PBXGroup;
+			children = (
+				A90F07E41E318B3600B84150 /* PPTLS */,
+				A90F07F81E318B3600B84150 /* PPTLS WatchKit App */,
+				A90F08071E318B3600B84150 /* PPTLS WatchKit Extension */,
+				A90F07E31E318B3600B84150 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A90F07E31E318B3600B84150 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A90F07E21E318B3600B84150 /* PPTLS.app */,
+				A90F07F41E318B3600B84150 /* PPTLS WatchKit App.app */,
+				A90F08031E318B3600B84150 /* PPTLS WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A90F07E41E318B3600B84150 /* PPTLS */ = {
+			isa = PBXGroup;
+			children = (
+				A90F07E51E318B3600B84150 /* AppDelegate.swift */,
+				A90F07E71E318B3600B84150 /* ViewController.swift */,
+				A90F07E91E318B3600B84150 /* Main.storyboard */,
+				A90F07EC1E318B3600B84150 /* Assets.xcassets */,
+				A90F07EE1E318B3600B84150 /* LaunchScreen.storyboard */,
+				A90F07F11E318B3600B84150 /* Info.plist */,
+			);
+			path = PPTLS;
+			sourceTree = "<group>";
+		};
+		A90F07F81E318B3600B84150 /* PPTLS WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A90F07F91E318B3600B84150 /* Interface.storyboard */,
+				A90F07FC1E318B3600B84150 /* Assets.xcassets */,
+				A90F07FE1E318B3600B84150 /* Info.plist */,
+			);
+			path = "PPTLS WatchKit App";
+			sourceTree = "<group>";
+		};
+		A90F08071E318B3600B84150 /* PPTLS WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A90F08081E318B3600B84150 /* InterfaceController.swift */,
+				A90F080A1E318B3600B84150 /* ExtensionDelegate.swift */,
+				A90F080C1E318B3600B84150 /* Assets.xcassets */,
+				A90F080E1E318B3600B84150 /* Info.plist */,
+			);
+			path = "PPTLS WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A90F07E11E318B3600B84150 /* PPTLS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A90F08191E318B3600B84150 /* Build configuration list for PBXNativeTarget "PPTLS" */;
+			buildPhases = (
+				A90F07DE1E318B3600B84150 /* Sources */,
+				A90F07DF1E318B3600B84150 /* Frameworks */,
+				A90F07E01E318B3600B84150 /* Resources */,
+				A90F08181E318B3600B84150 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A90F07F71E318B3600B84150 /* PBXTargetDependency */,
+			);
+			name = PPTLS;
+			productName = PPTLS;
+			productReference = A90F07E21E318B3600B84150 /* PPTLS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A90F07F31E318B3600B84150 /* PPTLS WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A90F08151E318B3600B84150 /* Build configuration list for PBXNativeTarget "PPTLS WatchKit App" */;
+			buildPhases = (
+				A90F07F21E318B3600B84150 /* Resources */,
+				A90F08141E318B3600B84150 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A90F08061E318B3600B84150 /* PBXTargetDependency */,
+			);
+			name = "PPTLS WatchKit App";
+			productName = "PPTLS WatchKit App";
+			productReference = A90F07F41E318B3600B84150 /* PPTLS WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A90F08021E318B3600B84150 /* PPTLS WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A90F08111E318B3600B84150 /* Build configuration list for PBXNativeTarget "PPTLS WatchKit Extension" */;
+			buildPhases = (
+				A90F07FF1E318B3600B84150 /* Sources */,
+				A90F08001E318B3600B84150 /* Frameworks */,
+				A90F08011E318B3600B84150 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PPTLS WatchKit Extension";
+			productName = "PPTLS WatchKit Extension";
+			productReference = A90F08031E318B3600B84150 /* PPTLS WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A90F07DA1E318B3600B84150 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = UPSA;
+				TargetAttributes = {
+					A90F07E11E318B3600B84150 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3VW789WSMP;
+						ProvisioningStyle = Automatic;
+					};
+					A90F07F31E318B3600B84150 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3VW789WSMP;
+						ProvisioningStyle = Automatic;
+					};
+					A90F08021E318B3600B84150 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3VW789WSMP;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A90F07DD1E318B3600B84150 /* Build configuration list for PBXProject "PPTLS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A90F07D91E318B3600B84150;
+			productRefGroup = A90F07E31E318B3600B84150 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A90F07E11E318B3600B84150 /* PPTLS */,
+				A90F07F31E318B3600B84150 /* PPTLS WatchKit App */,
+				A90F08021E318B3600B84150 /* PPTLS WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A90F07E01E318B3600B84150 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A90F07F01E318B3600B84150 /* LaunchScreen.storyboard in Resources */,
+				A90F07ED1E318B3600B84150 /* Assets.xcassets in Resources */,
+				A90F07EB1E318B3600B84150 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A90F07F21E318B3600B84150 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A90F07FD1E318B3600B84150 /* Assets.xcassets in Resources */,
+				A90F07FB1E318B3600B84150 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A90F08011E318B3600B84150 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A90F080D1E318B3600B84150 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A90F07DE1E318B3600B84150 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A90F07E81E318B3600B84150 /* ViewController.swift in Sources */,
+				A90F07E61E318B3600B84150 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A90F07FF1E318B3600B84150 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A90F080B1E318B3600B84150 /* ExtensionDelegate.swift in Sources */,
+				A90F08091E318B3600B84150 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A90F07F71E318B3600B84150 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A90F07F31E318B3600B84150 /* PPTLS WatchKit App */;
+			targetProxy = A90F07F61E318B3600B84150 /* PBXContainerItemProxy */;
+		};
+		A90F08061E318B3600B84150 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A90F08021E318B3600B84150 /* PPTLS WatchKit Extension */;
+			targetProxy = A90F08051E318B3600B84150 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A90F07E91E318B3600B84150 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A90F07EA1E318B3600B84150 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A90F07EE1E318B3600B84150 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A90F07EF1E318B3600B84150 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A90F07F91E318B3600B84150 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A90F07FA1E318B3600B84150 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A90F080F1E318B3600B84150 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A90F08101E318B3600B84150 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A90F08121E318B3600B84150 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 3VW789WSMP;
+				INFOPLIST_FILE = "PPTLS WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.PPTLS.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		A90F08131E318B3600B84150 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 3VW789WSMP;
+				INFOPLIST_FILE = "PPTLS WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.PPTLS.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		A90F08161E318B3600B84150 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3VW789WSMP;
+				IBSC_MODULE = PPTLS_WatchKit_Extension;
+				INFOPLIST_FILE = "PPTLS WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.PPTLS.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		A90F08171E318B3600B84150 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3VW789WSMP;
+				IBSC_MODULE = PPTLS_WatchKit_Extension;
+				INFOPLIST_FILE = "PPTLS WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.PPTLS.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		A90F081A1E318B3600B84150 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3VW789WSMP;
+				INFOPLIST_FILE = PPTLS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.PPTLS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A90F081B1E318B3600B84150 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3VW789WSMP;
+				INFOPLIST_FILE = PPTLS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.PPTLS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A90F07DD1E318B3600B84150 /* Build configuration list for PBXProject "PPTLS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A90F080F1E318B3600B84150 /* Debug */,
+				A90F08101E318B3600B84150 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A90F08111E318B3600B84150 /* Build configuration list for PBXNativeTarget "PPTLS WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A90F08121E318B3600B84150 /* Debug */,
+				A90F08131E318B3600B84150 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A90F08151E318B3600B84150 /* Build configuration list for PBXNativeTarget "PPTLS WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A90F08161E318B3600B84150 /* Debug */,
+				A90F08171E318B3600B84150 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A90F08191E318B3600B84150 /* Build configuration list for PBXNativeTarget "PPTLS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A90F081A1E318B3600B84150 /* Debug */,
+				A90F081B1E318B3600B84150 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A90F07DA1E318B3600B84150 /* Project object */;
+}
