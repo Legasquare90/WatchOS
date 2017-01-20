@@ -1,15 +1,69 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="PPTLS_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="center" verticalAlignment="center" title="Jugar" id="GSx-hI-FZk"/>
+                        <button width="1" alignment="center" verticalAlignment="center" title="Multijugador" id="VLT-Mf-rLU"/>
+                        <button width="1" alignment="center" verticalAlignment="center" title="Chat" id="Kgk-gz-ZIK"/>
+                    </items>
+                </controller>
             </objects>
+            <point key="canvasLocation" x="25" y="132"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="7xy-65-Uzq">
+            <objects>
+                <controller id="9B5-QO-aRQ">
+                    <items>
+                        <switch width="1" alignment="left" title="Random?" id="VXs-2q-G3n"/>
+                        <picker height="100" alignment="left" style="stack" id="Zs7-JB-2Yr"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="334" y="132"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="1rF-ZN-bqu">
+            <objects>
+                <controller id="8nw-fT-RYY">
+                    <items>
+                        <group width="1" alignment="center" verticalAlignment="center" id="qqa-gb-Ldh">
+                            <items>
+                                <imageView width="50" height="50" alignment="left" image="interrogacion" contentMode="scaleAspectFit" id="Yms-bH-YrO"/>
+                                <label alignment="center" verticalAlignment="center" text="-" textAlignment="center" id="Eyu-sI-flw">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                                <imageView width="50" height="50" alignment="right" image="interrogacion" contentMode="scaleAspectFit" id="Hta-7T-RAp"/>
+                            </items>
+                        </group>
+                        <label alignment="center" text="¡Agita tu mano!" id="cVZ-Bz-qlG"/>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Salir" id="ZXf-Md-Mow"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="639" y="132"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="dYV-mb-ZsN">
+            <objects>
+                <controller id="iDc-UV-5in">
+                    <items>
+                        <imageView width="100" height="100" alignment="center" verticalAlignment="center" image="interrogacion" id="Oq0-c8-r2J"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="639" y="432"/>
         </scene>
     </scenes>
 </document>
