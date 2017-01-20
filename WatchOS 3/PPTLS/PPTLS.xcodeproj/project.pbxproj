@@ -19,6 +19,10 @@
 		A90F08091E318B3600B84150 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90F08081E318B3600B84150 /* InterfaceController.swift */; };
 		A90F080B1E318B3600B84150 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90F080A1E318B3600B84150 /* ExtensionDelegate.swift */; };
 		A90F080D1E318B3600B84150 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A90F080C1E318B3600B84150 /* Assets.xcassets */; };
+		A90F081D1E32ABA500B84150 /* MenuInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90F081C1E32ABA500B84150 /* MenuInterfaceController.swift */; };
+		A90F081F1E32AC4900B84150 /* SelectMoveInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90F081E1E32AC4900B84150 /* SelectMoveInterfaceController.swift */; };
+		A90F08211E32AFC700B84150 /* ResultsIAInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90F08201E32AFC700B84150 /* ResultsIAInterfaceController.swift */; };
+		A90F08231E32B27600B84150 /* ResultsVsPlayerInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90F08221E32B27600B84150 /* ResultsVsPlayerInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +84,10 @@
 		A90F080A1E318B3600B84150 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		A90F080C1E318B3600B84150 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A90F080E1E318B3600B84150 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A90F081C1E32ABA500B84150 /* MenuInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuInterfaceController.swift; sourceTree = "<group>"; };
+		A90F081E1E32AC4900B84150 /* SelectMoveInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectMoveInterfaceController.swift; sourceTree = "<group>"; };
+		A90F08201E32AFC700B84150 /* ResultsIAInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsIAInterfaceController.swift; sourceTree = "<group>"; };
+		A90F08221E32B27600B84150 /* ResultsVsPlayerInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsVsPlayerInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +158,10 @@
 				A90F080A1E318B3600B84150 /* ExtensionDelegate.swift */,
 				A90F080C1E318B3600B84150 /* Assets.xcassets */,
 				A90F080E1E318B3600B84150 /* Info.plist */,
+				A90F081C1E32ABA500B84150 /* MenuInterfaceController.swift */,
+				A90F081E1E32AC4900B84150 /* SelectMoveInterfaceController.swift */,
+				A90F08201E32AFC700B84150 /* ResultsIAInterfaceController.swift */,
+				A90F08221E32B27600B84150 /* ResultsVsPlayerInterfaceController.swift */,
 			);
 			path = "PPTLS WatchKit Extension";
 			sourceTree = "<group>";
@@ -302,6 +314,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A90F080B1E318B3600B84150 /* ExtensionDelegate.swift in Sources */,
+				A90F081D1E32ABA500B84150 /* MenuInterfaceController.swift in Sources */,
+				A90F08231E32B27600B84150 /* ResultsVsPlayerInterfaceController.swift in Sources */,
+				A90F08211E32AFC700B84150 /* ResultsIAInterfaceController.swift in Sources */,
+				A90F081F1E32AC4900B84150 /* SelectMoveInterfaceController.swift in Sources */,
 				A90F08091E318B3600B84150 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -555,6 +571,7 @@
 				A90F08131E318B3600B84150 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A90F08151E318B3600B84150 /* Build configuration list for PBXNativeTarget "PPTLS WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -563,6 +580,7 @@
 				A90F08171E318B3600B84150 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A90F08191E318B3600B84150 /* Build configuration list for PBXNativeTarget "PPTLS" */ = {
 			isa = XCConfigurationList;
@@ -571,6 +589,7 @@
 				A90F081B1E318B3600B84150 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
