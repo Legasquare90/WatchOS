@@ -16,13 +16,13 @@
 		A90F07FB1E318B3600B84150 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A90F07F91E318B3600B84150 /* Interface.storyboard */; };
 		A90F07FD1E318B3600B84150 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A90F07FC1E318B3600B84150 /* Assets.xcassets */; };
 		A90F08041E318B3600B84150 /* PPTLS WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A90F08031E318B3600B84150 /* PPTLS WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		A90F08091E318B3600B84150 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90F08081E318B3600B84150 /* InterfaceController.swift */; };
 		A90F080B1E318B3600B84150 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90F080A1E318B3600B84150 /* ExtensionDelegate.swift */; };
 		A90F080D1E318B3600B84150 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A90F080C1E318B3600B84150 /* Assets.xcassets */; };
 		A90F081D1E32ABA500B84150 /* MenuInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90F081C1E32ABA500B84150 /* MenuInterfaceController.swift */; };
 		A90F081F1E32AC4900B84150 /* SelectMoveInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90F081E1E32AC4900B84150 /* SelectMoveInterfaceController.swift */; };
 		A90F08211E32AFC700B84150 /* ResultsIAInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90F08201E32AFC700B84150 /* ResultsIAInterfaceController.swift */; };
 		A90F08231E32B27600B84150 /* ResultsVsPlayerInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90F08221E32B27600B84150 /* ResultsVsPlayerInterfaceController.swift */; };
+		A90F08251E32EC4C00B84150 /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90F08241E32EC4C00B84150 /* MotionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,7 +80,6 @@
 		A90F07FC1E318B3600B84150 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A90F07FE1E318B3600B84150 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A90F08031E318B3600B84150 /* PPTLS WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PPTLS WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A90F08081E318B3600B84150 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		A90F080A1E318B3600B84150 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		A90F080C1E318B3600B84150 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A90F080E1E318B3600B84150 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -88,6 +87,7 @@
 		A90F081E1E32AC4900B84150 /* SelectMoveInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectMoveInterfaceController.swift; sourceTree = "<group>"; };
 		A90F08201E32AFC700B84150 /* ResultsIAInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsIAInterfaceController.swift; sourceTree = "<group>"; };
 		A90F08221E32B27600B84150 /* ResultsVsPlayerInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsVsPlayerInterfaceController.swift; sourceTree = "<group>"; };
+		A90F08241E32EC4C00B84150 /* MotionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,7 +154,6 @@
 		A90F08071E318B3600B84150 /* PPTLS WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				A90F08081E318B3600B84150 /* InterfaceController.swift */,
 				A90F080A1E318B3600B84150 /* ExtensionDelegate.swift */,
 				A90F080C1E318B3600B84150 /* Assets.xcassets */,
 				A90F080E1E318B3600B84150 /* Info.plist */,
@@ -162,6 +161,7 @@
 				A90F081E1E32AC4900B84150 /* SelectMoveInterfaceController.swift */,
 				A90F08201E32AFC700B84150 /* ResultsIAInterfaceController.swift */,
 				A90F08221E32B27600B84150 /* ResultsVsPlayerInterfaceController.swift */,
+				A90F08241E32EC4C00B84150 /* MotionManager.swift */,
 			);
 			path = "PPTLS WatchKit Extension";
 			sourceTree = "<group>";
@@ -314,11 +314,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A90F080B1E318B3600B84150 /* ExtensionDelegate.swift in Sources */,
+				A90F08251E32EC4C00B84150 /* MotionManager.swift in Sources */,
 				A90F081D1E32ABA500B84150 /* MenuInterfaceController.swift in Sources */,
 				A90F08231E32B27600B84150 /* ResultsVsPlayerInterfaceController.swift in Sources */,
 				A90F08211E32AFC700B84150 /* ResultsIAInterfaceController.swift in Sources */,
 				A90F081F1E32AC4900B84150 /* SelectMoveInterfaceController.swift in Sources */,
-				A90F08091E318B3600B84150 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

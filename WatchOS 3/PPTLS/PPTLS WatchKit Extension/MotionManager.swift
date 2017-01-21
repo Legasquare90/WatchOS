@@ -1,26 +1,26 @@
 //
-//  InterfaceController.swift
-//  PPTLS WatchKit Extension
+//  MotionManager.swift
+//  PPTLS
 //
-//  Created by Jose Angel Cuadrado on 20/1/17.
+//  Created by Jose Angel Cuadrado on 21/1/17.
 //  Copyright © 2017 UPSA. All rights reserved.
 //
 
 import WatchKit
-import Foundation
 import CoreMotion
 
-class InterfaceController: WKInterfaceController {
+protocol MotionManagerDelegate: class {
+    func armGestureDetected()
+}
 
-    let motionManager = CMMotionManager()
-    var count = 0
+class MotionManager: NSObject {
+
+    private let motionManager = CMMotionManager()
+    private var count = 0
     
-    override func awake(withContext context: Any?) {
-        super.awake(withContext: context)
-        setupAccelerometer()
-    }
-    
-    func setupAccelerometer() {
+    weak var delegate: MotionManagerDelegate?
+
+    func initAccelerometer() {
         guard motionManager.isDeviceMotionAvailable else {
             print("DeviceMotion no disponible")
             return
@@ -49,10 +49,10 @@ class InterfaceController: WKInterfaceController {
             if (self.count >= 5) {
                 print("FINISH")
                 self.motionManager.stopDeviceMotionUpdates()
+                self.delegate?.armGestureDetected()
             }
-
+            
         })
-        
     }
-
+    
 }
