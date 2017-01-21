@@ -23,6 +23,7 @@
 		A90F08211E32AFC700B84150 /* ResultsIAInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90F08201E32AFC700B84150 /* ResultsIAInterfaceController.swift */; };
 		A90F08231E32B27600B84150 /* ResultsVsPlayerInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90F08221E32B27600B84150 /* ResultsVsPlayerInterfaceController.swift */; };
 		A90F08251E32EC4C00B84150 /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90F08241E32EC4C00B84150 /* MotionManager.swift */; };
+		A9313A7C1E33AFA300D66FDD /* ChatInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9313A7B1E33AFA300D66FDD /* ChatInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		A90F08201E32AFC700B84150 /* ResultsIAInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsIAInterfaceController.swift; sourceTree = "<group>"; };
 		A90F08221E32B27600B84150 /* ResultsVsPlayerInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsVsPlayerInterfaceController.swift; sourceTree = "<group>"; };
 		A90F08241E32EC4C00B84150 /* MotionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
+		A9313A7B1E33AFA300D66FDD /* ChatInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 				A90F081E1E32AC4900B84150 /* SelectMoveInterfaceController.swift */,
 				A90F08201E32AFC700B84150 /* ResultsIAInterfaceController.swift */,
 				A90F08221E32B27600B84150 /* ResultsVsPlayerInterfaceController.swift */,
+				A9313A7B1E33AFA300D66FDD /* ChatInterfaceController.swift */,
 				A90F08241E32EC4C00B84150 /* MotionManager.swift */,
 			);
 			path = "PPTLS WatchKit Extension";
@@ -316,6 +319,7 @@
 				A90F080B1E318B3600B84150 /* ExtensionDelegate.swift in Sources */,
 				A90F08251E32EC4C00B84150 /* MotionManager.swift in Sources */,
 				A90F081D1E32ABA500B84150 /* MenuInterfaceController.swift in Sources */,
+				A9313A7C1E33AFA300D66FDD /* ChatInterfaceController.swift in Sources */,
 				A90F08231E32B27600B84150 /* ResultsVsPlayerInterfaceController.swift in Sources */,
 				A90F08211E32AFC700B84150 /* ResultsIAInterfaceController.swift in Sources */,
 				A90F081F1E32AC4900B84150 /* SelectMoveInterfaceController.swift in Sources */,

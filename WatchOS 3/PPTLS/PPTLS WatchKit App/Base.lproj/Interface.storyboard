@@ -33,6 +33,44 @@
             </objects>
             <point key="canvasLocation" x="25" y="132"/>
         </scene>
+        <!--ChatInterfaceController-->
+        <scene sceneID="yKL-gg-RY3">
+            <objects>
+                <controller identifier="ChatInterfaceController" id="0ec-Wj-Phf" customClass="ChatInterfaceController" customModule="PPTLS_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="WG9-4Y-WpK">
+                            <items>
+                                <label width="0.25" alignment="left" text="AW: " id="wta-17-Uri">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                                <label width="0.75" alignment="left" text="¿Quieres jugar a un juego?" numberOfLines="0" id="7cX-ip-sVF">
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                </label>
+                            </items>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </group>
+                        <group width="1" alignment="left" hidden="YES" id="BVy-ok-RfI">
+                            <items>
+                                <label height="21" alignment="right" text="Label" id="LOl-23-Z9O">
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                </label>
+                            </items>
+                            <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </group>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Responder" id="72R-1n-m9U">
+                            <connections>
+                                <action selector="answerAction" destination="0ec-Wj-Phf" id="aFD-SJ-9pO"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="answerLabel" destination="LOl-23-Z9O" id="ndj-yw-LeK"/>
+                        <outlet property="groupAnswer" destination="BVy-ok-RfI" id="Lcc-vq-bGK"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="25" y="440"/>
+        </scene>
         <!--SelectMoveInterfaceController-->
         <scene sceneID="7xy-65-Uzq">
             <objects>

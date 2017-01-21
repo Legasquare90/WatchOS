@@ -26,5 +26,6 @@ class MenuInterfaceController: WKInterfaceController {
     }
 
     @IBAction func chatAction() {
+        pushController(withName: "ChatInterfaceController", context: nil)
     }
 }
