@@ -10,17 +10,28 @@ import WatchKit
 import Foundation
 
 
-class ResultsVsPlayerInterfaceController: WKInterfaceController {
+class ResultsVsPlayerInterfaceController: WKInterfaceController, MotionManagerDelegate {
 
     @IBOutlet var resultImage: WKInterfaceImage!
     
+    let motionManager = MotionManager()
+    
+    var move = ""
+    
     override func awake(withContext context: Any?) {
-        super.awake(withContext: context)        
+        super.awake(withContext: context)
+        setTitle("Multijugador")
+        move = context as! String
+        motionManager.delegate = self
     }
-
+    
     override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        motionManager.initAccelerometer()
+    }
+    
+    func armGestureDetected() {
+        resultImage.setImage(UIImage(named: move))
     }
 
 }

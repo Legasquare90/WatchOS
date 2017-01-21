@@ -13,13 +13,16 @@ import Foundation
 class MenuInterfaceController: WKInterfaceController {
 
     override func awake(withContext context: Any?) {
-        super.awake(withContext: context)        
+        super.awake(withContext: context)
+        setTitle("PPTLS")
     }
 
     @IBAction func playVsIAAction() {
+        pushController(withName: "SelectMoveInterfaceController", context: ["multiplayer":false])
     }
 
     @IBAction func playVsOthersAction() {
+        pushController(withName: "SelectMoveInterfaceController", context: ["multiplayer":true])
     }
 
     @IBAction func chatAction() {

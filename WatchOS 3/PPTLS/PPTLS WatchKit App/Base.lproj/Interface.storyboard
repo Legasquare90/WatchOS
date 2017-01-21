@@ -33,33 +33,40 @@
             </objects>
             <point key="canvasLocation" x="25" y="132"/>
         </scene>
-        <!--Select Move Interface Controller-->
+        <!--SelectMoveInterfaceController-->
         <scene sceneID="7xy-65-Uzq">
             <objects>
-                <controller id="9B5-QO-aRQ" customClass="SelectMoveInterfaceController" customModule="PPTLS_WatchKit_Extension">
+                <controller identifier="SelectMoveInterfaceController" id="9B5-QO-aRQ" customClass="SelectMoveInterfaceController" customModule="PPTLS_WatchKit_Extension">
                     <items>
-                        <switch width="1" alignment="left" title="Random?" id="VXs-2q-G3n">
+                        <switch width="1" height="0.23999999999999999" alignment="left" title="Random?" id="VXs-2q-G3n">
                             <connections>
                                 <action selector="changeSwitchOption:" destination="9B5-QO-aRQ" id="S46-DG-7a5"/>
                             </connections>
                         </switch>
-                        <picker height="100" alignment="left" style="stack" id="Zs7-JB-2Yr">
+                        <picker height="0.5" alignment="center" style="stack" id="Zs7-JB-2Yr">
                             <connections>
                                 <action selector="pickerChangeValue:" destination="9B5-QO-aRQ" id="AWs-aJ-4yk"/>
                             </connections>
                         </picker>
+                        <imageView width="1" height="0.5" alignment="center" hidden="YES" image="interrogacion" contentMode="scaleAspectFit" id="XKt-kV-emj"/>
+                        <button width="1" height="0.23999999999999999" alignment="left" title="¡A jugar!" id="sLW-5S-Be5">
+                            <connections>
+                                <action selector="nextAction" destination="9B5-QO-aRQ" id="Ikn-f8-a2f"/>
+                            </connections>
+                        </button>
                     </items>
                     <connections>
                         <outlet property="picker" destination="Zs7-JB-2Yr" id="wij-zv-ylI"/>
+                        <outlet property="randomImage" destination="XKt-kV-emj" id="Ug3-os-5gD"/>
                     </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="334" y="132"/>
         </scene>
-        <!--ResultsIA Interface Controller-->
+        <!--ResultsIAInterfaceController-->
         <scene sceneID="1rF-ZN-bqu">
             <objects>
-                <controller id="8nw-fT-RYY" customClass="ResultsIAInterfaceController" customModule="PPTLS_WatchKit_Extension">
+                <controller identifier="ResultsIAInterfaceController" id="8nw-fT-RYY" customClass="ResultsIAInterfaceController" customModule="PPTLS_WatchKit_Extension">
                     <items>
                         <group width="1" alignment="center" verticalAlignment="center" id="qqa-gb-Ldh">
                             <items>
@@ -87,10 +94,10 @@
             </objects>
             <point key="canvasLocation" x="639" y="132"/>
         </scene>
-        <!--Results Vs Player Interface Controller-->
+        <!--ResultsVsPlayerInterfaceController-->
         <scene sceneID="dYV-mb-ZsN">
             <objects>
-                <controller id="iDc-UV-5in" customClass="ResultsVsPlayerInterfaceController" customModule="PPTLS_WatchKit_Extension">
+                <controller identifier="ResultsVsPlayerInterfaceController" id="iDc-UV-5in" customClass="ResultsVsPlayerInterfaceController" customModule="PPTLS_WatchKit_Extension">
                     <items>
                         <imageView width="100" height="100" alignment="center" verticalAlignment="center" image="interrogacion" id="Oq0-c8-r2J"/>
                     </items>

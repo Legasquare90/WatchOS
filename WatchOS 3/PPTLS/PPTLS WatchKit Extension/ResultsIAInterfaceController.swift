@@ -17,16 +17,15 @@ class ResultsIAInterfaceController: WKInterfaceController {
     @IBOutlet var iaMoveImage: WKInterfaceImage!
     @IBOutlet var exitButton: WKInterfaceButton!
     
+    var move = ""
+
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-    }
-
-    override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
-        super.willActivate()
+        setTitle("Juego vs IA")
+        move = context as! String
     }
 
     @IBAction func exitAction() {
-        
+        popToRootController()
     }
 }
