@@ -17,6 +17,7 @@ class ResultsVsPlayerInterfaceController: WKInterfaceController, MotionManagerDe
     let motionManager = MotionManager()
     
     var move = ""
+    var gameOver = false
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
@@ -27,11 +28,14 @@ class ResultsVsPlayerInterfaceController: WKInterfaceController, MotionManagerDe
     
     override func willActivate() {
         super.willActivate()
-        motionManager.initAccelerometer()
+        if (!gameOver) {
+            motionManager.initAccelerometer()
+        }
     }
     
     func armGestureDetected() {
-        resultImage.setImage(UIImage(named: move))
+        resultImage.setImageNamed(move)
+        gameOver = true
     }
 
 }

@@ -78,7 +78,7 @@
                             </items>
                         </group>
                         <label alignment="center" text="¡Agita tu mano!" id="cVZ-Bz-qlG"/>
-                        <button width="1" alignment="left" verticalAlignment="bottom" title="Salir" id="ZXf-Md-Mow">
+                        <button width="1" alignment="left" verticalAlignment="bottom" hidden="YES" title="Salir" id="ZXf-Md-Mow">
                             <connections>
                                 <action selector="exitAction" destination="8nw-fT-RYY" id="diw-FJ-bdO"/>
                             </connections>

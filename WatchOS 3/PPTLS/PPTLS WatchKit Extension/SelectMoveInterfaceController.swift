@@ -24,8 +24,9 @@ class SelectMoveInterfaceController: WKInterfaceController {
         super.awake(withContext: context)
         let data = context as! [String: Bool]
         multiplayer = data["multiplayer"]!
-        
         multiplayer ? setTitle("Multijugador") : setTitle("Juego vs IA")
+        
+        moveSelected = model.first!
         
         var array: [WKPickerItem] = [WKPickerItem]()
         for i in 0 ..< model.count {
