@@ -57,14 +57,32 @@
                             </items>
                             <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         </group>
-                        <button width="1" alignment="left" verticalAlignment="bottom" title="Responder" id="72R-1n-m9U">
+                        <button width="0.75" alignment="right" hidden="YES" title="Audio" id="KVX-kx-CLm">
+                            <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <action selector="answerAction" destination="0ec-Wj-Phf" id="aFD-SJ-9pO"/>
+                                <action selector="listenAudioAction" destination="0ec-Wj-Phf" id="f6W-L1-TIA"/>
                             </connections>
                         </button>
+                        <group width="1" alignment="center" verticalAlignment="bottom" id="raF-ys-G3y">
+                            <items>
+                                <button width="0.5" alignment="left" title="Escribir" id="72R-1n-m9U">
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                    <connections>
+                                        <action selector="answerAction" destination="0ec-Wj-Phf" id="aFD-SJ-9pO"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" alignment="left" title="Grabar" id="hfK-AF-5xZ">
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                    <connections>
+                                        <action selector="recordAction" destination="0ec-Wj-Phf" id="Mw2-r6-2xZ"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
                     </items>
                     <connections>
                         <outlet property="answerLabel" destination="LOl-23-Z9O" id="ndj-yw-LeK"/>
+                        <outlet property="audioButton" destination="KVX-kx-CLm" id="vtw-pF-ic1"/>
                         <outlet property="groupAnswer" destination="BVy-ok-RfI" id="Lcc-vq-bGK"/>
                     </connections>
                 </controller>
