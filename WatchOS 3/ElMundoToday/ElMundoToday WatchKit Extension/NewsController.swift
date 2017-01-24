@@ -31,7 +31,9 @@ class NewsController: WKInterfaceController {
         let imageURLString = news["image"]! as String
         let imageURL = URL(string: imageURLString)
         let data = try? Data(contentsOf: imageURL!)
-        newsImage.setImageData(data!)
+        if (data != nil) {
+            newsImage.setImageData(data!)
+        }
         
         let date = news["date"]! as String
         newsDateLabel.setText(date)
@@ -63,7 +65,9 @@ class NewsController: WKInterfaceController {
                 let imageURLString = self.news["image"]! as String
                 let imageURL = URL(string: imageURLString)
                 let data = try? Data(contentsOf: imageURL!)
-                self.video.setPosterImage(WKImage(imageData: data!))
+                if (data != nil) {
+                    self.video.setPosterImage(WKImage(imageData: data!))
+                }
                 self.videoButton.setTitle("¡Descargado!")
                 self.videoButton.setEnabled(false)
             }

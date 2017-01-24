@@ -256,14 +256,17 @@
 				TargetAttributes = {
 					A90EF7CD1E1B04FB00FA53E3 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3VW789WSMP;
 						ProvisioningStyle = Automatic;
 					};
 					A90EF7DF1E1B04FC00FA53E3 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3VW789WSMP;
 						ProvisioningStyle = Automatic;
 					};
 					A90EF7EE1E1B04FC00FA53E3 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3VW789WSMP;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -483,6 +486,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 3VW789WSMP;
 				INFOPLIST_FILE = "ElMundoToday WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo.ElMundoToday.watchkitapp.watchkitextension;
@@ -499,6 +503,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 3VW789WSMP;
 				INFOPLIST_FILE = "ElMundoToday WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo.ElMundoToday.watchkitapp.watchkitextension;
@@ -516,6 +521,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3VW789WSMP;
 				IBSC_MODULE = ElMundoToday_WatchKit_Extension;
 				INFOPLIST_FILE = "ElMundoToday WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo.ElMundoToday.watchkitapp;
@@ -524,7 +530,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Debug;
 		};
@@ -533,6 +539,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3VW789WSMP;
 				IBSC_MODULE = ElMundoToday_WatchKit_Extension;
 				INFOPLIST_FILE = "ElMundoToday WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo.ElMundoToday.watchkitapp;
@@ -541,7 +548,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Release;
 		};
@@ -549,6 +556,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3VW789WSMP;
 				INFOPLIST_FILE = ElMundoToday/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo.ElMundoToday;
@@ -561,6 +569,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3VW789WSMP;
 				INFOPLIST_FILE = ElMundoToday/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo.ElMundoToday;
